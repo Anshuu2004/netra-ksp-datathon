@@ -11,6 +11,7 @@
   "scripts": {
     "data:generate": "node data/generator/generate.mjs",
     "validate": "node packages/core/validate.mjs",
+    "ask": "node packages/core/ask.mjs",
     "dev": "npm --workspace apps/web run dev",
     "build": "npm --workspace apps/web run build"
   },

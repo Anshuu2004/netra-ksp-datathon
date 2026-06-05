@@ -46,7 +46,7 @@ export function socioCorrelation(ds, indicator = 'urbanization_index') {
   const real = loadKarnatakaCrime2023();
   const norm = (s) => s.toLowerCase().replace(/\b(city|district|urban|rural)\b/g, '').replace(/[^a-z]/g, '');
   const realByDistrict = new Map(real.rows.map((r) => [norm(r.district), r.total]));
-  const pairs = [];
+  const points = [];
   for (const d of ds.districts) {
     const key = norm(d.name);
     // try exact, then prefix match
@@ -54,13 +54,13 @@ export function socioCorrelation(ds, indicator = 'urbanization_index') {
     if (val == null) {
       for (const [k, v] of realByDistrict) if (k.startsWith(key) || key.startsWith(k)) { val = v; break; }
     }
-    if (val != null && d[indicator] != null) pairs.push([d[indicator], val]);
+    if (val != null && d[indicator] != null) points.push({ district: d.name, x: d[indicator], y: val });
   }
-  if (pairs.length < 3) return { r: null, n: pairs.length, indicator };
-  const xs = pairs.map((p) => p[0]), ys = pairs.map((p) => p[1]);
+  if (points.length < 3) return { r: null, n: points.length, indicator, points };
+  const xs = points.map((p) => p.x), ys = points.map((p) => p.y);
   const mx = xs.reduce((a, b) => a + b, 0) / xs.length, my = ys.reduce((a, b) => a + b, 0) / ys.length;
   let num = 0, dx = 0, dy = 0;
   for (let i = 0; i < xs.length; i++) { num += (xs[i] - mx) * (ys[i] - my); dx += (xs[i] - mx) ** 2; dy += (ys[i] - my) ** 2; }
   const r = num / (Math.sqrt(dx * dy) || 1);
-  return { r: Number(r.toFixed(3)), n: pairs.length, indicator, source: real.source };
+  return { r: Number(r.toFixed(3)), n: points.length, indicator, points, source: real.source };
 }
