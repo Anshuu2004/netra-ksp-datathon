@@ -1,0 +1,214 @@
+'use client';
+import { useEffect, useRef, useState } from 'react';
+import type { AnswerEnvelope, Role } from '@/lib/types';
+import { AnswerSurfaceView } from './surfaces';
+import { TrustPanel } from './TrustPanel';
+
+type Msg = { role: 'user' | 'assistant'; text: string; env?: AnswerEnvelope };
+
+const ROLES: { id: Role; label: string }[] = [
+  { id: 'constable', label: 'Constable' },
+  { id: 'investigator', label: 'Investigator' },
+  { id: 'supervisor', label: 'Supervisor' },
+  { id: 'policymaker', label: 'Policymaker' },
+];
+
+const SUGGESTIONS = [
+  'Show chain-snatching hotspots in Bengaluru in the last 6 months',
+  'Find the organized gang operating in Bengaluru',
+  'Where will the next burglary strike in Mysuru?',
+  'Top repeat offenders in Mysuru',
+  'Trace the money trail for the laundering ring',
+  'Correlate crime with urbanisation',
+];
+
+export default function ChatConsole() {
+  const [messages, setMessages] = useState<Msg[]>([]);
+  const [input, setInput] = useState('');
+  const [role, setRole] = useState<Role>('investigator');
+  const [lang, setLang] = useState<'en' | 'kn'>('en');
+  const [busy, setBusy] = useState(false);
+  const [listening, setListening] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const recogRef = useRef<any>(null);
+
+  const active = [...messages].reverse().find((m) => m.env)?.env;
+
+  useEffect(() => { scrollRef.current?.scrollTo({ top: 9e9, behavior: 'smooth' }); }, [messages, busy]);
+
+  async function send(text: string) {
+    const q = text.trim();
+    if (!q || busy) return;
+    setInput('');
+    setMessages((m) => [...m, { role: 'user', text: q }]);
+    setBusy(true);
+    try {
+      const res = await fetch('/api/ask', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: q, role }),
+      });
+      const env: AnswerEnvelope = await res.json();
+      const text = lang === 'kn' && env.narration_kn ? env.narration_kn : env.narration_en;
+      setMessages((m) => [...m, { role: 'assistant', text, env }]);
+      speak(env);
+    } catch {
+      setMessages((m) => [...m, { role: 'assistant', text: 'Sorry — something went wrong reaching the intelligence service.' }]);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  function speak(env: AnswerEnvelope) {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+    const text = lang === 'kn' && env.narration_kn ? env.narration_kn : env.narration_en;
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = lang === 'kn' ? 'kn-IN' : 'en-IN';
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  }
+
+  function toggleVoice() {
+    const SR = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition;
+    if (!SR) { alert('Voice input needs Chrome/Edge. Production uses Catalyst Zia (English) + Bhashini (Kannada).'); return; }
+    if (listening) { recogRef.current?.stop(); return; }
+    const r = new SR();
+    r.lang = lang === 'kn' ? 'kn-IN' : 'en-IN';
+    r.interimResults = false; r.maxAlternatives = 1;
+    r.onresult = (e: any) => { const t = e.results[0][0].transcript; setInput(t); send(t); };
+    r.onend = () => setListening(false);
+    r.onerror = () => setListening(false);
+    recogRef.current = r; setListening(true); r.start();
+  }
+
+  return (
+    <div className="h-screen flex flex-col">
+      <Header role={role} setRole={setRole} lang={lang} setLang={setLang} />
+      <div className="flex-1 grid grid-cols-1 lg:grid-cols-[minmax(360px,38%)_1fr] gap-3 p-3 overflow-hidden">
+        {/* LEFT: conversation */}
+        <div className="glass rounded-xl flex flex-col overflow-hidden">
+          <div ref={scrollRef} className="flex-1 overflow-auto p-4 space-y-3">
+            {messages.length === 0 && <EmptyState onPick={send} lang={lang} />}
+            {messages.map((m, i) => <Bubble key={i} m={m} lang={lang} />)}
+            {busy && <div className="text-slate-400 text-sm animate-pulse">NETRA is analysing…</div>}
+            {active && active.followups?.length > 0 && !busy && (
+              <div className="flex flex-wrap gap-2 pt-1">
+                {active.followups.filter(Boolean).map((f, i) => <button key={i} className="chip" onClick={() => send(f)}>{f}</button>)}
+              </div>
+            )}
+          </div>
+          <Composer input={input} setInput={setInput} onSend={() => send(input)} listening={listening} toggleVoice={toggleVoice} busy={busy} lang={lang} />
+        </div>
+
+        {/* RIGHT: answer surface + evidence */}
+        <div className="grid grid-rows-[1fr_auto] gap-3 overflow-hidden">
+          <div className="glass rounded-xl p-3 overflow-hidden flex flex-col">
+            <SurfaceHeader env={active} onSpeak={() => active && speak(active)} />
+            <div className="flex-1 overflow-hidden mt-2">
+              {active ? <AnswerSurfaceView surface={active.surface} /> : <Placeholder />}
+            </div>
+          </div>
+          <div className="glass rounded-xl p-3 max-h-[34vh] overflow-auto">
+            {active ? <TrustPanel evidence={active.evidence} /> : <div className="text-slate-500 text-sm">Evidence trail and reasoning will appear here — every answer is auditable.</div>}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Header({ role, setRole, lang, setLang }: any) {
+  return (
+    <header className="flex items-center justify-between px-4 py-2.5 border-b border-edge">
+      <div className="flex items-center gap-3">
+        <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-accent2 grid place-items-center text-ink font-bold">ನೇ</div>
+        <div>
+          <div className="font-semibold tracking-wide text-white leading-tight">NETRA <span className="text-slate-500 font-normal text-sm">· Crime Intelligence Copilot</span></div>
+          <div className="text-[11px] text-slate-500">Karnataka State Police · Ask. See. Act.</div>
+        </div>
+      </div>
+      <div className="flex items-center gap-2">
+        <span className="hidden md:inline text-[10px] uppercase tracking-wide text-amber-300/80 border border-amber-500/30 bg-amber-500/10 rounded px-2 py-1">Synthetic demo data</span>
+        <div className="flex rounded-lg border border-edge overflow-hidden text-sm">
+          <button onClick={() => setLang('en')} className={`px-2.5 py-1 ${lang === 'en' ? 'bg-accent text-ink' : 'text-slate-300'}`}>EN</button>
+          <button onClick={() => setLang('kn')} className={`px-2.5 py-1 font-kn ${lang === 'kn' ? 'bg-accent text-ink' : 'text-slate-300'}`}>ಕನ್ನಡ</button>
+        </div>
+        <select value={role} onChange={(e) => setRole(e.target.value)} className="bg-panel2 border border-edge rounded-lg text-sm px-2 py-1.5 text-slate-200">
+          {ROLES.map((r) => <option key={r.id} value={r.id}>{r.label}</option>)}
+        </select>
+      </div>
+    </header>
+  );
+}
+
+function EmptyState({ onPick, lang }: { onPick: (s: string) => void; lang: 'en' | 'kn' }) {
+  return (
+    <div className="py-6">
+      <div className="text-2xl font-semibold text-white">{lang === 'kn' ? 'ಕೇಳಿ. ನೋಡಿ. ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳಿ.' : 'Ask the crime database anything.'}</div>
+      <p className="text-slate-400 text-sm mt-1">English or ಕನ್ನಡ · by text or voice. Every answer comes with a map, graph or chart — and an evidence trail.</p>
+      <div className="mt-4 grid gap-2">
+        {SUGGESTIONS.map((s) => (
+          <button key={s} onClick={() => onPick(s)} className="text-left rounded-lg border border-edge bg-panel2 hover:border-accent hover:text-accent transition px-3 py-2 text-sm text-slate-200">{s}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Bubble({ m, lang }: { m: Msg; lang: 'en' | 'kn' }) {
+  const isUser = m.role === 'user';
+  return (
+    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
+      <div className={`max-w-[88%] rounded-2xl px-3.5 py-2 text-sm ${isUser ? 'bg-accent text-ink rounded-br-sm' : 'bg-panel2 border border-edge text-slate-100 rounded-bl-sm'} ${lang === 'kn' ? 'font-kn' : ''}`}>
+        {!isUser && m.env && <div className="text-[10px] uppercase tracking-wide text-accent2 mb-0.5">{m.env.intent.replace(/_/g, ' ')}</div>}
+        {m.text}
+      </div>
+    </div>
+  );
+}
+
+function Composer({ input, setInput, onSend, listening, toggleVoice, busy, lang }: any) {
+  return (
+    <div className="border-t border-edge p-2.5">
+      <div className="flex items-center gap-2">
+        <button onClick={toggleVoice} title="Voice query" className={`shrink-0 w-10 h-10 rounded-lg grid place-items-center border ${listening ? 'bg-danger/20 border-danger text-danger animate-pulse' : 'border-edge text-slate-300 hover:text-accent hover:border-accent'}`}>
+          <MicIcon />
+        </button>
+        <input
+          value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && onSend()}
+          placeholder={lang === 'kn' ? 'ಒಂದು ಪ್ರಶ್ನೆ ಕೇಳಿ…' : 'Ask about hotspots, gangs, offenders, a FIR…'}
+          className={`flex-1 bg-panel2 border border-edge rounded-lg px-3 py-2.5 text-sm text-slate-100 outline-none focus:border-accent ${lang === 'kn' ? 'font-kn' : ''}`}
+        />
+        <button onClick={onSend} disabled={busy} className="shrink-0 px-4 h-10 rounded-lg bg-accent text-ink font-medium text-sm disabled:opacity-50">Ask</button>
+      </div>
+    </div>
+  );
+}
+
+function SurfaceHeader({ env, onSpeak }: { env?: AnswerEnvelope; onSpeak: () => void }) {
+  return (
+    <div className="flex items-center justify-between">
+      <div className="text-sm text-slate-300 font-medium">{env ? prettyIntent(env.intent) : 'Answer surface'}</div>
+      {env && (
+        <button onClick={onSpeak} className="text-xs flex items-center gap-1 text-slate-300 hover:text-accent">
+          <SpeakerIcon /> Speak
+        </button>
+      )}
+    </div>
+  );
+}
+
+function Placeholder() {
+  return (
+    <div className="h-full grid place-items-center text-center text-slate-500">
+      <div>
+        <div className="text-4xl mb-2">🗺️🕸️📈</div>
+        <div className="text-sm">Maps · networks · forecasts · dossiers will render here.</div>
+      </div>
+    </div>
+  );
+}
+
+const prettyIntent = (s: string) => s.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+
+function MicIcon() { return <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="2" width="6" height="12" rx="3" /><path d="M5 10a7 7 0 0 0 14 0M12 17v4" /></svg>; }
+function SpeakerIcon() { return <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M11 5 6 9H2v6h4l5 4zM15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14" /></svg>; }

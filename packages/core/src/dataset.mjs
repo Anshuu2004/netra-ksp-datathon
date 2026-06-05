@@ -18,11 +18,28 @@ function readJson(path, fallback) {
   return JSON.parse(readFileSync(path, 'utf8'));
 }
 
-/** Load all tables + build indexes. */
+/** Walk up from `start` looking for a data/seed directory with a generated dataset. */
+function findSeedDir(start) {
+  let dir = start;
+  for (let i = 0; i < 8; i++) {
+    const cand = join(dir, 'data', 'seed');
+    if (existsSync(join(cand, 'persons.json'))) return cand;
+    const parent = dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  return null;
+}
+
+/** Load all tables + build indexes. Robust to CWD (CLI, Next.js, Catalyst). */
 export function loadDataset(seedDir = DEFAULT_SEED_DIR) {
+  let dir = seedDir;
+  if (!existsSync(join(dir, 'persons.json'))) {
+    dir = process.env.NETRA_SEED_DIR || findSeedDir(process.cwd()) || findSeedDir(__dirname) || dir;
+  }
   const t = {};
-  for (const name of TABLES) t[name] = readJson(join(seedDir, `${name}.json`), []);
-  const manifest = readJson(join(seedDir, 'manifest.json'), null);
+  for (const name of TABLES) t[name] = readJson(join(dir, `${name}.json`), []);
+  const manifest = readJson(join(dir, 'manifest.json'), null);
 
   if (t.persons.length === 0) {
     throw new Error(`No dataset found in ${seedDir}. Run: npm run data:generate`);

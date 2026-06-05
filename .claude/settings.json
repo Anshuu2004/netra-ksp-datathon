@@ -11,7 +11,10 @@
       "PowerShell(node \"data/generator/generate.mjs\")",
       "WebFetch(domain:data.opencity.in)",
       "PowerShell(node \"packages/core/validate.mjs\")",
-      "PowerShell(node \"packages/core/ask.mjs\")"
+      "PowerShell(node \"packages/core/ask.mjs\")",
+      "PowerShell(npm install --no-audit --no-fund 2>&1)",
+      "PowerShell(npm run build --workspace=apps/web 2>&1)",
+      "PowerShell(npm run start --workspace=apps/web)"
     ]
   }
 }
