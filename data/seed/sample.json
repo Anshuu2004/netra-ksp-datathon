@@ -86,13 +86,13 @@
       "ps_code": "PS-BEL-01",
       "socio_economic_band": "Lower-middle income",
       "is_repeat_offender": true,
-      "risk_score": 44,
+      "risk_score": 53,
       "mo_fingerprint": [
+        "market",
         "threat-call",
         "gang",
         "protection-money",
-        "businessman-target",
-        "crowded-bus"
+        "businessman-target"
       ]
     },
     {
@@ -125,8 +125,12 @@
       "ps_code": "PS-CHA-01",
       "socio_economic_band": "Lower-middle income",
       "is_repeat_offender": false,
-      "risk_score": 0,
-      "mo_fingerprint": []
+      "risk_score": 33,
+      "mo_fingerprint": [
+        "main-road",
+        "two-wheeler",
+        "pillion-rider"
+      ]
     },
     {
       "id": "P-00005",
@@ -324,47 +328,47 @@
   "transactions": [
     {
       "id": "TX-00001",
-      "from_account": "AC-0002",
-      "to_account": "AC-0010",
-      "amount": 30000,
-      "ts": "2025-10-15T06:30:00.000Z",
+      "from_account": "AC-0034",
+      "to_account": "AC-0022",
+      "amount": 71000,
+      "ts": "2026-04-14T06:30:00.000Z",
       "channel": "UPI",
       "flagged_reason": null
     },
     {
       "id": "TX-00002",
-      "from_account": "AC-0010",
-      "to_account": "AC-0009",
-      "amount": 37000,
-      "ts": "2026-01-22T06:30:00.000Z",
-      "channel": "CASH-DEPOSIT",
+      "from_account": "AC-0025",
+      "to_account": "AC-0024",
+      "amount": 19000,
+      "ts": "2025-10-12T06:30:00.000Z",
+      "channel": "UPI",
       "flagged_reason": null
     },
     {
       "id": "TX-00003",
-      "from_account": "AC-0023",
-      "to_account": "AC-0024",
-      "amount": 71000,
-      "ts": "2025-09-29T06:30:00.000Z",
-      "channel": "IMPS",
+      "from_account": "AC-0008",
+      "to_account": "AC-0005",
+      "amount": 65000,
+      "ts": "2026-01-01T06:30:00.000Z",
+      "channel": "CASH-DEPOSIT",
       "flagged_reason": null
     },
     {
       "id": "TX-00004",
-      "from_account": "AC-0035",
-      "to_account": "AC-0034",
-      "amount": 38000,
-      "ts": "2026-01-05T06:30:00.000Z",
+      "from_account": "AC-0042",
+      "to_account": "AC-0020",
+      "amount": 54000,
+      "ts": "2025-08-30T06:30:00.000Z",
       "channel": "IMPS",
       "flagged_reason": null
     },
     {
       "id": "TX-00005",
-      "from_account": "AC-0029",
-      "to_account": "AC-0014",
-      "amount": 19000,
-      "ts": "2026-03-23T06:30:00.000Z",
-      "channel": "IMPS",
+      "from_account": "AC-0013",
+      "to_account": "AC-0006",
+      "amount": 38000,
+      "ts": "2025-10-12T06:30:00.000Z",
+      "channel": "UPI",
       "flagged_reason": null
     }
   ]

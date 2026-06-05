@@ -191,7 +191,7 @@ function makeFir({ crimeType, station, occurredMs, accusedIds = [], mo, knNarrat
 }
 
 // ---- baseline FIRs ----
-for (let i = 0; i < 360; i++) makeFir({ knNarrative: chance(0.06) });
+for (let i = 0; i < 600; i++) makeFir({ knNarrative: chance(0.06) });
 
 // =========================================================================
 // PLANTED PATTERNS
@@ -228,17 +228,17 @@ const nrStation = pick(stationsByDistrict('Mysuru'));
 const nrAccused = [makePerson({ gender: 'M', district: 'Mysuru', age: randInt(24, 40) }).id];
 const nrCenter = jitter(nrStation.lat, nrStation.lng, 1);
 const nrFirIds = [];
-let nrDay = 40; // start ~40 days ago, strike roughly weekly
-for (let i = 0; i < 7; i++) {
-  const [lat, lng] = jitter(nrCenter[0], nrCenter[1], 1.2); // within ~2km
-  const occurredMs = REF_NOW - (nrDay - i * 5) * DAY;
+// tight space-time spree: 12 break-ins within ~1km, every ~2.7 days over ~30 days
+for (let i = 0; i < 12; i++) {
+  const [lat, lng] = jitter(nrCenter[0], nrCenter[1], 0.5); // cluster radius < ~1km
+  const occurredMs = REF_NOW - Math.round(33 - i * 2.7) * DAY;
   const f = makeFir({
     crimeType: 'Burglary',
     station: nrStation,
     occurredMs,
-    accusedIds: i < 5 ? nrAccused : [], // last ones unsolved -> "predict next"
+    accusedIds: i < 8 ? nrAccused : [], // last ones unsolved -> "predict next"
     mo: ['night', 'rear-entry', 'cut-grill', 'unoccupied-house'],
-    statusBias: i >= 5 ? 'under_investigation' : undefined,
+    statusBias: i >= 8 ? 'under_investigation' : undefined,
   });
   f.lat = lat; f.lng = lng;
   nrFirIds.push(f.id);
@@ -247,6 +247,11 @@ manifest.patterns.near_repeat_series = {
   description: 'Near-repeat residential burglary series in Mysuru (use for next-strike forecast).',
   center: nrCenter, radius_km: 2, ps_code: nrStation.ps_code, fir_ids: nrFirIds, suspect: nrAccused[0],
 };
+// realistic burglary baseline across Mysuru over the past ~18 months, located away from the
+// spree's tight circle — so the spree reads as a genuine spatio-temporal SPIKE, not the whole signal.
+for (let i = 0; i < 45; i++) {
+  makeFir({ crimeType: 'Burglary', station: pick(stationsByDistrict('Mysuru')), occurredMs: REF_NOW - randInt(45, 540) * DAY });
+}
 
 // --- Pattern 3: theft hotspot spike (last 60 days, single station) ---
 const hotStation = pick(stationsByDistrict('Hubballi'));
@@ -291,16 +296,20 @@ for (let i = 0; i < 60; i++) {
   const a = pick(offenders), b = pick(persons);
   addEdge(a.id, b.id, weightedPick([['associate', 4], ['family', 2], ['phone', 2], ['vehicle', 1]]));
 }
-// planted "shared vehicle" between two gang members who are NOT direct co-offenders
-// -> gives link-prediction a clean dashed-edge demo
-const lpA = gang[5].id, lpB = gang[6].id;
-addEdge(lpA, gang[2].id, 'vehicle');
-addEdge(lpB, gang[2].id, 'vehicle');
-addEdge(lpA, gang[3].id, 'phone');
-addEdge(lpB, gang[3].id, 'phone');
+// planted HIDDEN link: two offenders who share three neighbours but have NO direct tie.
+// Fresh persons each with a solo FIR (so they never co-offend with each other); a shared
+// associate hub + shared vehicle + shared phone -> NETRA should predict the missing edge.
+const lpA = makePerson({ gender: 'M', district: 'Bengaluru Urban', age: randInt(22, 38) });
+const lpB = makePerson({ gender: 'M', district: 'Bengaluru Urban', age: randInt(22, 38) });
+makeFir({ crimeType: 'Motor Vehicle Theft', station: pick(gangStations), occurredMs: REF_NOW - randInt(20, 160) * DAY, accusedIds: [lpA.id] });
+makeFir({ crimeType: 'Theft', station: pick(gangStations), occurredMs: REF_NOW - randInt(20, 160) * DAY, accusedIds: [lpB.id] });
+const lpHub = makePerson({ gender: 'M', district: 'Bengaluru Urban', age: randInt(25, 45) });
+addEdge(lpA.id, gang[2].id, 'vehicle'); addEdge(lpB.id, gang[2].id, 'vehicle');
+addEdge(lpA.id, gang[3].id, 'phone');   addEdge(lpB.id, gang[3].id, 'phone');
+addEdge(lpA.id, lpHub.id, 'associate'); addEdge(lpB.id, lpHub.id, 'associate');
 manifest.patterns.predicted_link = {
-  description: 'Two gang members share neighbours (vehicle/phone) but have no direct edge — expected top link-prediction result.',
-  expected_pair: [lpA, lpB],
+  description: 'Two offenders share three neighbours (common associate + shared vehicle + shared phone) but have NO direct edge — NETRA should predict this hidden tie.',
+  expected_pair: [lpA.id, lpB.id],
 };
 
 // =========================================================================
