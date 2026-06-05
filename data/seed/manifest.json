@@ -1,0 +1,116 @@
+{
+  "seed": 20260605,
+  "generated_at": "2026-06-05T06:30:00.000Z",
+  "patterns": {
+    "organized_gang": {
+      "description": "Chain-snatching gang operating in Bengaluru Urban South.",
+      "kingpin": "P-00485",
+      "members": [
+        "P-00485",
+        "P-00486",
+        "P-00487",
+        "P-00488",
+        "P-00489",
+        "P-00490",
+        "P-00491",
+        "P-00492"
+      ],
+      "fir_ids": [
+        "FIR-2026-BEN-00012",
+        "FIR-2026-BEN-00013",
+        "FIR-2026-BEN-00014",
+        "FIR-2026-BEN-00015",
+        "FIR-2026-BEN-00016",
+        "FIR-2026-BEN-00017",
+        "FIR-2026-BEN-00018",
+        "FIR-2026-BEN-00019",
+        "FIR-2026-BEN-00020",
+        "FIR-2026-BEN-00021",
+        "FIR-2026-BEN-00022",
+        "FIR-2026-BEN-00023",
+        "FIR-2025-BEN-00022",
+        "FIR-2025-BEN-00023"
+      ]
+    },
+    "near_repeat_series": {
+      "description": "Near-repeat residential burglary series in Mysuru (use for next-strike forecast).",
+      "center": [
+        12.263688,
+        76.605055
+      ],
+      "radius_km": 2,
+      "ps_code": "PS-MYS-04",
+      "fir_ids": [
+        "FIR-2026-MYS-00009",
+        "FIR-2026-MYS-00010",
+        "FIR-2026-MYS-00011",
+        "FIR-2026-MYS-00012",
+        "FIR-2026-MYS-00013",
+        "FIR-2026-MYS-00014",
+        "FIR-2026-MYS-00015"
+      ],
+      "suspect": "P-00507"
+    },
+    "hotspot": {
+      "description": "Theft hotspot spike at a Hubballi station over the last 60 days.",
+      "ps_code": "PS-HUB-04",
+      "station": "Hubballi North PS",
+      "fir_ids": [
+        "FIR-2026-HUB-00008",
+        "FIR-2026-HUB-00009",
+        "FIR-2026-HUB-00010",
+        "FIR-2026-HUB-00011",
+        "FIR-2026-HUB-00012",
+        "FIR-2026-HUB-00013",
+        "FIR-2026-HUB-00014",
+        "FIR-2026-HUB-00015",
+        "FIR-2026-HUB-00016",
+        "FIR-2026-HUB-00017",
+        "FIR-2026-HUB-00018",
+        "FIR-2026-HUB-00019",
+        "FIR-2026-HUB-00020",
+        "FIR-2026-HUB-00021",
+        "FIR-2026-HUB-00022",
+        "FIR-2026-HUB-00023",
+        "FIR-2026-HUB-00024",
+        "FIR-2026-HUB-00025",
+        "FIR-2026-HUB-00026",
+        "FIR-2026-HUB-00027",
+        "FIR-2026-HUB-00028",
+        "FIR-2026-HUB-00029"
+      ]
+    },
+    "predicted_link": {
+      "description": "Two gang members share neighbours (vehicle/phone) but have no direct edge — expected top link-prediction result.",
+      "expected_pair": [
+        "P-00490",
+        "P-00491"
+      ]
+    },
+    "laundering_ring": {
+      "description": "Layering ring: 6 mule accounts structuring deposits into one master account.",
+      "master_account": "AC-0052",
+      "master_person": "P-00543",
+      "mule_accounts": [
+        "AC-0046",
+        "AC-0047",
+        "AC-0048",
+        "AC-0049",
+        "AC-0050",
+        "AC-0051"
+      ],
+      "fir_id": "FIR-2026-BEN-00024"
+    }
+  },
+  "counts": {
+    "districts": 24,
+    "stations": 64,
+    "persons": 543,
+    "firs": 404,
+    "fir_accused": 406,
+    "fir_victim": 377,
+    "associations": 235,
+    "accounts": 52,
+    "transactions": 240
+  }
+}

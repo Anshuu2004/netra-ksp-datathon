@@ -1,0 +1,371 @@
+{
+  "note": "Small sample for browsing. Run `npm run data:generate` to build the full dataset.",
+  "districts": [
+    {
+      "name": "Bengaluru Urban",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "code": "BEN",
+      "population": 8078557,
+      "urbanization_index": 0.95,
+      "literacy_rate": 88,
+      "unemployment_proxy": 0.18
+    },
+    {
+      "name": "Bengaluru Rural",
+      "lat": 13.2846,
+      "lng": 77.62,
+      "code": "BE1",
+      "population": 2612251,
+      "urbanization_index": 0.55,
+      "literacy_rate": 80,
+      "unemployment_proxy": 0.22
+    },
+    {
+      "name": "Mysuru",
+      "lat": 12.2958,
+      "lng": 76.6394,
+      "code": "MYS",
+      "population": 2199139,
+      "urbanization_index": 0.78,
+      "literacy_rate": 85,
+      "unemployment_proxy": 0.2
+    }
+  ],
+  "stations": [
+    {
+      "ps_code": "PS-BEN-01",
+      "name": "Bengaluru Urban South PS",
+      "district": "Bengaluru Urban",
+      "lat": 12.986552,
+      "lng": 77.561187
+    },
+    {
+      "ps_code": "PS-BEN-02",
+      "name": "Bengaluru Urban Cantonment PS",
+      "district": "Bengaluru Urban",
+      "lat": 12.973482,
+      "lng": 77.636446
+    },
+    {
+      "ps_code": "PS-BEN-03",
+      "name": "Bengaluru Urban Industrial Area PS",
+      "district": "Bengaluru Urban",
+      "lat": 12.961781,
+      "lng": 77.571216
+    }
+  ],
+  "persons": [
+    {
+      "id": "P-00001",
+      "full_name": "Ramesh Joshi",
+      "full_name_kn": "ರಮೇಶ್ ಜೋಶಿ",
+      "gender": "M",
+      "age": 22,
+      "occupation": "Private security",
+      "district": "Kolar",
+      "ps_code": "PS-KOL-01",
+      "socio_economic_band": "Upper-middle income",
+      "is_repeat_offender": false,
+      "risk_score": 29,
+      "mo_fingerprint": [
+        "upi",
+        "fake-kyc",
+        "fake-customer-care",
+        "phishing-call"
+      ]
+    },
+    {
+      "id": "P-00002",
+      "full_name": "Lokesh Rao",
+      "full_name_kn": "ಲೋಕೇಶ್ ರಾವ್",
+      "gender": "M",
+      "age": 36,
+      "occupation": "Private security",
+      "district": "Belagavi",
+      "ps_code": "PS-BEL-01",
+      "socio_economic_band": "Lower-middle income",
+      "is_repeat_offender": true,
+      "risk_score": 44,
+      "mo_fingerprint": [
+        "threat-call",
+        "gang",
+        "protection-money",
+        "businessman-target",
+        "crowded-bus"
+      ]
+    },
+    {
+      "id": "P-00003",
+      "full_name": "Mahesh Shastry",
+      "full_name_kn": "ಮಹೇಶ್ ಶಾಸ್ತ್ರಿ",
+      "gender": "M",
+      "age": 36,
+      "occupation": "Factory worker",
+      "district": "Kalaburagi",
+      "ps_code": "PS-KAL-01",
+      "socio_economic_band": "Upper-middle income",
+      "is_repeat_offender": false,
+      "risk_score": 23,
+      "mo_fingerprint": [
+        "crowded-bus",
+        "market",
+        "pickpocket",
+        "unattended"
+      ]
+    },
+    {
+      "id": "P-00004",
+      "full_name": "Ananya Joshi",
+      "full_name_kn": "ಅನನ್ಯಾ ಜೋಶಿ",
+      "gender": "F",
+      "age": 31,
+      "occupation": "Factory worker",
+      "district": "Chamarajanagar",
+      "ps_code": "PS-CHA-01",
+      "socio_economic_band": "Lower-middle income",
+      "is_repeat_offender": false,
+      "risk_score": 0,
+      "mo_fingerprint": []
+    },
+    {
+      "id": "P-00005",
+      "full_name": "Harish Bhat",
+      "full_name_kn": "ಹರೀಶ್ ಭಟ್",
+      "gender": "M",
+      "age": 62,
+      "occupation": "Auto driver",
+      "district": "Bengaluru Rural",
+      "ps_code": "PS-BE1-03",
+      "socio_economic_band": "Middle income",
+      "is_repeat_offender": false,
+      "risk_score": 23,
+      "mo_fingerprint": [
+        "unattended",
+        "crowded-bus",
+        "pickpocket",
+        "market"
+      ]
+    }
+  ],
+  "firs": [
+    {
+      "id": "FIR-2025-KAL-00001",
+      "title": "Motor Vehicle Theft reported at Kalaburagi Old Town",
+      "crime_type": "Motor Vehicle Theft",
+      "ipc_bns_sections": [
+        "IPC 379",
+        "BNS 303"
+      ],
+      "occurred_at": "2025-05-26T06:30:00.000Z",
+      "reported_at": "2025-05-29T18:30:00.000Z",
+      "district": "Kalaburagi",
+      "ps_code": "PS-KAL-01",
+      "lat": 17.341875,
+      "lng": 76.815981,
+      "status": "chargesheeted",
+      "mo_tags": [
+        "parking-lot",
+        "no-lock",
+        "two-wheeler",
+        "master-key"
+      ],
+      "narrative_en": "On Mon May 26 2025, a case of motor vehicle theft was reported at Kalaburagi Old Town, Kalaburagi. Modus operandi observed: parking-lot, no-lock, two-wheeler, master-key.",
+      "narrative_kn": null,
+      "value_loss": 358000
+    },
+    {
+      "id": "FIR-2024-DHA-00001",
+      "title": "Chain Snatching reported at Dharwad Highway",
+      "crime_type": "Chain Snatching",
+      "ipc_bns_sections": [
+        "IPC 356",
+        "IPC 379",
+        "BNS 304"
+      ],
+      "occurred_at": "2024-12-23T06:30:00.000Z",
+      "reported_at": "2024-12-24T14:30:00.000Z",
+      "district": "Dharwad",
+      "ps_code": "PS-DHA-01",
+      "lat": 15.506429,
+      "lng": 75.002504,
+      "status": "closed",
+      "mo_tags": [
+        "main-road",
+        "gold-chain",
+        "two-wheeler",
+        "pillion-rider"
+      ],
+      "narrative_en": "On Mon Dec 23 2024, a case of chain snatching was reported at Dharwad Highway, Dharwad. Modus operandi observed: main-road, gold-chain, two-wheeler, pillion-rider.",
+      "narrative_kn": null,
+      "value_loss": 85000
+    },
+    {
+      "id": "FIR-2025-BEL-00001",
+      "title": "Attempt to Murder reported at Belagavi Market",
+      "crime_type": "Attempt to Murder",
+      "ipc_bns_sections": [
+        "IPC 307",
+        "BNS 109"
+      ],
+      "occurred_at": "2025-09-07T06:30:00.000Z",
+      "reported_at": "2025-09-07T07:30:00.000Z",
+      "district": "Belagavi",
+      "ps_code": "PS-BEL-03",
+      "lat": 15.834849,
+      "lng": 74.479364,
+      "status": "closed",
+      "mo_tags": [
+        "sharp-weapon",
+        "enmity",
+        "ambush"
+      ],
+      "narrative_en": "On Sun Sep 07 2025, a case of attempt to murder was reported at Belagavi Market, Belagavi. Modus operandi observed: sharp-weapon, enmity, ambush.",
+      "narrative_kn": null,
+      "value_loss": 0
+    },
+    {
+      "id": "FIR-2025-SHI-00001",
+      "title": "Rioting reported at Shivamogga Highway",
+      "crime_type": "Rioting",
+      "ipc_bns_sections": [
+        "IPC 147",
+        "BNS 191"
+      ],
+      "occurred_at": "2025-05-04T06:30:00.000Z",
+      "reported_at": "2025-05-05T19:30:00.000Z",
+      "district": "Shivamogga",
+      "ps_code": "PS-SHI-01",
+      "lat": 13.923255,
+      "lng": 75.523884,
+      "status": "chargesheeted",
+      "mo_tags": [
+        "property-damage",
+        "communal",
+        "public-place",
+        "group"
+      ],
+      "narrative_en": "On Sun May 04 2025, a case of rioting was reported at Shivamogga Highway, Shivamogga. Modus operandi observed: property-damage, communal, public-place, group.",
+      "narrative_kn": null,
+      "value_loss": 0
+    },
+    {
+      "id": "FIR-2026-KOL-00001",
+      "title": "Extortion reported at Kolar Rural",
+      "crime_type": "Extortion",
+      "ipc_bns_sections": [
+        "IPC 384",
+        "BNS 308"
+      ],
+      "occurred_at": "2026-02-11T06:30:00.000Z",
+      "reported_at": "2026-02-12T12:30:00.000Z",
+      "district": "Kolar",
+      "ps_code": "PS-KOL-02",
+      "lat": 13.10096,
+      "lng": 78.12939,
+      "status": "chargesheeted",
+      "mo_tags": [
+        "protection-money",
+        "gang",
+        "threat-call"
+      ],
+      "narrative_en": "On Wed Feb 11 2026, a case of extortion was reported at Kolar Rural, Kolar. Modus operandi observed: protection-money, gang, threat-call.",
+      "narrative_kn": null,
+      "value_loss": 0
+    }
+  ],
+  "associations": [
+    {
+      "person_a": "P-00064",
+      "person_b": "P-00076",
+      "type": "cooffender",
+      "weight": 1,
+      "source_fir_ids": [
+        "FIR-2024-UDU-00001"
+      ]
+    },
+    {
+      "person_a": "P-00030",
+      "person_b": "P-00146",
+      "type": "cooffender",
+      "weight": 1,
+      "source_fir_ids": [
+        "FIR-2025-BEL-00004"
+      ]
+    },
+    {
+      "person_a": "P-00088",
+      "person_b": "P-00096",
+      "type": "cooffender",
+      "weight": 1,
+      "source_fir_ids": [
+        "FIR-2026-KAL-00001"
+      ]
+    },
+    {
+      "person_a": "P-00152",
+      "person_b": "P-00173",
+      "type": "cooffender",
+      "weight": 1,
+      "source_fir_ids": [
+        "FIR-2025-DAK-00002"
+      ]
+    },
+    {
+      "person_a": "P-00003",
+      "person_b": "P-00152",
+      "type": "cooffender",
+      "weight": 1,
+      "source_fir_ids": [
+        "FIR-2025-DAK-00002"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "id": "TX-00001",
+      "from_account": "AC-0002",
+      "to_account": "AC-0010",
+      "amount": 30000,
+      "ts": "2025-10-15T06:30:00.000Z",
+      "channel": "UPI",
+      "flagged_reason": null
+    },
+    {
+      "id": "TX-00002",
+      "from_account": "AC-0010",
+      "to_account": "AC-0009",
+      "amount": 37000,
+      "ts": "2026-01-22T06:30:00.000Z",
+      "channel": "CASH-DEPOSIT",
+      "flagged_reason": null
+    },
+    {
+      "id": "TX-00003",
+      "from_account": "AC-0023",
+      "to_account": "AC-0024",
+      "amount": 71000,
+      "ts": "2025-09-29T06:30:00.000Z",
+      "channel": "IMPS",
+      "flagged_reason": null
+    },
+    {
+      "id": "TX-00004",
+      "from_account": "AC-0035",
+      "to_account": "AC-0034",
+      "amount": 38000,
+      "ts": "2026-01-05T06:30:00.000Z",
+      "channel": "IMPS",
+      "flagged_reason": null
+    },
+    {
+      "id": "TX-00005",
+      "from_account": "AC-0029",
+      "to_account": "AC-0014",
+      "amount": 19000,
+      "ts": "2026-03-23T06:30:00.000Z",
+      "channel": "IMPS",
+      "flagged_reason": null
+    }
+  ]
+}
