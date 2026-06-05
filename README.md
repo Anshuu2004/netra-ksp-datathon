@@ -9,49 +9,77 @@
 ---
 
 ## Why NETRA
+Karnataka State Police crime data is rich but siloed; querying it needs technical skill and English
+fluency, and policing is largely reactive. NETRA makes the database **conversational, multilingual,
+voice-first, explainable, and proactive** — surfacing networks, hotspots, and forecasts that are
+invisible in Excel.
 
-Karnataka State Police crime data is rich but siloed. NETRA lets any officer interrogate it in
-plain language — typed or spoken, in English or Kannada — and get explainable, evidence-backed,
-*visual* answers in seconds. It surfaces organized-crime networks invisible in Excel, scores
-repeat offenders, and forecasts where a crime series is likely to strike next.
-
-See [`docs/MASTER_PLAN.md`](docs/MASTER_PLAN.md) and [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
-for the full strategy, feature map, wow factors, and system design.
-
-## Status
-
-🚧 Early build. Foundation in progress (synthetic data, core types, intent router).
+## What it does
+- **Conversational + voice, EN/ಕನ್ನಡ** — ask by text or speech; spoken answers.
+- **Visual answers** — map / network graph / chart / table / dossier for every reply.
+- **Criminal networks** — centrality + Louvain community detection (gangs) + link prediction (hidden ties).
+- **Forecasting** — near-repeat space-time scan → next-strike red zone with a time window.
+- **Explainable offender risk** — transparent factor breakdown + repeat-offender ranking.
+- **Financial trail** — transaction graph + structuring detection.
+- **Explainable AI** — evidence trail (records, method, confidence, reasoning) on every answer.
+- **Governance** — 4 roles + immutable audit log.
+- **Proactive Beat Briefing** — nightly auto-intelligence (Catalyst Cron) at `/briefing`.
+- **PDF dossier export** — one-click conversation/case dossier.
+- **Real data** — district trends & socio-economic correlation on **real Karnataka 2023** figures.
 
 ## Repository layout
-
 ```
-docs/        strategy + architecture
-data/        synthetic Karnataka crime data generator + seed output
-packages/    core: shared types, intent router, analytics (graph/forecast/risk), provider adapters
-apps/web/    Next.js app (chat UI + visual answer surfaces) → deploys to Catalyst AppSail
-catalyst/    Catalyst deployment config (added in Week 3)
+docs/        strategy (MASTER_PLAN), ARCHITECTURE, DATA_POLICY, SUBMISSION, PITCH_DECK.html
+data/        generator/ (synthetic Karnataka data)  ·  real/ (real KA 2023 crime CSVs)  ·  seed/ (output)
+packages/core/  intelligence engine: analytics (graph/forecast/risk), intent router, providers, types
+apps/web/    Next.js app — chat console + visual answer surfaces (deploys to Catalyst AppSail)
+catalyst/    Catalyst deployment config + DEPLOY.md (service mapping)
 ```
 
-## Quick start (local dev)
-
-Requires Node.js >= 20.
-
+## Quick start (local)
+Requires Node.js ≥ 20.
 ```bash
-npm install                 # install workspaces
-npm run data:generate       # generate the synthetic Karnataka crime dataset → data/seed/
-npm run dev                 # start the web app (once scaffolded)
+npm install
+npm run data:generate     # build the synthetic Karnataka dataset → data/seed/
+npm run validate          # PROVE the analytics are real: recovers planted ground-truth (10/10)
+npm run ask               # terminal conversational demo (no UI)
+npm run dev               # web app at http://localhost:3000  (use Chrome/Edge for voice)
 ```
 
-The synthetic dataset is privacy-safe and contains **planted patterns** (a gang ring, a near-repeat
-crime series, a hotspot, a money-laundering ring, Kannada-narrative FIRs) so every analytics feature
-has something real to discover. Ground-truth of those patterns is recorded in `data/seed/manifest.json`.
+Try: *"Find the organized gang operating in Bengaluru"* · *"Where will the next burglary strike in
+Mysuru?"* · *"Top repeat offenders in Mysuru"* · *"Trace the money trail for the laundering ring"* ·
+toggle **EN/ಕನ್ನಡ**, use the **mic**, open **Beat Briefing**, click **Dossier ⬇**.
+
+## Proof the results are real (not mock)
+`npm run validate` runs the analytics against hidden ground-truth recorded in
+`data/seed/manifest.json` and checks they **rediscover** it — gang via community detection, kingpin via
+centrality, hidden link via link prediction, spree via space-time scan, etc. **10/10 pass.** Nothing is
+hardcoded. See [`docs/DATA_POLICY.md`](docs/DATA_POLICY.md) for full data provenance and the
+real-vs-synthetic policy (record-level FIR data is confidential by law; we use a labelled, swappable
+synthetic stand-in + real public aggregates).
+
+## Deploy on Catalyst (mandatory for the datathon)
+See [`catalyst/DEPLOY.md`](catalyst/DEPLOY.md) — `apps/web` deploys to **Catalyst AppSail**; each
+capability maps to a Catalyst service (Data Store, QuickML/Zia, Authentication, Stratus, Cron…).
+The app runs without external keys (local providers) and **upgrades to Catalyst services via env vars,
+no code changes** (`packages/core/src/providers`).
 
 ## Tech stack
+Next.js 15 · React 19 · TypeScript · Tailwind · Cytoscape.js · Recharts · zero-dependency Node ESM
+analytics core · Web Speech (dev voice) → **Zoho Catalyst** (AppSail, Data Store/NoSQL, QuickML + Zia
+LLM, Zia ASR/TTS, AutoML, Authentication, Stratus, Cron, Push/Mail) · Bhashini/AI4Bharat (Kannada).
 
-Next.js · TypeScript · MapLibre/deck.gl · Cytoscape.js · Recharts · Catalyst Functions ·
-Catalyst Data Store / NoSQL / Cache / Stratus · Catalyst QuickML (RAG + LLM Serving) · Zia LLM ·
-Zia ASR/TTS + Bhashini/AI4Bharat (Kannada) · Zia AutoML · Catalyst Authentication.
+## Scripts
+| Command | Purpose |
+|---|---|
+| `npm run data:generate` | Generate the synthetic Karnataka dataset |
+| `npm run validate` | Prove analytics recover ground-truth (10/10) |
+| `npm run ask "..."` | One-off terminal query (or scripted demo) |
+| `npm run dev` / `build` | Run / build the web app |
+
+## Submission
+See [`docs/SUBMISSION.md`](docs/SUBMISSION.md) — Prototype Brief, demo video script, checklist.
+Pitch deck: open [`docs/PITCH_DECK.html`](docs/PITCH_DECK.html) → print to PDF.
 
 ## License
-
-MIT (for the hackathon prototype).
+MIT (hackathon prototype). Built for the Karnataka State Police Datathon 2026.

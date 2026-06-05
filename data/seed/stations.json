@@ -1,0 +1,450 @@
+[
+ {
+  "ps_code": "PS-BEN-01",
+  "name": "Bengaluru Urban South PS",
+  "district": "Bengaluru Urban",
+  "lat": 12.986552,
+  "lng": 77.561187
+ },
+ {
+  "ps_code": "PS-BEN-02",
+  "name": "Bengaluru Urban Cantonment PS",
+  "district": "Bengaluru Urban",
+  "lat": 12.973482,
+  "lng": 77.636446
+ },
+ {
+  "ps_code": "PS-BEN-03",
+  "name": "Bengaluru Urban Industrial Area PS",
+  "district": "Bengaluru Urban",
+  "lat": 12.961781,
+  "lng": 77.571216
+ },
+ {
+  "ps_code": "PS-BEN-04",
+  "name": "Bengaluru Urban North PS",
+  "district": "Bengaluru Urban",
+  "lat": 12.990946,
+  "lng": 77.541629
+ },
+ {
+  "ps_code": "PS-BE1-01",
+  "name": "Bengaluru Rural Rural PS",
+  "district": "Bengaluru Rural",
+  "lat": 13.277421,
+  "lng": 77.67169
+ },
+ {
+  "ps_code": "PS-BE1-02",
+  "name": "Bengaluru Rural North PS",
+  "district": "Bengaluru Rural",
+  "lat": 13.283795,
+  "lng": 77.631476
+ },
+ {
+  "ps_code": "PS-BE1-03",
+  "name": "Bengaluru Rural Highway PS",
+  "district": "Bengaluru Rural",
+  "lat": 13.235439,
+  "lng": 77.595376
+ },
+ {
+  "ps_code": "PS-MYS-01",
+  "name": "Mysuru Market PS",
+  "district": "Mysuru",
+  "lat": 12.287891,
+  "lng": 76.589766
+ },
+ {
+  "ps_code": "PS-MYS-02",
+  "name": "Mysuru South PS",
+  "district": "Mysuru",
+  "lat": 12.310144,
+  "lng": 76.660849
+ },
+ {
+  "ps_code": "PS-MYS-03",
+  "name": "Mysuru City PS",
+  "district": "Mysuru",
+  "lat": 12.275961,
+  "lng": 76.66154
+ },
+ {
+  "ps_code": "PS-MYS-04",
+  "name": "Mysuru East PS",
+  "district": "Mysuru",
+  "lat": 12.256098,
+  "lng": 76.609887
+ },
+ {
+  "ps_code": "PS-MAN-01",
+  "name": "Mandya East PS",
+  "district": "Mandya",
+  "lat": 12.503067,
+  "lng": 76.935426
+ },
+ {
+  "ps_code": "PS-MAN-02",
+  "name": "Mandya City PS",
+  "district": "Mandya",
+  "lat": 12.537472,
+  "lng": 76.897376
+ },
+ {
+  "ps_code": "PS-HAS-01",
+  "name": "Hassan East PS",
+  "district": "Hassan",
+  "lat": 12.999017,
+  "lng": 76.054428
+ },
+ {
+  "ps_code": "PS-HAS-02",
+  "name": "Hassan Market PS",
+  "district": "Hassan",
+  "lat": 12.979038,
+  "lng": 76.062739
+ },
+ {
+  "ps_code": "PS-TUM-01",
+  "name": "Tumakuru North PS",
+  "district": "Tumakuru",
+  "lat": 13.300239,
+  "lng": 77.161835
+ },
+ {
+  "ps_code": "PS-TUM-02",
+  "name": "Tumakuru Industrial Area PS",
+  "district": "Tumakuru",
+  "lat": 13.291534,
+  "lng": 77.106309
+ },
+ {
+  "ps_code": "PS-KOL-01",
+  "name": "Kolar Market PS",
+  "district": "Kolar",
+  "lat": 13.150861,
+  "lng": 78.095631
+ },
+ {
+  "ps_code": "PS-KOL-02",
+  "name": "Kolar Rural PS",
+  "district": "Kolar",
+  "lat": 13.113969,
+  "lng": 78.129312
+ },
+ {
+  "ps_code": "PS-DAV-01",
+  "name": "Davanagere Rural PS",
+  "district": "Davanagere",
+  "lat": 14.435797,
+  "lng": 75.88155
+ },
+ {
+  "ps_code": "PS-DAV-02",
+  "name": "Davanagere South PS",
+  "district": "Davanagere",
+  "lat": 14.410422,
+  "lng": 75.900971
+ },
+ {
+  "ps_code": "PS-DAV-03",
+  "name": "Davanagere Industrial Area PS",
+  "district": "Davanagere",
+  "lat": 14.512103,
+  "lng": 75.867799
+ },
+ {
+  "ps_code": "PS-SHI-01",
+  "name": "Shivamogga Highway PS",
+  "district": "Shivamogga",
+  "lat": 13.903915,
+  "lng": 75.521285
+ },
+ {
+  "ps_code": "PS-SHI-02",
+  "name": "Shivamogga City PS",
+  "district": "Shivamogga",
+  "lat": 13.913112,
+  "lng": 75.563047
+ },
+ {
+  "ps_code": "PS-SHI-03",
+  "name": "Shivamogga Cantonment PS",
+  "district": "Shivamogga",
+  "lat": 13.947011,
+  "lng": 75.515396
+ },
+ {
+  "ps_code": "PS-BAL-01",
+  "name": "Ballari Highway PS",
+  "district": "Ballari",
+  "lat": 15.110263,
+  "lng": 76.950713
+ },
+ {
+  "ps_code": "PS-BAL-02",
+  "name": "Ballari New Extension PS",
+  "district": "Ballari",
+  "lat": 15.185529,
+  "lng": 76.934222
+ },
+ {
+  "ps_code": "PS-BAL-03",
+  "name": "Ballari Industrial Area PS",
+  "district": "Ballari",
+  "lat": 15.088485,
+  "lng": 76.930156
+ },
+ {
+  "ps_code": "PS-VIJ-01",
+  "name": "Vijayapura City PS",
+  "district": "Vijayapura",
+  "lat": 16.836158,
+  "lng": 75.713445
+ },
+ {
+  "ps_code": "PS-VIJ-02",
+  "name": "Vijayapura Town PS",
+  "district": "Vijayapura",
+  "lat": 16.845138,
+  "lng": 75.712652
+ },
+ {
+  "ps_code": "PS-KAL-01",
+  "name": "Kalaburagi Old Town PS",
+  "district": "Kalaburagi",
+  "lat": 17.348496,
+  "lng": 76.836098
+ },
+ {
+  "ps_code": "PS-KAL-02",
+  "name": "Kalaburagi Town PS",
+  "district": "Kalaburagi",
+  "lat": 17.352299,
+  "lng": 76.805277
+ },
+ {
+  "ps_code": "PS-KAL-03",
+  "name": "Kalaburagi North PS",
+  "district": "Kalaburagi",
+  "lat": 17.365957,
+  "lng": 76.828021
+ },
+ {
+  "ps_code": "PS-BEL-01",
+  "name": "Belagavi West PS",
+  "district": "Belagavi",
+  "lat": 15.859576,
+  "lng": 74.481281
+ },
+ {
+  "ps_code": "PS-BEL-02",
+  "name": "Belagavi City PS",
+  "district": "Belagavi",
+  "lat": 15.82771,
+  "lng": 74.545081
+ },
+ {
+  "ps_code": "PS-BEL-03",
+  "name": "Belagavi Market PS",
+  "district": "Belagavi",
+  "lat": 15.818791,
+  "lng": 74.467309
+ },
+ {
+  "ps_code": "PS-DHA-01",
+  "name": "Dharwad Highway PS",
+  "district": "Dharwad",
+  "lat": 15.479486,
+  "lng": 74.974541
+ },
+ {
+  "ps_code": "PS-DHA-02",
+  "name": "Dharwad West PS",
+  "district": "Dharwad",
+  "lat": 15.496026,
+  "lng": 75.04639
+ },
+ {
+  "ps_code": "PS-DHA-03",
+  "name": "Dharwad Rural PS",
+  "district": "Dharwad",
+  "lat": 15.510675,
+  "lng": 75.012527
+ },
+ {
+  "ps_code": "PS-HUB-01",
+  "name": "Hubballi Industrial Area PS",
+  "district": "Hubballi",
+  "lat": 15.361115,
+  "lng": 75.156548
+ },
+ {
+  "ps_code": "PS-HUB-02",
+  "name": "Hubballi Old Town PS",
+  "district": "Hubballi",
+  "lat": 15.355514,
+  "lng": 75.092686
+ },
+ {
+  "ps_code": "PS-HUB-03",
+  "name": "Hubballi New Extension PS",
+  "district": "Hubballi",
+  "lat": 15.353716,
+  "lng": 75.087476
+ },
+ {
+  "ps_code": "PS-HUB-04",
+  "name": "Hubballi North PS",
+  "district": "Hubballi",
+  "lat": 15.326755,
+  "lng": 75.155323
+ },
+ {
+  "ps_code": "PS-UDU-01",
+  "name": "Udupi Town PS",
+  "district": "Udupi",
+  "lat": 13.371707,
+  "lng": 74.742887
+ },
+ {
+  "ps_code": "PS-UDU-02",
+  "name": "Udupi Highway PS",
+  "district": "Udupi",
+  "lat": 13.387739,
+  "lng": 74.773872
+ },
+ {
+  "ps_code": "PS-UDU-03",
+  "name": "Udupi Rural PS",
+  "district": "Udupi",
+  "lat": 13.302063,
+  "lng": 74.776942
+ },
+ {
+  "ps_code": "PS-DAK-01",
+  "name": "Dakshina Kannada Old Town PS",
+  "district": "Dakshina Kannada",
+  "lat": 12.890264,
+  "lng": 74.81588
+ },
+ {
+  "ps_code": "PS-DAK-02",
+  "name": "Dakshina Kannada City PS",
+  "district": "Dakshina Kannada",
+  "lat": 12.957015,
+  "lng": 74.845103
+ },
+ {
+  "ps_code": "PS-DAK-03",
+  "name": "Dakshina Kannada Lake PS",
+  "district": "Dakshina Kannada",
+  "lat": 12.867376,
+  "lng": 74.91067
+ },
+ {
+  "ps_code": "PS-DAK-04",
+  "name": "Dakshina Kannada Town PS",
+  "district": "Dakshina Kannada",
+  "lat": 12.914308,
+  "lng": 74.840737
+ },
+ {
+  "ps_code": "PS-UTT-01",
+  "name": "Uttara Kannada City PS",
+  "district": "Uttara Kannada",
+  "lat": 14.857685,
+  "lng": 74.144302
+ },
+ {
+  "ps_code": "PS-UTT-02",
+  "name": "Uttara Kannada Highway PS",
+  "district": "Uttara Kannada",
+  "lat": 14.773928,
+  "lng": 74.171614
+ },
+ {
+  "ps_code": "PS-CHI-01",
+  "name": "Chitradurga New Extension PS",
+  "district": "Chitradurga",
+  "lat": 14.241842,
+  "lng": 76.422175
+ },
+ {
+  "ps_code": "PS-CHI-02",
+  "name": "Chitradurga North PS",
+  "district": "Chitradurga",
+  "lat": 14.210291,
+  "lng": 76.397536
+ },
+ {
+  "ps_code": "PS-RAI-01",
+  "name": "Raichur City PS",
+  "district": "Raichur",
+  "lat": 16.225832,
+  "lng": 77.3519
+ },
+ {
+  "ps_code": "PS-RAI-02",
+  "name": "Raichur Market PS",
+  "district": "Raichur",
+  "lat": 16.181821,
+  "lng": 77.392519
+ },
+ {
+  "ps_code": "PS-BID-01",
+  "name": "Bidar Old Town PS",
+  "district": "Bidar",
+  "lat": 17.892821,
+  "lng": 77.536344
+ },
+ {
+  "ps_code": "PS-BID-02",
+  "name": "Bidar Highway PS",
+  "district": "Bidar",
+  "lat": 17.903,
+  "lng": 77.567964
+ },
+ {
+  "ps_code": "PS-CH1-01",
+  "name": "Chikkamagaluru Cantonment PS",
+  "district": "Chikkamagaluru",
+  "lat": 13.337277,
+  "lng": 75.781737
+ },
+ {
+  "ps_code": "PS-CH1-02",
+  "name": "Chikkamagaluru North PS",
+  "district": "Chikkamagaluru",
+  "lat": 13.291725,
+  "lng": 75.773134
+ },
+ {
+  "ps_code": "PS-KOD-01",
+  "name": "Kodagu City PS",
+  "district": "Kodagu",
+  "lat": 12.3973,
+  "lng": 75.725291
+ },
+ {
+  "ps_code": "PS-KOD-02",
+  "name": "Kodagu Town PS",
+  "district": "Kodagu",
+  "lat": 12.465422,
+  "lng": 75.785516
+ },
+ {
+  "ps_code": "PS-CHA-01",
+  "name": "Chamarajanagar North PS",
+  "district": "Chamarajanagar",
+  "lat": 11.974079,
+  "lng": 76.929614
+ },
+ {
+  "ps_code": "PS-CHA-02",
+  "name": "Chamarajanagar Lake PS",
+  "district": "Chamarajanagar",
+  "lat": 11.878233,
+  "lng": 76.989886
+ }
+]

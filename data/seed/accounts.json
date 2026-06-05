@@ -1,0 +1,366 @@
+[
+ {
+  "id": "AC-0001",
+  "holder_person_id": "P-00088",
+  "bank": "KGB",
+  "account_no_masked": "XXXX2121",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0002",
+  "holder_person_id": "P-00276",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX1734",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0003",
+  "holder_person_id": "P-00247",
+  "bank": "Union Bank",
+  "account_no_masked": "XXXX3915",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0004",
+  "holder_person_id": "P-00263",
+  "bank": "KGB",
+  "account_no_masked": "XXXX4914",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0005",
+  "holder_person_id": "P-00236",
+  "bank": "SBI",
+  "account_no_masked": "XXXX4879",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0006",
+  "holder_person_id": "P-00294",
+  "bank": "ICICI Bank",
+  "account_no_masked": "XXXX6882",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0007",
+  "holder_person_id": "P-00284",
+  "bank": "Union Bank",
+  "account_no_masked": "XXXX5342",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0008",
+  "holder_person_id": "P-00260",
+  "bank": "Canara Bank",
+  "account_no_masked": "XXXX6260",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0009",
+  "holder_person_id": "P-00332",
+  "bank": "Union Bank",
+  "account_no_masked": "XXXX8833",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0010",
+  "holder_person_id": "P-00285",
+  "bank": "Union Bank",
+  "account_no_masked": "XXXX1294",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0011",
+  "holder_person_id": "P-00334",
+  "bank": "ICICI Bank",
+  "account_no_masked": "XXXX8881",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0012",
+  "holder_person_id": "P-00309",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX2047",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0013",
+  "holder_person_id": "P-00243",
+  "bank": "Canara Bank",
+  "account_no_masked": "XXXX8205",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0014",
+  "holder_person_id": "P-00245",
+  "bank": "KGB",
+  "account_no_masked": "XXXX9355",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0015",
+  "holder_person_id": "P-00282",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX1931",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0016",
+  "holder_person_id": "P-00264",
+  "bank": "SBI",
+  "account_no_masked": "XXXX2055",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0017",
+  "holder_person_id": "P-00311",
+  "bank": "ICICI Bank",
+  "account_no_masked": "XXXX8948",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0018",
+  "holder_person_id": "P-00222",
+  "bank": "ICICI Bank",
+  "account_no_masked": "XXXX9198",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0019",
+  "holder_person_id": "P-00346",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX2428",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0020",
+  "holder_person_id": "P-00030",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX5294",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0021",
+  "holder_person_id": "P-00045",
+  "bank": "KGB",
+  "account_no_masked": "XXXX4354",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0022",
+  "holder_person_id": "P-00342",
+  "bank": "ICICI Bank",
+  "account_no_masked": "XXXX7896",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0023",
+  "holder_person_id": "P-00176",
+  "bank": "Canara Bank",
+  "account_no_masked": "XXXX5557",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0024",
+  "holder_person_id": "P-00262",
+  "bank": "ICICI Bank",
+  "account_no_masked": "XXXX2494",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0025",
+  "holder_person_id": "P-00186",
+  "bank": "KGB",
+  "account_no_masked": "XXXX2811",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0026",
+  "holder_person_id": "P-00257",
+  "bank": "ICICI Bank",
+  "account_no_masked": "XXXX2405",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0027",
+  "holder_person_id": "P-00224",
+  "bank": "SBI",
+  "account_no_masked": "XXXX7729",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0028",
+  "holder_person_id": "P-00090",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX3716",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0029",
+  "holder_person_id": "P-00246",
+  "bank": "Union Bank",
+  "account_no_masked": "XXXX7951",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0030",
+  "holder_person_id": "P-00360",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX5461",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0031",
+  "holder_person_id": "P-00163",
+  "bank": "HDFC Bank",
+  "account_no_masked": "XXXX9087",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0032",
+  "holder_person_id": "P-00029",
+  "bank": "HDFC Bank",
+  "account_no_masked": "XXXX2247",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0033",
+  "holder_person_id": "P-00016",
+  "bank": "SBI",
+  "account_no_masked": "XXXX4312",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0034",
+  "holder_person_id": "P-00061",
+  "bank": "SBI",
+  "account_no_masked": "XXXX6269",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0035",
+  "holder_person_id": "P-00055",
+  "bank": "ICICI Bank",
+  "account_no_masked": "XXXX4832",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0036",
+  "holder_person_id": "P-00079",
+  "bank": "Canara Bank",
+  "account_no_masked": "XXXX7698",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0037",
+  "holder_person_id": "P-00300",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX9962",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0038",
+  "holder_person_id": "P-00075",
+  "bank": "Canara Bank",
+  "account_no_masked": "XXXX3239",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0039",
+  "holder_person_id": "P-00274",
+  "bank": "HDFC Bank",
+  "account_no_masked": "XXXX6386",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0040",
+  "holder_person_id": "P-00290",
+  "bank": "Canara Bank",
+  "account_no_masked": "XXXX6085",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0041",
+  "holder_person_id": "P-00279",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX2613",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0042",
+  "holder_person_id": "P-00127",
+  "bank": "SBI",
+  "account_no_masked": "XXXX6076",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0043",
+  "holder_person_id": "P-00150",
+  "bank": "Union Bank",
+  "account_no_masked": "XXXX7743",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0044",
+  "holder_person_id": "P-00147",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX8327",
+  "kyc_band": "full"
+ },
+ {
+  "id": "AC-0045",
+  "holder_person_id": "P-00213",
+  "bank": "KGB",
+  "account_no_masked": "XXXX6561",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0046",
+  "holder_person_id": "P-00816",
+  "bank": "SBI",
+  "account_no_masked": "XXXX2029",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0047",
+  "holder_person_id": "P-00817",
+  "bank": "ICICI Bank",
+  "account_no_masked": "XXXX3253",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0048",
+  "holder_person_id": "P-00818",
+  "bank": "SBI",
+  "account_no_masked": "XXXX5898",
+  "kyc_band": "minimal"
+ },
+ {
+  "id": "AC-0049",
+  "holder_person_id": "P-00819",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX3456",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0050",
+  "holder_person_id": "P-00820",
+  "bank": "ICICI Bank",
+  "account_no_masked": "XXXX6705",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0051",
+  "holder_person_id": "P-00821",
+  "bank": "Axis Bank",
+  "account_no_masked": "XXXX2825",
+  "kyc_band": "unverified"
+ },
+ {
+  "id": "AC-0052",
+  "holder_person_id": "P-00822",
+  "bank": "KGB",
+  "account_no_masked": "XXXX7724",
+  "kyc_band": "full"
+ }
+]

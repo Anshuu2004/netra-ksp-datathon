@@ -1,0 +1,12 @@
+{
+  "//": "AppSail managed-runtime config for the NETRA Next.js app. Field names may differ slightly by CLI version; `catalyst appsail init` generates the authoritative file.",
+  "name": "netra-web",
+  "stack": "node20",
+  "buildCommand": "npm install && npm run build --workspace=apps/web",
+  "runCommand": "npm run start --workspace=apps/web",
+  "port": 3000,
+  "env": {
+    "NETRA_ENV": "catalyst",
+    "NETRA_SEED_DIR": "./data/seed"
+  }
+}

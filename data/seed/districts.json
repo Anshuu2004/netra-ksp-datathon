@@ -1,0 +1,242 @@
+[
+ {
+  "name": "Bengaluru Urban",
+  "lat": 12.9716,
+  "lng": 77.5946,
+  "code": "BEN",
+  "population": 8078557,
+  "urbanization_index": 0.95,
+  "literacy_rate": 88,
+  "unemployment_proxy": 0.18
+ },
+ {
+  "name": "Bengaluru Rural",
+  "lat": 13.2846,
+  "lng": 77.62,
+  "code": "BE1",
+  "population": 2612251,
+  "urbanization_index": 0.55,
+  "literacy_rate": 80,
+  "unemployment_proxy": 0.22
+ },
+ {
+  "name": "Mysuru",
+  "lat": 12.2958,
+  "lng": 76.6394,
+  "code": "MYS",
+  "population": 2199139,
+  "urbanization_index": 0.78,
+  "literacy_rate": 85,
+  "unemployment_proxy": 0.2
+ },
+ {
+  "name": "Mandya",
+  "lat": 12.5223,
+  "lng": 76.8954,
+  "code": "MAN",
+  "population": 7024331,
+  "urbanization_index": 0.45,
+  "literacy_rate": 78,
+  "unemployment_proxy": 0.26
+ },
+ {
+  "name": "Hassan",
+  "lat": 13.0072,
+  "lng": 76.0962,
+  "code": "HAS",
+  "population": 2816792,
+  "urbanization_index": 0.42,
+  "literacy_rate": 79,
+  "unemployment_proxy": 0.24
+ },
+ {
+  "name": "Tumakuru",
+  "lat": 13.3379,
+  "lng": 77.1173,
+  "code": "TUM",
+  "population": 9500311,
+  "urbanization_index": 0.5,
+  "literacy_rate": 80,
+  "unemployment_proxy": 0.25
+ },
+ {
+  "name": "Kolar",
+  "lat": 13.1357,
+  "lng": 78.1296,
+  "code": "KOL",
+  "population": 6997575,
+  "urbanization_index": 0.48,
+  "literacy_rate": 77,
+  "unemployment_proxy": 0.27
+ },
+ {
+  "name": "Davanagere",
+  "lat": 14.4644,
+  "lng": 75.9218,
+  "code": "DAV",
+  "population": 5390729,
+  "urbanization_index": 0.6,
+  "literacy_rate": 80,
+  "unemployment_proxy": 0.23
+ },
+ {
+  "name": "Shivamogga",
+  "lat": 13.9299,
+  "lng": 75.5681,
+  "code": "SHI",
+  "population": 7173914,
+  "urbanization_index": 0.55,
+  "literacy_rate": 83,
+  "unemployment_proxy": 0.22
+ },
+ {
+  "name": "Ballari",
+  "lat": 15.1394,
+  "lng": 76.9214,
+  "code": "BAL",
+  "population": 3890797,
+  "urbanization_index": 0.58,
+  "literacy_rate": 74,
+  "unemployment_proxy": 0.28
+ },
+ {
+  "name": "Vijayapura",
+  "lat": 16.8302,
+  "lng": 75.71,
+  "code": "VIJ",
+  "population": 1541599,
+  "urbanization_index": 0.46,
+  "literacy_rate": 72,
+  "unemployment_proxy": 0.3
+ },
+ {
+  "name": "Kalaburagi",
+  "lat": 17.3297,
+  "lng": 76.8343,
+  "code": "KAL",
+  "population": 9731639,
+  "urbanization_index": 0.52,
+  "literacy_rate": 70,
+  "unemployment_proxy": 0.31
+ },
+ {
+  "name": "Belagavi",
+  "lat": 15.8497,
+  "lng": 74.4977,
+  "code": "BEL",
+  "population": 11525527,
+  "urbanization_index": 0.57,
+  "literacy_rate": 79,
+  "unemployment_proxy": 0.24
+ },
+ {
+  "name": "Dharwad",
+  "lat": 15.4589,
+  "lng": 75.0078,
+  "code": "DHA",
+  "population": 6436353,
+  "urbanization_index": 0.7,
+  "literacy_rate": 82,
+  "unemployment_proxy": 0.21
+ },
+ {
+  "name": "Hubballi",
+  "lat": 15.3647,
+  "lng": 75.124,
+  "code": "HUB",
+  "population": 10118936,
+  "urbanization_index": 0.75,
+  "literacy_rate": 83,
+  "unemployment_proxy": 0.2
+ },
+ {
+  "name": "Udupi",
+  "lat": 13.3409,
+  "lng": 74.7421,
+  "code": "UDU",
+  "population": 11484549,
+  "urbanization_index": 0.62,
+  "literacy_rate": 92,
+  "unemployment_proxy": 0.16
+ },
+ {
+  "name": "Dakshina Kannada",
+  "lat": 12.9141,
+  "lng": 74.856,
+  "code": "DAK",
+  "population": 3131340,
+  "urbanization_index": 0.8,
+  "literacy_rate": 91,
+  "unemployment_proxy": 0.17
+ },
+ {
+  "name": "Uttara Kannada",
+  "lat": 14.8183,
+  "lng": 74.1297,
+  "code": "UTT",
+  "population": 4667535,
+  "urbanization_index": 0.4,
+  "literacy_rate": 84,
+  "unemployment_proxy": 0.23
+ },
+ {
+  "name": "Chitradurga",
+  "lat": 14.2251,
+  "lng": 76.398,
+  "code": "CHI",
+  "population": 5910618,
+  "urbanization_index": 0.44,
+  "literacy_rate": 76,
+  "unemployment_proxy": 0.27
+ },
+ {
+  "name": "Raichur",
+  "lat": 16.2076,
+  "lng": 77.3463,
+  "code": "RAI",
+  "population": 2828846,
+  "urbanization_index": 0.45,
+  "literacy_rate": 68,
+  "unemployment_proxy": 0.32
+ },
+ {
+  "name": "Bidar",
+  "lat": 17.9106,
+  "lng": 77.5199,
+  "code": "BID",
+  "population": 8276394,
+  "urbanization_index": 0.47,
+  "literacy_rate": 71,
+  "unemployment_proxy": 0.3
+ },
+ {
+  "name": "Chikkamagaluru",
+  "lat": 13.3161,
+  "lng": 75.772,
+  "code": "CH1",
+  "population": 7752584,
+  "urbanization_index": 0.41,
+  "literacy_rate": 85,
+  "unemployment_proxy": 0.21
+ },
+ {
+  "name": "Kodagu",
+  "lat": 12.4218,
+  "lng": 75.74,
+  "code": "KOD",
+  "population": 9400019,
+  "urbanization_index": 0.38,
+  "literacy_rate": 86,
+  "unemployment_proxy": 0.19
+ },
+ {
+  "name": "Chamarajanagar",
+  "lat": 11.9261,
+  "lng": 76.9437,
+  "code": "CHA",
+  "population": 7250401,
+  "urbanization_index": 0.39,
+  "literacy_rate": 73,
+  "unemployment_proxy": 0.28
+ }
+]

@@ -1,0 +1,10 @@
+{
+  "//": "TEMPLATE. `catalyst init` overwrites this with values bound to YOUR project.",
+  "project_name": "netra-ksp",
+  "project_id": "<filled-by-catalyst-init>",
+  "appsail": {
+    "name": "netra-web",
+    "source": "apps/web"
+  },
+  "functions_dir": "catalyst/functions"
+}

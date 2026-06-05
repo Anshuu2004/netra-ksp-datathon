@@ -1,0 +1,3920 @@
+[
+ {
+  "fir_id": "FIR-2025-KAL-00001",
+  "person_id": "P-00151",
+  "injury": "none",
+  "loss_amount": 358000
+ },
+ {
+  "fir_id": "FIR-2024-DHA-00001",
+  "person_id": "P-00152",
+  "injury": "none",
+  "loss_amount": 85000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00001",
+  "person_id": "P-00153",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-KOL-00001",
+  "person_id": "P-00154",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00001",
+  "person_id": "P-00155",
+  "injury": "minor",
+  "loss_amount": 444000
+ },
+ {
+  "fir_id": "FIR-2024-UDU-00001",
+  "person_id": "P-00156",
+  "injury": "minor",
+  "loss_amount": 92000
+ },
+ {
+  "fir_id": "FIR-2025-CH1-00001",
+  "person_id": "P-00157",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00001",
+  "person_id": "P-00158",
+  "injury": "none",
+  "loss_amount": 317000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00003",
+  "person_id": "P-00159",
+  "injury": "minor",
+  "loss_amount": 265000
+ },
+ {
+  "fir_id": "FIR-2025-RAI-00001",
+  "person_id": "P-00160",
+  "injury": "minor",
+  "loss_amount": 79000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00001",
+  "person_id": "P-00161",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00001",
+  "person_id": "P-00162",
+  "injury": "none",
+  "loss_amount": 185000
+ },
+ {
+  "fir_id": "FIR-2026-BAL-00001",
+  "person_id": "P-00163",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00004",
+  "person_id": "P-00164",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-UTT-00001",
+  "person_id": "P-00165",
+  "injury": "minor",
+  "loss_amount": 414000
+ },
+ {
+  "fir_id": "FIR-2026-BAL-00002",
+  "person_id": "P-00166",
+  "injury": "minor",
+  "loss_amount": 22000
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00002",
+  "person_id": "P-00167",
+  "injury": "none",
+  "loss_amount": 213000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00002",
+  "person_id": "P-00168",
+  "injury": "none",
+  "loss_amount": 216000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00001",
+  "person_id": "P-00169",
+  "injury": "none",
+  "loss_amount": 14000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00001",
+  "person_id": "P-00170",
+  "injury": "none",
+  "loss_amount": 261000
+ },
+ {
+  "fir_id": "FIR-2025-MAN-00001",
+  "person_id": "P-00171",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00001",
+  "person_id": "P-00172",
+  "injury": "none",
+  "loss_amount": 459000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00001",
+  "person_id": "P-00173",
+  "injury": "minor",
+  "loss_amount": 303000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00002",
+  "person_id": "P-00174",
+  "injury": "none",
+  "loss_amount": 484000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00002",
+  "person_id": "P-00175",
+  "injury": "minor",
+  "loss_amount": 395000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00005",
+  "person_id": "P-00176",
+  "injury": "none",
+  "loss_amount": 432000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00001",
+  "person_id": "P-00177",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00002",
+  "person_id": "P-00178",
+  "injury": "none",
+  "loss_amount": 279000
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00001",
+  "person_id": "P-00179",
+  "injury": "minor",
+  "loss_amount": 123000
+ },
+ {
+  "fir_id": "FIR-2026-BAL-00003",
+  "person_id": "P-00180",
+  "injury": "minor",
+  "loss_amount": 174000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00002",
+  "person_id": "P-00181",
+  "injury": "none",
+  "loss_amount": 417000
+ },
+ {
+  "fir_id": "FIR-2025-RAI-00002",
+  "person_id": "P-00182",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00002",
+  "person_id": "P-00183",
+  "injury": "none",
+  "loss_amount": 463000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00003",
+  "person_id": "P-00184",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00003",
+  "person_id": "P-00185",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00003",
+  "person_id": "P-00186",
+  "injury": "minor",
+  "loss_amount": 65000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00003",
+  "person_id": "P-00187",
+  "injury": "none",
+  "loss_amount": 401000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00004",
+  "person_id": "P-00188",
+  "injury": "none",
+  "loss_amount": 353000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00003",
+  "person_id": "P-00189",
+  "injury": "minor",
+  "loss_amount": 309000
+ },
+ {
+  "fir_id": "FIR-2026-CHI-00001",
+  "person_id": "P-00190",
+  "injury": "none",
+  "loss_amount": 192000
+ },
+ {
+  "fir_id": "FIR-2025-KOL-00001",
+  "person_id": "P-00191",
+  "injury": "none",
+  "loss_amount": 43000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00001",
+  "person_id": "P-00192",
+  "injury": "minor",
+  "loss_amount": 99000
+ },
+ {
+  "fir_id": "FIR-2024-DHA-00002",
+  "person_id": "P-00193",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00001",
+  "person_id": "P-00194",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00004",
+  "person_id": "P-00195",
+  "injury": "none",
+  "loss_amount": 409000
+ },
+ {
+  "fir_id": "FIR-2026-DHA-00001",
+  "person_id": "P-00196",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MAN-00002",
+  "person_id": "P-00197",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-CH1-00002",
+  "person_id": "P-00198",
+  "injury": "minor",
+  "loss_amount": 346000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00003",
+  "person_id": "P-00199",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00005",
+  "person_id": "P-00200",
+  "injury": "none",
+  "loss_amount": 221000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00003",
+  "person_id": "P-00201",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00006",
+  "person_id": "P-00202",
+  "injury": "none",
+  "loss_amount": 72000
+ },
+ {
+  "fir_id": "FIR-2025-RAI-00003",
+  "person_id": "P-00203",
+  "injury": "minor",
+  "loss_amount": 6000
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00004",
+  "person_id": "P-00204",
+  "injury": "none",
+  "loss_amount": 172000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00002",
+  "person_id": "P-00205",
+  "injury": "none",
+  "loss_amount": 75000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00002",
+  "person_id": "P-00206",
+  "injury": "minor",
+  "loss_amount": 381000
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00005",
+  "person_id": "P-00207",
+  "injury": "none",
+  "loss_amount": 497000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00001",
+  "person_id": "P-00208",
+  "injury": "minor",
+  "loss_amount": 119000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00006",
+  "person_id": "P-00209",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00002",
+  "person_id": "P-00210",
+  "injury": "minor",
+  "loss_amount": 156000
+ },
+ {
+  "fir_id": "FIR-2025-KOL-00002",
+  "person_id": "P-00211",
+  "injury": "grievous",
+  "loss_amount": 490000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00007",
+  "person_id": "P-00212",
+  "injury": "none",
+  "loss_amount": 333000
+ },
+ {
+  "fir_id": "FIR-2026-TUM-00001",
+  "person_id": "P-00213",
+  "injury": "none",
+  "loss_amount": 378000
+ },
+ {
+  "fir_id": "FIR-2026-RAI-00001",
+  "person_id": "P-00214",
+  "injury": "minor",
+  "loss_amount": 131000
+ },
+ {
+  "fir_id": "FIR-2026-CHI-00002",
+  "person_id": "P-00215",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00005",
+  "person_id": "P-00216",
+  "injury": "none",
+  "loss_amount": 13000
+ },
+ {
+  "fir_id": "FIR-2026-CHA-00001",
+  "person_id": "P-00217",
+  "injury": "none",
+  "loss_amount": 379000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00003",
+  "person_id": "P-00218",
+  "injury": "grievous",
+  "loss_amount": 60000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00002",
+  "person_id": "P-00219",
+  "injury": "none",
+  "loss_amount": 494000
+ },
+ {
+  "fir_id": "FIR-2025-VIJ-00001",
+  "person_id": "P-00220",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2024-TUM-00001",
+  "person_id": "P-00221",
+  "injury": "grievous",
+  "loss_amount": 233000
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00003",
+  "person_id": "P-00222",
+  "injury": "none",
+  "loss_amount": 290000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00004",
+  "person_id": "P-00223",
+  "injury": "none",
+  "loss_amount": 105000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00001",
+  "person_id": "P-00224",
+  "injury": "minor",
+  "loss_amount": 320000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00003",
+  "person_id": "P-00225",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-TUM-00002",
+  "person_id": "P-00226",
+  "injury": "minor",
+  "loss_amount": 434000
+ },
+ {
+  "fir_id": "FIR-2025-KOL-00003",
+  "person_id": "P-00227",
+  "injury": "none",
+  "loss_amount": 113000
+ },
+ {
+  "fir_id": "FIR-2026-HAS-00001",
+  "person_id": "P-00228",
+  "injury": "none",
+  "loss_amount": 470000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00008",
+  "person_id": "P-00229",
+  "injury": "none",
+  "loss_amount": 44000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00003",
+  "person_id": "P-00230",
+  "injury": "none",
+  "loss_amount": 177000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00009",
+  "person_id": "P-00231",
+  "injury": "none",
+  "loss_amount": 402000
+ },
+ {
+  "fir_id": "FIR-2026-TUM-00003",
+  "person_id": "P-00232",
+  "injury": "none",
+  "loss_amount": 321000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00004",
+  "person_id": "P-00233",
+  "injury": "none",
+  "loss_amount": 83000
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00002",
+  "person_id": "P-00234",
+  "injury": "grievous",
+  "loss_amount": 156000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00002",
+  "person_id": "P-00235",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2024-TUM-00002",
+  "person_id": "P-00236",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-CHA-00001",
+  "person_id": "P-00237",
+  "injury": "grievous",
+  "loss_amount": 189000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00007",
+  "person_id": "P-00238",
+  "injury": "none",
+  "loss_amount": 447000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00004",
+  "person_id": "P-00239",
+  "injury": "minor",
+  "loss_amount": 477000
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00002",
+  "person_id": "P-00240",
+  "injury": "none",
+  "loss_amount": 489000
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00006",
+  "person_id": "P-00241",
+  "injury": "grievous",
+  "loss_amount": 478000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00004",
+  "person_id": "P-00242",
+  "injury": "none",
+  "loss_amount": 233000
+ },
+ {
+  "fir_id": "FIR-2026-CHI-00003",
+  "person_id": "P-00243",
+  "injury": "none",
+  "loss_amount": 462000
+ },
+ {
+  "fir_id": "FIR-2026-RAI-00002",
+  "person_id": "P-00244",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00008",
+  "person_id": "P-00245",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00001",
+  "person_id": "P-00246",
+  "injury": "minor",
+  "loss_amount": 185000
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00003",
+  "person_id": "P-00247",
+  "injury": "none",
+  "loss_amount": 334000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00004",
+  "person_id": "P-00248",
+  "injury": "minor",
+  "loss_amount": 119000
+ },
+ {
+  "fir_id": "FIR-2026-VIJ-00001",
+  "person_id": "P-00249",
+  "injury": "none",
+  "loss_amount": 306000
+ },
+ {
+  "fir_id": "FIR-2026-CHA-00002",
+  "person_id": "P-00250",
+  "injury": "minor",
+  "loss_amount": 450000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00002",
+  "person_id": "P-00251",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00002",
+  "person_id": "P-00252",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00010",
+  "person_id": "P-00253",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-CHA-00003",
+  "person_id": "P-00254",
+  "injury": "minor",
+  "loss_amount": 69000
+ },
+ {
+  "fir_id": "FIR-2025-CH1-00003",
+  "person_id": "P-00255",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00002",
+  "person_id": "P-00256",
+  "injury": "minor",
+  "loss_amount": 28000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00003",
+  "person_id": "P-00257",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00009",
+  "person_id": "P-00258",
+  "injury": "none",
+  "loss_amount": 254000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00003",
+  "person_id": "P-00259",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-DAV-00001",
+  "person_id": "P-00260",
+  "injury": "minor",
+  "loss_amount": 461000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00005",
+  "person_id": "P-00261",
+  "injury": "none",
+  "loss_amount": 473000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00005",
+  "person_id": "P-00262",
+  "injury": "none",
+  "loss_amount": 164000
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00002",
+  "person_id": "P-00263",
+  "injury": "minor",
+  "loss_amount": 12000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00006",
+  "person_id": "P-00264",
+  "injury": "minor",
+  "loss_amount": 473000
+ },
+ {
+  "fir_id": "FIR-2025-CHA-00002",
+  "person_id": "P-00265",
+  "injury": "minor",
+  "loss_amount": 240000
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00007",
+  "person_id": "P-00266",
+  "injury": "none",
+  "loss_amount": 81000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00005",
+  "person_id": "P-00267",
+  "injury": "none",
+  "loss_amount": 171000
+ },
+ {
+  "fir_id": "FIR-2025-RAI-00004",
+  "person_id": "P-00268",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2024-DHA-00003",
+  "person_id": "P-00269",
+  "injury": "none",
+  "loss_amount": 69000
+ },
+ {
+  "fir_id": "FIR-2026-DHA-00003",
+  "person_id": "P-00270",
+  "injury": "grievous",
+  "loss_amount": 394000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00003",
+  "person_id": "P-00271",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00006",
+  "person_id": "P-00272",
+  "injury": "minor",
+  "loss_amount": 144000
+ },
+ {
+  "fir_id": "FIR-2026-MAN-00001",
+  "person_id": "P-00273",
+  "injury": "none",
+  "loss_amount": 399000
+ },
+ {
+  "fir_id": "FIR-2026-TUM-00004",
+  "person_id": "P-00274",
+  "injury": "minor",
+  "loss_amount": 231000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00004",
+  "person_id": "P-00275",
+  "injury": "minor",
+  "loss_amount": 438000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00003",
+  "person_id": "P-00276",
+  "injury": "none",
+  "loss_amount": 172000
+ },
+ {
+  "fir_id": "FIR-2024-RAI-00001",
+  "person_id": "P-00277",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-TUM-00005",
+  "person_id": "P-00278",
+  "injury": "none",
+  "loss_amount": 357000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00006",
+  "person_id": "P-00279",
+  "injury": "none",
+  "loss_amount": 311000
+ },
+ {
+  "fir_id": "FIR-2025-BID-00001",
+  "person_id": "P-00280",
+  "injury": "none",
+  "loss_amount": 163000
+ },
+ {
+  "fir_id": "FIR-2026-KOL-00002",
+  "person_id": "P-00281",
+  "injury": "minor",
+  "loss_amount": 336000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00004",
+  "person_id": "P-00282",
+  "injury": "none",
+  "loss_amount": 486000
+ },
+ {
+  "fir_id": "FIR-2025-VIJ-00002",
+  "person_id": "P-00283",
+  "injury": "none",
+  "loss_amount": 431000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00005",
+  "person_id": "P-00284",
+  "injury": "none",
+  "loss_amount": 134000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00010",
+  "person_id": "P-00285",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00005",
+  "person_id": "P-00286",
+  "injury": "minor",
+  "loss_amount": 125000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00011",
+  "person_id": "P-00287",
+  "injury": "none",
+  "loss_amount": 201000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00007",
+  "person_id": "P-00288",
+  "injury": "none",
+  "loss_amount": 441000
+ },
+ {
+  "fir_id": "FIR-2026-BID-00001",
+  "person_id": "P-00289",
+  "injury": "minor",
+  "loss_amount": 323000
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00003",
+  "person_id": "P-00290",
+  "injury": "minor",
+  "loss_amount": 239000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00005",
+  "person_id": "P-00291",
+  "injury": "none",
+  "loss_amount": 89000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00007",
+  "person_id": "P-00292",
+  "injury": "minor",
+  "loss_amount": 440000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00008",
+  "person_id": "P-00293",
+  "injury": "none",
+  "loss_amount": 468000
+ },
+ {
+  "fir_id": "FIR-2025-UTT-00002",
+  "person_id": "P-00294",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00004",
+  "person_id": "P-00295",
+  "injury": "minor",
+  "loss_amount": 69000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00007",
+  "person_id": "P-00296",
+  "injury": "none",
+  "loss_amount": 389000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00008",
+  "person_id": "P-00297",
+  "injury": "minor",
+  "loss_amount": 136000
+ },
+ {
+  "fir_id": "FIR-2026-KOD-00001",
+  "person_id": "P-00298",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00003",
+  "person_id": "P-00299",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-UDU-00001",
+  "person_id": "P-00300",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-UTT-00003",
+  "person_id": "P-00301",
+  "injury": "none",
+  "loss_amount": 248000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00005",
+  "person_id": "P-00302",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-DAV-00002",
+  "person_id": "P-00303",
+  "injury": "grievous",
+  "loss_amount": 264000
+ },
+ {
+  "fir_id": "FIR-2026-DAK-00001",
+  "person_id": "P-00304",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00004",
+  "person_id": "P-00305",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-BID-00002",
+  "person_id": "P-00306",
+  "injury": "none",
+  "loss_amount": 308000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00006",
+  "person_id": "P-00307",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00009",
+  "person_id": "P-00308",
+  "injury": "none",
+  "loss_amount": 130000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00001",
+  "person_id": "P-00309",
+  "injury": "none",
+  "loss_amount": 172000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00006",
+  "person_id": "P-00310",
+  "injury": "none",
+  "loss_amount": 283000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00005",
+  "person_id": "P-00311",
+  "injury": "none",
+  "loss_amount": 244000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00007",
+  "person_id": "P-00312",
+  "injury": "none",
+  "loss_amount": 227000
+ },
+ {
+  "fir_id": "FIR-2024-HUB-00001",
+  "person_id": "P-00313",
+  "injury": "minor",
+  "loss_amount": 214000
+ },
+ {
+  "fir_id": "FIR-2026-MAN-00002",
+  "person_id": "P-00314",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00004",
+  "person_id": "P-00315",
+  "injury": "minor",
+  "loss_amount": 387000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00012",
+  "person_id": "P-00316",
+  "injury": "none",
+  "loss_amount": 292000
+ },
+ {
+  "fir_id": "FIR-2026-TUM-00006",
+  "person_id": "P-00317",
+  "injury": "none",
+  "loss_amount": 459000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00005",
+  "person_id": "P-00318",
+  "injury": "none",
+  "loss_amount": 483000
+ },
+ {
+  "fir_id": "FIR-2025-VIJ-00003",
+  "person_id": "P-00319",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00004",
+  "person_id": "P-00320",
+  "injury": "none",
+  "loss_amount": 107000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00006",
+  "person_id": "P-00321",
+  "injury": "grievous",
+  "loss_amount": 378000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00010",
+  "person_id": "P-00322",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-BAL-00005",
+  "person_id": "P-00323",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00006",
+  "person_id": "P-00324",
+  "injury": "grievous",
+  "loss_amount": 283000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00007",
+  "person_id": "P-00325",
+  "injury": "grievous",
+  "loss_amount": 34000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00013",
+  "person_id": "P-00326",
+  "injury": "none",
+  "loss_amount": 35000
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00005",
+  "person_id": "P-00327",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-UTT-00004",
+  "person_id": "P-00328",
+  "injury": "none",
+  "loss_amount": 229000
+ },
+ {
+  "fir_id": "FIR-2026-CH1-00001",
+  "person_id": "P-00329",
+  "injury": "none",
+  "loss_amount": 198000
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00006",
+  "person_id": "P-00330",
+  "injury": "minor",
+  "loss_amount": 110000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00014",
+  "person_id": "P-00331",
+  "injury": "minor",
+  "loss_amount": 301000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00008",
+  "person_id": "P-00332",
+  "injury": "none",
+  "loss_amount": 456000
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00007",
+  "person_id": "P-00333",
+  "injury": "none",
+  "loss_amount": 123000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00009",
+  "person_id": "P-00334",
+  "injury": "none",
+  "loss_amount": 199000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00008",
+  "person_id": "P-00335",
+  "injury": "minor",
+  "loss_amount": 458000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00004",
+  "person_id": "P-00336",
+  "injury": "grievous",
+  "loss_amount": 67000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00007",
+  "person_id": "P-00337",
+  "injury": "none",
+  "loss_amount": 469000
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00008",
+  "person_id": "P-00338",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-DHA-00004",
+  "person_id": "P-00339",
+  "injury": "none",
+  "loss_amount": 155000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00005",
+  "person_id": "P-00340",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00006",
+  "person_id": "P-00341",
+  "injury": "minor",
+  "loss_amount": 145000
+ },
+ {
+  "fir_id": "FIR-2026-KOD-00002",
+  "person_id": "P-00342",
+  "injury": "none",
+  "loss_amount": 246000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00011",
+  "person_id": "P-00343",
+  "injury": "none",
+  "loss_amount": 75000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00002",
+  "person_id": "P-00344",
+  "injury": "minor",
+  "loss_amount": 351000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00007",
+  "person_id": "P-00345",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00006",
+  "person_id": "P-00346",
+  "injury": "none",
+  "loss_amount": 82000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00011",
+  "person_id": "P-00347",
+  "injury": "none",
+  "loss_amount": 66000
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00009",
+  "person_id": "P-00348",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00008",
+  "person_id": "P-00349",
+  "injury": "none",
+  "loss_amount": 381000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00016",
+  "person_id": "P-00350",
+  "injury": "none",
+  "loss_amount": 412000
+ },
+ {
+  "fir_id": "FIR-2026-VIJ-00002",
+  "person_id": "P-00351",
+  "injury": "none",
+  "loss_amount": 4000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00012",
+  "person_id": "P-00352",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00008",
+  "person_id": "P-00353",
+  "injury": "grievous",
+  "loss_amount": 379000
+ },
+ {
+  "fir_id": "FIR-2026-BID-00003",
+  "person_id": "P-00354",
+  "injury": "minor",
+  "loss_amount": 248000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00009",
+  "person_id": "P-00355",
+  "injury": "none",
+  "loss_amount": 96000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00007",
+  "person_id": "P-00356",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00007",
+  "person_id": "P-00357",
+  "injury": "none",
+  "loss_amount": 345000
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00010",
+  "person_id": "P-00358",
+  "injury": "none",
+  "loss_amount": 138000
+ },
+ {
+  "fir_id": "FIR-2026-KOL-00003",
+  "person_id": "P-00359",
+  "injury": "minor",
+  "loss_amount": 19000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00008",
+  "person_id": "P-00360",
+  "injury": "minor",
+  "loss_amount": 43000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00006",
+  "person_id": "P-00361",
+  "injury": "none",
+  "loss_amount": 172000
+ },
+ {
+  "fir_id": "FIR-2026-CH1-00002",
+  "person_id": "P-00362",
+  "injury": "none",
+  "loss_amount": 267000
+ },
+ {
+  "fir_id": "FIR-2025-BID-00002",
+  "person_id": "P-00363",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-VIJ-00004",
+  "person_id": "P-00364",
+  "injury": "none",
+  "loss_amount": 349000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00009",
+  "person_id": "P-00365",
+  "injury": "minor",
+  "loss_amount": 96000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00005",
+  "person_id": "P-00366",
+  "injury": "none",
+  "loss_amount": 79000
+ },
+ {
+  "fir_id": "FIR-2025-UTT-00005",
+  "person_id": "P-00367",
+  "injury": "none",
+  "loss_amount": 234000
+ },
+ {
+  "fir_id": "FIR-2026-CH1-00003",
+  "person_id": "P-00368",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-DHA-00005",
+  "person_id": "P-00369",
+  "injury": "none",
+  "loss_amount": 376000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00010",
+  "person_id": "P-00370",
+  "injury": "none",
+  "loss_amount": 353000
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00004",
+  "person_id": "P-00371",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00006",
+  "person_id": "P-00372",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00009",
+  "person_id": "P-00373",
+  "injury": "grievous",
+  "loss_amount": 485000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00012",
+  "person_id": "P-00374",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-RAI-00005",
+  "person_id": "P-00375",
+  "injury": "none",
+  "loss_amount": 54000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00003",
+  "person_id": "P-00376",
+  "injury": "grievous",
+  "loss_amount": 119000
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00008",
+  "person_id": "P-00377",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00006",
+  "person_id": "P-00378",
+  "injury": "none",
+  "loss_amount": 375000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00011",
+  "person_id": "P-00379",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00012",
+  "person_id": "P-00380",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00018",
+  "person_id": "P-00381",
+  "injury": "none",
+  "loss_amount": 56000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00010",
+  "person_id": "P-00382",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00005",
+  "person_id": "P-00383",
+  "injury": "none",
+  "loss_amount": 451000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00006",
+  "person_id": "P-00384",
+  "injury": "none",
+  "loss_amount": 137000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00013",
+  "person_id": "P-00385",
+  "injury": "none",
+  "loss_amount": 27000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00006",
+  "person_id": "P-00386",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00008",
+  "person_id": "P-00387",
+  "injury": "none",
+  "loss_amount": 239000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00013",
+  "person_id": "P-00388",
+  "injury": "none",
+  "loss_amount": 400000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00007",
+  "person_id": "P-00389",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00007",
+  "person_id": "P-00390",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-VIJ-00005",
+  "person_id": "P-00391",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00005",
+  "person_id": "P-00392",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-HAS-00002",
+  "person_id": "P-00393",
+  "injury": "minor",
+  "loss_amount": 407000
+ },
+ {
+  "fir_id": "FIR-2026-BAL-00006",
+  "person_id": "P-00394",
+  "injury": "minor",
+  "loss_amount": 346000
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00003",
+  "person_id": "P-00395",
+  "injury": "minor",
+  "loss_amount": 42000
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00009",
+  "person_id": "P-00396",
+  "injury": "none",
+  "loss_amount": 255000
+ },
+ {
+  "fir_id": "FIR-2025-UTT-00006",
+  "person_id": "P-00397",
+  "injury": "none",
+  "loss_amount": 499000
+ },
+ {
+  "fir_id": "FIR-2026-DHA-00006",
+  "person_id": "P-00398",
+  "injury": "minor",
+  "loss_amount": 495000
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00004",
+  "person_id": "P-00399",
+  "injury": "none",
+  "loss_amount": 410000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00011",
+  "person_id": "P-00400",
+  "injury": "minor",
+  "loss_amount": 485000
+ },
+ {
+  "fir_id": "FIR-2026-CHI-00004",
+  "person_id": "P-00401",
+  "injury": "grievous",
+  "loss_amount": 229000
+ },
+ {
+  "fir_id": "FIR-2026-UTT-00002",
+  "person_id": "P-00402",
+  "injury": "minor",
+  "loss_amount": 465000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00014",
+  "person_id": "P-00403",
+  "injury": "none",
+  "loss_amount": 179000
+ },
+ {
+  "fir_id": "FIR-2025-BID-00003",
+  "person_id": "P-00404",
+  "injury": "minor",
+  "loss_amount": 297000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00009",
+  "person_id": "P-00405",
+  "injury": "none",
+  "loss_amount": 418000
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00010",
+  "person_id": "P-00406",
+  "injury": "none",
+  "loss_amount": 261000
+ },
+ {
+  "fir_id": "FIR-2024-DAK-00001",
+  "person_id": "P-00407",
+  "injury": "minor",
+  "loss_amount": 218000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00015",
+  "person_id": "P-00408",
+  "injury": "minor",
+  "loss_amount": 98000
+ },
+ {
+  "fir_id": "FIR-2026-HAS-00003",
+  "person_id": "P-00409",
+  "injury": "none",
+  "loss_amount": 358000
+ },
+ {
+  "fir_id": "FIR-2026-DAK-00002",
+  "person_id": "P-00410",
+  "injury": "none",
+  "loss_amount": 196000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00004",
+  "person_id": "P-00411",
+  "injury": "minor",
+  "loss_amount": 190000
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00011",
+  "person_id": "P-00412",
+  "injury": "minor",
+  "loss_amount": 103000
+ },
+ {
+  "fir_id": "FIR-2026-DHA-00007",
+  "person_id": "P-00413",
+  "injury": "minor",
+  "loss_amount": 289000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00003",
+  "person_id": "P-00414",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-UTT-00003",
+  "person_id": "P-00415",
+  "injury": "none",
+  "loss_amount": 331000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00011",
+  "person_id": "P-00416",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00019",
+  "person_id": "P-00417",
+  "injury": "none",
+  "loss_amount": 485000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00009",
+  "person_id": "P-00418",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00013",
+  "person_id": "P-00419",
+  "injury": "none",
+  "loss_amount": 241000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00009",
+  "person_id": "P-00420",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00016",
+  "person_id": "P-00421",
+  "injury": "none",
+  "loss_amount": 409000
+ },
+ {
+  "fir_id": "FIR-2025-CHA-00003",
+  "person_id": "P-00422",
+  "injury": "none",
+  "loss_amount": 273000
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00006",
+  "person_id": "P-00423",
+  "injury": "none",
+  "loss_amount": 488000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00012",
+  "person_id": "P-00424",
+  "injury": "minor",
+  "loss_amount": 17000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00014",
+  "person_id": "P-00425",
+  "injury": "minor",
+  "loss_amount": 297000
+ },
+ {
+  "fir_id": "FIR-2024-KOD-00001",
+  "person_id": "P-00426",
+  "injury": "none",
+  "loss_amount": 217000
+ },
+ {
+  "fir_id": "FIR-2025-CHA-00004",
+  "person_id": "P-00427",
+  "injury": "none",
+  "loss_amount": 112000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00007",
+  "person_id": "P-00428",
+  "injury": "none",
+  "loss_amount": 457000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00015",
+  "person_id": "P-00429",
+  "injury": "grievous",
+  "loss_amount": 158000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00007",
+  "person_id": "P-00430",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00007",
+  "person_id": "P-00431",
+  "injury": "none",
+  "loss_amount": 494000
+ },
+ {
+  "fir_id": "FIR-2026-RAI-00003",
+  "person_id": "P-00432",
+  "injury": "none",
+  "loss_amount": 188000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00008",
+  "person_id": "P-00433",
+  "injury": "minor",
+  "loss_amount": 467000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00013",
+  "person_id": "P-00434",
+  "injury": "none",
+  "loss_amount": 269000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00017",
+  "person_id": "P-00435",
+  "injury": "grievous",
+  "loss_amount": 321000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00010",
+  "person_id": "P-00436",
+  "injury": "grievous",
+  "loss_amount": 94000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00008",
+  "person_id": "P-00437",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00020",
+  "person_id": "P-00438",
+  "injury": "none",
+  "loss_amount": 101000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00011",
+  "person_id": "P-00439",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00018",
+  "person_id": "P-00440",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-VIJ-00006",
+  "person_id": "P-00441",
+  "injury": "none",
+  "loss_amount": 434000
+ },
+ {
+  "fir_id": "FIR-2026-VIJ-00003",
+  "person_id": "P-00442",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MAN-00003",
+  "person_id": "P-00443",
+  "injury": "grievous",
+  "loss_amount": 42000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00008",
+  "person_id": "P-00444",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-RAI-00006",
+  "person_id": "P-00445",
+  "injury": "minor",
+  "loss_amount": 32000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00010",
+  "person_id": "P-00446",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00005",
+  "person_id": "P-00447",
+  "injury": "none",
+  "loss_amount": 446000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00019",
+  "person_id": "P-00448",
+  "injury": "minor",
+  "loss_amount": 55000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00021",
+  "person_id": "P-00449",
+  "injury": "minor",
+  "loss_amount": 146000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00012",
+  "person_id": "P-00450",
+  "injury": "minor",
+  "loss_amount": 322000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00009",
+  "person_id": "P-00451",
+  "injury": "minor",
+  "loss_amount": 249000
+ },
+ {
+  "fir_id": "FIR-2025-BID-00004",
+  "person_id": "P-00452",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00008",
+  "person_id": "P-00453",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00013",
+  "person_id": "P-00454",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00008",
+  "person_id": "P-00455",
+  "injury": "none",
+  "loss_amount": 86000
+ },
+ {
+  "fir_id": "FIR-2026-DAK-00003",
+  "person_id": "P-00456",
+  "injury": "grievous",
+  "loss_amount": 267000
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00009",
+  "person_id": "P-00457",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00022",
+  "person_id": "P-00458",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00012",
+  "person_id": "P-00459",
+  "injury": "none",
+  "loss_amount": 105000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00005",
+  "person_id": "P-00460",
+  "injury": "none",
+  "loss_amount": 280000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00020",
+  "person_id": "P-00461",
+  "injury": "none",
+  "loss_amount": 16000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00013",
+  "person_id": "P-00462",
+  "injury": "minor",
+  "loss_amount": 453000
+ },
+ {
+  "fir_id": "FIR-2025-MAN-00004",
+  "person_id": "P-00463",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00016",
+  "person_id": "P-00464",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00009",
+  "person_id": "P-00465",
+  "injury": "none",
+  "loss_amount": 497000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00006",
+  "person_id": "P-00466",
+  "injury": "none",
+  "loss_amount": 216000
+ },
+ {
+  "fir_id": "FIR-2024-RAI-00002",
+  "person_id": "P-00467",
+  "injury": "grievous",
+  "loss_amount": 120000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00007",
+  "person_id": "P-00468",
+  "injury": "grievous",
+  "loss_amount": 60000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00014",
+  "person_id": "P-00469",
+  "injury": "grievous",
+  "loss_amount": 314000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00015",
+  "person_id": "P-00470",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00009",
+  "person_id": "P-00471",
+  "injury": "grievous",
+  "loss_amount": 149000
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00010",
+  "person_id": "P-00472",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00008",
+  "person_id": "P-00473",
+  "injury": "minor",
+  "loss_amount": 82000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00023",
+  "person_id": "P-00474",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00010",
+  "person_id": "P-00475",
+  "injury": "none",
+  "loss_amount": 310000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00021",
+  "person_id": "P-00476",
+  "injury": "minor",
+  "loss_amount": 105000
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00010",
+  "person_id": "P-00477",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-CHA-00004",
+  "person_id": "P-00478",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2024-DAV-00001",
+  "person_id": "P-00479",
+  "injury": "none",
+  "loss_amount": 81000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00024",
+  "person_id": "P-00480",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00007",
+  "person_id": "P-00481",
+  "injury": "none",
+  "loss_amount": 498000
+ },
+ {
+  "fir_id": "FIR-2024-DAV-00002",
+  "person_id": "P-00482",
+  "injury": "none",
+  "loss_amount": 384000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00017",
+  "person_id": "P-00483",
+  "injury": "minor",
+  "loss_amount": 415000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00011",
+  "person_id": "P-00484",
+  "injury": "grievous",
+  "loss_amount": 74000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00012",
+  "person_id": "P-00485",
+  "injury": "none",
+  "loss_amount": 127000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00004",
+  "person_id": "P-00486",
+  "injury": "minor",
+  "loss_amount": 474000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00009",
+  "person_id": "P-00487",
+  "injury": "minor",
+  "loss_amount": 70000
+ },
+ {
+  "fir_id": "FIR-2025-BID-00005",
+  "person_id": "P-00488",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00012",
+  "person_id": "P-00489",
+  "injury": "grievous",
+  "loss_amount": 247000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00025",
+  "person_id": "P-00490",
+  "injury": "none",
+  "loss_amount": 410000
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00011",
+  "person_id": "P-00491",
+  "injury": "none",
+  "loss_amount": 154000
+ },
+ {
+  "fir_id": "FIR-2025-MAN-00005",
+  "person_id": "P-00492",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00010",
+  "person_id": "P-00493",
+  "injury": "none",
+  "loss_amount": 500000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00026",
+  "person_id": "P-00494",
+  "injury": "none",
+  "loss_amount": 320000
+ },
+ {
+  "fir_id": "FIR-2024-RAI-00003",
+  "person_id": "P-00495",
+  "injury": "minor",
+  "loss_amount": 232000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00010",
+  "person_id": "P-00496",
+  "injury": "grievous",
+  "loss_amount": 307000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00016",
+  "person_id": "P-00497",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00011",
+  "person_id": "P-00498",
+  "injury": "minor",
+  "loss_amount": 451000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00009",
+  "person_id": "P-00499",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00027",
+  "person_id": "P-00500",
+  "injury": "minor",
+  "loss_amount": 240000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00005",
+  "person_id": "P-00501",
+  "injury": "none",
+  "loss_amount": 12000
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00011",
+  "person_id": "P-00502",
+  "injury": "minor",
+  "loss_amount": 395000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00011",
+  "person_id": "P-00503",
+  "injury": "minor",
+  "loss_amount": 80000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00010",
+  "person_id": "P-00504",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00017",
+  "person_id": "P-00505",
+  "injury": "none",
+  "loss_amount": 185000
+ },
+ {
+  "fir_id": "FIR-2026-BE1-00002",
+  "person_id": "P-00506",
+  "injury": "minor",
+  "loss_amount": 413000
+ },
+ {
+  "fir_id": "FIR-2026-BE1-00003",
+  "person_id": "P-00507",
+  "injury": "none",
+  "loss_amount": 361000
+ },
+ {
+  "fir_id": "FIR-2026-KOD-00003",
+  "person_id": "P-00508",
+  "injury": "minor",
+  "loss_amount": 85000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00011",
+  "person_id": "P-00509",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-CH1-00005",
+  "person_id": "P-00510",
+  "injury": "none",
+  "loss_amount": 356000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00006",
+  "person_id": "P-00511",
+  "injury": "none",
+  "loss_amount": 499000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00018",
+  "person_id": "P-00512",
+  "injury": "minor",
+  "loss_amount": 283000
+ },
+ {
+  "fir_id": "FIR-2026-DAK-00004",
+  "person_id": "P-00513",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00011",
+  "person_id": "P-00514",
+  "injury": "minor",
+  "loss_amount": 317000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00014",
+  "person_id": "P-00515",
+  "injury": "none",
+  "loss_amount": 445000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00010",
+  "person_id": "P-00516",
+  "injury": "none",
+  "loss_amount": 323000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00022",
+  "person_id": "P-00517",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00015",
+  "person_id": "P-00518",
+  "injury": "none",
+  "loss_amount": 370000
+ },
+ {
+  "fir_id": "FIR-2026-DAV-00003",
+  "person_id": "P-00519",
+  "injury": "none",
+  "loss_amount": 208000
+ },
+ {
+  "fir_id": "FIR-2026-CH1-00004",
+  "person_id": "P-00520",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00018",
+  "person_id": "P-00521",
+  "injury": "none",
+  "loss_amount": 301000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00011",
+  "person_id": "P-00522",
+  "injury": "none",
+  "loss_amount": 3000
+ },
+ {
+  "fir_id": "FIR-2025-KOL-00006",
+  "person_id": "P-00523",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-KOL-00007",
+  "person_id": "P-00524",
+  "injury": "none",
+  "loss_amount": 135000
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00012",
+  "person_id": "P-00525",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2024-DAK-00003",
+  "person_id": "P-00526",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00012",
+  "person_id": "P-00527",
+  "injury": "grievous",
+  "loss_amount": 16000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00023",
+  "person_id": "P-00528",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00012",
+  "person_id": "P-00529",
+  "injury": "grievous",
+  "loss_amount": 226000
+ },
+ {
+  "fir_id": "FIR-2026-BE1-00004",
+  "person_id": "P-00530",
+  "injury": "minor",
+  "loss_amount": 63000
+ },
+ {
+  "fir_id": "FIR-2025-KOL-00008",
+  "person_id": "P-00531",
+  "injury": "grievous",
+  "loss_amount": 386000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00012",
+  "person_id": "P-00532",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-KOL-00009",
+  "person_id": "P-00533",
+  "injury": "none",
+  "loss_amount": 117000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00024",
+  "person_id": "P-00534",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00009",
+  "person_id": "P-00535",
+  "injury": "minor",
+  "loss_amount": 44000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00025",
+  "person_id": "P-00536",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-KOD-00004",
+  "person_id": "P-00537",
+  "injury": "none",
+  "loss_amount": 273000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00007",
+  "person_id": "P-00538",
+  "injury": "none",
+  "loss_amount": 209000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00008",
+  "person_id": "P-00539",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-DHA-00008",
+  "person_id": "P-00540",
+  "injury": "minor",
+  "loss_amount": 475000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00013",
+  "person_id": "P-00541",
+  "injury": "none",
+  "loss_amount": 246000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00011",
+  "person_id": "P-00542",
+  "injury": "none",
+  "loss_amount": 31000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00029",
+  "person_id": "P-00543",
+  "injury": "none",
+  "loss_amount": 319000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00013",
+  "person_id": "P-00544",
+  "injury": "none",
+  "loss_amount": 14000
+ },
+ {
+  "fir_id": "FIR-2026-BE1-00005",
+  "person_id": "P-00545",
+  "injury": "grievous",
+  "loss_amount": 274000
+ },
+ {
+  "fir_id": "FIR-2026-TUM-00007",
+  "person_id": "P-00546",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-UDU-00002",
+  "person_id": "P-00547",
+  "injury": "none",
+  "loss_amount": 278000
+ },
+ {
+  "fir_id": "FIR-2025-RAI-00007",
+  "person_id": "P-00548",
+  "injury": "none",
+  "loss_amount": 439000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00013",
+  "person_id": "P-00549",
+  "injury": "minor",
+  "loss_amount": 67000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00014",
+  "person_id": "P-00550",
+  "injury": "minor",
+  "loss_amount": 311000
+ },
+ {
+  "fir_id": "FIR-2024-CHA-00001",
+  "person_id": "P-00551",
+  "injury": "minor",
+  "loss_amount": 392000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00009",
+  "person_id": "P-00552",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-DAK-00005",
+  "person_id": "P-00553",
+  "injury": "minor",
+  "loss_amount": 145000
+ },
+ {
+  "fir_id": "FIR-2026-DAV-00004",
+  "person_id": "P-00554",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-VIJ-00007",
+  "person_id": "P-00555",
+  "injury": "none",
+  "loss_amount": 312000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00019",
+  "person_id": "P-00556",
+  "injury": "none",
+  "loss_amount": 155000
+ },
+ {
+  "fir_id": "FIR-2025-UTT-00007",
+  "person_id": "P-00557",
+  "injury": "none",
+  "loss_amount": 301000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00015",
+  "person_id": "P-00558",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-DAK-00006",
+  "person_id": "P-00559",
+  "injury": "grievous",
+  "loss_amount": 362000
+ },
+ {
+  "fir_id": "FIR-2024-BID-00001",
+  "person_id": "P-00560",
+  "injury": "none",
+  "loss_amount": 197000
+ },
+ {
+  "fir_id": "FIR-2025-RAI-00008",
+  "person_id": "P-00561",
+  "injury": "grievous",
+  "loss_amount": 425000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00013",
+  "person_id": "P-00562",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00016",
+  "person_id": "P-00563",
+  "injury": "minor",
+  "loss_amount": 400000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00015",
+  "person_id": "P-00564",
+  "injury": "grievous",
+  "loss_amount": 364000
+ },
+ {
+  "fir_id": "FIR-2026-UTT-00004",
+  "person_id": "P-00565",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-DAK-00007",
+  "person_id": "P-00566",
+  "injury": "none",
+  "loss_amount": 192000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00017",
+  "person_id": "P-00567",
+  "injury": "grievous",
+  "loss_amount": 60000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00026",
+  "person_id": "P-00568",
+  "injury": "none",
+  "loss_amount": 370000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00020",
+  "person_id": "P-00569",
+  "injury": "none",
+  "loss_amount": 241000
+ },
+ {
+  "fir_id": "FIR-2026-KAL-00012",
+  "person_id": "P-00570",
+  "injury": "minor",
+  "loss_amount": 383000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00011",
+  "person_id": "P-00571",
+  "injury": "none",
+  "loss_amount": 186000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00020",
+  "person_id": "P-00572",
+  "injury": "none",
+  "loss_amount": 311000
+ },
+ {
+  "fir_id": "FIR-2025-HUB-00016",
+  "person_id": "P-00573",
+  "injury": "none",
+  "loss_amount": 83000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00010",
+  "person_id": "P-00574",
+  "injury": "minor",
+  "loss_amount": 417000
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00014",
+  "person_id": "P-00575",
+  "injury": "none",
+  "loss_amount": 89000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00027",
+  "person_id": "P-00576",
+  "injury": "minor",
+  "loss_amount": 30000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00008",
+  "person_id": "P-00577",
+  "injury": "none",
+  "loss_amount": 143000
+ },
+ {
+  "fir_id": "FIR-2025-KOL-00010",
+  "person_id": "P-00578",
+  "injury": "none",
+  "loss_amount": 483000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00014",
+  "person_id": "P-00579",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00015",
+  "person_id": "P-00580",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00021",
+  "person_id": "P-00581",
+  "injury": "minor",
+  "loss_amount": 57000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00030",
+  "person_id": "P-00582",
+  "injury": "none",
+  "loss_amount": 420000
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00006",
+  "person_id": "P-00583",
+  "injury": "none",
+  "loss_amount": 244000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00012",
+  "person_id": "P-00584",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00017",
+  "person_id": "P-00585",
+  "injury": "none",
+  "loss_amount": 107000
+ },
+ {
+  "fir_id": "FIR-2025-VIJ-00008",
+  "person_id": "P-00586",
+  "injury": "none",
+  "loss_amount": 192000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00013",
+  "person_id": "P-00587",
+  "injury": "none",
+  "loss_amount": 16000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00019",
+  "person_id": "P-00588",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00012",
+  "person_id": "P-00589",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00018",
+  "person_id": "P-00590",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00012",
+  "person_id": "P-00591",
+  "injury": "none",
+  "loss_amount": 162000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00014",
+  "person_id": "P-00592",
+  "injury": "none",
+  "loss_amount": 265000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00019",
+  "person_id": "P-00593",
+  "injury": "none",
+  "loss_amount": 491000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00020",
+  "person_id": "P-00594",
+  "injury": "minor",
+  "loss_amount": 186000
+ },
+ {
+  "fir_id": "FIR-2026-CHI-00006",
+  "person_id": "P-00595",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00007",
+  "person_id": "P-00596",
+  "injury": "none",
+  "loss_amount": 429000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00010",
+  "person_id": "P-00597",
+  "injury": "minor",
+  "loss_amount": 380000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00012",
+  "person_id": "P-00598",
+  "injury": "minor",
+  "loss_amount": 131000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00021",
+  "person_id": "P-00599",
+  "injury": "minor",
+  "loss_amount": 451000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00031",
+  "person_id": "P-00600",
+  "injury": "minor",
+  "loss_amount": 357000
+ },
+ {
+  "fir_id": "FIR-2026-BE1-00006",
+  "person_id": "P-00601",
+  "injury": "none",
+  "loss_amount": 210000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00014",
+  "person_id": "P-00602",
+  "injury": "none",
+  "loss_amount": 393000
+ },
+ {
+  "fir_id": "FIR-2026-MAN-00004",
+  "person_id": "P-00603",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-CHI-00007",
+  "person_id": "P-00604",
+  "injury": "none",
+  "loss_amount": 398000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00015",
+  "person_id": "P-00605",
+  "injury": "grievous",
+  "loss_amount": 292000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00015",
+  "person_id": "P-00606",
+  "injury": "none",
+  "loss_amount": 451000
+ },
+ {
+  "fir_id": "FIR-2026-RAI-00004",
+  "person_id": "P-00607",
+  "injury": "none",
+  "loss_amount": 66000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00009",
+  "person_id": "P-00608",
+  "injury": "minor",
+  "loss_amount": 472000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00011",
+  "person_id": "P-00609",
+  "injury": "grievous",
+  "loss_amount": 280000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00014",
+  "person_id": "P-00610",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00008",
+  "person_id": "P-00611",
+  "injury": "minor",
+  "loss_amount": 475000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00011",
+  "person_id": "P-00612",
+  "injury": "none",
+  "loss_amount": 415000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00014",
+  "person_id": "P-00613",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00010",
+  "person_id": "P-00614",
+  "injury": "none",
+  "loss_amount": 51000
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00009",
+  "person_id": "P-00615",
+  "injury": "minor",
+  "loss_amount": 490000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00028",
+  "person_id": "P-00616",
+  "injury": "minor",
+  "loss_amount": 415000
+ },
+ {
+  "fir_id": "FIR-2025-UTT-00008",
+  "person_id": "P-00617",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00013",
+  "person_id": "P-00618",
+  "injury": "minor",
+  "loss_amount": 297000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00013",
+  "person_id": "P-00619",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00010",
+  "person_id": "P-00620",
+  "injury": "none",
+  "loss_amount": 99000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00015",
+  "person_id": "P-00621",
+  "injury": "none",
+  "loss_amount": 148000
+ },
+ {
+  "fir_id": "FIR-2026-CH1-00005",
+  "person_id": "P-00622",
+  "injury": "minor",
+  "loss_amount": 428000
+ },
+ {
+  "fir_id": "FIR-2026-BAL-00007",
+  "person_id": "P-00623",
+  "injury": "none",
+  "loss_amount": 23000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00011",
+  "person_id": "P-00624",
+  "injury": "minor",
+  "loss_amount": 240000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00022",
+  "person_id": "P-00625",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00015",
+  "person_id": "P-00626",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-RAI-00009",
+  "person_id": "P-00627",
+  "injury": "none",
+  "loss_amount": 232000
+ },
+ {
+  "fir_id": "FIR-2026-UDU-00003",
+  "person_id": "P-00628",
+  "injury": "none",
+  "loss_amount": 33000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00022",
+  "person_id": "P-00629",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00023",
+  "person_id": "P-00630",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-KOD-00016",
+  "person_id": "P-00631",
+  "injury": "minor",
+  "loss_amount": 439000
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00011",
+  "person_id": "P-00632",
+  "injury": "none",
+  "loss_amount": 461000
+ },
+ {
+  "fir_id": "FIR-2025-CHI-00016",
+  "person_id": "P-00633",
+  "injury": "minor",
+  "loss_amount": 323000
+ },
+ {
+  "fir_id": "FIR-2026-BE1-00007",
+  "person_id": "P-00634",
+  "injury": "grievous",
+  "loss_amount": 251000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00012",
+  "person_id": "P-00635",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00023",
+  "person_id": "P-00636",
+  "injury": "minor",
+  "loss_amount": 168000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00024",
+  "person_id": "P-00637",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00032",
+  "person_id": "P-00638",
+  "injury": "minor",
+  "loss_amount": 478000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00012",
+  "person_id": "P-00639",
+  "injury": "none",
+  "loss_amount": 395000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00020",
+  "person_id": "P-00640",
+  "injury": "minor",
+  "loss_amount": 310000
+ },
+ {
+  "fir_id": "FIR-2024-DHA-00004",
+  "person_id": "P-00641",
+  "injury": "minor",
+  "loss_amount": 305000
+ },
+ {
+  "fir_id": "FIR-2026-BAL-00008",
+  "person_id": "P-00642",
+  "injury": "none",
+  "loss_amount": 397000
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00013",
+  "person_id": "P-00643",
+  "injury": "none",
+  "loss_amount": 402000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00021",
+  "person_id": "P-00644",
+  "injury": "none",
+  "loss_amount": 486000
+ },
+ {
+  "fir_id": "FIR-2025-VIJ-00009",
+  "person_id": "P-00645",
+  "injury": "none",
+  "loss_amount": 97000
+ },
+ {
+  "fir_id": "FIR-2025-KOL-00011",
+  "person_id": "P-00646",
+  "injury": "minor",
+  "loss_amount": 461000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00022",
+  "person_id": "P-00647",
+  "injury": "minor",
+  "loss_amount": 279000
+ },
+ {
+  "fir_id": "FIR-2025-MAN-00007",
+  "person_id": "P-00648",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00029",
+  "person_id": "P-00649",
+  "injury": "minor",
+  "loss_amount": 102000
+ },
+ {
+  "fir_id": "FIR-2026-KOD-00005",
+  "person_id": "P-00650",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-MAN-00005",
+  "person_id": "P-00651",
+  "injury": "none",
+  "loss_amount": 475000
+ },
+ {
+  "fir_id": "FIR-2025-BAL-00013",
+  "person_id": "P-00652",
+  "injury": "none",
+  "loss_amount": 119000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00023",
+  "person_id": "P-00653",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00030",
+  "person_id": "P-00654",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-HAS-00004",
+  "person_id": "P-00655",
+  "injury": "none",
+  "loss_amount": 340000
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00012",
+  "person_id": "P-00656",
+  "injury": "none",
+  "loss_amount": 203000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00022",
+  "person_id": "P-00657",
+  "injury": "none",
+  "loss_amount": 210000
+ },
+ {
+  "fir_id": "FIR-2026-DAK-00008",
+  "person_id": "P-00658",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00016",
+  "person_id": "P-00659",
+  "injury": "none",
+  "loss_amount": 364000
+ },
+ {
+  "fir_id": "FIR-2026-UDU-00004",
+  "person_id": "P-00660",
+  "injury": "none",
+  "loss_amount": 271000
+ },
+ {
+  "fir_id": "FIR-2025-CH1-00006",
+  "person_id": "P-00661",
+  "injury": "grievous",
+  "loss_amount": 70000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00033",
+  "person_id": "P-00662",
+  "injury": "none",
+  "loss_amount": 472000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00023",
+  "person_id": "P-00663",
+  "injury": "none",
+  "loss_amount": 256000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00025",
+  "person_id": "P-00664",
+  "injury": "none",
+  "loss_amount": 274000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00013",
+  "person_id": "P-00665",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-VIJ-00010",
+  "person_id": "P-00666",
+  "injury": "grievous",
+  "loss_amount": 114000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00024",
+  "person_id": "P-00667",
+  "injury": "minor",
+  "loss_amount": 131000
+ },
+ {
+  "fir_id": "FIR-2025-CH1-00007",
+  "person_id": "P-00668",
+  "injury": "none",
+  "loss_amount": 475000
+ },
+ {
+  "fir_id": "FIR-2025-MAN-00008",
+  "person_id": "P-00669",
+  "injury": "minor",
+  "loss_amount": 119000
+ },
+ {
+  "fir_id": "FIR-2025-CHA-00006",
+  "person_id": "P-00670",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-BAL-00009",
+  "person_id": "P-00671",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00015",
+  "person_id": "P-00672",
+  "injury": "grievous",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-BAL-00010",
+  "person_id": "P-00673",
+  "injury": "none",
+  "loss_amount": 76000
+ },
+ {
+  "fir_id": "FIR-2025-CHA-00007",
+  "person_id": "P-00674",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00034",
+  "person_id": "P-00675",
+  "injury": "none",
+  "loss_amount": 430000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00014",
+  "person_id": "P-00676",
+  "injury": "none",
+  "loss_amount": 181000
+ },
+ {
+  "fir_id": "FIR-2025-TUM-00016",
+  "person_id": "P-00677",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00031",
+  "person_id": "P-00678",
+  "injury": "minor",
+  "loss_amount": 289000
+ },
+ {
+  "fir_id": "FIR-2026-BEL-00013",
+  "person_id": "P-00679",
+  "injury": "grievous",
+  "loss_amount": 470000
+ },
+ {
+  "fir_id": "FIR-2025-RAI-00010",
+  "person_id": "P-00680",
+  "injury": "none",
+  "loss_amount": 80000
+ },
+ {
+  "fir_id": "FIR-2026-DAK-00009",
+  "person_id": "P-00681",
+  "injury": "none",
+  "loss_amount": 448000
+ },
+ {
+  "fir_id": "FIR-2025-DHA-00026",
+  "person_id": "P-00682",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-HAS-00014",
+  "person_id": "P-00683",
+  "injury": "minor",
+  "loss_amount": 448000
+ },
+ {
+  "fir_id": "FIR-2026-SHI-00013",
+  "person_id": "P-00684",
+  "injury": "minor",
+  "loss_amount": 155000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00016",
+  "person_id": "P-00685",
+  "injury": "grievous",
+  "loss_amount": 73000
+ },
+ {
+  "fir_id": "FIR-2025-BEL-00024",
+  "person_id": "P-00686",
+  "injury": "minor",
+  "loss_amount": 100000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00014",
+  "person_id": "P-00687",
+  "injury": "minor",
+  "loss_amount": 414000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00032",
+  "person_id": "P-00688",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00017",
+  "person_id": "P-00689",
+  "injury": "none",
+  "loss_amount": 221000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00016",
+  "person_id": "P-00690",
+  "injury": "none",
+  "loss_amount": 187000
+ },
+ {
+  "fir_id": "FIR-2025-BE1-00024",
+  "person_id": "P-00691",
+  "injury": "minor",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-DAV-00015",
+  "person_id": "P-00692",
+  "injury": "none",
+  "loss_amount": 414000
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00013",
+  "person_id": "P-00693",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-UTT-00005",
+  "person_id": "P-00694",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-VIJ-00004",
+  "person_id": "P-00695",
+  "injury": "none",
+  "loss_amount": 394000
+ },
+ {
+  "fir_id": "FIR-2026-UTT-00006",
+  "person_id": "P-00696",
+  "injury": "none",
+  "loss_amount": 475000
+ },
+ {
+  "fir_id": "FIR-2025-SHI-00014",
+  "person_id": "P-00697",
+  "injury": "none",
+  "loss_amount": 141000
+ },
+ {
+  "fir_id": "FIR-2024-UDU-00002",
+  "person_id": "P-00698",
+  "injury": "none",
+  "loss_amount": 260000
+ },
+ {
+  "fir_id": "FIR-2025-MAN-00009",
+  "person_id": "P-00699",
+  "injury": "minor",
+  "loss_amount": 237000
+ },
+ {
+  "fir_id": "FIR-2025-KAL-00017",
+  "person_id": "P-00700",
+  "injury": "grievous",
+  "loss_amount": 213000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00015",
+  "person_id": "P-00701",
+  "injury": "minor",
+  "loss_amount": 256000
+ },
+ {
+  "fir_id": "FIR-2025-UDU-00017",
+  "person_id": "P-00702",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00035",
+  "person_id": "P-00703",
+  "injury": "none",
+  "loss_amount": 0
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00018",
+  "person_id": "P-00704",
+  "injury": "none",
+  "loss_amount": 403000
+ },
+ {
+  "fir_id": "FIR-2026-KOL-00004",
+  "person_id": "P-00705",
+  "injury": "none",
+  "loss_amount": 99000
+ },
+ {
+  "fir_id": "FIR-2026-DAV-00005",
+  "person_id": "P-00706",
+  "injury": "grievous",
+  "loss_amount": 164000
+ },
+ {
+  "fir_id": "FIR-2025-DAK-00025",
+  "person_id": "P-00707",
+  "injury": "minor",
+  "loss_amount": 26000
+ },
+ {
+  "fir_id": "FIR-2026-HAS-00005",
+  "person_id": "P-00708",
+  "injury": "minor",
+  "loss_amount": 497000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00019",
+  "person_id": "P-00717",
+  "injury": "minor",
+  "loss_amount": 336000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00020",
+  "person_id": "P-00718",
+  "injury": "none",
+  "loss_amount": 367000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00021",
+  "person_id": "P-00719",
+  "injury": "minor",
+  "loss_amount": 51000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00022",
+  "person_id": "P-00720",
+  "injury": "grievous",
+  "loss_amount": 419000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00023",
+  "person_id": "P-00721",
+  "injury": "minor",
+  "loss_amount": 11000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00033",
+  "person_id": "P-00722",
+  "injury": "none",
+  "loss_amount": 198000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00034",
+  "person_id": "P-00723",
+  "injury": "minor",
+  "loss_amount": 277000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00024",
+  "person_id": "P-00724",
+  "injury": "none",
+  "loss_amount": 200000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00035",
+  "person_id": "P-00725",
+  "injury": "minor",
+  "loss_amount": 307000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00025",
+  "person_id": "P-00726",
+  "injury": "none",
+  "loss_amount": 160000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00026",
+  "person_id": "P-00727",
+  "injury": "grievous",
+  "loss_amount": 129000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00027",
+  "person_id": "P-00728",
+  "injury": "grievous",
+  "loss_amount": 253000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00028",
+  "person_id": "P-00729",
+  "injury": "none",
+  "loss_amount": 85000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00029",
+  "person_id": "P-00730",
+  "injury": "none",
+  "loss_amount": 161000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00016",
+  "person_id": "P-00732",
+  "injury": "grievous",
+  "loss_amount": 272000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00017",
+  "person_id": "P-00733",
+  "injury": "none",
+  "loss_amount": 345000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00018",
+  "person_id": "P-00734",
+  "injury": "none",
+  "loss_amount": 440000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00019",
+  "person_id": "P-00735",
+  "injury": "none",
+  "loss_amount": 72000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00020",
+  "person_id": "P-00736",
+  "injury": "grievous",
+  "loss_amount": 225000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00021",
+  "person_id": "P-00737",
+  "injury": "none",
+  "loss_amount": 325000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00022",
+  "person_id": "P-00738",
+  "injury": "none",
+  "loss_amount": 492000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00023",
+  "person_id": "P-00739",
+  "injury": "none",
+  "loss_amount": 413000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00024",
+  "person_id": "P-00740",
+  "injury": "none",
+  "loss_amount": 173000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00025",
+  "person_id": "P-00741",
+  "injury": "minor",
+  "loss_amount": 413000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00026",
+  "person_id": "P-00742",
+  "injury": "none",
+  "loss_amount": 114000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00027",
+  "person_id": "P-00743",
+  "injury": "minor",
+  "loss_amount": 341000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00036",
+  "person_id": "P-00744",
+  "injury": "none",
+  "loss_amount": 144000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00037",
+  "person_id": "P-00745",
+  "injury": "none",
+  "loss_amount": 92000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00038",
+  "person_id": "P-00746",
+  "injury": "none",
+  "loss_amount": 152000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00039",
+  "person_id": "P-00747",
+  "injury": "minor",
+  "loss_amount": 469000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00040",
+  "person_id": "P-00748",
+  "injury": "none",
+  "loss_amount": 473000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00041",
+  "person_id": "P-00749",
+  "injury": "minor",
+  "loss_amount": 84000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00042",
+  "person_id": "P-00750",
+  "injury": "minor",
+  "loss_amount": 228000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00043",
+  "person_id": "P-00751",
+  "injury": "none",
+  "loss_amount": 150000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00044",
+  "person_id": "P-00752",
+  "injury": "none",
+  "loss_amount": 45000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00045",
+  "person_id": "P-00753",
+  "injury": "minor",
+  "loss_amount": 351000
+ },
+ {
+  "fir_id": "FIR-2024-MYS-00001",
+  "person_id": "P-00754",
+  "injury": "none",
+  "loss_amount": 440000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00046",
+  "person_id": "P-00755",
+  "injury": "grievous",
+  "loss_amount": 41000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00028",
+  "person_id": "P-00756",
+  "injury": "none",
+  "loss_amount": 430000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00047",
+  "person_id": "P-00757",
+  "injury": "none",
+  "loss_amount": 297000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00048",
+  "person_id": "P-00758",
+  "injury": "none",
+  "loss_amount": 471000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00049",
+  "person_id": "P-00759",
+  "injury": "none",
+  "loss_amount": 456000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00050",
+  "person_id": "P-00760",
+  "injury": "none",
+  "loss_amount": 6000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00029",
+  "person_id": "P-00761",
+  "injury": "none",
+  "loss_amount": 447000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00051",
+  "person_id": "P-00762",
+  "injury": "none",
+  "loss_amount": 68000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00052",
+  "person_id": "P-00763",
+  "injury": "minor",
+  "loss_amount": 284000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00030",
+  "person_id": "P-00764",
+  "injury": "none",
+  "loss_amount": 208000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00053",
+  "person_id": "P-00765",
+  "injury": "none",
+  "loss_amount": 18000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00054",
+  "person_id": "P-00766",
+  "injury": "minor",
+  "loss_amount": 301000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00055",
+  "person_id": "P-00767",
+  "injury": "grievous",
+  "loss_amount": 462000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00056",
+  "person_id": "P-00768",
+  "injury": "none",
+  "loss_amount": 141000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00057",
+  "person_id": "P-00769",
+  "injury": "grievous",
+  "loss_amount": 384000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00058",
+  "person_id": "P-00770",
+  "injury": "minor",
+  "loss_amount": 177000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00059",
+  "person_id": "P-00771",
+  "injury": "none",
+  "loss_amount": 445000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00060",
+  "person_id": "P-00772",
+  "injury": "none",
+  "loss_amount": 194000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00061",
+  "person_id": "P-00773",
+  "injury": "none",
+  "loss_amount": 336000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00062",
+  "person_id": "P-00774",
+  "injury": "none",
+  "loss_amount": 136000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00063",
+  "person_id": "P-00775",
+  "injury": "none",
+  "loss_amount": 394000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00064",
+  "person_id": "P-00776",
+  "injury": "minor",
+  "loss_amount": 90000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00065",
+  "person_id": "P-00777",
+  "injury": "none",
+  "loss_amount": 363000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00066",
+  "person_id": "P-00778",
+  "injury": "grievous",
+  "loss_amount": 231000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00031",
+  "person_id": "P-00779",
+  "injury": "none",
+  "loss_amount": 431000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00067",
+  "person_id": "P-00780",
+  "injury": "minor",
+  "loss_amount": 50000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00032",
+  "person_id": "P-00781",
+  "injury": "none",
+  "loss_amount": 402000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00068",
+  "person_id": "P-00782",
+  "injury": "none",
+  "loss_amount": 106000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00069",
+  "person_id": "P-00783",
+  "injury": "minor",
+  "loss_amount": 261000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00033",
+  "person_id": "P-00784",
+  "injury": "none",
+  "loss_amount": 113000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00034",
+  "person_id": "P-00785",
+  "injury": "none",
+  "loss_amount": 433000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00070",
+  "person_id": "P-00786",
+  "injury": "grievous",
+  "loss_amount": 151000
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00035",
+  "person_id": "P-00787",
+  "injury": "none",
+  "loss_amount": 497000
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00071",
+  "person_id": "P-00788",
+  "injury": "minor",
+  "loss_amount": 5000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00015",
+  "person_id": "P-00789",
+  "injury": "none",
+  "loss_amount": 352000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00016",
+  "person_id": "P-00790",
+  "injury": "none",
+  "loss_amount": 347000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00017",
+  "person_id": "P-00791",
+  "injury": "none",
+  "loss_amount": 195000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00018",
+  "person_id": "P-00792",
+  "injury": "none",
+  "loss_amount": 235000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00019",
+  "person_id": "P-00793",
+  "injury": "minor",
+  "loss_amount": 293000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00020",
+  "person_id": "P-00794",
+  "injury": "grievous",
+  "loss_amount": 414000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00021",
+  "person_id": "P-00795",
+  "injury": "none",
+  "loss_amount": 180000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00022",
+  "person_id": "P-00796",
+  "injury": "minor",
+  "loss_amount": 476000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00023",
+  "person_id": "P-00797",
+  "injury": "none",
+  "loss_amount": 128000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00024",
+  "person_id": "P-00798",
+  "injury": "none",
+  "loss_amount": 337000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00025",
+  "person_id": "P-00799",
+  "injury": "none",
+  "loss_amount": 105000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00026",
+  "person_id": "P-00800",
+  "injury": "minor",
+  "loss_amount": 60000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00027",
+  "person_id": "P-00801",
+  "injury": "none",
+  "loss_amount": 361000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00028",
+  "person_id": "P-00802",
+  "injury": "minor",
+  "loss_amount": 67000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00029",
+  "person_id": "P-00803",
+  "injury": "none",
+  "loss_amount": 193000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00030",
+  "person_id": "P-00804",
+  "injury": "minor",
+  "loss_amount": 195000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00031",
+  "person_id": "P-00805",
+  "injury": "minor",
+  "loss_amount": 211000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00032",
+  "person_id": "P-00806",
+  "injury": "none",
+  "loss_amount": 300000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00033",
+  "person_id": "P-00807",
+  "injury": "none",
+  "loss_amount": 206000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00034",
+  "person_id": "P-00808",
+  "injury": "none",
+  "loss_amount": 476000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00035",
+  "person_id": "P-00809",
+  "injury": "minor",
+  "loss_amount": 470000
+ },
+ {
+  "fir_id": "FIR-2026-HUB-00036",
+  "person_id": "P-00810",
+  "injury": "none",
+  "loss_amount": 195000
+ },
+ {
+  "fir_id": "FIR-2025-BEN-00036",
+  "person_id": "P-00813",
+  "injury": "none",
+  "loss_amount": 428000
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00030",
+  "person_id": "P-00814",
+  "injury": "none",
+  "loss_amount": 294000
+ }
+]

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NETRA — Pitch Deck · KSP Datathon 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0a0e14;--panel:#111722;--panel2:#161d2b;--edge:#223049;--accent:#38bdf8;--accent2:#22d3ee;--danger:#f43f5e;--warn:#f59e0b;--good:#34d399;--text:#e6edf6;--muted:#94a3b8;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Inter,system-ui,'Noto Sans Kannada',sans-serif;background:#05070b;color:var(--text)}
+  .deck{max-width:1180px;margin:0 auto;padding:24px}
+  .slide{background:radial-gradient(900px 420px at 75% -15%,#15213a 0%,#0a0e14 60%);border:1px solid var(--edge);border-radius:18px;padding:46px 52px;margin:22px 0;min-height:660px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+  .tag{position:absolute;top:20px;right:26px;font-size:12px;color:var(--muted)}
+  .logo{display:flex;align-items:center;gap:12px}
+  .mark{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:var(--ink);font-weight:800;font-size:20px}
+  h1{font-size:54px;font-weight:800;letter-spacing:-1px;line-height:1.04}
+  h2{font-size:30px;font-weight:700;margin-bottom:6px}
+  .sub{color:var(--muted);font-size:17px}
+  .big{font-size:21px;line-height:1.5}
+  .grid{display:grid;gap:14px;margin-top:18px}
+  .g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}.g4{grid-template-columns:1fr 1fr 1fr 1fr}
+  .card{background:var(--panel);border:1px solid var(--edge);border-radius:12px;padding:16px 18px}
+  .card h3{font-size:15px;color:#fff;margin-bottom:4px}
+  .card p{font-size:13.5px;color:var(--muted);line-height:1.45}
+  .k{color:var(--accent);font-weight:600}
+  .pill{display:inline-block;font-size:12px;border:1px solid var(--edge);border-radius:999px;padding:4px 10px;margin:4px 6px 0 0;color:#cbd5e1}
+  .center{flex:1;display:flex;flex-direction:column;justify-content:center}
+  .foot{position:absolute;bottom:18px;left:52px;font-size:12px;color:#5b6b85}
+  .stat{font-size:40px;font-weight:800}
+  .accent{color:var(--accent)} .danger{color:var(--danger)} .good{color:var(--good)} .warn{color:var(--warn)}
+  ul{margin-left:18px;line-height:1.7;font-size:15.5px}
+  .flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;color:#cbd5e1}
+  .node{background:var(--panel2);border:1px solid var(--edge);border-radius:8px;padding:8px 12px}
+  .arrow{color:var(--accent)}
+  @media print{
+    @page{size:A4 landscape;margin:0}
+    body{background:#fff}
+    .deck{max-width:none;padding:0}
+    .slide{margin:0;border-radius:0;border:0;page-break-after:always;min-height:100vh;height:100vh}
+    .noprint{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+  <div class="noprint" style="text-align:center;padding:14px;color:#94a3b8;font-size:13px">
+    Press <b>Ctrl/Cmd+P</b> → “Save as PDF”, Landscape, margins None → upload as the Prototype Deck.
+  </div>
+
+  <!-- 1 TITLE -->
+  <section class="slide">
+    <span class="tag">KSP Datathon 2026 · Problem Statement 1</span>
+    <div class="logo"><div class="mark">ನೇ</div><div><b style="font-size:18px">NETRA</b><div class="sub" style="font-size:13px">Network-Enhanced Threat &amp; Relationship Analytics</div></div></div>
+    <div class="center">
+      <h1>The crime database,<br/>now you can <span class="accent">talk to it.</span></h1>
+      <p class="big" style="margin-top:18px;max-width:780px">A bilingual (English + ಕನ್ನಡ), voice-enabled <b>conversational crime-intelligence copilot</b> for the Karnataka State Police. Ask in plain language — get a map, a network, a forecast, and the evidence behind it.</p>
+      <div style="margin-top:22px"><span class="pill">Ask. See. Act.</span><span class="pill">Conversational AI</span><span class="pill">Explainable</span><span class="pill">Deployed on Zoho Catalyst</span></div>
+    </div>
+    <div class="foot">ನೇತ್ರ = “the eye”</div>
+  </section>
+
+  <!-- 2 PROBLEM -->
+  <section class="slide">
+    <span class="tag">The problem</span>
+    <h2>Rich data, locked away. Policing stuck in reaction.</h2>
+    <div class="grid g2 center">
+      <div class="card"><h3>🗄️ Data silos &amp; Excel</h3><p>FIRs, accused, victims and networks sit in fragmented sheets. Querying needs SQL skills and English fluency.</p></div>
+      <div class="card"><h3>🔌 No advanced analytics</h3><p>Behavioural patterns, organized-crime networks and hidden links go undiscovered.</p></div>
+      <div class="card"><h3>🌐 Information gaps</h3><p>SCRB gets fragmented inputs — no comprehensive, state-wide intelligence picture.</p></div>
+      <div class="card"><h3>⏱️ Reactive, not proactive</h3><p>Without trend exploration, there are no tools for prevention or evidence-based deployment.</p></div>
+    </div>
+  </section>
+
+  <!-- 3 SOLUTION -->
+  <section class="slide">
+    <span class="tag">The solution</span>
+    <h2>One question → one explainable, visual answer.</h2>
+    <p class="sub">Every reply is a living visual <i>and</i> an evidence trail back to the exact FIRs used.</p>
+    <div class="grid g3 center">
+      <div class="card"><h3 class="accent">Conversational + voice</h3><p>Type or speak, English or Kannada. Context-aware follow-ups. Spoken answers.</p></div>
+      <div class="card"><h3 class="accent">Visual answers</h3><p>Hotspot maps, criminal-network graphs, risk dossiers, money trails, trend charts.</p></div>
+      <div class="card"><h3 class="accent">Evidence on everything</h3><p>Records used, method run, confidence, step-by-step reasoning path.</p></div>
+      <div class="card"><h3 class="accent">Networks &amp; gangs</h3><p>Community detection finds gangs; link prediction suggests hidden ties.</p></div>
+      <div class="card"><h3 class="accent">Forecasting</h3><p>Near-repeat space-time scan predicts where a series strikes next.</p></div>
+      <div class="card"><h3 class="accent">Proactive briefings</h3><p>Nightly auto-intelligence pushed to each station (Catalyst Cron).</p></div>
+    </div>
+  </section>
+
+  <!-- 4 WHY WE WIN -->
+  <section class="slide">
+    <span class="tag">Why this wins</span>
+    <h2>We own the empty quadrant — and steal the demo appeal.</h2>
+    <div class="grid g2 center">
+      <div class="card"><h3>🎯 Uncrowded track</h3><p>Past KSP hackathons are saturated with dashboards (the 2024 winner was one). A robust bilingual, voice, explainable copilot is rare — so we stand out.</p></div>
+      <div class="card"><h3>🧩 Built for Catalyst</h3><p>Conversational AI maps 1:1 onto Catalyst's flagship services (QuickML RAG, Zia LLM/ASR, Auth, Stratus, Cron) — maximising platform usage.</p></div>
+      <div class="card"><h3>🪔 Local relevance</h3><p>Spoken Kannada Q&amp;A is unforgettable to a Karnataka Police audience.</p></div>
+      <div class="card"><h3>🛡️ Demo-proof &amp; credible</h3><p>Every answer renders a visual; methods are real criminology (near-repeat, RTM, Louvain) — proven by an automated test suite.</p></div>
+    </div>
+  </section>
+
+  <!-- 5 ARCHITECTURE -->
+  <section class="slide">
+    <span class="tag">Architecture</span>
+    <h2>Reliable by design: a constrained semantic layer, not raw text-to-SQL.</h2>
+    <div class="center">
+      <div class="flow"><div class="node">Voice / Text (EN·KN)</div><span class="arrow">→</span><div class="node">Intent router + slot-filling</div><span class="arrow">→</span><div class="node">18 typed capability handlers</div><span class="arrow">→</span><div class="node">Analytics engine</div><span class="arrow">→</span><div class="node">Answer + Evidence + Voice</div></div>
+      <div class="grid g4" style="margin-top:26px">
+        <div class="card"><h3>Frontend</h3><p>Next.js · React · Cytoscape · Recharts · geo-viz</p></div>
+        <div class="card"><h3>Engine (core)</h3><p>Graph · forecast · risk · MO similarity (zero-dep, tested)</p></div>
+        <div class="card"><h3>Data</h3><p>Catalyst Data Store/NoSQL · real KA 2023 · swappable seed</p></div>
+        <div class="card"><h3>AI / Voice</h3><p>QuickML RAG · Zia LLM/ASR · Bhashini (Kannada)</p></div>
+      </div>
+      <p class="sub" style="margin-top:18px">The LLM classifies &amp; narrates; it never authors queries — so answers are reliable, fast, auditable, and demo-safe. Unknown → clarify/abstain.</p>
+    </div>
+  </section>
+
+  <!-- 6 PROOF -->
+  <section class="slide">
+    <span class="tag">Real results, not faked</span>
+    <h2>The analytics are proven — they rediscover hidden ground-truth.</h2>
+    <div class="grid g4 center">
+      <div class="card"><div class="stat good">10/10</div><p>automated analytics checks pass (<span class="k">npm run validate</span>)</p></div>
+      <div class="card"><div class="stat accent">8/8</div><p>gang members recovered by Louvain; correct kingpin by centrality</p></div>
+      <div class="card"><div class="stat danger">p=0.002</div><p>near-repeat spree flagged significant; forecast within 0.25&nbsp;km</p></div>
+      <div class="card"><div class="stat warn">2.14L</div><p>REAL Karnataka 2023 crime records power trend/socio analytics</p></div>
+    </div>
+    <p class="sub" style="margin-top:20px">Record-level FIR data is confidential by law (no public source exists), so those features use a <b>labelled, schema-faithful synthetic stand-in</b> that swaps for KSP's real Data Store with zero code change. Full provenance in <span class="k">docs/DATA_POLICY.md</span>.</p>
+  </section>
+
+  <!-- 7 WOW -->
+  <section class="slide">
+    <span class="tag">Signature moments</span>
+    <h2>The lean-forward features.</h2>
+    <div class="grid g3 center">
+      <div class="card"><h3>🎙️ Kannada voice loop</h3><p>Ask by voice in Kannada, get a spoken Kannada answer.</p></div>
+      <div class="card"><h3>🕸️ Hidden-link prediction</h3><p>“NETRA suspects X↔Y” — a dashed predicted tie, with the why.</p></div>
+      <div class="card"><h3>🗺️ Next-strike forecast</h3><p>Pulsing red zone + time window for an active series.</p></div>
+      <div class="card"><h3>🔎 Evidence trail</h3><p>Every answer cites its FIRs + reasoning path (Explainable AI).</p></div>
+      <div class="card"><h3>📰 Beat Briefing</h3><p>Proactive nightly intelligence per station (Cron).</p></div>
+      <div class="card"><h3>📄 One-click dossier</h3><p>Conversation/case → formatted PDF (Stratus).</p></div>
+    </div>
+  </section>
+
+  <!-- 8 CATALYST -->
+  <section class="slide">
+    <span class="tag">Built on Zoho Catalyst</span>
+    <h2>Deployed exclusively on Catalyst.</h2>
+    <div class="grid g3 center">
+      <div class="card"><h3>AppSail</h3><p>Hosts the Next.js app (managed Node runtime)</p></div>
+      <div class="card"><h3>Data Store · NoSQL · Cache</h3><p>FIRs, persons, edges, transactions, audit</p></div>
+      <div class="card"><h3>QuickML + Zia LLM</h3><p>RAG, grounded answers, summaries</p></div>
+      <div class="card"><h3>Zia ASR/TTS · AutoML</h3><p>Voice + tabular risk/forecast</p></div>
+      <div class="card"><h3>Authentication · API Gateway</h3><p>4 roles, audit, throttling</p></div>
+      <div class="card"><h3>Stratus · Cron · Mail/Push</h3><p>PDF storage + proactive briefings</p></div>
+    </div>
+    <p class="sub" style="margin-top:16px">Third-party only where Catalyst has no equivalent — <b>Bhashini/AI4Bharat</b> for Kannada ASR + FIR entity extraction (a Govt-of-India stack).</p>
+  </section>
+
+  <!-- 9 IMPACT -->
+  <section class="slide">
+    <span class="tag">Impact</span>
+    <div class="center">
+      <h1 style="font-size:42px">From a constable's question<br/>to the state's memory — <span class="accent">in seconds.</span></h1>
+      <p class="big" style="margin-top:20px;max-width:840px">Any officer, regardless of tech skill or language, interrogates the crime database in spoken Kannada and gets explainable, evidence-backed, visual answers. NETRA exposes organized-crime networks, scores repeat offenders, forecasts the next strike, and pushes proactive beat briefings — a deployable blueprint for a state-wide <b>SCRB Crime Intelligence Hub</b>.</p>
+      <div style="margin-top:24px"><span class="pill">GitHub: &lt;repo link&gt;</span><span class="pill">Live on Catalyst: &lt;deployed URL&gt;</span><span class="pill">Demo: &lt;video link&gt;</span></div>
+    </div>
+    <div class="foot">NETRA · Karnataka State Police Crime Intelligence Platform</div>
+  </section>
+</div>
+</body>
+</html>

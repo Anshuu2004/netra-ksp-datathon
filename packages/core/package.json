@@ -9,6 +9,7 @@
     ".": "./src/index.mjs",
     "./router": "./src/intents/router.mjs",
     "./dataset": "./src/dataset.mjs",
+    "./briefing": "./src/briefing.mjs",
     "./types": "./src/types.ts"
   }
 }

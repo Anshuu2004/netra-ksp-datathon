@@ -25,10 +25,8 @@ yarn-debug.log*
 .DS_Store
 Thumbs.db
 
-# generated seed data (keep the manifest + a small sample committed; ignore the bulk)
-data/seed/*.json
-!data/seed/manifest.json
-!data/seed/sample.json
+# NOTE: the generated seed dataset (data/seed/*.json) IS committed so the deployed
+# Catalyst app has data at runtime. Regenerate any time with `npm run data:generate`.
 
 # catalyst
 .catalyst/
