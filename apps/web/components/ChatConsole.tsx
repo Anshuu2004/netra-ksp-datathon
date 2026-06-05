@@ -45,7 +45,7 @@ export default function ChatConsole() {
     try {
       const res = await fetch('/api/ask', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: q, role }),
+        body: JSON.stringify({ message: q, role, lang }),
       });
       const env: AnswerEnvelope = await res.json();
       const text = lang === 'kn' && env.narration_kn ? env.narration_kn : env.narration_en;
@@ -91,6 +91,10 @@ export default function ChatConsole() {
     const text = lang === 'kn' && env.narration_kn ? env.narration_kn : env.narration_en;
     const u = new SpeechSynthesisUtterance(text);
     u.lang = lang === 'kn' ? 'kn-IN' : 'en-IN';
+    const voices = window.speechSynthesis.getVoices();
+    const match = voices.find((v) => v.lang === u.lang) || voices.find((v) => v.lang.startsWith(lang === 'kn' ? 'kn' : 'en'));
+    if (match) u.voice = match;
+    u.rate = 0.98;
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(u);
   }

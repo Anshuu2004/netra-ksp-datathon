@@ -21,17 +21,59 @@ function makeLocalDataProvider() {
 }
 
 function makeCatalystDataProvider() {
-  // In production: query Catalyst Data Store (relational + full-text) and NoSQL (edges) via
-  // the zcatalyst SDK, mapping rows onto the canonical schema in ../types.ts. The SDK calls
-  // are the only thing that changes; handlers/analytics are untouched. If SDK credentials are
-  // absent (e.g. local preview), we fall back to the seed so the demo never breaks.
+  // In production this reads Catalyst Data Store (relational + full-text) and NoSQL (edges)
+  // via the zcatalyst SDK and maps rows onto the canonical schema in ../types.ts. Handlers and
+  // analytics are untouched — only this loader changes. If the SDK/credentials are absent (local
+  // preview, missing request context), we fall back to the seed so the demo never breaks.
   let ds = null;
+  const TABLES = ['districts', 'stations', 'persons', 'firs', 'fir_accused', 'fir_victim', 'associations', 'accounts', 'transactions'];
+
   return {
     name: 'catalyst-datastore',
-    load() {
-      // TODO: replace with Data Store reads when bound (catalyst/DEPLOY.md §4).
-      if (!ds) ds = loadDataset();
-      return ds;
+    /** Synchronous accessor used by the request path; returns cached data. */
+    load() { if (!ds) ds = loadDataset(); return ds; },
+
+    /**
+     * Async read from Catalyst Data Store. Call once at request init with the Catalyst
+     * `req`/`res` (needed to initialise the SDK app context), e.g. in a Function/AppSail route.
+     */
+    async loadFromCatalyst(catalystReq) {
+      if (ds) return ds;
+      try {
+        const sdk = await import('zcatalyst-sdk-node').catch(() => null);
+        if (!sdk || !catalystReq) throw new Error('Catalyst SDK/context unavailable');
+        const app = sdk.initialize(catalystReq);
+        const store = app.datastore();
+        const tables = {};
+        for (const name of TABLES) {
+          // page through the table; ZCQL is also available for full-text/filters
+          tables[name] = await store.table(name).getPagedRows({ maxRows: 100000 }).then((r) => r.data || r);
+        }
+        ds = buildIndexes(tables);
+        return ds;
+      } catch (e) {
+        // graceful fallback — keep serving from the seed dataset
+        if (!ds) ds = loadDataset();
+        return ds;
+      }
+    },
+  };
+}
+
+// Re-build the in-memory indexes loadDataset() produces, for rows fetched from Catalyst.
+function buildIndexes(t) {
+  const m = (arr, k) => new Map(arr.map((x) => [x[k], x]));
+  const groupPush = (arr, k) => { const g = new Map(); for (const x of arr) { if (!g.has(x[k])) g.set(x[k], []); g.get(x[k]).push(x); } return g; };
+  const firsByPerson = new Map();
+  for (const fa of t.fir_accused || []) { if (!firsByPerson.has(fa.person_id)) firsByPerson.set(fa.person_id, []); firsByPerson.get(fa.person_id).push(fa.fir_id); }
+  return {
+    ...t, manifest: null,
+    index: {
+      personById: m(t.persons || [], 'id'), firById: m(t.firs || [], 'id'),
+      stationByCode: m(t.stations || [], 'ps_code'), districtByName: m(t.districts || [], 'name'),
+      accountById: m(t.accounts || [], 'id'),
+      accusedByFir: groupPush(t.fir_accused || [], 'fir_id'), victimsByFir: groupPush(t.fir_victim || [], 'fir_id'),
+      accountsByPerson: groupPush(t.accounts || [], 'holder_person_id'), firsByPerson,
     },
   };
 }

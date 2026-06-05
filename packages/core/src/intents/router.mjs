@@ -17,7 +17,10 @@ const CRIME_KN = {
   'Cheating': 'ವಂಚನೆ',
 };
 const DISTRICT_KN = {
-  'Bengaluru Urban': 'ಬೆಂಗಳೂರು', 'Mysuru': 'ಮೈಸೂರು', 'Hubballi': 'ಹುಬ್ಬಳ್ಳಿ', 'Dakshina Kannada': 'ದಕ್ಷಿಣ ಕನ್ನಡ',
+  'Bengaluru Urban': 'ಬೆಂಗಳೂರು', 'Bengaluru Rural': 'ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ', 'Mysuru': 'ಮೈಸೂರು', 'Hubballi': 'ಹುಬ್ಬಳ್ಳಿ',
+  'Dakshina Kannada': 'ದಕ್ಷಿಣ ಕನ್ನಡ', 'Belagavi': 'ಬೆಳಗಾವಿ', 'Kalaburagi': 'ಕಲಬುರಗಿ', 'Tumakuru': 'ತುಮಕೂರು',
+  'Shivamogga': 'ಶಿವಮೊಗ್ಗ', 'Ballari': 'ಬಳ್ಳಾರಿ', 'Davanagere': 'ದಾವಣಗೆರೆ', 'Mandya': 'ಮಂಡ್ಯ', 'Hassan': 'ಹಾಸನ',
+  'Udupi': 'ಉಡುಪಿ', 'Vijayapura': 'ವಿಜಯಪುರ', 'Raichur': 'ರಾಯಚೂರು', 'Bidar': 'ಬೀದರ್', 'Dharwad': 'ಧಾರವಾಡ', 'Kolar': 'ಕೋಲಾರ',
 };
 const knCrime = (c) => CRIME_KN[c] || c;
 const knArea = (a) => (a ? DISTRICT_KN[a] || a : 'ರಾಜ್ಯದಾದ್ಯಂತ');
@@ -464,6 +467,51 @@ function hMoneyTrail(ds, slots) {
   };
 }
 
+function hSuggestLeads(ds, slots) {
+  let fir = slots.firId ? ds.index.firById.get(slots.firId) : null;
+  let person = slots.personRef ? ds.index.personById.get(slots.personRef) : null;
+  if (!fir && person) { const fs = firsForPerson(ds, person.id); fir = fs[fs.length - 1]; }
+  if (!fir && !person) return clarify('Which case or person should I suggest leads for? Give an FIR number or a name.');
+
+  const leads = [];
+  if (fir) {
+    const refTags = new Set(fir.mo_tags);
+    const sim = ds.firs.filter((f) => f.id !== fir.id && f.crime_type === fir.crime_type)
+      .map((f) => { const tags = new Set(f.mo_tags); return { f, inter: [...tags].filter((x) => refTags.has(x)).length }; })
+      .filter((x) => x.inter >= 2).sort((a, b) => b.inter - a.inter).slice(0, 3);
+    if (sim.length) leads.push({ lead: 'Link same-MO cases', detail: `${sim.map((x) => x.f.id).join(', ')} share this modus operandi — check for a common offender.`, refs: sim.map((x) => x.f.id) });
+    const accused = (ds.index.accusedByFir.get(fir.id) || []).map((a) => ({ ...a, p: ds.index.personById.get(a.person_id) }));
+    const absc = accused.filter((a) => a.arrest_status === 'absconding');
+    if (absc.length) leads.push({ lead: 'Trace absconding accused', detail: `${absc.map((a) => a.p?.full_name).filter(Boolean).join(', ')} still absconding — issue lookout notice.`, refs: [fir.id] });
+    if (!person && accused[0]) person = accused[0].p;
+  }
+  if (person) {
+    const { g } = offenderSubgraph(ds);
+    const nbrs = [...(g.adj.get(person.id)?.keys() || [])];
+    if (nbrs.length) leads.push({ lead: 'Question known associates', detail: `${person.full_name} is linked to ${nbrs.length} associate(s): ${nbrs.slice(0, 4).map((id) => personLabel(ds, id).name).join(', ')}.`, refs: (ds.index.firsByPerson.get(person.id) || []).slice(0, 5) });
+    const r = offenderRisk(ds, person.id);
+    if (r.score >= 60) leads.push({ lead: 'Prioritise high-risk offender', detail: `${person.full_name} risk ${r.score}/100 (${r.band}). Drivers: ${r.factors.slice(0, 2).map((f) => f.name).join(', ')}.`, refs: [] });
+    const accts = ds.index.accountsByPerson.get(person.id) || [];
+    const flaggedTx = ds.transactions.filter((tx) => accts.some((a) => a.id === tx.from_account || a.id === tx.to_account) && tx.flagged_reason);
+    if (flaggedTx.length) leads.push({ lead: 'Follow the money', detail: `${flaggedTx.length} suspicious transaction(s) linked — trace the financial trail.`, refs: [] });
+  }
+  if (leads.length === 0) leads.push({ lead: 'Widen the search', detail: 'No strong leads from current links — extend the time window or compare neighbouring jurisdictions.', refs: [] });
+
+  const subject = fir ? fir.id : person.full_name;
+  return {
+    narration_en: `Suggested ${leads.length} investigative lead(s) for ${subject}: ${leads.map((l) => l.lead.toLowerCase()).join('; ')}.`,
+    narration_kn: `${subject} ಪ್ರಕರಣಕ್ಕೆ ${leads.length} ತನಿಖಾ ಸುಳಿವುಗಳು ಸೂಚಿಸಲಾಗಿದೆ.`,
+    surface: { kind: 'table', columns: [{ key: 'n', label: '#' }, { key: 'lead', label: 'Lead' }, { key: 'detail', label: 'Rationale' }], rows: leads.map((l, i) => ({ n: i + 1, lead: l.lead, detail: l.detail })) },
+    evidence: {
+      fir_ids: [...new Set(leads.flatMap((l) => l.refs))].slice(0, 15),
+      query: `derive leads for ${subject} (MO similarity + network + risk + financial)`,
+      confidence: 0.75,
+      reasoning_path: leads.map((l) => ({ step: l.lead, detail: l.detail, refs: l.refs })),
+    },
+    followups: fir ? [`Summarise ${fir.id}`, `Find cases similar to ${fir.id}`, person ? `Network of ${person.full_name}` : 'Show hotspots'] : [`Network of ${person.full_name}`, `Risk score for ${person.full_name}`, `Criminal history of ${person.full_name}`],
+  };
+}
+
 // ---------------------------------------------------------------- fallbacks
 function clarify(msg) {
   return { narration_en: msg, narration_kn: 'ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಸ್ಪಷ್ಟಪಡಿಸಿ.', surface: { kind: 'text' }, evidence: { fir_ids: [], query: 'clarify', confidence: 0.3, reasoning_path: [{ step: 'Clarify', detail: msg }] }, followups: ['Show chain-snatching hotspots in Bengaluru', 'Top repeat offenders in Mysuru', 'Forecast the next burglary in Mysuru'] };
@@ -477,7 +525,7 @@ const HANDLERS = {
   detect_org_crime: hDetectOrgCrime, network_explore: hNetwork, repeat_offenders: hRepeatOffenders,
   offender_risk: hOffenderRisk, person_profile: hPersonProfile, criminal_history: hCriminalHistory,
   mo_similarity: hMoSimilarity, case_summary: hCaseSummary, trend_analysis: hTrend, socio_insight: hSocio,
-  money_trail: hMoneyTrail,
+  money_trail: hMoneyTrail, suggest_leads: hSuggestLeads,
 };
 
 /**
@@ -499,4 +547,25 @@ export function ask(ds, message, ctx = {}) {
     pii_revealed: ['person_profile', 'criminal_history', 'retrieve_fir'].includes(nlu.intent),
   });
   return envelope;
+}
+
+/**
+ * Same as ask(), but if Catalyst QuickML/Zia is configured (NETRA_LLM_URL), the English
+ * narration is re-phrased over NETRA's grounding via RAG. Falls back to ask() verbatim
+ * otherwise, so local/CLI behaviour is unchanged. The API route uses this.
+ */
+export async function askEnriched(ds, message, ctx = {}) {
+  const env = ask(ds, message, ctx);
+  try {
+    const { ragNarrate, llmConfigured } = await import('../ai/quickml.mjs');
+    if (llmConfigured() && env.surface.kind !== 'text') {
+      const polished = await ragNarrate({
+        question: message,
+        grounding: { intent: env.intent, facts: env.narration_en, evidence: env.evidence },
+        lang: ctx.lang || 'en',
+      });
+      if (polished) env.narration_en = polished;
+    }
+  } catch { /* keep template narration */ }
+  return env;
 }

@@ -16,7 +16,9 @@
       "PowerShell(npm run build --workspace=apps/web 2>&1)",
       "PowerShell(npm run start --workspace=apps/web)",
       "PowerShell(node --input-type=module -e \"import {loadDataset} from './packages/core/src/dataset.mjs'; import {generateBriefing} from './packages/core/src/briefing.mjs'; const b=generateBriefing\\(loadDataset\\(\\)\\); console.log\\('summary', JSON.stringify\\(b.summary\\)\\); console.log\\('active_series', b.active_series.map\\(s=>s.crime+' @ '+s.station+' \\(p='+s.cluster.p+'\\)'\\)\\); console.log\\('emerging', b.emerging.slice\\(0,3\\).map\\(e=>e.crime+' '+e.station+' z='+e.z\\)\\); console.log\\('watch', b.watch_offenders.map\\(o=>o.name+':'+o.score\\)\\);\")",
-      "PowerShell(node --input-type=module -e \"import {loadDataset} from './packages/core/src/dataset.mjs'; import {generateBriefing} from './packages/core/src/briefing.mjs'; const b=generateBriefing\\(loadDataset\\(\\)\\); console.log\\('summary', JSON.stringify\\(b.summary\\)\\); console.log\\('emerging', b.emerging.map\\(e=>e.crime+' @ '+e.station+' z='+e.z+' n='+e.count\\)\\);\")"
+      "PowerShell(node --input-type=module -e \"import {loadDataset} from './packages/core/src/dataset.mjs'; import {generateBriefing} from './packages/core/src/briefing.mjs'; const b=generateBriefing\\(loadDataset\\(\\)\\); console.log\\('summary', JSON.stringify\\(b.summary\\)\\); console.log\\('emerging', b.emerging.map\\(e=>e.crime+' @ '+e.station+' z='+e.z+' n='+e.count\\)\\);\")",
+      "PowerShell(gh --version 2>$null)",
+      "PowerShell(gh auth status 2>&1)"
     ]
   }
 }

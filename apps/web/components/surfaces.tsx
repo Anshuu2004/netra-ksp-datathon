@@ -6,6 +6,7 @@ import {
   XAxis, YAxis, CartesianGrid, Tooltip, ZAxis,
 } from 'recharts';
 import type { AnswerSurface, MapAnswer, GraphAnswer, ChartAnswer, TableAnswer, CardAnswer } from '@/lib/types';
+import 'maplibre-gl/dist/maplibre-gl.css';
 
 const COMMUNITY_COLORS = ['#38bdf8', '#f59e0b', '#34d399', '#f43f5e', '#a78bfa', '#fb7185', '#2dd4bf', '#facc15'];
 
@@ -20,57 +21,69 @@ export function AnswerSurfaceView({ surface }: { surface: AnswerSurface }) {
   }
 }
 
-/* ----------------------------- MAP (SVG projection) ----------------------------- */
+/* ----------------------------- MAP (MapLibre slippy map) ----------------------------- */
 function MapView({ s }: { s: MapAnswer }) {
-  const all = [...s.points, ...(s.riskZones || [])];
-  let minLat = 11.5, maxLat = 18.6, minLng = 74, maxLng = 78.7; // Karnataka fallback
-  if (all.length) {
-    minLat = Math.min(...all.map((p) => p.lat)); maxLat = Math.max(...all.map((p) => p.lat));
-    minLng = Math.min(...all.map((p) => p.lng)); maxLng = Math.max(...all.map((p) => p.lng));
-    const padLat = (maxLat - minLat) * 0.15 + 0.05, padLng = (maxLng - minLng) * 0.15 + 0.05;
-    minLat -= padLat; maxLat += padLat; minLng -= padLng; maxLng += padLng;
-  }
-  const W = 760, H = 520;
-  const x = (lng: number) => ((lng - minLng) / (maxLng - minLng || 1)) * W;
-  const y = (lat: number) => H - ((lat - minLat) / (maxLat - minLat || 1)) * H;
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    let map: any; let cancelled = false;
+    (async () => {
+      const maplibregl = (await import('maplibre-gl')).default;
+      if (!ref.current || cancelled) return;
+      const pts = s.points.filter((p) => p.lat != null);
+      const zones = s.riskZones || [];
+      const all: { lat: number; lng: number }[] = [...pts, ...zones];
+      const center: [number, number] = s.center ? [s.center.lng, s.center.lat]
+        : all.length ? [all[0].lng, all[0].lat] : [76.6, 14.8];
+
+      map = new maplibregl.Map({
+        container: ref.current,
+        style: {
+          version: 8,
+          sources: {
+            carto: {
+              type: 'raster',
+              tiles: ['https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', 'https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'],
+              tileSize: 256, attribution: '© OpenStreetMap © CARTO',
+            },
+          },
+          layers: [{ id: 'carto', type: 'raster', source: 'carto' }],
+        } as any,
+        center, zoom: s.center?.zoom ?? 7, attributionControl: false,
+      });
+      map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+      map.addControl(new maplibregl.AttributionControl({ compact: true }));
+
+      map.on('load', () => {
+        if ((s._grid || []).length) {
+          map.addSource('heat', { type: 'geojson', data: { type: 'FeatureCollection', features: (s._grid || []).map((c) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: [c.lng, c.lat] }, properties: { w: c.intensity } })) } });
+          map.addLayer({ id: 'heat', type: 'heatmap', source: 'heat', paint: { 'heatmap-weight': ['get', 'w'], 'heatmap-intensity': 1.1, 'heatmap-radius': 30, 'heatmap-opacity': 0.5, 'heatmap-color': ['interpolate', ['linear'], ['heatmap-density'], 0, 'rgba(0,0,0,0)', 0.3, '#22d3ee', 0.6, '#f59e0b', 1, '#f43f5e'] } });
+        }
+        map.addSource('incidents', { type: 'geojson', data: { type: 'FeatureCollection', features: pts.map((p) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: [p.lng, p.lat] }, properties: { label: p.label || p.fir_id || '' } })) } });
+        map.addLayer({ id: 'incidents', type: 'circle', source: 'incidents', paint: { 'circle-radius': 4, 'circle-color': '#38bdf8', 'circle-opacity': 0.85, 'circle-stroke-width': 0.5, 'circle-stroke-color': '#0b1220' } });
+
+        const popup = new maplibregl.Popup({ closeButton: false, closeOnMove: true, className: 'netra-popup' });
+        map.on('mouseenter', 'incidents', (e: any) => { map.getCanvas().style.cursor = 'pointer'; const f = e.features[0]; popup.setLngLat(f.geometry.coordinates).setHTML(`<span style="font-size:11px">${f.properties.label}</span>`).addTo(map); });
+        map.on('mouseleave', 'incidents', () => { map.getCanvas().style.cursor = ''; popup.remove(); });
+
+        for (const z of zones) {
+          const el = document.createElement('div'); el.className = 'netra-pulse';
+          if (z.window) { const t = document.createElement('div'); t.className = 'netra-pulse-label'; t.textContent = z.window; el.appendChild(t); }
+          new maplibregl.Marker({ element: el }).setLngLat([z.lng, z.lat]).addTo(map);
+        }
+        if (all.length > 1) {
+          const b = new maplibregl.LngLatBounds();
+          all.forEach((p) => b.extend([p.lng, p.lat]));
+          map.fitBounds(b, { padding: 70, maxZoom: 13, duration: 0 });
+        }
+      });
+    })();
+    return () => { cancelled = true; if (map) map.remove(); };
+  }, [s]);
 
   return (
     <div className="relative w-full h-full">
-      <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-full rounded-lg bg-[#0c1220]">
-        <defs>
-          <radialGradient id="heat" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#f43f5e" stopOpacity="0.55" />
-            <stop offset="100%" stopColor="#f43f5e" stopOpacity="0" />
-          </radialGradient>
-        </defs>
-        {/* grid */}
-        {Array.from({ length: 9 }).map((_, i) => (
-          <line key={'v' + i} x1={(i * W) / 8} y1={0} x2={(i * W) / 8} y2={H} stroke="#16203400" />
-        ))}
-        <rect x={0} y={0} width={W} height={H} fill="none" stroke="#223049" />
-        {/* KDE haze */}
-        {(s._grid || []).map((c, i) => (
-          <circle key={'g' + i} cx={x(c.lng)} cy={y(c.lat)} r={10 + c.intensity * 26} fill="url(#heat)" opacity={0.06 + c.intensity * 0.12} />
-        ))}
-        {/* incidents */}
-        {s.points.map((p, i) => (
-          <circle key={'p' + i} cx={x(p.lng)} cy={y(p.lat)} r={3} fill="#38bdf8" opacity={0.8}>
-            <title>{p.label || p.fir_id}</title>
-          </circle>
-        ))}
-        {/* risk zones (pulsing) */}
-        {(s.riskZones || []).map((z, i) => {
-          const rPix = Math.max(14, ((z.radius_km / (maxLng - minLng) / 111) * W) || 26);
-          return (
-            <g key={'z' + i}>
-              <circle cx={x(z.lng)} cy={y(z.lat)} r={rPix} fill="#f43f5e" opacity={0.08 + z.intensity * 0.12} stroke="#f43f5e" strokeOpacity={0.6} />
-              <circle cx={x(z.lng)} cy={y(z.lat)} r={rPix} fill="none" stroke="#f43f5e" className="origin-center animate-pulseRing" style={{ transformBox: 'fill-box', transformOrigin: 'center' }} />
-              {z.window && <text x={x(z.lng)} y={y(z.lat) - rPix - 4} fill="#fecdd3" fontSize="11" textAnchor="middle">{z.window}</text>}
-            </g>
-          );
-        })}
-      </svg>
-      <div className="absolute bottom-2 left-3 text-[11px] text-slate-400">
+      <div ref={ref} className="w-full h-full rounded-lg overflow-hidden bg-[#0c1220]" />
+      <div className="absolute bottom-2 left-3 z-10 text-[11px] text-slate-300 bg-ink/70 rounded px-2 py-1 pointer-events-none">
         <span className="inline-block w-2 h-2 rounded-full bg-accent mr-1" /> incident
         <span className="inline-block w-2 h-2 rounded-full bg-danger ml-3 mr-1" /> predicted / hotspot zone
       </div>

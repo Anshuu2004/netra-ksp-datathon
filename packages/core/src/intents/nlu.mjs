@@ -95,6 +95,7 @@ export function classify(text, slots) {
   const t = text.toLowerCase();
   if (slots.firId && has(t, 'summar', 'brief')) return { intent: 'case_summary', confidence: 0.9 };
   if (slots.firId && has(t, 'similar', 'like this', 'same mo')) return { intent: 'mo_similarity', confidence: 0.85 };
+  if (slots.firId && has(t, 'lead', 'what next', 'next step', 'do next', 'recommend', 'what should i', 'how to proceed', 'investigate')) return { intent: 'suggest_leads', confidence: 0.85 };
   if (slots.firId) return { intent: 'retrieve_fir', confidence: 0.95 };
   if (has(t, 'predict', 'forecast', 'next strike', 'strike next', 'where will', 'going to strike', 'likely to', 'early warning', 'will they hit')) return { intent: 'forecast_hotspot', confidence: 0.88 };
   if (has(t, 'gang', 'organized', 'organised', 'syndicate', 'crime group', 'criminal group')) return { intent: 'detect_org_crime', confidence: 0.86 };
@@ -104,6 +105,7 @@ export function classify(text, slots) {
   if (has(t, 'money', 'transaction', 'laundering', 'money trail', 'financial', 'funds', 'payment', 'account', 'hawala')) return { intent: 'money_trail', confidence: 0.82 };
   if (has(t, 'connected', 'connection', 'linked', 'link between', 'associate', 'associates', 'network of', 'who knows')) return { intent: 'network_explore', confidence: 0.8 };
   if (has(t, 'similar', 'same mo', 'same modus', 'comparable case', 'cases like')) return { intent: 'mo_similarity', confidence: 0.78 };
+  if (has(t, 'lead', 'investigate next', 'what next', 'next step', 'recommend', 'where do i look', 'what should i do', 'how to proceed')) return { intent: 'suggest_leads', confidence: 0.8 };
   if (has(t, 'trend', 'over time', 'monthly', 'per month', 'rising', 'increasing', 'time series')) return { intent: 'trend_analysis', confidence: 0.8 };
   if (has(t, 'unemployment', 'literacy', 'urbaniz', 'urbanis', 'socio', 'poverty', 'education', 'social factor', 'demographic', 'correlat')) return { intent: 'socio_insight', confidence: 0.8 };
   if (slots.personRef && has(t, 'history', 'priors', 'record', 'past cases')) return { intent: 'criminal_history', confidence: 0.82 };
