@@ -15,23 +15,28 @@ is largely reactive. NETRA makes the database conversational, multilingual, voic
 proactive — surfacing networks, hotspots, and forecasts that are invisible in Excel.
 
 ## 3. Key features & functionalities
-- **Conversational, bilingual, voice** — ask by text or speech in English/ಕನ್ನಡ; spoken answers (TTS).
+- **Conversational, bilingual, voice, multi-turn** — ask by text or speech in English/ಕನ್ನಡ; anaphoric follow-ups resolve from context; spoken answers (TTS).
 - **Visual answers** — every reply renders a map, network graph, chart, table, or dossier.
 - **Criminal-network analysis** — centrality + Louvain communities (gang discovery) + link prediction (hidden ties).
 - **Crime forecasting** — near-repeat space-time scan → next-strike red zone with time window.
 - **Explainable offender risk** — transparent factor breakdown; repeat-offender ranking.
-- **Financial trail** — transaction graph + structuring detection.
+- **Sociological insight** — district socio-economic correlation on real data + offender age/gender demographic breakdown.
+- **Financial trail** — transaction graph with **query-time** fan-in / sub-threshold structuring detection, joined to FIRs.
 - **Explainable AI** — every answer ships an evidence trail (records used, method, confidence, reasoning path).
-- **Governance** — 4 roles + immutable audit log.
-- **Proactive Beat Briefing** — nightly auto-intelligence (Catalyst Cron).
+- **Governance** — 4 roles with **real PII redaction by role** + a per-query audit log (in-app viewer + API; persisted to Catalyst Data Store in production).
+- **Proactive Beat Briefing** — on-demand per-jurisdiction intelligence; Catalyst Cron **function + schedule included** (`catalyst/functions/beatBriefing`) for nightly Mail/Push dispatch on deploy.
 - **PDF dossier export** — one-click conversation/case dossier.
 - **Real data** — district trends & socio-economic correlation computed on real Karnataka 2023 figures.
 
 ## 4. Technology stack
-Next.js 15 · React 19 · TypeScript · Tailwind · Cytoscape.js · Recharts · SVG geo-viz ·
-Node ESM analytics core (graph/forecast/risk, zero-dep) · Web Speech (dev voice) →
-**Zoho Catalyst**: AppSail, Data Store/NoSQL, QuickML (RAG + LLM Serving) + Zia LLM, Zia ASR/TTS,
-Zia AutoML, Authentication, Stratus, Cron, Push/Mail · Bhashini/AI4Bharat (Kannada ASR + IndicNER).
+**Live in the prototype:** Next.js 15 · React 19 · TypeScript · Tailwind · MapLibre GL · Cytoscape.js ·
+Recharts · zero-dependency Node ESM analytics core (graph / forecast / risk / demographics) ·
+rule-based NLU + RAG-shaped LLM adapter · browser Web Speech (dev voice).
+**Catalyst (deployment target — wired via provider adapters, activate on deploy):** AppSail (hosts the
+Next.js server) · Data Store / NoSQL · QuickML LLM Serving + RAG (Qwen2.5) · Authentication (4 RBAC
+roles) · Cron + Functions (beatBriefing) · Mail / Push · Stratus + SmartBrowz (PDF) · Zia ASR/TTS
+(English) · **Roadmap:** Zia AutoML, IndicNER. **Allowed third-party (no Catalyst equivalent):**
+Bhashini / AI4Bharat for **Kannada** voice; MapLibre + CARTO/OSM tiles; Cytoscape/Recharts.
 
 ## 5. Proposed impact & use case
 Any officer — regardless of tech skill or language — interrogates the state crime database in spoken

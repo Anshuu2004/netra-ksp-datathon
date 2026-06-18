@@ -1,0 +1,10 @@
+{
+  "name": "beat-briefing",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "zcatalyst-sdk-node": "^1.9.0",
+    "@netra/core": "*"
+  }
+}

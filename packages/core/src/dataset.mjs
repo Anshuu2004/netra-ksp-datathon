@@ -85,8 +85,8 @@ export function firsForPerson(ds, personId) {
   return (ds.index.firsByPerson.get(personId) || []).map((id) => ds.index.firById.get(id)).filter(Boolean);
 }
 
-/** Filter FIRs by optional crime type, district/ps area substring, and time window (days). */
-export function filterFirs(ds, { crimeType, area, days, status } = {}) {
+/** Filter FIRs by optional crime type, district/ps area substring, time window (days), and time-of-day. */
+export function filterFirs(ds, { crimeType, area, days, status, afterHour, beforeHour, tod } = {}) {
   const now = Date.now();
   return ds.firs.filter((f) => {
     if (crimeType && f.crime_type.toLowerCase() !== crimeType.toLowerCase()) return false;
@@ -94,6 +94,16 @@ export function filterFirs(ds, { crimeType, area, days, status } = {}) {
     if (days != null) {
       const ageDays = (now - new Date(f.occurred_at).getTime()) / 86400000;
       if (ageDays > days) return false;
+    }
+    if (afterHour != null || beforeHour != null || tod) {
+      const h = new Date(f.occurred_at).getUTCHours();
+      if (afterHour != null && h < afterHour) return false;
+      if (beforeHour != null && h >= beforeHour) return false;
+      if (tod === 'night' && !(h >= 20 || h < 6)) return false;
+      if (tod === 'evening' && !(h >= 17 && h < 21)) return false;
+      if (tod === 'morning' && !(h >= 6 && h < 12)) return false;
+      if (tod === 'afternoon' && !(h >= 12 && h < 17)) return false;
+      if (tod === 'daytime' && !(h >= 9 && h < 18)) return false;
     }
     if (area) {
       const a = area.toLowerCase();

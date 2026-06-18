@@ -1,12 +1,10 @@
 {
-  "//": "AppSail managed-runtime config for the NETRA Next.js app. Field names may differ slightly by CLI version; `catalyst appsail init` generates the authoritative file.",
+  "//": "AppSail managed-runtime config for NETRA. Deploy from the REPO ROOT (source '.') so the @netra/core workspace package and data/seed resolve. The start launcher (apps/web/start.mjs) binds the AppSail-injected X_ZOHO_CATALYST_LISTEN_PORT. `catalyst appsail init` generates the authoritative file; confirm the stack value against your console (node16 baseline; node18/20 may be selectable).",
   "name": "netra-web",
-  "stack": "node20",
+  "stack": "node18",
   "buildCommand": "npm install && npm run build --workspace=apps/web",
   "runCommand": "npm run start --workspace=apps/web",
-  "port": 3000,
   "env": {
-    "NETRA_ENV": "catalyst",
-    "NETRA_SEED_DIR": "./data/seed"
+    "NETRA_ENV": "catalyst"
   }
 }

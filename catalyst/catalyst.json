@@ -4,7 +4,8 @@
   "project_id": "<filled-by-catalyst-init>",
   "appsail": {
     "name": "netra-web",
-    "source": "apps/web"
+    "source": ".",
+    "note": "Deploy from repo root so the @netra/core workspace dep and data/seed are present; build/run target the apps/web workspace. Port is bound by apps/web/start.mjs via X_ZOHO_CATALYST_LISTEN_PORT."
   },
   "functions_dir": "catalyst/functions"
 }

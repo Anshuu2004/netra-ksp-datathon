@@ -29,6 +29,7 @@ export default function ChatConsole() {
   const [lang, setLang] = useState<'en' | 'kn'>('en');
   const [busy, setBusy] = useState(false);
   const [listening, setListening] = useState(false);
+  const [audit, setAudit] = useState<any[] | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const recogRef = useRef<any>(null);
 
@@ -43,9 +44,10 @@ export default function ChatConsole() {
     setMessages((m) => [...m, { role: 'user', text: q }]);
     setBusy(true);
     try {
+      const history = messages.slice(-6).map((m) => ({ role: m.role, text: m.text }));
       const res = await fetch('/api/ask', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: q, role, lang }),
+        body: JSON.stringify({ message: q, role, lang, history }),
       });
       const env: AnswerEnvelope = await res.json();
       const text = lang === 'kn' && env.narration_kn ? env.narration_kn : env.narration_en;
@@ -86,6 +88,14 @@ export default function ChatConsole() {
     w.document.write(html); w.document.close();
   }
 
+  async function openAudit() {
+    try {
+      const res = await fetch('/api/audit');
+      const data = await res.json();
+      setAudit(data.entries || []);
+    } catch { setAudit([]); }
+  }
+
   function speak(env: AnswerEnvelope) {
     if (typeof window === 'undefined' || !window.speechSynthesis) return;
     const text = lang === 'kn' && env.narration_kn ? env.narration_kn : env.narration_en;
@@ -114,7 +124,8 @@ export default function ChatConsole() {
 
   return (
     <div className="h-screen flex flex-col">
-      <Header role={role} setRole={setRole} lang={lang} setLang={setLang} onDossier={downloadDossier} />
+      <Header role={role} setRole={setRole} lang={lang} setLang={setLang} onDossier={downloadDossier} onAudit={openAudit} />
+      {audit !== null && <AuditModal entries={audit} onClose={() => setAudit(null)} />}
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-[minmax(360px,38%)_1fr] gap-3 p-3 overflow-hidden">
         {/* LEFT: conversation */}
         <div className="glass rounded-xl flex flex-col overflow-hidden">
@@ -148,7 +159,42 @@ export default function ChatConsole() {
   );
 }
 
-function Header({ role, setRole, lang, setLang, onDossier }: any) {
+function AuditModal({ entries, onClose }: { entries: any[]; onClose: () => void }) {
+  return (
+    <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4" onClick={onClose}>
+      <div className="glass rounded-xl w-full max-w-3xl max-h-[80vh] overflow-hidden flex flex-col" onClick={(e) => e.stopPropagation()}>
+        <div className="flex items-center justify-between px-4 py-3 border-b border-edge">
+          <div>
+            <div className="font-semibold text-white">Audit log · governance &amp; traceability</div>
+            <div className="text-[11px] text-slate-500">{entries.length} entries · every query logged (role · intent · entities · PII-revealed). Persisted to Catalyst Data Store in production.</div>
+          </div>
+          <button onClick={onClose} className="text-slate-400 hover:text-white text-xl leading-none">×</button>
+        </div>
+        <div className="overflow-auto">
+          <table className="w-full text-xs">
+            <thead className="sticky top-0 bg-panel2 text-slate-400">
+              <tr><th className="text-left px-3 py-2">Time</th><th className="text-left">Role</th><th className="text-left">Intent</th><th className="text-left">Entities</th><th className="text-left">PII</th></tr>
+            </thead>
+            <tbody>
+              {entries.length === 0 && <tr><td colSpan={5} className="px-3 py-4 text-slate-500">No queries yet — ask something first.</td></tr>}
+              {entries.map((e) => (
+                <tr key={e.id} className="border-t border-edge/40">
+                  <td className="px-3 py-1.5 text-slate-400 whitespace-nowrap">{new Date(e.ts).toLocaleTimeString()}</td>
+                  <td className="text-slate-200">{e.role}</td>
+                  <td className="text-accent2">{e.intent}</td>
+                  <td className="text-slate-400 font-mono">{(e.entity_refs || []).slice(0, 3).join(', ')}</td>
+                  <td>{e.pii_revealed ? <span className="text-warn">revealed</span> : <span className="text-good">redacted</span>}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Header({ role, setRole, lang, setLang, onDossier, onAudit }: any) {
   return (
     <header className="flex items-center justify-between px-4 py-2.5 border-b border-edge">
       <div className="flex items-center gap-3">
@@ -161,6 +207,7 @@ function Header({ role, setRole, lang, setLang, onDossier }: any) {
       <div className="flex items-center gap-2">
         <span className="hidden md:inline text-[10px] uppercase tracking-wide text-amber-300/80 border border-amber-500/30 bg-amber-500/10 rounded px-2 py-1">Synthetic demo data</span>
         <a href="/briefing" className="text-sm px-2.5 py-1.5 rounded-lg border border-edge text-slate-300 hover:text-accent hover:border-accent">Beat Briefing</a>
+        <button onClick={onAudit} className="text-sm px-2.5 py-1.5 rounded-lg border border-edge text-slate-300 hover:text-accent hover:border-accent">Audit</button>
         <button onClick={onDossier} className="text-sm px-2.5 py-1.5 rounded-lg border border-edge text-slate-300 hover:text-accent hover:border-accent">Dossier ⬇</button>
         <div className="flex rounded-lg border border-edge overflow-hidden text-sm">
           <button onClick={() => setLang('en')} className={`px-2.5 py-1 ${lang === 'en' ? 'bg-accent text-ink' : 'text-slate-300'}`}>EN</button>

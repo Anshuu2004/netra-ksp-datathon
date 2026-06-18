@@ -1,0 +1,15 @@
+{
+  "//": "Catalyst Cron descriptor (illustrative). Create via the console or `catalyst cron` targeting the beatBriefing function. Runs 06:00 IST daily.",
+  "cron_name": "netra-beat-briefing",
+  "cron_type": "Calendar",
+  "cron_detail": {
+    "hour": [6],
+    "minute": [0],
+    "days": [1, 2, 3, 4, 5, 6, 7],
+    "timezone": "Asia/Kolkata"
+  },
+  "job_meta": {
+    "target_type": "Function",
+    "target_name": "beatBriefing"
+  }
+}

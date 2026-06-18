@@ -6,11 +6,17 @@
 import { haversineKm } from '../dataset.mjs';
 
 /** Rank police stations by incident count in a window, with a z-score spike flag. */
-export function hotspotStations(ds, { crimeType, days = 60, topK = 8 } = {}) {
+export function hotspotStations(ds, { crimeType, area, days = 60, topK = 8 } = {}) {
   const now = Date.now();
+  const a = area ? area.toLowerCase() : null;
   const counts = new Map();
   for (const f of ds.firs) {
     if (crimeType && f.crime_type.toLowerCase() !== crimeType.toLowerCase()) continue;
+    if (a) {
+      const st = ds.index.stationByCode.get(f.ps_code);
+      const hay = `${f.district} ${st ? st.name : ''} ${f.ps_code}`.toLowerCase();
+      if (!hay.includes(a)) continue;
+    }
     const ageDays = (now - new Date(f.occurred_at).getTime()) / 86400000;
     if (ageDays > days) continue;
     counts.set(f.ps_code, (counts.get(f.ps_code) || 0) + 1);

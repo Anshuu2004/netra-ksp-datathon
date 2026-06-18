@@ -66,12 +66,13 @@
       "district": "Kolar",
       "ps_code": "PS-KOL-01",
       "socio_economic_band": "Upper-middle income",
-      "is_repeat_offender": false,
-      "risk_score": 29,
+      "is_repeat_offender": true,
+      "risk_score": 40,
       "mo_fingerprint": [
-        "upi",
-        "fake-kyc",
-        "fake-customer-care",
+        "two-wheeler",
+        "pillion-rider",
+        "evening",
+        "gold-chain",
         "phishing-call"
       ]
     },
@@ -86,13 +87,12 @@
       "ps_code": "PS-BEL-01",
       "socio_economic_band": "Lower-middle income",
       "is_repeat_offender": true,
-      "risk_score": 53,
+      "risk_score": 40,
       "mo_fingerprint": [
-        "market",
-        "threat-call",
-        "gang",
-        "protection-money",
-        "businessman-target"
+        "parking-lot",
+        "no-lock",
+        "fake-customer-care",
+        "upi"
       ]
     },
     {
@@ -106,13 +106,8 @@
       "ps_code": "PS-KAL-01",
       "socio_economic_band": "Upper-middle income",
       "is_repeat_offender": false,
-      "risk_score": 23,
-      "mo_fingerprint": [
-        "crowded-bus",
-        "market",
-        "pickpocket",
-        "unattended"
-      ]
+      "risk_score": 0,
+      "mo_fingerprint": []
     },
     {
       "id": "P-00004",
@@ -124,12 +119,14 @@
       "district": "Chamarajanagar",
       "ps_code": "PS-CHA-01",
       "socio_economic_band": "Lower-middle income",
-      "is_repeat_offender": false,
-      "risk_score": 33,
+      "is_repeat_offender": true,
+      "risk_score": 40,
       "mo_fingerprint": [
-        "main-road",
-        "two-wheeler",
-        "pillion-rider"
+        "unauthorised-entry",
+        "day",
+        "businessman-target",
+        "threat-call",
+        "gang"
       ]
     },
     {
@@ -145,230 +142,226 @@
       "is_repeat_offender": false,
       "risk_score": 23,
       "mo_fingerprint": [
-        "unattended",
-        "crowded-bus",
+        "market",
         "pickpocket",
-        "market"
+        "crowded-bus"
       ]
     }
   ],
   "firs": [
     {
       "id": "FIR-2025-KAL-00001",
-      "title": "Motor Vehicle Theft reported at Kalaburagi Old Town",
+      "title": "Motor Vehicle Theft reported at Kalaburagi City",
       "crime_type": "Motor Vehicle Theft",
       "ipc_bns_sections": [
         "IPC 379",
         "BNS 303"
       ],
-      "occurred_at": "2025-05-26T06:30:00.000Z",
-      "reported_at": "2025-05-29T18:30:00.000Z",
+      "occurred_at": "2025-05-26T22:08:00.000Z",
+      "reported_at": "2025-05-30T16:08:00.000Z",
       "district": "Kalaburagi",
       "ps_code": "PS-KAL-01",
-      "lat": 17.341875,
-      "lng": 76.815981,
+      "lat": 17.297274,
+      "lng": 76.858771,
       "status": "chargesheeted",
       "mo_tags": [
-        "parking-lot",
         "no-lock",
-        "two-wheeler",
-        "master-key"
+        "parking-lot",
+        "two-wheeler"
       ],
-      "narrative_en": "On Mon May 26 2025, a case of motor vehicle theft was reported at Kalaburagi Old Town, Kalaburagi. Modus operandi observed: parking-lot, no-lock, two-wheeler, master-key.",
+      "narrative_en": "On Tue May 27 2025, a case of motor vehicle theft was reported at Kalaburagi City, Kalaburagi. Modus operandi observed: no-lock, parking-lot, two-wheeler.",
       "narrative_kn": null,
-      "value_loss": 358000
+      "value_loss": 292000
     },
     {
-      "id": "FIR-2024-DHA-00001",
-      "title": "Chain Snatching reported at Dharwad Highway",
-      "crime_type": "Chain Snatching",
+      "id": "FIR-2025-KOL-00001",
+      "title": "Cheating reported at Kolar Town",
+      "crime_type": "Cheating",
       "ipc_bns_sections": [
-        "IPC 356",
-        "IPC 379",
-        "BNS 304"
+        "IPC 420",
+        "BNS 318"
       ],
-      "occurred_at": "2024-12-23T06:30:00.000Z",
-      "reported_at": "2024-12-24T14:30:00.000Z",
-      "district": "Dharwad",
-      "ps_code": "PS-DHA-01",
-      "lat": 15.506429,
-      "lng": 75.002504,
-      "status": "closed",
-      "mo_tags": [
-        "main-road",
-        "gold-chain",
-        "two-wheeler",
-        "pillion-rider"
-      ],
-      "narrative_en": "On Mon Dec 23 2024, a case of chain snatching was reported at Dharwad Highway, Dharwad. Modus operandi observed: main-road, gold-chain, two-wheeler, pillion-rider.",
-      "narrative_kn": null,
-      "value_loss": 85000
-    },
-    {
-      "id": "FIR-2025-BEL-00001",
-      "title": "Attempt to Murder reported at Belagavi Market",
-      "crime_type": "Attempt to Murder",
-      "ipc_bns_sections": [
-        "IPC 307",
-        "BNS 109"
-      ],
-      "occurred_at": "2025-09-07T06:30:00.000Z",
-      "reported_at": "2025-09-07T07:30:00.000Z",
-      "district": "Belagavi",
-      "ps_code": "PS-BEL-03",
-      "lat": 15.834849,
-      "lng": 74.479364,
-      "status": "closed",
-      "mo_tags": [
-        "sharp-weapon",
-        "enmity",
-        "ambush"
-      ],
-      "narrative_en": "On Sun Sep 07 2025, a case of attempt to murder was reported at Belagavi Market, Belagavi. Modus operandi observed: sharp-weapon, enmity, ambush.",
-      "narrative_kn": null,
-      "value_loss": 0
-    },
-    {
-      "id": "FIR-2025-SHI-00001",
-      "title": "Rioting reported at Shivamogga Highway",
-      "crime_type": "Rioting",
-      "ipc_bns_sections": [
-        "IPC 147",
-        "BNS 191"
-      ],
-      "occurred_at": "2025-05-04T06:30:00.000Z",
-      "reported_at": "2025-05-05T19:30:00.000Z",
-      "district": "Shivamogga",
-      "ps_code": "PS-SHI-01",
-      "lat": 13.923255,
-      "lng": 75.523884,
-      "status": "chargesheeted",
-      "mo_tags": [
-        "property-damage",
-        "communal",
-        "public-place",
-        "group"
-      ],
-      "narrative_en": "On Sun May 04 2025, a case of rioting was reported at Shivamogga Highway, Shivamogga. Modus operandi observed: property-damage, communal, public-place, group.",
-      "narrative_kn": null,
-      "value_loss": 0
-    },
-    {
-      "id": "FIR-2026-KOL-00001",
-      "title": "Extortion reported at Kolar Rural",
-      "crime_type": "Extortion",
-      "ipc_bns_sections": [
-        "IPC 384",
-        "BNS 308"
-      ],
-      "occurred_at": "2026-02-11T06:30:00.000Z",
-      "reported_at": "2026-02-12T12:30:00.000Z",
+      "occurred_at": "2025-08-04T18:59:00.000Z",
+      "reported_at": "2025-08-04T23:59:00.000Z",
       "district": "Kolar",
-      "ps_code": "PS-KOL-02",
-      "lat": 13.10096,
-      "lng": 78.12939,
-      "status": "chargesheeted",
+      "ps_code": "PS-KOL-01",
+      "lat": 13.158116,
+      "lng": 78.194335,
+      "status": "under_investigation",
       "mo_tags": [
-        "protection-money",
-        "gang",
-        "threat-call"
+        "forged-document",
+        "investment-scam"
       ],
-      "narrative_en": "On Wed Feb 11 2026, a case of extortion was reported at Kolar Rural, Kolar. Modus operandi observed: protection-money, gang, threat-call.",
+      "narrative_en": "On Tue Aug 05 2025, a case of cheating was reported at Kolar Town, Kolar. Modus operandi observed: forged-document, investment-scam.",
       "narrative_kn": null,
-      "value_loss": 0
+      "value_loss": 223000
+    },
+    {
+      "id": "FIR-2025-KAL-00002",
+      "title": "Cheating reported at Kalaburagi Lake",
+      "crime_type": "Cheating",
+      "ipc_bns_sections": [
+        "IPC 420",
+        "BNS 318"
+      ],
+      "occurred_at": "2025-03-31T16:35:00.000Z",
+      "reported_at": "2025-04-03T05:35:00.000Z",
+      "district": "Kalaburagi",
+      "ps_code": "PS-KAL-03",
+      "lat": 17.28204,
+      "lng": 76.823998,
+      "status": "closed",
+      "mo_tags": [
+        "forged-document",
+        "fake-promise",
+        "investment-scam"
+      ],
+      "narrative_en": "On Mon Mar 31 2025, a case of cheating was reported at Kalaburagi Lake, Kalaburagi. Modus operandi observed: forged-document, fake-promise, investment-scam.",
+      "narrative_kn": null,
+      "value_loss": 93000
+    },
+    {
+      "id": "FIR-2026-HUB-00001",
+      "title": "Theft reported at Hubballi East",
+      "crime_type": "Theft",
+      "ipc_bns_sections": [
+        "IPC 379",
+        "BNS 303"
+      ],
+      "occurred_at": "2026-05-30T14:07:00.000Z",
+      "reported_at": "2026-06-03T09:07:00.000Z",
+      "district": "Hubballi",
+      "ps_code": "PS-HUB-01",
+      "lat": 15.331718,
+      "lng": 75.120338,
+      "status": "under_investigation",
+      "mo_tags": [
+        "unattended",
+        "pickpocket",
+        "crowded-bus",
+        "market"
+      ],
+      "narrative_en": "On Sat May 30 2026, a case of theft was reported at Hubballi East, Hubballi. Modus operandi observed: unattended, pickpocket, crowded-bus, market.",
+      "narrative_kn": null,
+      "value_loss": 403000
+    },
+    {
+      "id": "FIR-2026-BE1-00001",
+      "title": "Burglary reported at Bengaluru Rural North",
+      "crime_type": "Burglary",
+      "ipc_bns_sections": [
+        "IPC 457",
+        "IPC 380",
+        "BNS 305"
+      ],
+      "occurred_at": "2026-04-10T00:13:00.000Z",
+      "reported_at": "2026-04-11T05:13:00.000Z",
+      "district": "Bengaluru Rural",
+      "ps_code": "PS-BE1-01",
+      "lat": 13.232466,
+      "lng": 77.57327,
+      "status": "under_investigation",
+      "mo_tags": [
+        "unoccupied-house",
+        "cut-grill",
+        "rear-entry"
+      ],
+      "narrative_en": "On Fri Apr 10 2026, a case of burglary was reported at Bengaluru Rural North, Bengaluru Rural. Modus operandi observed: unoccupied-house, cut-grill, rear-entry.",
+      "narrative_kn": null,
+      "value_loss": 162000
     }
   ],
   "associations": [
     {
-      "person_a": "P-00064",
-      "person_b": "P-00076",
+      "person_a": "P-00112",
+      "person_b": "P-00114",
       "type": "cooffender",
       "weight": 1,
       "source_fir_ids": [
-        "FIR-2024-UDU-00001"
+        "FIR-2025-BEL-00003"
+      ]
+    },
+    {
+      "person_a": "P-00116",
+      "person_b": "P-00167",
+      "type": "cooffender",
+      "weight": 1,
+      "source_fir_ids": [
+        "FIR-2025-MAN-00001"
       ]
     },
     {
       "person_a": "P-00030",
-      "person_b": "P-00146",
+      "person_b": "P-00148",
       "type": "cooffender",
       "weight": 1,
       "source_fir_ids": [
-        "FIR-2025-BEL-00004"
+        "FIR-2025-UDU-00001"
       ]
     },
     {
-      "person_a": "P-00088",
-      "person_b": "P-00096",
+      "person_a": "P-00010",
+      "person_b": "P-00030",
       "type": "cooffender",
       "weight": 1,
       "source_fir_ids": [
-        "FIR-2026-KAL-00001"
+        "FIR-2025-UDU-00001"
       ]
     },
     {
-      "person_a": "P-00152",
-      "person_b": "P-00173",
+      "person_a": "P-00010",
+      "person_b": "P-00148",
       "type": "cooffender",
       "weight": 1,
       "source_fir_ids": [
-        "FIR-2025-DAK-00002"
-      ]
-    },
-    {
-      "person_a": "P-00003",
-      "person_b": "P-00152",
-      "type": "cooffender",
-      "weight": 1,
-      "source_fir_ids": [
-        "FIR-2025-DAK-00002"
+        "FIR-2025-UDU-00001"
       ]
     }
   ],
   "transactions": [
     {
       "id": "TX-00001",
-      "from_account": "AC-0034",
-      "to_account": "AC-0022",
-      "amount": 71000,
-      "ts": "2026-04-14T06:30:00.000Z",
-      "channel": "UPI",
-      "flagged_reason": null
-    },
-    {
-      "id": "TX-00002",
-      "from_account": "AC-0025",
-      "to_account": "AC-0024",
-      "amount": 19000,
-      "ts": "2025-10-12T06:30:00.000Z",
-      "channel": "UPI",
-      "flagged_reason": null
-    },
-    {
-      "id": "TX-00003",
-      "from_account": "AC-0008",
-      "to_account": "AC-0005",
-      "amount": 65000,
-      "ts": "2026-01-01T06:30:00.000Z",
+      "from_account": "AC-0022",
+      "to_account": "AC-0039",
+      "amount": 70000,
+      "ts": "2025-06-10T06:30:00.000Z",
       "channel": "CASH-DEPOSIT",
       "flagged_reason": null
     },
     {
+      "id": "TX-00002",
+      "from_account": "AC-0006",
+      "to_account": "AC-0042",
+      "amount": 66000,
+      "ts": "2025-08-20T06:30:00.000Z",
+      "channel": "IMPS",
+      "flagged_reason": null
+    },
+    {
+      "id": "TX-00003",
+      "from_account": "AC-0021",
+      "to_account": "AC-0024",
+      "amount": 59000,
+      "ts": "2025-08-20T06:30:00.000Z",
+      "channel": "IMPS",
+      "flagged_reason": null
+    },
+    {
       "id": "TX-00004",
-      "from_account": "AC-0042",
-      "to_account": "AC-0020",
-      "amount": 54000,
-      "ts": "2025-08-30T06:30:00.000Z",
+      "from_account": "AC-0005",
+      "to_account": "AC-0012",
+      "amount": 36000,
+      "ts": "2026-04-13T06:30:00.000Z",
       "channel": "IMPS",
       "flagged_reason": null
     },
     {
       "id": "TX-00005",
-      "from_account": "AC-0013",
-      "to_account": "AC-0006",
-      "amount": 38000,
-      "ts": "2025-10-12T06:30:00.000Z",
-      "channel": "UPI",
+      "from_account": "AC-0025",
+      "to_account": "AC-0024",
+      "amount": 57000,
+      "ts": "2025-08-21T06:30:00.000Z",
+      "channel": "IMPS",
       "flagged_reason": null
     }
   ]

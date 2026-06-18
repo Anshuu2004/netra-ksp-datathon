@@ -1,2144 +1,2207 @@
 [
  {
   "id": "TX-00001",
-  "from_account": "AC-0034",
-  "to_account": "AC-0022",
-  "amount": 71000,
-  "ts": "2026-04-14T06:30:00.000Z",
-  "channel": "UPI",
+  "from_account": "AC-0022",
+  "to_account": "AC-0039",
+  "amount": 70000,
+  "ts": "2025-06-10T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
   "flagged_reason": null
  },
  {
   "id": "TX-00002",
-  "from_account": "AC-0025",
-  "to_account": "AC-0024",
-  "amount": 19000,
-  "ts": "2025-10-12T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00003",
-  "from_account": "AC-0008",
-  "to_account": "AC-0005",
-  "amount": 65000,
-  "ts": "2026-01-01T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00004",
-  "from_account": "AC-0042",
-  "to_account": "AC-0020",
-  "amount": 54000,
-  "ts": "2025-08-30T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00005",
-  "from_account": "AC-0013",
-  "to_account": "AC-0006",
-  "amount": 38000,
-  "ts": "2025-10-12T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00006",
-  "from_account": "AC-0018",
-  "to_account": "AC-0030",
-  "amount": 7000,
-  "ts": "2026-01-06T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00007",
-  "from_account": "AC-0010",
-  "to_account": "AC-0012",
-  "amount": 39000,
-  "ts": "2025-06-29T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00008",
-  "from_account": "AC-0034",
-  "to_account": "AC-0032",
-  "amount": 42000,
-  "ts": "2026-05-27T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00009",
-  "from_account": "AC-0039",
-  "to_account": "AC-0042",
-  "amount": 21000,
-  "ts": "2025-06-15T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00010",
-  "from_account": "AC-0001",
-  "to_account": "AC-0016",
-  "amount": 73000,
-  "ts": "2025-09-28T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00011",
-  "from_account": "AC-0014",
-  "to_account": "AC-0003",
-  "amount": 69000,
-  "ts": "2026-02-17T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00012",
-  "from_account": "AC-0030",
-  "to_account": "AC-0045",
-  "amount": 10000,
-  "ts": "2025-05-14T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00013",
-  "from_account": "AC-0007",
-  "to_account": "AC-0002",
-  "amount": 26000,
-  "ts": "2025-10-01T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00014",
-  "from_account": "AC-0044",
-  "to_account": "AC-0030",
-  "amount": 46000,
-  "ts": "2025-11-28T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00015",
-  "from_account": "AC-0014",
-  "to_account": "AC-0019",
-  "amount": 22000,
-  "ts": "2026-05-21T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00016",
-  "from_account": "AC-0028",
-  "to_account": "AC-0045",
-  "amount": 12000,
-  "ts": "2025-11-05T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00017",
-  "from_account": "AC-0021",
-  "to_account": "AC-0040",
-  "amount": 40000,
-  "ts": "2025-06-15T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00018",
-  "from_account": "AC-0025",
-  "to_account": "AC-0023",
-  "amount": 62000,
-  "ts": "2026-01-06T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00019",
-  "from_account": "AC-0010",
-  "to_account": "AC-0017",
-  "amount": 74000,
-  "ts": "2026-03-07T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00020",
-  "from_account": "AC-0042",
-  "to_account": "AC-0032",
-  "amount": 25000,
-  "ts": "2025-10-16T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00021",
-  "from_account": "AC-0004",
-  "to_account": "AC-0038",
-  "amount": 17000,
-  "ts": "2025-08-25T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00022",
   "from_account": "AC-0006",
-  "to_account": "AC-0019",
-  "amount": 61000,
-  "ts": "2026-05-14T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00023",
-  "from_account": "AC-0025",
-  "to_account": "AC-0020",
-  "amount": 39000,
-  "ts": "2026-04-30T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00024",
-  "from_account": "AC-0033",
-  "to_account": "AC-0034",
-  "amount": 22000,
-  "ts": "2025-06-29T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00025",
-  "from_account": "AC-0034",
-  "to_account": "AC-0032",
-  "amount": 20000,
-  "ts": "2026-05-21T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00026",
-  "from_account": "AC-0017",
-  "to_account": "AC-0002",
-  "amount": 66000,
-  "ts": "2025-07-12T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00027",
-  "from_account": "AC-0041",
-  "to_account": "AC-0038",
-  "amount": 48000,
-  "ts": "2025-08-03T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00028",
-  "from_account": "AC-0004",
-  "to_account": "AC-0031",
-  "amount": 46000,
-  "ts": "2025-07-11T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00029",
-  "from_account": "AC-0030",
-  "to_account": "AC-0029",
-  "amount": 58000,
-  "ts": "2025-07-25T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00030",
-  "from_account": "AC-0038",
-  "to_account": "AC-0041",
-  "amount": 33000,
-  "ts": "2025-11-23T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00031",
-  "from_account": "AC-0042",
-  "to_account": "AC-0008",
-  "amount": 76000,
-  "ts": "2025-09-08T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00032",
-  "from_account": "AC-0031",
-  "to_account": "AC-0041",
-  "amount": 7000,
-  "ts": "2026-02-16T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00033",
-  "from_account": "AC-0004",
-  "to_account": "AC-0021",
-  "amount": 21000,
-  "ts": "2025-11-06T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00034",
-  "from_account": "AC-0038",
-  "to_account": "AC-0017",
-  "amount": 5000,
-  "ts": "2026-02-07T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00035",
-  "from_account": "AC-0045",
-  "to_account": "AC-0028",
-  "amount": 50000,
-  "ts": "2025-08-19T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00036",
-  "from_account": "AC-0011",
-  "to_account": "AC-0034",
-  "amount": 5000,
-  "ts": "2026-05-06T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00037",
-  "from_account": "AC-0020",
-  "to_account": "AC-0001",
-  "amount": 41000,
-  "ts": "2026-02-23T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00038",
-  "from_account": "AC-0015",
-  "to_account": "AC-0029",
-  "amount": 34000,
-  "ts": "2025-05-20T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00039",
-  "from_account": "AC-0043",
-  "to_account": "AC-0041",
-  "amount": 11000,
-  "ts": "2025-11-09T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00040",
-  "from_account": "AC-0019",
-  "to_account": "AC-0018",
-  "amount": 26000,
-  "ts": "2025-05-25T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00041",
-  "from_account": "AC-0019",
-  "to_account": "AC-0031",
-  "amount": 3000,
-  "ts": "2026-01-02T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00042",
-  "from_account": "AC-0004",
-  "to_account": "AC-0009",
-  "amount": 2000,
-  "ts": "2026-02-16T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00043",
-  "from_account": "AC-0022",
-  "to_account": "AC-0024",
-  "amount": 36000,
-  "ts": "2025-11-21T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00044",
-  "from_account": "AC-0009",
-  "to_account": "AC-0032",
-  "amount": 24000,
-  "ts": "2026-02-05T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00045",
-  "from_account": "AC-0029",
-  "to_account": "AC-0022",
-  "amount": 33000,
-  "ts": "2026-04-23T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00046",
-  "from_account": "AC-0021",
-  "to_account": "AC-0030",
-  "amount": 61000,
-  "ts": "2025-10-18T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00047",
-  "from_account": "AC-0002",
-  "to_account": "AC-0005",
-  "amount": 30000,
-  "ts": "2025-10-10T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00048",
-  "from_account": "AC-0007",
-  "to_account": "AC-0013",
-  "amount": 68000,
-  "ts": "2026-05-22T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00049",
-  "from_account": "AC-0042",
-  "to_account": "AC-0021",
-  "amount": 68000,
-  "ts": "2026-04-04T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00050",
-  "from_account": "AC-0012",
-  "to_account": "AC-0030",
-  "amount": 61000,
-  "ts": "2026-03-11T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00051",
-  "from_account": "AC-0007",
-  "to_account": "AC-0025",
-  "amount": 62000,
-  "ts": "2025-08-25T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00052",
-  "from_account": "AC-0022",
-  "to_account": "AC-0027",
-  "amount": 51000,
-  "ts": "2025-09-08T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00053",
-  "from_account": "AC-0039",
-  "to_account": "AC-0038",
-  "amount": 30000,
-  "ts": "2026-01-06T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00054",
-  "from_account": "AC-0025",
-  "to_account": "AC-0044",
-  "amount": 42000,
-  "ts": "2025-10-24T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00055",
-  "from_account": "AC-0001",
-  "to_account": "AC-0027",
-  "amount": 5000,
-  "ts": "2025-10-23T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00056",
-  "from_account": "AC-0002",
-  "to_account": "AC-0026",
-  "amount": 46000,
-  "ts": "2026-05-14T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00057",
-  "from_account": "AC-0022",
-  "to_account": "AC-0040",
-  "amount": 70000,
-  "ts": "2025-07-14T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00058",
-  "from_account": "AC-0009",
-  "to_account": "AC-0030",
-  "amount": 65000,
-  "ts": "2025-08-18T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00059",
-  "from_account": "AC-0021",
-  "to_account": "AC-0024",
-  "amount": 52000,
-  "ts": "2025-07-02T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00060",
-  "from_account": "AC-0024",
-  "to_account": "AC-0001",
-  "amount": 18000,
-  "ts": "2025-08-13T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00061",
-  "from_account": "AC-0011",
-  "to_account": "AC-0012",
-  "amount": 59000,
-  "ts": "2025-12-07T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00062",
-  "from_account": "AC-0015",
-  "to_account": "AC-0043",
-  "amount": 51000,
-  "ts": "2025-07-20T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00063",
-  "from_account": "AC-0042",
-  "to_account": "AC-0028",
-  "amount": 74000,
-  "ts": "2026-03-01T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00064",
-  "from_account": "AC-0031",
-  "to_account": "AC-0026",
-  "amount": 22000,
-  "ts": "2025-11-12T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00065",
-  "from_account": "AC-0029",
-  "to_account": "AC-0041",
-  "amount": 57000,
-  "ts": "2026-02-05T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00066",
-  "from_account": "AC-0035",
-  "to_account": "AC-0008",
-  "amount": 19000,
-  "ts": "2026-01-19T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00067",
-  "from_account": "AC-0007",
-  "to_account": "AC-0044",
-  "amount": 12000,
-  "ts": "2026-03-13T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00068",
-  "from_account": "AC-0004",
-  "to_account": "AC-0029",
-  "amount": 71000,
-  "ts": "2026-03-18T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00069",
-  "from_account": "AC-0038",
-  "to_account": "AC-0021",
-  "amount": 44000,
-  "ts": "2025-10-18T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00070",
-  "from_account": "AC-0003",
-  "to_account": "AC-0025",
-  "amount": 37000,
-  "ts": "2025-11-14T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00071",
-  "from_account": "AC-0015",
-  "to_account": "AC-0037",
-  "amount": 69000,
-  "ts": "2026-02-18T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00072",
-  "from_account": "AC-0019",
-  "to_account": "AC-0018",
-  "amount": 80000,
-  "ts": "2026-04-22T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00073",
-  "from_account": "AC-0044",
-  "to_account": "AC-0032",
-  "amount": 76000,
-  "ts": "2026-01-30T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00074",
-  "from_account": "AC-0039",
-  "to_account": "AC-0007",
-  "amount": 19000,
-  "ts": "2025-05-25T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00075",
-  "from_account": "AC-0024",
-  "to_account": "AC-0001",
-  "amount": 44000,
-  "ts": "2026-05-24T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00076",
-  "from_account": "AC-0034",
-  "to_account": "AC-0040",
-  "amount": 2000,
-  "ts": "2025-08-22T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00077",
-  "from_account": "AC-0020",
-  "to_account": "AC-0012",
-  "amount": 80000,
-  "ts": "2025-12-09T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00078",
-  "from_account": "AC-0025",
-  "to_account": "AC-0014",
-  "amount": 52000,
-  "ts": "2025-12-31T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00079",
-  "from_account": "AC-0026",
   "to_account": "AC-0042",
-  "amount": 8000,
-  "ts": "2025-09-09T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00080",
-  "from_account": "AC-0036",
-  "to_account": "AC-0034",
-  "amount": 36000,
-  "ts": "2025-12-02T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00081",
-  "from_account": "AC-0042",
-  "to_account": "AC-0006",
-  "amount": 14000,
-  "ts": "2026-01-21T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00082",
-  "from_account": "AC-0021",
-  "to_account": "AC-0045",
-  "amount": 1000,
-  "ts": "2025-12-21T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00083",
-  "from_account": "AC-0030",
-  "to_account": "AC-0015",
-  "amount": 49000,
-  "ts": "2025-08-24T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00084",
-  "from_account": "AC-0010",
-  "to_account": "AC-0015",
-  "amount": 63000,
-  "ts": "2025-06-23T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00085",
-  "from_account": "AC-0007",
-  "to_account": "AC-0004",
-  "amount": 34000,
-  "ts": "2026-05-11T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00086",
-  "from_account": "AC-0041",
-  "to_account": "AC-0035",
-  "amount": 75000,
-  "ts": "2025-09-17T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00087",
-  "from_account": "AC-0028",
-  "to_account": "AC-0039",
-  "amount": 8000,
-  "ts": "2025-11-13T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00088",
-  "from_account": "AC-0024",
-  "to_account": "AC-0023",
-  "amount": 9000,
-  "ts": "2026-05-09T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00089",
-  "from_account": "AC-0007",
-  "to_account": "AC-0012",
-  "amount": 51000,
-  "ts": "2025-09-13T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00090",
-  "from_account": "AC-0021",
-  "to_account": "AC-0001",
-  "amount": 10000,
-  "ts": "2026-03-01T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00091",
-  "from_account": "AC-0043",
-  "to_account": "AC-0021",
-  "amount": 76000,
-  "ts": "2025-11-10T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00092",
-  "from_account": "AC-0016",
-  "to_account": "AC-0004",
   "amount": 66000,
   "ts": "2025-08-20T06:30:00.000Z",
   "channel": "IMPS",
   "flagged_reason": null
  },
  {
-  "id": "TX-00093",
-  "from_account": "AC-0007",
-  "to_account": "AC-0008",
-  "amount": 53000,
-  "ts": "2025-05-15T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00094",
-  "from_account": "AC-0002",
-  "to_account": "AC-0006",
-  "amount": 74000,
-  "ts": "2025-06-29T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00095",
-  "from_account": "AC-0018",
-  "to_account": "AC-0034",
-  "amount": 24000,
-  "ts": "2026-05-07T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00096",
-  "from_account": "AC-0022",
-  "to_account": "AC-0003",
-  "amount": 47000,
-  "ts": "2025-10-13T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00097",
-  "from_account": "AC-0017",
-  "to_account": "AC-0004",
-  "amount": 18000,
-  "ts": "2026-05-25T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00098",
-  "from_account": "AC-0027",
+  "id": "TX-00003",
+  "from_account": "AC-0021",
   "to_account": "AC-0024",
-  "amount": 77000,
-  "ts": "2025-12-02T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00099",
-  "from_account": "AC-0030",
-  "to_account": "AC-0043",
-  "amount": 20000,
-  "ts": "2025-07-29T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00100",
-  "from_account": "AC-0005",
-  "to_account": "AC-0027",
-  "amount": 11000,
-  "ts": "2025-07-11T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00101",
-  "from_account": "AC-0008",
-  "to_account": "AC-0001",
-  "amount": 61000,
-  "ts": "2025-07-31T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00102",
-  "from_account": "AC-0044",
-  "to_account": "AC-0009",
-  "amount": 36000,
-  "ts": "2026-05-19T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00103",
-  "from_account": "AC-0007",
-  "to_account": "AC-0035",
-  "amount": 17000,
-  "ts": "2026-01-19T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00104",
-  "from_account": "AC-0013",
-  "to_account": "AC-0039",
-  "amount": 13000,
-  "ts": "2026-04-10T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00105",
-  "from_account": "AC-0030",
-  "to_account": "AC-0014",
-  "amount": 75000,
-  "ts": "2025-05-12T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00106",
-  "from_account": "AC-0031",
-  "to_account": "AC-0009",
-  "amount": 15000,
-  "ts": "2026-01-06T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00107",
-  "from_account": "AC-0022",
-  "to_account": "AC-0020",
-  "amount": 6000,
-  "ts": "2025-05-03T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00108",
-  "from_account": "AC-0005",
-  "to_account": "AC-0034",
-  "amount": 55000,
-  "ts": "2026-03-06T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00109",
-  "from_account": "AC-0001",
-  "to_account": "AC-0028",
   "amount": 59000,
-  "ts": "2026-01-14T06:30:00.000Z",
-  "channel": "NEFT",
+  "ts": "2025-08-20T06:30:00.000Z",
+  "channel": "IMPS",
   "flagged_reason": null
  },
  {
-  "id": "TX-00110",
-  "from_account": "AC-0017",
-  "to_account": "AC-0022",
-  "amount": 22000,
-  "ts": "2025-11-25T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
+  "id": "TX-00004",
+  "from_account": "AC-0005",
+  "to_account": "AC-0012",
+  "amount": 36000,
+  "ts": "2026-04-13T06:30:00.000Z",
+  "channel": "IMPS",
   "flagged_reason": null
  },
  {
-  "id": "TX-00111",
-  "from_account": "AC-0022",
-  "to_account": "AC-0030",
-  "amount": 37000,
-  "ts": "2026-01-02T06:30:00.000Z",
-  "channel": "NEFT",
+  "id": "TX-00005",
+  "from_account": "AC-0025",
+  "to_account": "AC-0024",
+  "amount": 57000,
+  "ts": "2025-08-21T06:30:00.000Z",
+  "channel": "IMPS",
   "flagged_reason": null
  },
  {
-  "id": "TX-00112",
-  "from_account": "AC-0016",
-  "to_account": "AC-0004",
-  "amount": 39000,
-  "ts": "2025-09-07T06:30:00.000Z",
-  "channel": "UPI",
+  "id": "TX-00006",
+  "from_account": "AC-0041",
+  "to_account": "AC-0023",
+  "amount": 34000,
+  "ts": "2026-02-04T06:30:00.000Z",
+  "channel": "IMPS",
   "flagged_reason": null
  },
  {
-  "id": "TX-00113",
-  "from_account": "AC-0014",
-  "to_account": "AC-0007",
-  "amount": 3000,
-  "ts": "2025-11-06T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00114",
-  "from_account": "AC-0018",
-  "to_account": "AC-0001",
-  "amount": 53000,
-  "ts": "2025-06-08T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00115",
+  "id": "TX-00007",
   "from_account": "AC-0010",
-  "to_account": "AC-0026",
-  "amount": 30000,
-  "ts": "2026-01-12T06:30:00.000Z",
+  "to_account": "AC-0019",
+  "amount": 58000,
+  "ts": "2026-03-03T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00008",
+  "from_account": "AC-0016",
+  "to_account": "AC-0005",
+  "amount": 69000,
+  "ts": "2025-06-13T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00009",
+  "from_account": "AC-0037",
+  "to_account": "AC-0021",
+  "amount": 61000,
+  "ts": "2026-02-09T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00010",
+  "from_account": "AC-0021",
+  "to_account": "AC-0011",
+  "amount": 54000,
+  "ts": "2025-08-10T06:30:00.000Z",
   "channel": "UPI",
   "flagged_reason": null
  },
  {
-  "id": "TX-00116",
-  "from_account": "AC-0011",
-  "to_account": "AC-0022",
-  "amount": 80000,
+  "id": "TX-00011",
+  "from_account": "AC-0036",
+  "to_account": "AC-0001",
+  "amount": 8000,
+  "ts": "2026-01-26T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00012",
+  "from_account": "AC-0042",
+  "to_account": "AC-0024",
+  "amount": 67000,
+  "ts": "2026-03-23T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00013",
+  "from_account": "AC-0023",
+  "to_account": "AC-0033",
+  "amount": 26000,
   "ts": "2026-03-13T06:30:00.000Z",
   "channel": "UPI",
   "flagged_reason": null
  },
  {
-  "id": "TX-00117",
-  "from_account": "AC-0018",
-  "to_account": "AC-0028",
-  "amount": 38000,
-  "ts": "2025-05-15T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00118",
-  "from_account": "AC-0003",
-  "to_account": "AC-0034",
-  "amount": 58000,
-  "ts": "2026-06-02T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00119",
-  "from_account": "AC-0013",
-  "to_account": "AC-0035",
-  "amount": 5000,
-  "ts": "2025-06-10T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00120",
-  "from_account": "AC-0018",
-  "to_account": "AC-0041",
-  "amount": 69000,
-  "ts": "2025-12-20T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00121",
+  "id": "TX-00014",
   "from_account": "AC-0038",
-  "to_account": "AC-0007",
-  "amount": 61000,
-  "ts": "2026-02-16T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00122",
-  "from_account": "AC-0027",
-  "to_account": "AC-0004",
-  "amount": 73000,
-  "ts": "2025-06-02T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00123",
-  "from_account": "AC-0025",
-  "to_account": "AC-0017",
-  "amount": 71000,
-  "ts": "2026-05-19T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00124",
-  "from_account": "AC-0011",
-  "to_account": "AC-0003",
-  "amount": 38000,
-  "ts": "2026-06-01T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00125",
-  "from_account": "AC-0014",
   "to_account": "AC-0036",
-  "amount": 80000,
-  "ts": "2026-03-30T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00126",
-  "from_account": "AC-0030",
-  "to_account": "AC-0006",
-  "amount": 67000,
-  "ts": "2025-11-16T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00127",
-  "from_account": "AC-0005",
-  "to_account": "AC-0023",
-  "amount": 23000,
-  "ts": "2025-10-29T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00128",
-  "from_account": "AC-0028",
-  "to_account": "AC-0043",
-  "amount": 74000,
-  "ts": "2025-10-02T06:30:00.000Z",
+  "amount": 46000,
+  "ts": "2026-02-07T06:30:00.000Z",
   "channel": "IMPS",
   "flagged_reason": null
  },
  {
-  "id": "TX-00129",
-  "from_account": "AC-0037",
-  "to_account": "AC-0033",
-  "amount": 61000,
-  "ts": "2025-06-24T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00130",
-  "from_account": "AC-0025",
-  "to_account": "AC-0044",
-  "amount": 34000,
-  "ts": "2025-06-23T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00131",
-  "from_account": "AC-0004",
-  "to_account": "AC-0034",
-  "amount": 48000,
-  "ts": "2026-04-19T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00132",
+  "id": "TX-00015",
   "from_account": "AC-0019",
-  "to_account": "AC-0016",
-  "amount": 61000,
-  "ts": "2026-02-05T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00133",
-  "from_account": "AC-0034",
-  "to_account": "AC-0013",
-  "amount": 38000,
-  "ts": "2025-10-19T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00134",
-  "from_account": "AC-0034",
-  "to_account": "AC-0015",
-  "amount": 36000,
-  "ts": "2025-09-02T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00135",
-  "from_account": "AC-0043",
-  "to_account": "AC-0024",
-  "amount": 32000,
-  "ts": "2025-06-04T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00136",
-  "from_account": "AC-0030",
-  "to_account": "AC-0033",
-  "amount": 2000,
-  "ts": "2025-06-28T06:30:00.000Z",
+  "to_account": "AC-0040",
+  "amount": 1000,
+  "ts": "2025-07-12T06:30:00.000Z",
   "channel": "IMPS",
   "flagged_reason": null
  },
  {
-  "id": "TX-00137",
-  "from_account": "AC-0003",
-  "to_account": "AC-0025",
-  "amount": 48000,
-  "ts": "2025-12-16T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00138",
-  "from_account": "AC-0023",
-  "to_account": "AC-0018",
-  "amount": 69000,
-  "ts": "2025-08-19T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00139",
-  "from_account": "AC-0029",
-  "to_account": "AC-0003",
-  "amount": 16000,
-  "ts": "2026-03-18T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00140",
-  "from_account": "AC-0037",
-  "to_account": "AC-0010",
-  "amount": 15000,
-  "ts": "2025-11-07T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00141",
-  "from_account": "AC-0009",
-  "to_account": "AC-0032",
-  "amount": 54000,
-  "ts": "2025-09-22T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00142",
-  "from_account": "AC-0021",
-  "to_account": "AC-0038",
-  "amount": 55000,
-  "ts": "2025-05-25T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00143",
-  "from_account": "AC-0042",
-  "to_account": "AC-0029",
-  "amount": 11000,
-  "ts": "2025-07-02T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00144",
-  "from_account": "AC-0041",
-  "to_account": "AC-0031",
-  "amount": 29000,
-  "ts": "2025-05-18T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00145",
-  "from_account": "AC-0007",
-  "to_account": "AC-0013",
-  "amount": 18000,
-  "ts": "2025-09-20T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00146",
-  "from_account": "AC-0036",
-  "to_account": "AC-0041",
-  "amount": 38000,
-  "ts": "2026-04-24T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00147",
-  "from_account": "AC-0043",
-  "to_account": "AC-0023",
-  "amount": 17000,
-  "ts": "2026-05-12T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00148",
-  "from_account": "AC-0044",
-  "to_account": "AC-0009",
-  "amount": 20000,
-  "ts": "2025-06-03T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00149",
-  "from_account": "AC-0009",
-  "to_account": "AC-0026",
-  "amount": 39000,
-  "ts": "2025-09-05T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00150",
-  "from_account": "AC-0032",
-  "to_account": "AC-0036",
-  "amount": 2000,
-  "ts": "2025-08-13T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00151",
-  "from_account": "AC-0029",
-  "to_account": "AC-0028",
-  "amount": 48000,
-  "ts": "2025-06-15T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00152",
-  "from_account": "AC-0017",
-  "to_account": "AC-0045",
-  "amount": 47000,
-  "ts": "2025-07-20T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00153",
-  "from_account": "AC-0017",
-  "to_account": "AC-0008",
-  "amount": 62000,
-  "ts": "2025-12-27T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00154",
-  "from_account": "AC-0020",
-  "to_account": "AC-0041",
-  "amount": 3000,
-  "ts": "2025-10-07T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00155",
-  "from_account": "AC-0002",
-  "to_account": "AC-0022",
-  "amount": 76000,
-  "ts": "2025-08-11T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00156",
-  "from_account": "AC-0045",
-  "to_account": "AC-0033",
-  "amount": 10000,
-  "ts": "2026-05-14T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00157",
-  "from_account": "AC-0041",
-  "to_account": "AC-0006",
-  "amount": 40000,
-  "ts": "2026-03-02T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00158",
-  "from_account": "AC-0041",
+  "id": "TX-00016",
+  "from_account": "AC-0026",
   "to_account": "AC-0030",
-  "amount": 47000,
-  "ts": "2025-05-27T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00159",
-  "from_account": "AC-0022",
-  "to_account": "AC-0044",
-  "amount": 69000,
-  "ts": "2026-02-28T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00160",
-  "from_account": "AC-0027",
-  "to_account": "AC-0013",
-  "amount": 57000,
-  "ts": "2026-02-27T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00161",
-  "from_account": "AC-0012",
-  "to_account": "AC-0038",
   "amount": 11000,
-  "ts": "2025-09-07T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00162",
-  "from_account": "AC-0023",
-  "to_account": "AC-0026",
-  "amount": 6000,
-  "ts": "2025-10-13T06:30:00.000Z",
+  "ts": "2026-02-09T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": null
  },
  {
-  "id": "TX-00163",
-  "from_account": "AC-0030",
-  "to_account": "AC-0005",
-  "amount": 5000,
-  "ts": "2025-09-05T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00164",
-  "from_account": "AC-0006",
-  "to_account": "AC-0012",
-  "amount": 48000,
-  "ts": "2025-12-25T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00165",
-  "from_account": "AC-0011",
-  "to_account": "AC-0038",
-  "amount": 16000,
-  "ts": "2025-09-22T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00166",
-  "from_account": "AC-0003",
-  "to_account": "AC-0020",
-  "amount": 52000,
-  "ts": "2025-05-10T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00167",
-  "from_account": "AC-0036",
-  "to_account": "AC-0018",
-  "amount": 58000,
-  "ts": "2025-11-20T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00168",
-  "from_account": "AC-0043",
-  "to_account": "AC-0022",
-  "amount": 69000,
-  "ts": "2026-01-11T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00169",
-  "from_account": "AC-0013",
-  "to_account": "AC-0008",
-  "amount": 69000,
-  "ts": "2026-05-07T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00170",
-  "from_account": "AC-0032",
-  "to_account": "AC-0014",
-  "amount": 23000,
-  "ts": "2026-01-11T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00171",
-  "from_account": "AC-0041",
-  "to_account": "AC-0001",
-  "amount": 16000,
-  "ts": "2025-11-17T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00172",
-  "from_account": "AC-0009",
+  "id": "TX-00017",
+  "from_account": "AC-0023",
   "to_account": "AC-0032",
+  "amount": 4000,
+  "ts": "2026-02-16T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00018",
+  "from_account": "AC-0023",
+  "to_account": "AC-0031",
+  "amount": 56000,
+  "ts": "2025-11-22T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00019",
+  "from_account": "AC-0035",
+  "to_account": "AC-0045",
+  "amount": 31000,
+  "ts": "2025-12-12T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00020",
+  "from_account": "AC-0035",
+  "to_account": "AC-0045",
+  "amount": 12000,
+  "ts": "2026-05-17T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00021",
+  "from_account": "AC-0031",
+  "to_account": "AC-0039",
   "amount": 76000,
+  "ts": "2025-06-25T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00022",
+  "from_account": "AC-0014",
+  "to_account": "AC-0032",
+  "amount": 35000,
+  "ts": "2026-05-05T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00023",
+  "from_account": "AC-0024",
+  "to_account": "AC-0007",
+  "amount": 16000,
+  "ts": "2025-10-02T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00024",
+  "from_account": "AC-0038",
+  "to_account": "AC-0005",
+  "amount": 79000,
+  "ts": "2026-05-01T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00025",
+  "from_account": "AC-0036",
+  "to_account": "AC-0009",
+  "amount": 44000,
+  "ts": "2025-07-13T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00026",
+  "from_account": "AC-0006",
+  "to_account": "AC-0001",
+  "amount": 19000,
+  "ts": "2025-05-26T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00027",
+  "from_account": "AC-0021",
+  "to_account": "AC-0003",
+  "amount": 28000,
+  "ts": "2025-07-14T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00028",
+  "from_account": "AC-0010",
+  "to_account": "AC-0001",
+  "amount": 43000,
+  "ts": "2025-06-13T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00029",
+  "from_account": "AC-0045",
+  "to_account": "AC-0030",
+  "amount": 13000,
+  "ts": "2025-11-15T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00030",
+  "from_account": "AC-0004",
+  "to_account": "AC-0031",
+  "amount": 37000,
+  "ts": "2026-05-12T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00031",
+  "from_account": "AC-0013",
+  "to_account": "AC-0041",
+  "amount": 4000,
+  "ts": "2025-10-29T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00032",
+  "from_account": "AC-0016",
+  "to_account": "AC-0001",
+  "amount": 30000,
+  "ts": "2025-10-20T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00033",
+  "from_account": "AC-0006",
+  "to_account": "AC-0044",
+  "amount": 78000,
+  "ts": "2026-03-30T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00034",
+  "from_account": "AC-0030",
+  "to_account": "AC-0004",
+  "amount": 27000,
+  "ts": "2026-03-26T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00035",
+  "from_account": "AC-0008",
+  "to_account": "AC-0014",
+  "amount": 44000,
+  "ts": "2025-11-11T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00036",
+  "from_account": "AC-0006",
+  "to_account": "AC-0040",
+  "amount": 80000,
+  "ts": "2026-02-10T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00037",
+  "from_account": "AC-0033",
+  "to_account": "AC-0013",
+  "amount": 46000,
+  "ts": "2025-12-28T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00038",
+  "from_account": "AC-0034",
+  "to_account": "AC-0038",
+  "amount": 30000,
+  "ts": "2026-05-05T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00039",
+  "from_account": "AC-0022",
+  "to_account": "AC-0035",
+  "amount": 45000,
+  "ts": "2025-11-16T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00040",
+  "from_account": "AC-0024",
+  "to_account": "AC-0018",
+  "amount": 70000,
+  "ts": "2026-02-07T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00041",
+  "from_account": "AC-0037",
+  "to_account": "AC-0012",
+  "amount": 38000,
+  "ts": "2025-09-28T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00042",
+  "from_account": "AC-0042",
+  "to_account": "AC-0026",
+  "amount": 5000,
+  "ts": "2026-05-07T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00043",
+  "from_account": "AC-0045",
+  "to_account": "AC-0014",
+  "amount": 58000,
+  "ts": "2025-12-16T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00044",
+  "from_account": "AC-0002",
+  "to_account": "AC-0042",
+  "amount": 78000,
+  "ts": "2026-03-07T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00045",
+  "from_account": "AC-0018",
+  "to_account": "AC-0040",
+  "amount": 67000,
+  "ts": "2025-05-09T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00046",
+  "from_account": "AC-0019",
+  "to_account": "AC-0030",
+  "amount": 64000,
+  "ts": "2026-01-09T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00047",
+  "from_account": "AC-0002",
+  "to_account": "AC-0036",
+  "amount": 24000,
   "ts": "2025-07-15T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": null
  },
  {
-  "id": "TX-00173",
-  "from_account": "AC-0010",
-  "to_account": "AC-0038",
-  "amount": 6000,
-  "ts": "2025-07-04T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00174",
-  "from_account": "AC-0022",
-  "to_account": "AC-0009",
-  "amount": 7000,
-  "ts": "2025-06-17T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00175",
-  "from_account": "AC-0019",
-  "to_account": "AC-0011",
-  "amount": 47000,
-  "ts": "2026-02-16T06:30:00.000Z",
+  "id": "TX-00048",
+  "from_account": "AC-0035",
+  "to_account": "AC-0034",
+  "amount": 60000,
+  "ts": "2025-12-31T06:30:00.000Z",
   "channel": "IMPS",
   "flagged_reason": null
  },
  {
-  "id": "TX-00176",
-  "from_account": "AC-0015",
-  "to_account": "AC-0011",
-  "amount": 31000,
-  "ts": "2026-05-29T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00177",
-  "from_account": "AC-0041",
-  "to_account": "AC-0011",
-  "amount": 10000,
-  "ts": "2025-07-06T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00178",
-  "from_account": "AC-0015",
-  "to_account": "AC-0019",
-  "amount": 54000,
-  "ts": "2026-02-20T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00179",
-  "from_account": "AC-0017",
-  "to_account": "AC-0028",
-  "amount": 32000,
-  "ts": "2026-01-10T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00180",
-  "from_account": "AC-0034",
-  "to_account": "AC-0040",
-  "amount": 3000,
-  "ts": "2025-11-21T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00181",
-  "from_account": "AC-0029",
-  "to_account": "AC-0011",
-  "amount": 69000,
-  "ts": "2026-02-16T06:30:00.000Z",
+  "id": "TX-00049",
+  "from_account": "AC-0018",
+  "to_account": "AC-0037",
+  "amount": 43000,
+  "ts": "2026-04-08T06:30:00.000Z",
   "channel": "IMPS",
   "flagged_reason": null
  },
  {
-  "id": "TX-00182",
-  "from_account": "AC-0019",
-  "to_account": "AC-0032",
-  "amount": 74000,
-  "ts": "2026-01-31T06:30:00.000Z",
+  "id": "TX-00050",
+  "from_account": "AC-0036",
+  "to_account": "AC-0026",
+  "amount": 46000,
+  "ts": "2025-06-23T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00051",
+  "from_account": "AC-0025",
+  "to_account": "AC-0012",
+  "amount": 49000,
+  "ts": "2026-01-05T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00052",
+  "from_account": "AC-0023",
+  "to_account": "AC-0041",
+  "amount": 49000,
+  "ts": "2025-10-16T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": null
  },
  {
-  "id": "TX-00183",
+  "id": "TX-00053",
+  "from_account": "AC-0039",
+  "to_account": "AC-0040",
+  "amount": 19000,
+  "ts": "2025-07-06T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00054",
+  "from_account": "AC-0036",
+  "to_account": "AC-0016",
+  "amount": 12000,
+  "ts": "2025-10-15T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00055",
+  "from_account": "AC-0023",
+  "to_account": "AC-0020",
+  "amount": 40000,
+  "ts": "2025-10-28T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00056",
+  "from_account": "AC-0028",
+  "to_account": "AC-0043",
+  "amount": 42000,
+  "ts": "2026-01-03T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00057",
+  "from_account": "AC-0039",
+  "to_account": "AC-0037",
+  "amount": 26000,
+  "ts": "2026-01-19T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00058",
+  "from_account": "AC-0036",
+  "to_account": "AC-0004",
+  "amount": 23000,
+  "ts": "2025-06-08T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00059",
+  "from_account": "AC-0014",
+  "to_account": "AC-0010",
+  "amount": 51000,
+  "ts": "2026-01-15T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00060",
+  "from_account": "AC-0016",
+  "to_account": "AC-0026",
+  "amount": 42000,
+  "ts": "2025-12-09T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00061",
+  "from_account": "AC-0045",
+  "to_account": "AC-0042",
+  "amount": 23000,
+  "ts": "2026-04-08T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00062",
+  "from_account": "AC-0027",
+  "to_account": "AC-0012",
+  "amount": 41000,
+  "ts": "2025-08-12T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00063",
+  "from_account": "AC-0042",
+  "to_account": "AC-0036",
+  "amount": 16000,
+  "ts": "2025-12-01T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00064",
+  "from_account": "AC-0042",
+  "to_account": "AC-0007",
+  "amount": 28000,
+  "ts": "2025-11-08T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00065",
+  "from_account": "AC-0018",
+  "to_account": "AC-0041",
+  "amount": 60000,
+  "ts": "2025-11-02T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00066",
+  "from_account": "AC-0041",
+  "to_account": "AC-0022",
+  "amount": 46000,
+  "ts": "2025-09-11T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00067",
+  "from_account": "AC-0009",
+  "to_account": "AC-0003",
+  "amount": 62000,
+  "ts": "2026-01-25T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00068",
+  "from_account": "AC-0025",
+  "to_account": "AC-0024",
+  "amount": 9000,
+  "ts": "2025-12-30T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00069",
+  "from_account": "AC-0032",
+  "to_account": "AC-0025",
+  "amount": 23000,
+  "ts": "2025-09-14T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00070",
   "from_account": "AC-0003",
+  "to_account": "AC-0009",
+  "amount": 5000,
+  "ts": "2026-04-11T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00071",
+  "from_account": "AC-0045",
+  "to_account": "AC-0015",
+  "amount": 59000,
+  "ts": "2025-08-23T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00072",
+  "from_account": "AC-0040",
+  "to_account": "AC-0015",
+  "amount": 38000,
+  "ts": "2025-08-11T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00073",
+  "from_account": "AC-0043",
+  "to_account": "AC-0015",
+  "amount": 52000,
+  "ts": "2025-06-24T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00074",
+  "from_account": "AC-0012",
+  "to_account": "AC-0040",
+  "amount": 23000,
+  "ts": "2025-09-14T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00075",
+  "from_account": "AC-0012",
+  "to_account": "AC-0022",
+  "amount": 68000,
+  "ts": "2026-01-17T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00076",
+  "from_account": "AC-0004",
+  "to_account": "AC-0018",
+  "amount": 57000,
+  "ts": "2026-05-28T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00077",
+  "from_account": "AC-0038",
+  "to_account": "AC-0030",
+  "amount": 29000,
+  "ts": "2025-06-26T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00078",
+  "from_account": "AC-0045",
+  "to_account": "AC-0041",
+  "amount": 21000,
+  "ts": "2026-05-11T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00079",
+  "from_account": "AC-0035",
+  "to_account": "AC-0014",
+  "amount": 32000,
+  "ts": "2025-05-19T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00080",
+  "from_account": "AC-0029",
+  "to_account": "AC-0041",
+  "amount": 39000,
+  "ts": "2025-07-20T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00081",
+  "from_account": "AC-0010",
+  "to_account": "AC-0015",
+  "amount": 44000,
+  "ts": "2026-03-01T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00082",
+  "from_account": "AC-0011",
+  "to_account": "AC-0019",
+  "amount": 70000,
+  "ts": "2026-02-08T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00083",
+  "from_account": "AC-0003",
+  "to_account": "AC-0036",
+  "amount": 74000,
+  "ts": "2025-08-25T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00084",
+  "from_account": "AC-0017",
   "to_account": "AC-0023",
   "amount": 17000,
-  "ts": "2026-03-26T06:30:00.000Z",
+  "ts": "2025-08-09T06:30:00.000Z",
   "channel": "CASH-DEPOSIT",
   "flagged_reason": null
  },
  {
-  "id": "TX-00184",
-  "from_account": "AC-0008",
-  "to_account": "AC-0012",
-  "amount": 3000,
-  "ts": "2026-04-03T06:30:00.000Z",
+  "id": "TX-00085",
+  "from_account": "AC-0044",
+  "to_account": "AC-0005",
+  "amount": 47000,
+  "ts": "2026-01-17T06:30:00.000Z",
   "channel": "CASH-DEPOSIT",
   "flagged_reason": null
  },
  {
-  "id": "TX-00185",
-  "from_account": "AC-0034",
-  "to_account": "AC-0030",
+  "id": "TX-00086",
+  "from_account": "AC-0014",
+  "to_account": "AC-0018",
+  "amount": 35000,
+  "ts": "2026-05-10T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00087",
+  "from_account": "AC-0022",
+  "to_account": "AC-0014",
+  "amount": 66000,
+  "ts": "2026-04-22T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00088",
+  "from_account": "AC-0028",
+  "to_account": "AC-0026",
+  "amount": 7000,
+  "ts": "2025-11-03T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00089",
+  "from_account": "AC-0033",
+  "to_account": "AC-0029",
+  "amount": 79000,
+  "ts": "2026-04-16T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00090",
+  "from_account": "AC-0037",
+  "to_account": "AC-0044",
+  "amount": 31000,
+  "ts": "2025-09-24T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00091",
+  "from_account": "AC-0040",
+  "to_account": "AC-0010",
+  "amount": 48000,
+  "ts": "2026-03-06T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00092",
+  "from_account": "AC-0013",
+  "to_account": "AC-0007",
+  "amount": 4000,
+  "ts": "2026-05-30T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00093",
+  "from_account": "AC-0045",
+  "to_account": "AC-0015",
+  "amount": 33000,
+  "ts": "2025-08-25T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00094",
+  "from_account": "AC-0033",
+  "to_account": "AC-0004",
+  "amount": 62000,
+  "ts": "2026-02-11T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00095",
+  "from_account": "AC-0015",
+  "to_account": "AC-0014",
   "amount": 10000,
+  "ts": "2025-06-13T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00096",
+  "from_account": "AC-0022",
+  "to_account": "AC-0032",
+  "amount": 39000,
+  "ts": "2025-09-23T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00097",
+  "from_account": "AC-0042",
+  "to_account": "AC-0038",
+  "amount": 16000,
+  "ts": "2025-06-23T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00098",
+  "from_account": "AC-0036",
+  "to_account": "AC-0044",
+  "amount": 75000,
+  "ts": "2025-09-13T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00099",
+  "from_account": "AC-0014",
+  "to_account": "AC-0035",
+  "amount": 27000,
+  "ts": "2025-09-08T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00100",
+  "from_account": "AC-0019",
+  "to_account": "AC-0013",
+  "amount": 13000,
+  "ts": "2025-11-25T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00101",
+  "from_account": "AC-0012",
+  "to_account": "AC-0035",
+  "amount": 41000,
+  "ts": "2025-08-13T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00102",
+  "from_account": "AC-0028",
+  "to_account": "AC-0016",
+  "amount": 8000,
+  "ts": "2025-06-02T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00103",
+  "from_account": "AC-0024",
+  "to_account": "AC-0006",
+  "amount": 46000,
+  "ts": "2026-03-29T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00104",
+  "from_account": "AC-0040",
+  "to_account": "AC-0033",
+  "amount": 66000,
+  "ts": "2026-03-08T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00105",
+  "from_account": "AC-0009",
+  "to_account": "AC-0006",
+  "amount": 56000,
+  "ts": "2026-03-14T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00106",
+  "from_account": "AC-0009",
+  "to_account": "AC-0026",
+  "amount": 5000,
+  "ts": "2026-05-30T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00107",
+  "from_account": "AC-0030",
+  "to_account": "AC-0029",
+  "amount": 24000,
+  "ts": "2025-06-29T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00108",
+  "from_account": "AC-0010",
+  "to_account": "AC-0021",
+  "amount": 25000,
+  "ts": "2025-07-31T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00109",
+  "from_account": "AC-0018",
+  "to_account": "AC-0006",
+  "amount": 21000,
+  "ts": "2025-10-13T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00110",
+  "from_account": "AC-0038",
+  "to_account": "AC-0015",
+  "amount": 77000,
+  "ts": "2025-11-04T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00111",
+  "from_account": "AC-0036",
+  "to_account": "AC-0025",
+  "amount": 71000,
+  "ts": "2025-06-13T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00112",
+  "from_account": "AC-0032",
+  "to_account": "AC-0041",
+  "amount": 23000,
+  "ts": "2025-09-13T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00113",
+  "from_account": "AC-0038",
+  "to_account": "AC-0012",
+  "amount": 53000,
+  "ts": "2025-05-06T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00114",
+  "from_account": "AC-0028",
+  "to_account": "AC-0008",
+  "amount": 32000,
+  "ts": "2026-05-10T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00115",
+  "from_account": "AC-0011",
+  "to_account": "AC-0045",
+  "amount": 12000,
+  "ts": "2025-11-11T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00116",
+  "from_account": "AC-0041",
+  "to_account": "AC-0034",
+  "amount": 37000,
+  "ts": "2026-01-06T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00117",
+  "from_account": "AC-0005",
+  "to_account": "AC-0023",
+  "amount": 28000,
+  "ts": "2026-02-19T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00118",
+  "from_account": "AC-0044",
+  "to_account": "AC-0037",
+  "amount": 43000,
+  "ts": "2025-10-04T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00119",
+  "from_account": "AC-0028",
+  "to_account": "AC-0039",
+  "amount": 55000,
+  "ts": "2025-10-28T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00120",
+  "from_account": "AC-0044",
+  "to_account": "AC-0006",
+  "amount": 34000,
+  "ts": "2026-01-22T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00121",
+  "from_account": "AC-0005",
+  "to_account": "AC-0015",
+  "amount": 5000,
+  "ts": "2026-05-06T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00122",
+  "from_account": "AC-0005",
+  "to_account": "AC-0016",
+  "amount": 65000,
   "ts": "2026-01-28T06:30:00.000Z",
   "channel": "IMPS",
   "flagged_reason": null
  },
  {
-  "id": "TX-00186",
-  "from_account": "AC-0016",
-  "to_account": "AC-0005",
-  "amount": 45000,
-  "ts": "2025-08-06T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00187",
-  "from_account": "AC-0008",
-  "to_account": "AC-0027",
-  "amount": 17000,
-  "ts": "2025-12-03T06:30:00.000Z",
+  "id": "TX-00123",
+  "from_account": "AC-0024",
+  "to_account": "AC-0013",
+  "amount": 5000,
+  "ts": "2025-12-29T06:30:00.000Z",
   "channel": "CASH-DEPOSIT",
   "flagged_reason": null
  },
  {
-  "id": "TX-00188",
-  "from_account": "AC-0033",
-  "to_account": "AC-0045",
-  "amount": 65000,
-  "ts": "2025-12-09T06:30:00.000Z",
+  "id": "TX-00124",
+  "from_account": "AC-0043",
+  "to_account": "AC-0042",
+  "amount": 51000,
+  "ts": "2025-11-16T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00125",
+  "from_account": "AC-0045",
+  "to_account": "AC-0018",
+  "amount": 78000,
+  "ts": "2025-07-21T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00126",
+  "from_account": "AC-0030",
+  "to_account": "AC-0010",
+  "amount": 71000,
+  "ts": "2026-04-30T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00127",
+  "from_account": "AC-0027",
+  "to_account": "AC-0006",
+  "amount": 54000,
+  "ts": "2025-05-09T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00128",
+  "from_account": "AC-0009",
+  "to_account": "AC-0012",
+  "amount": 28000,
+  "ts": "2025-10-01T06:30:00.000Z",
   "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00129",
+  "from_account": "AC-0020",
+  "to_account": "AC-0014",
+  "amount": 62000,
+  "ts": "2025-12-18T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00130",
+  "from_account": "AC-0030",
+  "to_account": "AC-0033",
+  "amount": 25000,
+  "ts": "2025-06-17T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00131",
+  "from_account": "AC-0004",
+  "to_account": "AC-0012",
+  "amount": 19000,
+  "ts": "2025-09-25T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00132",
+  "from_account": "AC-0025",
+  "to_account": "AC-0013",
+  "amount": 19000,
+  "ts": "2026-03-21T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00133",
+  "from_account": "AC-0018",
+  "to_account": "AC-0045",
+  "amount": 66000,
+  "ts": "2025-11-16T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00134",
+  "from_account": "AC-0007",
+  "to_account": "AC-0020",
+  "amount": 64000,
+  "ts": "2025-11-04T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00135",
+  "from_account": "AC-0034",
+  "to_account": "AC-0018",
+  "amount": 70000,
+  "ts": "2026-01-27T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00136",
+  "from_account": "AC-0036",
+  "to_account": "AC-0037",
+  "amount": 78000,
+  "ts": "2025-09-05T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00137",
+  "from_account": "AC-0041",
+  "to_account": "AC-0027",
+  "amount": 66000,
+  "ts": "2025-05-10T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00138",
+  "from_account": "AC-0014",
+  "to_account": "AC-0006",
+  "amount": 53000,
+  "ts": "2025-10-24T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00139",
+  "from_account": "AC-0020",
+  "to_account": "AC-0027",
+  "amount": 14000,
+  "ts": "2025-05-06T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00140",
+  "from_account": "AC-0008",
+  "to_account": "AC-0014",
+  "amount": 14000,
+  "ts": "2025-05-30T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00141",
+  "from_account": "AC-0015",
+  "to_account": "AC-0028",
+  "amount": 51000,
+  "ts": "2025-08-21T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00142",
+  "from_account": "AC-0007",
+  "to_account": "AC-0042",
+  "amount": 44000,
+  "ts": "2026-03-04T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00143",
+  "from_account": "AC-0016",
+  "to_account": "AC-0034",
+  "amount": 25000,
+  "ts": "2025-12-10T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00144",
+  "from_account": "AC-0009",
+  "to_account": "AC-0011",
+  "amount": 64000,
+  "ts": "2026-01-01T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00145",
+  "from_account": "AC-0040",
+  "to_account": "AC-0032",
+  "amount": 67000,
+  "ts": "2026-04-15T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00146",
+  "from_account": "AC-0010",
+  "to_account": "AC-0023",
+  "amount": 67000,
+  "ts": "2026-03-18T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00147",
+  "from_account": "AC-0001",
+  "to_account": "AC-0045",
+  "amount": 25000,
+  "ts": "2026-05-25T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00148",
+  "from_account": "AC-0024",
+  "to_account": "AC-0026",
+  "amount": 39000,
+  "ts": "2025-09-23T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00149",
+  "from_account": "AC-0028",
+  "to_account": "AC-0025",
+  "amount": 42000,
+  "ts": "2025-09-01T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00150",
+  "from_account": "AC-0015",
+  "to_account": "AC-0007",
+  "amount": 6000,
+  "ts": "2025-11-17T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00151",
+  "from_account": "AC-0044",
+  "to_account": "AC-0015",
+  "amount": 75000,
+  "ts": "2025-09-01T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00152",
+  "from_account": "AC-0011",
+  "to_account": "AC-0028",
+  "amount": 22000,
+  "ts": "2025-06-30T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00153",
+  "from_account": "AC-0045",
+  "to_account": "AC-0021",
+  "amount": 34000,
+  "ts": "2025-08-01T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00154",
+  "from_account": "AC-0043",
+  "to_account": "AC-0018",
+  "amount": 16000,
+  "ts": "2025-09-01T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00155",
+  "from_account": "AC-0015",
+  "to_account": "AC-0004",
+  "amount": 36000,
+  "ts": "2026-03-03T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00156",
+  "from_account": "AC-0005",
+  "to_account": "AC-0009",
+  "amount": 26000,
+  "ts": "2025-06-02T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00157",
+  "from_account": "AC-0036",
+  "to_account": "AC-0004",
+  "amount": 2000,
+  "ts": "2026-03-28T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00158",
+  "from_account": "AC-0015",
+  "to_account": "AC-0012",
+  "amount": 78000,
+  "ts": "2025-11-19T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00159",
+  "from_account": "AC-0038",
+  "to_account": "AC-0017",
+  "amount": 62000,
+  "ts": "2026-05-25T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00160",
+  "from_account": "AC-0033",
+  "to_account": "AC-0026",
+  "amount": 10000,
+  "ts": "2025-06-26T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00161",
+  "from_account": "AC-0019",
+  "to_account": "AC-0020",
+  "amount": 72000,
+  "ts": "2025-08-02T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00162",
+  "from_account": "AC-0023",
+  "to_account": "AC-0042",
+  "amount": 41000,
+  "ts": "2025-07-21T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00163",
+  "from_account": "AC-0003",
+  "to_account": "AC-0022",
+  "amount": 76000,
+  "ts": "2025-11-04T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00164",
+  "from_account": "AC-0040",
+  "to_account": "AC-0045",
+  "amount": 24000,
+  "ts": "2025-05-20T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00165",
+  "from_account": "AC-0012",
+  "to_account": "AC-0028",
+  "amount": 12000,
+  "ts": "2025-10-13T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00166",
+  "from_account": "AC-0009",
+  "to_account": "AC-0017",
+  "amount": 71000,
+  "ts": "2026-02-08T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00167",
+  "from_account": "AC-0044",
+  "to_account": "AC-0020",
+  "amount": 6000,
+  "ts": "2026-05-04T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00168",
+  "from_account": "AC-0040",
+  "to_account": "AC-0008",
+  "amount": 60000,
+  "ts": "2025-11-06T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00169",
+  "from_account": "AC-0002",
+  "to_account": "AC-0042",
+  "amount": 73000,
+  "ts": "2025-05-15T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00170",
+  "from_account": "AC-0015",
+  "to_account": "AC-0010",
+  "amount": 32000,
+  "ts": "2025-08-07T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00171",
+  "from_account": "AC-0039",
+  "to_account": "AC-0002",
+  "amount": 20000,
+  "ts": "2025-09-14T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00172",
+  "from_account": "AC-0029",
+  "to_account": "AC-0041",
+  "amount": 10000,
+  "ts": "2026-02-03T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00173",
+  "from_account": "AC-0042",
+  "to_account": "AC-0010",
+  "amount": 80000,
+  "ts": "2026-02-09T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00174",
+  "from_account": "AC-0032",
+  "to_account": "AC-0027",
+  "amount": 14000,
+  "ts": "2025-06-01T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00175",
+  "from_account": "AC-0011",
+  "to_account": "AC-0045",
+  "amount": 45000,
+  "ts": "2026-03-10T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00176",
+  "from_account": "AC-0040",
+  "to_account": "AC-0002",
+  "amount": 54000,
+  "ts": "2025-08-22T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00177",
+  "from_account": "AC-0014",
+  "to_account": "AC-0038",
+  "amount": 56000,
+  "ts": "2025-09-21T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00178",
+  "from_account": "AC-0012",
+  "to_account": "AC-0031",
+  "amount": 74000,
+  "ts": "2025-12-11T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00179",
+  "from_account": "AC-0042",
+  "to_account": "AC-0043",
+  "amount": 39000,
+  "ts": "2025-09-05T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00180",
+  "from_account": "AC-0029",
+  "to_account": "AC-0010",
+  "amount": 68000,
+  "ts": "2025-12-21T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00181",
+  "from_account": "AC-0034",
+  "to_account": "AC-0025",
+  "amount": 23000,
+  "ts": "2026-04-29T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00182",
+  "from_account": "AC-0023",
+  "to_account": "AC-0039",
+  "amount": 19000,
+  "ts": "2025-09-24T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00183",
+  "from_account": "AC-0005",
+  "to_account": "AC-0007",
+  "amount": 13000,
+  "ts": "2026-04-26T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00184",
+  "from_account": "AC-0010",
+  "to_account": "AC-0015",
+  "amount": 27000,
+  "ts": "2025-11-11T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00185",
+  "from_account": "AC-0004",
+  "to_account": "AC-0022",
+  "amount": 30000,
+  "ts": "2025-09-25T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00186",
+  "from_account": "AC-0011",
+  "to_account": "AC-0002",
+  "amount": 55000,
+  "ts": "2026-05-06T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00187",
+  "from_account": "AC-0005",
+  "to_account": "AC-0028",
+  "amount": 63000,
+  "ts": "2025-11-13T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00188",
+  "from_account": "AC-0042",
+  "to_account": "AC-0038",
+  "amount": 29000,
+  "ts": "2026-03-17T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
   "flagged_reason": null
  },
  {
   "id": "TX-00189",
   "from_account": "AC-0011",
-  "to_account": "AC-0026",
-  "amount": 34000,
-  "ts": "2025-05-08T06:30:00.000Z",
-  "channel": "IMPS",
+  "to_account": "AC-0040",
+  "amount": 37000,
+  "ts": "2025-07-14T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
   "flagged_reason": null
  },
  {
   "id": "TX-00190",
-  "from_account": "AC-0041",
-  "to_account": "AC-0015",
-  "amount": 33000,
-  "ts": "2026-05-31T06:30:00.000Z",
-  "channel": "UPI",
+  "from_account": "AC-0029",
+  "to_account": "AC-0010",
+  "amount": 56000,
+  "ts": "2025-11-14T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
   "flagged_reason": null
  },
  {
   "id": "TX-00191",
-  "from_account": "AC-0036",
-  "to_account": "AC-0009",
-  "amount": 14000,
-  "ts": "2025-07-25T06:30:00.000Z",
+  "from_account": "AC-0006",
+  "to_account": "AC-0018",
+  "amount": 33000,
+  "ts": "2025-12-17T06:30:00.000Z",
   "channel": "UPI",
   "flagged_reason": null
  },
  {
   "id": "TX-00192",
   "from_account": "AC-0032",
-  "to_account": "AC-0035",
-  "amount": 78000,
-  "ts": "2026-01-13T06:30:00.000Z",
+  "to_account": "AC-0025",
+  "amount": 76000,
+  "ts": "2026-01-12T06:30:00.000Z",
   "channel": "IMPS",
   "flagged_reason": null
  },
  {
   "id": "TX-00193",
-  "from_account": "AC-0027",
-  "to_account": "AC-0006",
-  "amount": 32000,
-  "ts": "2026-01-31T06:30:00.000Z",
-  "channel": "IMPS",
+  "from_account": "AC-0023",
+  "to_account": "AC-0009",
+  "amount": 58000,
+  "ts": "2026-01-29T06:30:00.000Z",
+  "channel": "UPI",
   "flagged_reason": null
  },
  {
   "id": "TX-00194",
-  "from_account": "AC-0013",
-  "to_account": "AC-0010",
-  "amount": 76000,
-  "ts": "2026-04-12T06:30:00.000Z",
+  "from_account": "AC-0015",
+  "to_account": "AC-0027",
+  "amount": 63000,
+  "ts": "2025-09-08T06:30:00.000Z",
   "channel": "UPI",
   "flagged_reason": null
  },
  {
   "id": "TX-00195",
-  "from_account": "AC-0044",
-  "to_account": "AC-0012",
-  "amount": 30000,
-  "ts": "2025-11-22T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
+  "from_account": "AC-0015",
+  "to_account": "AC-0025",
+  "amount": 19000,
+  "ts": "2025-10-09T06:30:00.000Z",
+  "channel": "NEFT",
   "flagged_reason": null
  },
  {
   "id": "TX-00196",
-  "from_account": "AC-0011",
-  "to_account": "AC-0045",
-  "amount": 58000,
-  "ts": "2026-05-20T06:30:00.000Z",
-  "channel": "IMPS",
+  "from_account": "AC-0043",
+  "to_account": "AC-0018",
+  "amount": 37000,
+  "ts": "2025-11-05T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
   "flagged_reason": null
  },
  {
   "id": "TX-00197",
-  "from_account": "AC-0033",
-  "to_account": "AC-0042",
-  "amount": 16000,
+  "from_account": "AC-0018",
+  "to_account": "AC-0045",
+  "amount": 21000,
   "ts": "2025-09-15T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
+  "channel": "UPI",
   "flagged_reason": null
  },
  {
   "id": "TX-00198",
-  "from_account": "AC-0018",
-  "to_account": "AC-0035",
-  "amount": 71000,
-  "ts": "2025-07-12T06:30:00.000Z",
-  "channel": "IMPS",
+  "from_account": "AC-0031",
+  "to_account": "AC-0003",
+  "amount": 41000,
+  "ts": "2025-08-22T06:30:00.000Z",
+  "channel": "UPI",
   "flagged_reason": null
  },
  {
   "id": "TX-00199",
-  "from_account": "AC-0006",
-  "to_account": "AC-0011",
-  "amount": 43000,
-  "ts": "2025-08-18T06:30:00.000Z",
-  "channel": "IMPS",
+  "from_account": "AC-0027",
+  "to_account": "AC-0042",
+  "amount": 1000,
+  "ts": "2026-02-12T06:30:00.000Z",
+  "channel": "UPI",
   "flagged_reason": null
  },
  {
   "id": "TX-00200",
-  "from_account": "AC-0045",
-  "to_account": "AC-0033",
-  "amount": 61000,
-  "ts": "2026-02-21T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00201",
-  "from_account": "AC-0005",
-  "to_account": "AC-0033",
-  "amount": 55000,
-  "ts": "2025-05-07T06:30:00.000Z",
+  "from_account": "AC-0022",
+  "to_account": "AC-0032",
+  "amount": 28000,
+  "ts": "2026-03-16T06:30:00.000Z",
   "channel": "IMPS",
   "flagged_reason": null
  },
  {
+  "id": "TX-00201",
+  "from_account": "AC-0015",
+  "to_account": "AC-0023",
+  "amount": 33000,
+  "ts": "2025-08-14T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
   "id": "TX-00202",
-  "from_account": "AC-0014",
-  "to_account": "AC-0019",
-  "amount": 64000,
-  "ts": "2025-05-27T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
+  "from_account": "AC-0030",
+  "to_account": "AC-0043",
+  "amount": 15000,
+  "ts": "2025-05-16T06:30:00.000Z",
+  "channel": "NEFT",
   "flagged_reason": null
  },
  {
   "id": "TX-00203",
-  "from_account": "AC-0045",
-  "to_account": "AC-0012",
-  "amount": 19000,
-  "ts": "2026-06-04T06:30:00.000Z",
+  "from_account": "AC-0037",
+  "to_account": "AC-0002",
+  "amount": 17000,
+  "ts": "2025-09-01T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": null
  },
  {
   "id": "TX-00204",
-  "from_account": "AC-0029",
-  "to_account": "AC-0025",
-  "amount": 40000,
-  "ts": "2025-05-24T06:30:00.000Z",
-  "channel": "NEFT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00205",
-  "from_account": "AC-0006",
-  "to_account": "AC-0027",
+  "from_account": "AC-0035",
+  "to_account": "AC-0022",
   "amount": 38000,
-  "ts": "2025-12-15T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00206",
-  "from_account": "AC-0004",
-  "to_account": "AC-0009",
-  "amount": 38000,
-  "ts": "2026-01-11T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": null
- },
- {
-  "id": "TX-00207",
-  "from_account": "AC-0016",
-  "to_account": "AC-0014",
-  "amount": 25000,
-  "ts": "2025-08-23T06:30:00.000Z",
+  "ts": "2026-04-19T06:30:00.000Z",
   "channel": "IMPS",
   "flagged_reason": null
  },
  {
+  "id": "TX-00205",
+  "from_account": "AC-0037",
+  "to_account": "AC-0045",
+  "amount": 5000,
+  "ts": "2025-05-21T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00206",
+  "from_account": "AC-0031",
+  "to_account": "AC-0022",
+  "amount": 27000,
+  "ts": "2025-05-17T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
+  "id": "TX-00207",
+  "from_account": "AC-0005",
+  "to_account": "AC-0021",
+  "amount": 39000,
+  "ts": "2026-02-28T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
+ },
+ {
   "id": "TX-00208",
-  "from_account": "AC-0036",
-  "to_account": "AC-0026",
-  "amount": 15000,
-  "ts": "2025-11-15T06:30:00.000Z",
+  "from_account": "AC-0040",
+  "to_account": "AC-0015",
+  "amount": 60000,
+  "ts": "2025-11-23T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": null
  },
  {
   "id": "TX-00209",
-  "from_account": "AC-0012",
-  "to_account": "AC-0016",
-  "amount": 41000,
-  "ts": "2026-02-24T06:30:00.000Z",
+  "from_account": "AC-0015",
+  "to_account": "AC-0029",
+  "amount": 21000,
+  "ts": "2025-12-23T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": null
  },
  {
   "id": "TX-00210",
-  "from_account": "AC-0007",
-  "to_account": "AC-0040",
-  "amount": 19000,
-  "ts": "2025-08-24T06:30:00.000Z",
-  "channel": "NEFT",
+  "from_account": "AC-0010",
+  "to_account": "AC-0045",
+  "amount": 30000,
+  "ts": "2025-05-09T06:30:00.000Z",
+  "channel": "IMPS",
   "flagged_reason": null
  },
  {
   "id": "TX-00211",
-  "from_account": "AC-0036",
-  "to_account": "AC-0004",
-  "amount": 68000,
-  "ts": "2026-02-24T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
+  "from_account": "AC-0033",
+  "to_account": "AC-0005",
+  "amount": 62000,
+  "ts": "2025-06-11T06:30:00.000Z",
+  "channel": "UPI",
   "flagged_reason": null
  },
  {
   "id": "TX-00212",
-  "from_account": "AC-0025",
-  "to_account": "AC-0015",
-  "amount": 21000,
-  "ts": "2026-02-21T06:30:00.000Z",
-  "channel": "NEFT",
+  "from_account": "AC-0002",
+  "to_account": "AC-0027",
+  "amount": 79000,
+  "ts": "2025-07-03T06:30:00.000Z",
+  "channel": "UPI",
   "flagged_reason": null
  },
  {
   "id": "TX-00213",
-  "from_account": "AC-0044",
-  "to_account": "AC-0011",
-  "amount": 24000,
-  "ts": "2026-03-14T06:30:00.000Z",
-  "channel": "IMPS",
+  "from_account": "AC-0026",
+  "to_account": "AC-0030",
+  "amount": 2000,
+  "ts": "2025-09-26T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
   "flagged_reason": null
  },
  {
   "id": "TX-00214",
-  "from_account": "AC-0036",
-  "to_account": "AC-0045",
-  "amount": 80000,
-  "ts": "2025-06-05T06:30:00.000Z",
-  "channel": "NEFT",
+  "from_account": "AC-0031",
+  "to_account": "AC-0013",
+  "amount": 71000,
+  "ts": "2025-09-05T06:30:00.000Z",
+  "channel": "IMPS",
   "flagged_reason": null
  },
  {
   "id": "TX-00215",
-  "from_account": "AC-0046",
-  "to_account": "AC-0052",
-  "amount": 80000,
-  "ts": "2026-05-20T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": "structuring"
+  "from_account": "AC-0001",
+  "to_account": "AC-0004",
+  "amount": 37000,
+  "ts": "2025-05-15T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": null
  },
  {
   "id": "TX-00216",
-  "from_account": "AC-0046",
-  "to_account": "AC-0052",
-  "amount": 43000,
-  "ts": "2026-05-26T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": "structuring"
+  "from_account": "AC-0004",
+  "to_account": "AC-0036",
+  "amount": 67000,
+  "ts": "2025-12-17T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
  },
  {
   "id": "TX-00217",
-  "from_account": "AC-0046",
-  "to_account": "AC-0052",
-  "amount": 58000,
-  "ts": "2026-05-24T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": "structuring"
+  "from_account": "AC-0043",
+  "to_account": "AC-0006",
+  "amount": 71000,
+  "ts": "2025-07-12T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": null
  },
  {
   "id": "TX-00218",
   "from_account": "AC-0046",
   "to_account": "AC-0052",
-  "amount": 76000,
-  "ts": "2026-05-27T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
+  "amount": 53000,
+  "ts": "2026-05-21T06:30:00.000Z",
+  "channel": "NEFT",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00219",
   "from_account": "AC-0046",
   "to_account": "AC-0052",
-  "amount": 81000,
-  "ts": "2026-05-26T06:30:00.000Z",
-  "channel": "UPI",
+  "amount": 40000,
+  "ts": "2026-05-25T06:30:00.000Z",
+  "channel": "NEFT",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00220",
-  "from_account": "AC-0047",
+  "from_account": "AC-0046",
   "to_account": "AC-0052",
-  "amount": 50000,
-  "ts": "2026-05-13T06:30:00.000Z",
+  "amount": 41000,
+  "ts": "2026-05-19T06:30:00.000Z",
   "channel": "CASH-DEPOSIT",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00221",
-  "from_account": "AC-0047",
+  "from_account": "AC-0046",
   "to_account": "AC-0052",
-  "amount": 60000,
-  "ts": "2026-05-15T06:30:00.000Z",
-  "channel": "UPI",
+  "amount": 99000,
+  "ts": "2026-05-23T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00222",
   "from_account": "AC-0047",
   "to_account": "AC-0052",
-  "amount": 60000,
-  "ts": "2026-05-26T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
-  "flagged_reason": "structuring"
- },
- {
-  "id": "TX-00223",
-  "from_account": "AC-0048",
-  "to_account": "AC-0052",
-  "amount": 61000,
-  "ts": "2026-05-16T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": "structuring"
- },
- {
-  "id": "TX-00224",
-  "from_account": "AC-0048",
-  "to_account": "AC-0052",
-  "amount": 86000,
-  "ts": "2026-05-14T06:30:00.000Z",
+  "amount": 83000,
+  "ts": "2026-05-25T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": "structuring"
  },
  {
-  "id": "TX-00225",
-  "from_account": "AC-0048",
+  "id": "TX-00223",
+  "from_account": "AC-0047",
   "to_account": "AC-0052",
-  "amount": 62000,
-  "ts": "2026-05-16T06:30:00.000Z",
+  "amount": 65000,
+  "ts": "2026-05-29T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00224",
+  "from_account": "AC-0047",
+  "to_account": "AC-0052",
+  "amount": 71000,
+  "ts": "2026-05-25T06:30:00.000Z",
   "channel": "CASH-DEPOSIT",
   "flagged_reason": "structuring"
  },
  {
-  "id": "TX-00226",
-  "from_account": "AC-0048",
+  "id": "TX-00225",
+  "from_account": "AC-0047",
   "to_account": "AC-0052",
-  "amount": 57000,
-  "ts": "2026-05-24T06:30:00.000Z",
-  "channel": "CASH-DEPOSIT",
+  "amount": 59000,
+  "ts": "2026-05-28T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00226",
+  "from_account": "AC-0047",
+  "to_account": "AC-0052",
+  "amount": 76000,
+  "ts": "2026-05-12T06:30:00.000Z",
+  "channel": "IMPS",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00227",
   "from_account": "AC-0048",
   "to_account": "AC-0052",
-  "amount": 67000,
-  "ts": "2026-05-19T06:30:00.000Z",
+  "amount": 86000,
+  "ts": "2026-05-28T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00228",
-  "from_account": "AC-0049",
+  "from_account": "AC-0048",
   "to_account": "AC-0052",
-  "amount": 81000,
-  "ts": "2026-05-21T06:30:00.000Z",
-  "channel": "IMPS",
-  "flagged_reason": "structuring"
- },
- {
-  "id": "TX-00229",
-  "from_account": "AC-0049",
-  "to_account": "AC-0052",
-  "amount": 88000,
-  "ts": "2026-05-16T06:30:00.000Z",
-  "channel": "UPI",
-  "flagged_reason": "structuring"
- },
- {
-  "id": "TX-00230",
-  "from_account": "AC-0049",
-  "to_account": "AC-0052",
-  "amount": 52000,
-  "ts": "2026-05-22T06:30:00.000Z",
+  "amount": 73000,
+  "ts": "2026-05-17T06:30:00.000Z",
   "channel": "CASH-DEPOSIT",
   "flagged_reason": "structuring"
  },
  {
-  "id": "TX-00231",
-  "from_account": "AC-0049",
+  "id": "TX-00229",
+  "from_account": "AC-0048",
   "to_account": "AC-0052",
   "amount": 56000,
-  "ts": "2026-05-22T06:30:00.000Z",
+  "ts": "2026-05-20T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00230",
+  "from_account": "AC-0048",
+  "to_account": "AC-0052",
+  "amount": 50000,
+  "ts": "2026-05-25T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": "structuring"
  },
  {
-  "id": "TX-00232",
-  "from_account": "AC-0050",
+  "id": "TX-00231",
+  "from_account": "AC-0048",
   "to_account": "AC-0052",
-  "amount": 42000,
-  "ts": "2026-05-12T06:30:00.000Z",
+  "amount": 43000,
+  "ts": "2026-05-24T06:30:00.000Z",
+  "channel": "UPI",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00232",
+  "from_account": "AC-0049",
+  "to_account": "AC-0052",
+  "amount": 87000,
+  "ts": "2026-05-22T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00233",
-  "from_account": "AC-0050",
+  "from_account": "AC-0049",
   "to_account": "AC-0052",
-  "amount": 75000,
-  "ts": "2026-05-21T06:30:00.000Z",
+  "amount": 43000,
+  "ts": "2026-05-26T06:30:00.000Z",
   "channel": "NEFT",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00234",
-  "from_account": "AC-0050",
+  "from_account": "AC-0049",
   "to_account": "AC-0052",
-  "amount": 41000,
-  "ts": "2026-05-29T06:30:00.000Z",
-  "channel": "NEFT",
+  "amount": 54000,
+  "ts": "2026-05-21T06:30:00.000Z",
+  "channel": "UPI",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00235",
-  "from_account": "AC-0051",
+  "from_account": "AC-0049",
   "to_account": "AC-0052",
-  "amount": 69000,
-  "ts": "2026-05-15T06:30:00.000Z",
-  "channel": "IMPS",
+  "amount": 80000,
+  "ts": "2026-05-11T06:30:00.000Z",
+  "channel": "UPI",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00236",
-  "from_account": "AC-0051",
+  "from_account": "AC-0049",
   "to_account": "AC-0052",
-  "amount": 95000,
-  "ts": "2026-05-18T06:30:00.000Z",
-  "channel": "IMPS",
+  "amount": 55000,
+  "ts": "2026-05-20T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00237",
-  "from_account": "AC-0051",
+  "from_account": "AC-0050",
   "to_account": "AC-0052",
-  "amount": 95000,
-  "ts": "2026-05-23T06:30:00.000Z",
+  "amount": 85000,
+  "ts": "2026-05-29T06:30:00.000Z",
   "channel": "UPI",
   "flagged_reason": "structuring"
  },
  {
   "id": "TX-00238",
+  "from_account": "AC-0050",
+  "to_account": "AC-0052",
+  "amount": 63000,
+  "ts": "2026-05-23T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00239",
+  "from_account": "AC-0050",
+  "to_account": "AC-0052",
+  "amount": 50000,
+  "ts": "2026-05-19T06:30:00.000Z",
+  "channel": "NEFT",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00240",
+  "from_account": "AC-0050",
+  "to_account": "AC-0052",
+  "amount": 72000,
+  "ts": "2026-05-23T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00241",
   "from_account": "AC-0051",
   "to_account": "AC-0052",
-  "amount": 91000,
+  "amount": 92000,
   "ts": "2026-05-28T06:30:00.000Z",
+  "channel": "CASH-DEPOSIT",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00242",
+  "from_account": "AC-0051",
+  "to_account": "AC-0052",
+  "amount": 41000,
+  "ts": "2026-05-29T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00243",
+  "from_account": "AC-0051",
+  "to_account": "AC-0052",
+  "amount": 99000,
+  "ts": "2026-05-25T06:30:00.000Z",
+  "channel": "IMPS",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00244",
+  "from_account": "AC-0051",
+  "to_account": "AC-0052",
+  "amount": 50000,
+  "ts": "2026-05-27T06:30:00.000Z",
   "channel": "UPI",
+  "flagged_reason": "structuring"
+ },
+ {
+  "id": "TX-00245",
+  "from_account": "AC-0051",
+  "to_account": "AC-0052",
+  "amount": 57000,
+  "ts": "2026-05-26T06:30:00.000Z",
+  "channel": "NEFT",
   "flagged_reason": "structuring"
  }
 ]

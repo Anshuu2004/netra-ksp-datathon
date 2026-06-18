@@ -8,7 +8,7 @@ import { buildGraph, degreeCentrality, eigenvectorCentrality, louvain, linkPredi
 import { hotspotStations, kdeGrid, nearRepeatCluster, forecastNextStrike } from '../analytics/forecast.mjs';
 import { offenderRisk, repeatOffenders } from '../analytics/risk.mjs';
 import { socioCorrelation } from '../analytics/realdata.mjs';
-import { understand } from './nlu.mjs';
+import { understand, understandWithContext } from './nlu.mjs';
 
 const CRIME_KN = {
   'Theft': 'ಕಳ್ಳತನ', 'Burglary': 'ಮನೆ ಕಳ್ಳತನ', 'Chain Snatching': 'ಸರ ಕಳ್ಳತನ', 'Robbery': 'ದರೋಡೆ',
@@ -29,6 +29,49 @@ const inr = (n) => '₹' + Number(n).toLocaleString('en-IN');
 
 const _audit = [];
 export const getAuditLog = () => _audit.slice();
+
+// ----------------------------------------------------------- RBAC PII redaction
+// Roles that may see personally-identifiable info (names, narratives). Investigators and
+// supervisors work cases and need identities; constables and policymakers get redacted views
+// (policymakers see strategic patterns, not individuals). This makes the role ACTUALLY change
+// output (PS1 §10) rather than being a cosmetic dropdown.
+const PII_ALLOWED_ROLES = new Set(['investigator', 'supervisor']);
+const REDACT_TOKEN = '🔒 [redacted]';
+let _redactor = null;
+function getRedactor(ds) {
+  if (_redactor && _redactor.ds === ds) return _redactor;
+  const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const names = [...new Set(ds.persons.map((p) => p.full_name))].filter((n) => n && n.length > 4).sort((a, b) => b.length - a.length);
+  const knNames = [...new Set(ds.persons.map((p) => p.full_name_kn))].filter((n) => n && n.length > 2);
+  const re = names.length ? new RegExp(names.map(esc).join('|'), 'g') : null;
+  const reKn = knNames.length ? new RegExp(knNames.map(esc).join('|'), 'g') : null;
+  _redactor = { ds, re, reKn };
+  return _redactor;
+}
+function redactText(ds, s, kn = false) {
+  if (typeof s !== 'string') return s;
+  const r = getRedactor(ds);
+  let out = s;
+  if (r.re) out = out.replace(r.re, REDACT_TOKEN);
+  if (kn && r.reKn) out = out.replace(r.reKn, REDACT_TOKEN);
+  return out;
+}
+/** Mutates the envelope in place to remove PII for restricted roles. Returns true if redacted. */
+function applyRoleRedaction(ds, env, role) {
+  if (PII_ALLOWED_ROLES.has(role)) return false;
+  env.narration_en = redactText(ds, env.narration_en);
+  if (env.narration_kn) env.narration_kn = redactText(ds, env.narration_kn, true);
+  const s = env.surface;
+  if (s.kind === 'table') {
+    s.rows = s.rows.map((row) => { const r = { ...row }; for (const k of Object.keys(r)) r[k] = redactText(ds, r[k]); return r; });
+  } else if (s.kind === 'card') {
+    s.fields = s.fields.map((f) => ({ ...f, value: redactText(ds, f.value, true) }));
+  } else if (s.kind === 'graph') {
+    s.nodes = s.nodes.map((n) => ({ ...n, label: n.kind === 'person' ? `${REDACT_TOKEN} (${n.id})` : redactText(ds, n.label) }));
+  }
+  env.followups = (env.followups || []).map((f) => redactText(ds, f));
+  return true;
+}
 
 function personLabel(ds, id) {
   const p = ds.index.personById.get(id);
@@ -92,7 +135,7 @@ function hRetrieveFir(ds, slots) {
 
 function hHotspot(ds, slots) {
   const days = slots.days || 90;
-  const hot = hotspotStations(ds, { crimeType: slots.crimeType, days, topK: 8 });
+  const hot = hotspotStations(ds, { crimeType: slots.crimeType, area: slots.area, days, topK: 8 });
   const incidents = filterFirs(ds, { crimeType: slots.crimeType, area: slots.area, days });
   const top = hot[0];
   const grid = kdeGrid(incidents, { bandwidthKm: 1.5 });
@@ -404,7 +447,8 @@ function hTrend(ds, slots) {
     buckets.push({ key: `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`, y: 0 });
   }
   const idx = new Map(buckets.map((b, i) => [b.key, i]));
-  for (const f of filterFirs(ds, { crimeType: slots.crimeType, area: slots.area })) {
+  const matched = filterFirs(ds, { crimeType: slots.crimeType, area: slots.area });
+  for (const f of matched) {
     const d = new Date(f.occurred_at); const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
     if (idx.has(key)) buckets[idx.get(key)].y++;
   }
@@ -414,7 +458,7 @@ function hTrend(ds, slots) {
     narration_en: `${slots.crimeType || 'Crime'} trend${slots.area ? ' in ' + slots.area : ''} over ${months} months is ${dir} (${firstHalf} → ${secondHalf}).`,
     narration_kn: `${knArea(slots.area)}ದಲ್ಲಿ ${knCrime(slots.crimeType || 'ಅಪರಾಧ')} ಪ್ರವೃತ್ತಿ: ${dir === 'rising' ? 'ಏರಿಕೆ' : dir === 'falling' ? 'ಇಳಿಕೆ' : 'ಸ್ಥಿರ'}.`,
     surface: { kind: 'chart', chartType: 'line', xLabel: 'Month', yLabel: 'Incidents', series: [{ name: `${slots.crimeType || 'All crime'}${slots.area ? ' — ' + slots.area : ''}`, points: buckets.map((b) => ({ x: b.key, y: b.y })) }] },
-    evidence: { fir_ids: [], query: `monthly counts (crime=${slots.crimeType || 'all'}, area=${slots.area || 'all'})`, confidence: 0.85, reasoning_path: [{ step: 'Bucket', detail: `${months} monthly bins` }, { step: 'Trend', detail: `first half ${firstHalf} vs second half ${secondHalf} → ${dir}` }] },
+    evidence: { fir_ids: matched.slice(0, 20).map((f) => f.id), query: `monthly counts over ${matched.length} FIRs (crime=${slots.crimeType || 'all'}, area=${slots.area || 'all'})`, confidence: 0.85, reasoning_path: [{ step: 'Retrieve', detail: `${matched.length} matching FIRs` }, { step: 'Bucket', detail: `${months} monthly bins` }, { step: 'Trend', detail: `first half ${firstHalf} vs second half ${secondHalf} → ${dir}` }] },
     followups: [`Show ${slots.crimeType || 'crime'} hotspots`, 'Is this seasonal?', `Forecast next ${slots.crimeType || 'crime'} hotspot`],
   };
 }
@@ -436,34 +480,69 @@ function hSocio(ds, slots) {
 }
 
 function hMoneyTrail(ds, slots) {
-  // resolve a focus account set
+  // Query-time structuring detection (not a pre-baked flag): an account receiving
+  // sub-threshold (< ₹1,00,000) deposits from many distinct senders = fan-in / layering.
+  const SUBTHRESH = 100000, FANIN_MIN = 5;
+  const inboxByAcct = new Map();
+  for (const tx of ds.transactions) {
+    if (!inboxByAcct.has(tx.to_account)) inboxByAcct.set(tx.to_account, []);
+    inboxByAcct.get(tx.to_account).push(tx);
+  }
+  const fanIn = (acc) => {
+    const sub = (inboxByAcct.get(acc) || []).filter((t) => t.amount < SUBTHRESH);
+    return { senders: new Set(sub.map((t) => t.from_account)).size, subTotal: sub.reduce((s, t) => s + t.amount, 0) };
+  };
   let accounts = [];
   if (slots.personRef) accounts = ds.index.accountsByPerson.get(slots.personRef) || [];
   if (accounts.length === 0) {
-    // fall back to the account receiving the most structuring-flagged inflows
-    const inflow = new Map();
-    for (const tx of ds.transactions) if (tx.flagged_reason) inflow.set(tx.to_account, (inflow.get(tx.to_account) || 0) + 1);
-    const master = [...inflow.entries()].sort((a, b) => b[1] - a[1])[0];
-    if (master) accounts = [ds.index.accountById.get(master[0])].filter(Boolean);
+    let best = null;
+    for (const acc of ds.accounts) { const f = fanIn(acc.id); if (f.senders >= FANIN_MIN && (!best || f.senders > best.f.senders)) best = { acc, f }; }
+    if (best) accounts = [best.acc];
   }
-  if (accounts.length === 0) return abstain('No financial accounts linked to that query.');
+  if (accounts.length === 0) return abstain('No financial accounts or suspicious flows match that query.');
   const focus = new Set(accounts.map((a) => a.id));
-  // 1-hop neighbourhood
   const txns = ds.transactions.filter((tx) => focus.has(tx.from_account) || focus.has(tx.to_account));
   const acctIds = new Set(txns.flatMap((tx) => [tx.from_account, tx.to_account]));
-  const flaggedTotal = txns.filter((tx) => tx.flagged_reason).reduce((s, tx) => s + tx.amount, 0);
+  const suspectDest = new Set([...acctIds].filter((a) => fanIn(a).senders >= FANIN_MIN));
+  const isSus = (tx) => tx.amount < SUBTHRESH && suspectDest.has(tx.to_account);
+  const susTotal = txns.filter(isSus).reduce((s, tx) => s + tx.amount, 0);
+  // join accounts -> holders -> FIRs (evidence trail into the crime records)
+  const holderIds = [...acctIds].map((id) => ds.index.accountById.get(id)).filter(Boolean).map((a) => a.holder_person_id);
+  const firIds = [...new Set(holderIds.flatMap((pid) => ds.index.firsByPerson.get(pid) || []))];
   const nodes = [...acctIds].map((id) => {
     const a = ds.index.accountById.get(id);
     const holder = a ? personLabel(ds, a.holder_person_id).name : id;
-    return { id, label: `${holder} · ${a ? a.bank : ''}`, kind: 'account', flags: focus.has(id) ? ['focus'] : [] };
+    return { id, label: `${holder} · ${a ? a.bank : ''}`, kind: 'account', flags: focus.has(id) ? ['focus'] : suspectDest.has(id) ? ['suspect'] : [] };
   });
-  const edges = txns.map((tx) => ({ source: tx.from_account, target: tx.to_account, type: tx.flagged_reason || 'transfer', weight: tx.amount, predicted: false, score: tx.amount, flagged: !!tx.flagged_reason }));
+  const edges = txns.map((tx) => ({ source: tx.from_account, target: tx.to_account, type: isSus(tx) ? 'structuring' : 'transfer', weight: tx.amount, score: tx.amount, flagged: isSus(tx) }));
   return {
-    narration_en: `Mapped ${txns.length} transaction(s) across ${acctIds.size} account(s). ${flaggedTotal ? 'Suspicious flows (structuring) total ' + inr(flaggedTotal) + '.' : 'No flagged flows.'}`,
-    narration_kn: `${acctIds.size} ಖಾತೆಗಳ ${txns.length} ವ್ಯವಹಾರಗಳು. ಶಂಕಿತ ಮೊತ್ತ: ${flaggedTotal ? inr(flaggedTotal) : '—'}.`,
+    narration_en: `Mapped ${txns.length} transaction(s) across ${acctIds.size} account(s). Computed: ${suspectDest.size} account(s) with high fan-in (≥${FANIN_MIN} distinct senders) received ${inr(susTotal)} in sub-threshold deposits — a structuring pattern. Linked to ${firIds.length} FIR(s).`,
+    narration_kn: `${acctIds.size} ಖಾತೆಗಳ ${txns.length} ವ್ಯವಹಾರಗಳು. ಶಂಕಿತ ರಚನಾತ್ಮಕ ಠೇವಣಿ: ${inr(susTotal)}.`,
     surface: { kind: 'graph', nodes, edges },
-    evidence: { fir_ids: [], query: `transaction graph around ${[...focus].join(', ')}; flag structuring`, confidence: 0.8, reasoning_path: [{ step: 'Resolve accounts', detail: `${focus.size} focus account(s)` }, { step: 'Trace', detail: `${txns.length} transactions, 1-hop` }, { step: 'Flag', detail: `structuring inflows = ${inr(flaggedTotal)}` }] },
-    followups: ['Who controls the master account?', 'Link these accounts to FIRs', 'Show the network of these holders'],
+    evidence: { fir_ids: firIds.slice(0, 15), query: `transaction graph + query-time fan-in / sub-threshold structuring detection (≥${FANIN_MIN} senders, < ${inr(SUBTHRESH)})`, confidence: 0.8, reasoning_path: [{ step: 'Resolve accounts', detail: `${focus.size} focus account(s)` }, { step: 'Detect', detail: `fan-in ≥${FANIN_MIN} senders + sub-threshold deposits → ${suspectDest.size} suspect account(s), ${inr(susTotal)}` }, { step: 'Link to crimes', detail: `joined ${acctIds.size} holders to ${firIds.length} FIR(s)` }] },
+    followups: ['Who controls the suspect account?', 'Show the network of these holders', 'Risk score for the account holders'],
+  };
+}
+
+function hDemographics(ds, slots) {
+  const firs = filterFirs(ds, { crimeType: slots.crimeType, area: slots.area, days: slots.days });
+  const firSet = new Set(firs.map((f) => f.id));
+  const personIds = new Set();
+  for (const fa of ds.fir_accused) if (firSet.has(fa.fir_id)) personIds.add(fa.person_id);
+  const persons = [...personIds].map((id) => ds.index.personById.get(id)).filter(Boolean);
+  if (persons.length === 0) return abstain('No offender records match that filter for a demographic breakdown.');
+  const bands = ['18-24', '25-34', '35-44', '45-54', '55+'];
+  const bandOf = (a) => (a < 25 ? '18-24' : a < 35 ? '25-34' : a < 45 ? '35-44' : a < 55 ? '45-54' : '55+');
+  const byBand = Object.fromEntries(bands.map((b) => [b, 0]));
+  let male = 0, female = 0;
+  for (const p of persons) { byBand[bandOf(p.age)]++; if (p.gender === 'M') male++; else female++; }
+  const topBand = Object.entries(byBand).sort((a, b) => b[1] - a[1])[0];
+  return {
+    narration_en: `Offender demographics${slots.crimeType ? ' for ' + slots.crimeType : ''}${slots.area ? ' in ' + slots.area : ''}: ${persons.length} individuals; ${male} male / ${female} female; most common age band ${topBand[0]} (${topBand[1]}).`,
+    narration_kn: `ಆರೋಪಿಗಳ ಜನಸಂಖ್ಯಾ ವಿವರ: ${persons.length} ವ್ಯಕ್ತಿಗಳು; ಪುರುಷ ${male}, ಮಹಿಳೆ ${female}.`,
+    surface: { kind: 'chart', chartType: 'bar', xLabel: 'Age band', yLabel: 'Offenders', series: [{ name: `Offender age distribution${slots.crimeType ? ' — ' + slots.crimeType : ''} (${male}M / ${female}F)`, points: bands.map((b) => ({ x: b, y: byBand[b] })) }] },
+    evidence: { fir_ids: firs.slice(0, 20).map((f) => f.id), query: `demographic aggregation over ${persons.length} offenders in ${firs.length} FIRs (age band, gender)`, confidence: 0.82, reasoning_path: [{ step: 'Cohort', detail: `${persons.length} accused persons in ${firs.length} matching FIRs` }, { step: 'Aggregate', detail: `by age band & gender (${male}M / ${female}F)` }] },
+    followups: ['Correlate crime with socio-economic factors', slots.area ? `Crime trend in ${slots.area}` : 'Show crime hotspots', 'Top repeat offenders here'],
   };
 }
 
@@ -525,7 +604,7 @@ const HANDLERS = {
   detect_org_crime: hDetectOrgCrime, network_explore: hNetwork, repeat_offenders: hRepeatOffenders,
   offender_risk: hOffenderRisk, person_profile: hPersonProfile, criminal_history: hCriminalHistory,
   mo_similarity: hMoSimilarity, case_summary: hCaseSummary, trend_analysis: hTrend, socio_insight: hSocio,
-  money_trail: hMoneyTrail, suggest_leads: hSuggestLeads,
+  money_trail: hMoneyTrail, suggest_leads: hSuggestLeads, demographics: hDemographics,
 };
 
 /**
@@ -533,18 +612,24 @@ const HANDLERS = {
  * This is the single entry point the API/UI calls.
  */
 export function ask(ds, message, ctx = {}) {
-  const nlu = understand(message, ds);
+  const nlu = understandWithContext(message, ds, ctx.history);
   nlu.slots._text = message;
   const handler = HANDLERS[nlu.intent] || (nlu.intent === 'abstain' ? () => abstain("I can't answer that.") : () => clarify("I didn't quite get that. Try asking about hotspots, offenders, networks, or a specific FIR."));
   const out = handler(ds, nlu.slots);
   const envelope = { intent: nlu.intent, ...out, evidence: { ...out.evidence, confidence: out.evidence.confidence ?? nlu.confidence } };
 
-  // governance: immutable audit entry (PS1 §10)
+  // RBAC: enforce PII redaction by role BEFORE the answer leaves the server (PS1 §10).
+  const role = ctx.role || 'investigator';
+  const redacted = applyRoleRedaction(ds, envelope, role);
+  const piiIntent = ['person_profile', 'criminal_history', 'retrieve_fir', 'repeat_offenders', 'offender_risk', 'network_explore', 'detect_org_crime', 'suggest_leads'].includes(nlu.intent);
+
+  // governance: audit entry per query. In production this is also written to the Catalyst
+  // Data Store audit table via the DataProvider for durable, traceable records.
   _audit.push({
     id: `AUD-${_audit.length + 1}`, ts: new Date().toISOString(),
-    user_id: ctx.user_id || 'demo', role: ctx.role || 'investigator',
+    user_id: ctx.user_id || 'demo', role,
     action: 'query', intent: nlu.intent, entity_refs: envelope.evidence.fir_ids.slice(0, 10),
-    pii_revealed: ['person_profile', 'criminal_history', 'retrieve_fir'].includes(nlu.intent),
+    pii_revealed: piiIntent && !redacted,
   });
   return envelope;
 }

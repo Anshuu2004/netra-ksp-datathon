@@ -1,0 +1,12 @@
+{
+  "deployment": {
+    "name": "beatBriefing",
+    "source": ".",
+    "stack": "node18",
+    "memory": 256
+  },
+  "execution": {
+    "main": "index.js"
+  },
+  "//": "Catalyst Function invoked by the netra-beat-briefing Cron. Confirm field names with `catalyst functions:init` for your CLI version."
+}

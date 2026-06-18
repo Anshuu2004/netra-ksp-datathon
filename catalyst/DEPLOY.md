@@ -33,13 +33,22 @@ catalyst init
 ```
 
 ## 3. Deploy the web app to AppSail (managed Node runtime)
-NETRA's `apps/web` is a standard Next.js app (`build` → `start`). Point AppSail at it:
+NETRA's Next.js server runs on AppSail (no static export needed — confirmed against the official
+`catalystbyzoho/appsail-nextjs` sample). **Deploy from the repo ROOT** so the `@netra/core`
+workspace package and `data/seed` are present; build/run target the `apps/web` workspace.
 ```bash
-catalyst appsail init      # stack: Node 20; build: npm run build; start: npm run start
+catalyst appsail init      # stack: node18 (confirm available stacks in console; node16 is the sample baseline)
+                           # build: npm install && npm run build --workspace=apps/web
+                           # start: npm run start --workspace=apps/web
 catalyst deploy            # builds + uploads + returns your public URL
 ```
+**Port binding (critical):** AppSail injects the listen port via `X_ZOHO_CATALYST_LISTEN_PORT`
+(default 9000; ports ≤1024 disallowed). NETRA's `apps/web/start.mjs` reads this automatically — do
+**not** hardcode a port, or the health check fails and the link is dead.
+
 The deployed URL is your **Deployed Solution Link** for the submission. Add a custom domain + SSL
-via **Catalyst Domain Mappings** if desired.
+via **Catalyst Domain Mappings** if desired. After deploy, open the URL in an incognito window and
+confirm a 200 before pasting it into the submission form.
 
 > The seed dataset ships in `data/seed/` (committed), so the deployed app has data immediately.
 > `loadDataset()` resolves the seed dir relative to the app at runtime (or set `NETRA_SEED_DIR`).

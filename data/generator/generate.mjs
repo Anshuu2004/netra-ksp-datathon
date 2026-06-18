@@ -71,7 +71,10 @@ const districts = DISTRICTS.map(([name, lat, lng, urb, lit, unemp]) => ({
 const stations = [];
 for (const d of districts) {
   const n = d.urbanization_index > 0.7 ? 4 : d.urbanization_index > 0.5 ? 3 : 2;
-  const areas = [...STATION_AREAS].sort(() => rnd() - 0.5).slice(0, n);
+  // avoid awkward duplications like "Bengaluru Rural Rural PS" by dropping area words
+  // already present in the district name
+  const areas = STATION_AREAS.filter((a) => !d.name.toLowerCase().includes(a.toLowerCase()))
+    .sort(() => rnd() - 0.5).slice(0, n);
   areas.forEach((area, i) => {
     const [lat, lng] = jitter(d.lat, d.lng, 6);
     stations.push({
@@ -138,6 +141,15 @@ function makeFir({ crimeType, station, occurredMs, accusedIds = [], mo, knNarrat
   station = station || pick(stations);
   occurredMs = occurredMs ?? REF_NOW - randInt(1, 540) * DAY;
   const meta = CRIME_TYPES[crimeType];
+  // MO-consistent time-of-day (UTC hour) so time-of-day queries are meaningful & realistic:
+  // snatching/robbery in the evening, burglary/vehicle-theft at night, frauds in the daytime.
+  const HOURS = {
+    'Chain Snatching': [17, 21], 'Robbery': [19, 23], 'Burglary': [0, 4], 'Motor Vehicle Theft': [22, 23],
+    'House Trespass': [12, 16], 'Theft': [10, 19], 'Cheating': [10, 18], 'Cyber Fraud': [9, 20],
+    'Murder': [20, 23], 'Attempt to Murder': [19, 23], 'Assault': [18, 23], 'Extortion': [11, 17], 'NDPS / Drugs': [21, 23],
+  };
+  const [h0, h1] = HOURS[crimeType] || [6, 22];
+  occurredMs = Math.floor(occurredMs / DAY) * DAY + randInt(h0, h1) * 3600000 + randInt(0, 59) * 60000;
   const [lat, lng] = jitter(station.lat, station.lng, 3);
   const moTags = mo || [...meta.mo].sort(() => rnd() - 0.5).slice(0, randInt(2, Math.min(4, meta.mo.length)));
   const reportedMs = occurredMs + randInt(0, 3) * DAY + randInt(0, 20) * 3600000;

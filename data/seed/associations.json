@@ -1,394 +1,160 @@
 [
  {
-  "person_a": "P-00064",
-  "person_b": "P-00076",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-UDU-00001"
-  ]
- },
- {
-  "person_a": "P-00030",
-  "person_b": "P-00146",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEL-00004"
-  ]
- },
- {
-  "person_a": "P-00088",
-  "person_b": "P-00096",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-KAL-00001"
-  ]
- },
- {
-  "person_a": "P-00152",
-  "person_b": "P-00173",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-DAK-00002"
-  ]
- },
- {
-  "person_a": "P-00003",
-  "person_b": "P-00152",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-DAK-00002"
-  ]
- },
- {
-  "person_a": "P-00003",
-  "person_b": "P-00173",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-DAK-00002"
-  ]
- },
- {
-  "person_a": "P-00055",
+  "person_a": "P-00112",
   "person_b": "P-00114",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BAL-00003"
+   "FIR-2025-BEL-00003"
   ]
  },
  {
-  "person_a": "P-00086",
-  "person_b": "P-00102",
+  "person_a": "P-00116",
+  "person_b": "P-00167",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-KOD-00003"
+   "FIR-2025-MAN-00001"
   ]
  },
  {
-  "person_a": "P-00078",
-  "person_b": "P-00083",
+  "person_a": "P-00030",
+  "person_b": "P-00148",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00003"
+   "FIR-2025-UDU-00001"
   ]
  },
  {
-  "person_a": "P-00029",
-  "person_b": "P-00058",
+  "person_a": "P-00010",
+  "person_b": "P-00030",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-DAK-00003"
+   "FIR-2025-UDU-00001"
   ]
  },
  {
-  "person_a": "P-00036",
-  "person_b": "P-00151",
+  "person_a": "P-00010",
+  "person_b": "P-00148",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00004"
+   "FIR-2025-UDU-00001"
   ]
  },
  {
-  "person_a": "P-00151",
-  "person_b": "P-00180",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-MYS-00004"
-  ]
- },
- {
-  "person_a": "P-00036",
-  "person_b": "P-00180",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-MYS-00004"
-  ]
- },
- {
-  "person_a": "P-00145",
-  "person_b": "P-00162",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-CHI-00001"
-  ]
- },
- {
-  "person_a": "P-00049",
-  "person_b": "P-00175",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-DHA-00001"
-  ]
- },
- {
-  "person_a": "P-00049",
-  "person_b": "P-00138",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-DHA-00001"
-  ]
- },
- {
-  "person_a": "P-00138",
-  "person_b": "P-00175",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-DHA-00001"
-  ]
- },
- {
-  "person_a": "P-00145",
-  "person_b": "P-00172",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-MYS-00003"
-  ]
- },
- {
-  "person_a": "P-00056",
+  "person_a": "P-00033",
   "person_b": "P-00084",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00005"
+   "FIR-2025-BID-00001"
   ]
  },
  {
-  "person_a": "P-00038",
-  "person_b": "P-00044",
+  "person_a": "P-00033",
+  "person_b": "P-00078",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEL-00006"
+   "FIR-2025-BID-00001"
   ]
  },
  {
-  "person_a": "P-00044",
-  "person_b": "P-00068",
+  "person_a": "P-00078",
+  "person_b": "P-00084",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEL-00006"
+   "FIR-2025-BID-00001"
   ]
  },
  {
-  "person_a": "P-00038",
-  "person_b": "P-00068",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEL-00006"
-  ]
- },
- {
-  "person_a": "P-00069",
-  "person_b": "P-00123",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00002"
-  ]
- },
- {
-  "person_a": "P-00123",
-  "person_b": "P-00137",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00002"
-  ]
- },
- {
-  "person_a": "P-00069",
-  "person_b": "P-00137",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00002"
-  ]
- },
- {
-  "person_a": "P-00018",
-  "person_b": "P-00133",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00002"
-  ]
- },
- {
-  "person_a": "P-00133",
-  "person_b": "P-00142",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00002"
-  ]
- },
- {
-  "person_a": "P-00018",
-  "person_b": "P-00142",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00002"
-  ]
- },
- {
-  "person_a": "P-00135",
+  "person_a": "P-00037",
   "person_b": "P-00160",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-DAV-00002"
+   "FIR-2026-SHI-00002"
   ]
  },
  {
-  "person_a": "P-00071",
-  "person_b": "P-00150",
+  "person_a": "P-00028",
+  "person_b": "P-00129",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-RAI-00001"
+   "FIR-2026-HAS-00001"
   ]
  },
  {
-  "person_a": "P-00140",
-  "person_b": "P-00153",
+  "person_a": "P-00089",
+  "person_b": "P-00135",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2024-TUM-00001"
+   "FIR-2025-UDU-00002"
   ]
  },
  {
-  "person_a": "P-00148",
-  "person_b": "P-00193",
+  "person_a": "P-00020",
+  "person_b": "P-00061",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BE1-00001"
+   "FIR-2026-MYS-00001"
   ]
  },
  {
-  "person_a": "P-00073",
-  "person_b": "P-00193",
+  "person_a": "P-00042",
+  "person_b": "P-00173",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BE1-00001"
-  ]
- },
- {
-  "person_a": "P-00073",
-  "person_b": "P-00148",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BE1-00001"
-  ]
- },
- {
-  "person_a": "P-00131",
-  "person_b": "P-00190",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-TUM-00002"
-  ]
- },
- {
-  "person_a": "P-00130",
-  "person_b": "P-00163",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00004"
-  ]
- },
- {
-  "person_a": "P-00095",
-  "person_b": "P-00163",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00004"
-  ]
- },
- {
-  "person_a": "P-00095",
-  "person_b": "P-00130",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00004"
-  ]
- },
- {
-  "person_a": "P-00038",
-  "person_b": "P-00141",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-TUM-00002"
-  ]
- },
- {
-  "person_a": "P-00141",
-  "person_b": "P-00229",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-TUM-00002"
-  ]
- },
- {
-  "person_a": "P-00038",
-  "person_b": "P-00229",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-TUM-00002"
-  ]
- },
- {
-  "person_a": "P-00099",
-  "person_b": "P-00123",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-HUB-00004"
+   "FIR-2025-HUB-00002"
   ]
  },
  {
   "person_a": "P-00120",
-  "person_b": "P-00164",
+  "person_b": "P-00132",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-KOD-00006"
+   "FIR-2025-VIJ-00002"
   ]
  },
  {
-  "person_a": "P-00081",
-  "person_b": "P-00148",
+  "person_a": "P-00112",
+  "person_b": "P-00132",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-VIJ-00002"
+  ]
+ },
+ {
+  "person_a": "P-00112",
+  "person_b": "P-00120",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-VIJ-00002"
+  ]
+ },
+ {
+  "person_a": "P-00144",
+  "person_b": "P-00151",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-MYS-00002"
+  ]
+ },
+ {
+  "person_a": "P-00108",
+  "person_b": "P-00142",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
@@ -396,404 +162,422 @@
   ]
  },
  {
-  "person_a": "P-00053",
-  "person_b": "P-00204",
+  "person_a": "P-00075",
+  "person_b": "P-00108",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00008"
+   "FIR-2026-RAI-00002"
   ]
  },
  {
-  "person_a": "P-00092",
-  "person_b": "P-00098",
+  "person_a": "P-00075",
+  "person_b": "P-00142",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BEN-00004"
+   "FIR-2026-RAI-00002"
   ]
  },
  {
-  "person_a": "P-00092",
-  "person_b": "P-00196",
+  "person_a": "P-00143",
+  "person_b": "P-00169",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BEN-00004"
+   "FIR-2025-SHI-00003"
   ]
  },
  {
-  "person_a": "P-00098",
-  "person_b": "P-00196",
+  "person_a": "P-00055",
+  "person_b": "P-00082",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BEN-00004"
+   "FIR-2025-MYS-00001"
   ]
  },
  {
-  "person_a": "P-00013",
-  "person_b": "P-00071",
+  "person_a": "P-00139",
+  "person_b": "P-00143",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-VIJ-00001"
+   "FIR-2025-HUB-00004"
   ]
  },
  {
-  "person_a": "P-00119",
-  "person_b": "P-00125",
+  "person_a": "P-00018",
+  "person_b": "P-00025",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-CHA-00002"
+   "FIR-2025-BEN-00003"
   ]
  },
  {
-  "person_a": "P-00025",
-  "person_b": "P-00233",
+  "person_a": "P-00135",
+  "person_b": "P-00201",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00009"
+   "FIR-2025-HAS-00001"
   ]
  },
  {
-  "person_a": "P-00032",
-  "person_b": "P-00052",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-DHA-00003"
-  ]
- },
- {
-  "person_a": "P-00050",
-  "person_b": "P-00161",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-UDU-00003"
-  ]
- },
- {
-  "person_a": "P-00001",
-  "person_b": "P-00261",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-KAL-00006"
-  ]
- },
- {
-  "person_a": "P-00001",
-  "person_b": "P-00030",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-KAL-00006"
-  ]
- },
- {
-  "person_a": "P-00030",
-  "person_b": "P-00261",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-KAL-00006"
-  ]
- },
- {
-  "person_a": "P-00011",
-  "person_b": "P-00094",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-DAK-00006"
-  ]
- },
- {
-  "person_a": "P-00041",
-  "person_b": "P-00052",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BID-00001"
-  ]
- },
- {
-  "person_a": "P-00006",
-  "person_b": "P-00041",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BID-00001"
-  ]
- },
- {
-  "person_a": "P-00006",
-  "person_b": "P-00052",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BID-00001"
-  ]
- },
- {
-  "person_a": "P-00051",
-  "person_b": "P-00198",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-MYS-00010"
-  ]
- },
- {
-  "person_a": "P-00057",
-  "person_b": "P-00245",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00007"
-  ]
- },
- {
-  "person_a": "P-00199",
-  "person_b": "P-00245",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00007"
-  ]
- },
- {
-  "person_a": "P-00057",
+  "person_a": "P-00085",
   "person_b": "P-00199",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEN-00007"
+   "FIR-2025-KAL-00005"
   ]
  },
  {
-  "person_a": "P-00140",
-  "person_b": "P-00246",
+  "person_a": "P-00023",
+  "person_b": "P-00124",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BEN-00005"
+   "FIR-2026-BE1-00002"
   ]
  },
  {
-  "person_a": "P-00079",
-  "person_b": "P-00140",
+  "person_a": "P-00095",
+  "person_b": "P-00176",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-DHA-00004"
+   "FIR-2026-DHA-00002"
   ]
  },
  {
-  "person_a": "P-00105",
-  "person_b": "P-00247",
+  "person_a": "P-00091",
+  "person_b": "P-00210",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-UTT-00003"
+   "FIR-2025-SHI-00004"
   ]
  },
  {
-  "person_a": "P-00031",
-  "person_b": "P-00140",
+  "person_a": "P-00027",
+  "person_b": "P-00188",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-CHI-00005"
+   "FIR-2026-DHA-00003"
   ]
  },
  {
-  "person_a": "P-00167",
-  "person_b": "P-00281",
+  "person_a": "P-00092",
+  "person_b": "P-00223",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-UDU-00004"
+   "FIR-2026-DAV-00002"
   ]
  },
  {
-  "person_a": "P-00126",
-  "person_b": "P-00281",
+  "person_a": "P-00160",
+  "person_b": "P-00223",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-UDU-00004"
+   "FIR-2026-DAV-00002"
   ]
  },
  {
-  "person_a": "P-00126",
-  "person_b": "P-00167",
+  "person_a": "P-00092",
+  "person_b": "P-00160",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-UDU-00004"
+   "FIR-2026-DAV-00002"
   ]
  },
  {
-  "person_a": "P-00172",
-  "person_b": "P-00243",
+  "person_a": "P-00165",
+  "person_b": "P-00207",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BID-00002"
+   "FIR-2026-DHA-00004"
   ]
  },
  {
-  "person_a": "P-00172",
-  "person_b": "P-00227",
+  "person_a": "P-00137",
+  "person_b": "P-00177",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BID-00002"
+   "FIR-2025-RAI-00002"
   ]
  },
  {
-  "person_a": "P-00227",
-  "person_b": "P-00243",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BID-00002"
-  ]
- },
- {
-  "person_a": "P-00121",
-  "person_b": "P-00148",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-HUB-00001"
-  ]
- },
- {
-  "person_a": "P-00051",
-  "person_b": "P-00122",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00006"
-  ]
- },
- {
-  "person_a": "P-00017",
+  "person_a": "P-00021",
   "person_b": "P-00130",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2024-HUB-00001"
+   "FIR-2025-UDU-00004"
   ]
  },
  {
-  "person_a": "P-00012",
-  "person_b": "P-00017",
+  "person_a": "P-00021",
+  "person_b": "P-00107",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2024-HUB-00001"
+   "FIR-2026-UDU-00003"
   ]
  },
  {
-  "person_a": "P-00012",
-  "person_b": "P-00130",
+  "person_a": "P-00021",
+  "person_b": "P-00195",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2024-HUB-00001"
+   "FIR-2026-UDU-00003"
   ]
  },
  {
-  "person_a": "P-00187",
-  "person_b": "P-00261",
+  "person_a": "P-00107",
+  "person_b": "P-00195",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00012"
+   "FIR-2026-UDU-00003"
   ]
  },
  {
-  "person_a": "P-00082",
-  "person_b": "P-00224",
+  "person_a": "P-00007",
+  "person_b": "P-00089",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-DAV-00004"
+   "FIR-2025-BID-00005"
   ]
  },
  {
-  "person_a": "P-00102",
-  "person_b": "P-00243",
+  "person_a": "P-00060",
+  "person_b": "P-00190",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-HUB-00006"
+   "FIR-2024-BEN-00001"
   ]
  },
  {
-  "person_a": "P-00150",
-  "person_b": "P-00316",
+  "person_a": "P-00040",
+  "person_b": "P-00071",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00013"
+   "FIR-2025-CHI-00006"
   ]
  },
  {
-  "person_a": "P-00010",
+  "person_a": "P-00008",
+  "person_b": "P-00159",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-HUB-00005"
+  ]
+ },
+ {
+  "person_a": "P-00008",
+  "person_b": "P-00189",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-HUB-00005"
+  ]
+ },
+ {
+  "person_a": "P-00159",
+  "person_b": "P-00189",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-HUB-00005"
+  ]
+ },
+ {
+  "person_a": "P-00077",
+  "person_b": "P-00233",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DAV-00003"
+  ]
+ },
+ {
+  "person_a": "P-00138",
+  "person_b": "P-00218",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KOD-00005"
+  ]
+ },
+ {
+  "person_a": "P-00101",
+  "person_b": "P-00238",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-RAI-00004"
+  ]
+ },
+ {
+  "person_a": "P-00153",
+  "person_b": "P-00245",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-VIJ-00004"
+  ]
+ },
+ {
+  "person_a": "P-00186",
+  "person_b": "P-00214",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-BAL-00003"
+  ]
+ },
+ {
+  "person_a": "P-00087",
+  "person_b": "P-00229",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KOD-00006"
+  ]
+ },
+ {
+  "person_a": "P-00229",
+  "person_b": "P-00262",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KOD-00006"
+  ]
+ },
+ {
+  "person_a": "P-00087",
+  "person_b": "P-00262",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KOD-00006"
+  ]
+ },
+ {
+  "person_a": "P-00136",
+  "person_b": "P-00252",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-UDU-00006"
+  ]
+ },
+ {
+  "person_a": "P-00009",
+  "person_b": "P-00159",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00009"
+  ]
+ },
+ {
+  "person_a": "P-00165",
+  "person_b": "P-00223",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-KOD-00001"
+  ]
+ },
+ {
+  "person_a": "P-00094",
   "person_b": "P-00165",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-CH1-00001"
+   "FIR-2026-KOD-00001"
   ]
  },
  {
-  "person_a": "P-00141",
-  "person_b": "P-00232",
+  "person_a": "P-00094",
+  "person_b": "P-00223",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-DAV-00007"
+   "FIR-2026-KOD-00001"
   ]
  },
  {
-  "person_a": "P-00049",
-  "person_b": "P-00051",
+  "person_a": "P-00128",
+  "person_b": "P-00152",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BE1-00004"
+   "FIR-2025-DHA-00006"
   ]
  },
  {
-  "person_a": "P-00049",
-  "person_b": "P-00229",
+  "person_a": "P-00022",
+  "person_b": "P-00152",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BE1-00004"
+   "FIR-2025-DHA-00006"
   ]
  },
  {
-  "person_a": "P-00051",
-  "person_b": "P-00229",
+  "person_a": "P-00022",
+  "person_b": "P-00128",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BE1-00004"
+   "FIR-2025-DHA-00006"
   ]
  },
  {
-  "person_a": "P-00110",
-  "person_b": "P-00228",
+  "person_a": "P-00140",
+  "person_b": "P-00244",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-CHI-00009"
+  ]
+ },
+ {
+  "person_a": "P-00179",
+  "person_b": "P-00244",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-CHI-00009"
+  ]
+ },
+ {
+  "person_a": "P-00140",
+  "person_b": "P-00179",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-CHI-00009"
+  ]
+ },
+ {
+  "person_a": "P-00202",
+  "person_b": "P-00262",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
@@ -801,161 +585,35 @@
   ]
  },
  {
-  "person_a": "P-00017",
-  "person_b": "P-00305",
+  "person_a": "P-00183",
+  "person_b": "P-00262",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEL-00011"
+   "FIR-2026-KOD-00002"
   ]
  },
  {
-  "person_a": "P-00128",
-  "person_b": "P-00305",
+  "person_a": "P-00183",
+  "person_b": "P-00202",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEL-00011"
+   "FIR-2026-KOD-00002"
   ]
  },
  {
-  "person_a": "P-00017",
-  "person_b": "P-00128",
+  "person_a": "P-00174",
+  "person_b": "P-00271",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEL-00011"
+   "FIR-2025-KOL-00004"
   ]
  },
  {
-  "person_a": "P-00176",
-  "person_b": "P-00308",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-SHI-00006"
-  ]
- },
- {
-  "person_a": "P-00176",
-  "person_b": "P-00267",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-VIJ-00002"
-  ]
- },
- {
-  "person_a": "P-00197",
-  "person_b": "P-00240",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00007"
-  ]
- },
- {
-  "person_a": "P-00109",
-  "person_b": "P-00197",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00007"
-  ]
- },
- {
-  "person_a": "P-00109",
-  "person_b": "P-00240",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00007"
-  ]
- },
- {
-  "person_a": "P-00015",
-  "person_b": "P-00252",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-KOD-00010"
-  ]
- },
- {
-  "person_a": "P-00031",
-  "person_b": "P-00236",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-KOL-00003"
-  ]
- },
- {
-  "person_a": "P-00033",
-  "person_b": "P-00291",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-SHI-00008"
-  ]
- },
- {
-  "person_a": "P-00002",
-  "person_b": "P-00274",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-MYS-00006"
-  ]
- },
- {
-  "person_a": "P-00002",
-  "person_b": "P-00284",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-MYS-00006"
-  ]
- },
- {
-  "person_a": "P-00274",
-  "person_b": "P-00284",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-MYS-00006"
-  ]
- },
- {
-  "person_a": "P-00106",
-  "person_b": "P-00270",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-TUM-00006"
-  ]
- },
- {
-  "person_a": "P-00070",
-  "person_b": "P-00270",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-TUM-00006"
-  ]
- },
- {
-  "person_a": "P-00070",
-  "person_b": "P-00106",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-TUM-00006"
-  ]
- },
- {
-  "person_a": "P-00075",
-  "person_b": "P-00239",
+  "person_a": "P-00063",
+  "person_b": "P-00228",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
@@ -963,89 +621,206 @@
   ]
  },
  {
-  "person_a": "P-00031",
-  "person_b": "P-00161",
+  "person_a": "P-00211",
+  "person_b": "P-00304",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-DAV-00008"
+   "FIR-2026-BEL-00002"
   ]
  },
  {
-  "person_a": "P-00218",
-  "person_b": "P-00383",
+  "person_a": "P-00113",
+  "person_b": "P-00115",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BE1-00006"
+   "FIR-2024-DAK-00001"
   ]
  },
  {
-  "person_a": "P-00129",
-  "person_b": "P-00380",
+  "person_a": "P-00026",
+  "person_b": "P-00232",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BEN-00006"
+   "FIR-2026-UTT-00001"
   ]
  },
  {
-  "person_a": "P-00042",
-  "person_b": "P-00287",
+  "person_a": "P-00232",
+  "person_b": "P-00274",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-UTT-00006"
+   "FIR-2026-UTT-00001"
   ]
  },
  {
-  "person_a": "P-00287",
-  "person_b": "P-00348",
+  "person_a": "P-00026",
+  "person_b": "P-00274",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-UTT-00006"
+   "FIR-2026-UTT-00001"
   ]
  },
  {
-  "person_a": "P-00042",
-  "person_b": "P-00348",
+  "person_a": "P-00058",
+  "person_b": "P-00149",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-UTT-00006"
+   "FIR-2025-MAN-00004"
   ]
  },
  {
-  "person_a": "P-00119",
-  "person_b": "P-00176",
+  "person_a": "P-00058",
+  "person_b": "P-00123",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-HUB-00011"
+   "FIR-2025-MAN-00004"
   ]
  },
  {
-  "person_a": "P-00180",
-  "person_b": "P-00311",
+  "person_a": "P-00123",
+  "person_b": "P-00149",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-SHI-00009"
+   "FIR-2025-MAN-00004"
   ]
  },
  {
-  "person_a": "P-00157",
-  "person_b": "P-00285",
+  "person_a": "P-00021",
+  "person_b": "P-00187",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEN-00015"
+   "FIR-2025-BAL-00004"
   ]
  },
  {
-  "person_a": "P-00260",
-  "person_b": "P-00309",
+  "person_a": "P-00021",
+  "person_b": "P-00132",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BAL-00004"
+  ]
+ },
+ {
+  "person_a": "P-00132",
+  "person_b": "P-00187",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BAL-00004"
+  ]
+ },
+ {
+  "person_a": "P-00014",
+  "person_b": "P-00256",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BID-00007"
+  ]
+ },
+ {
+  "person_a": "P-00206",
+  "person_b": "P-00330",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-CHI-00010"
+  ]
+ },
+ {
+  "person_a": "P-00153",
+  "person_b": "P-00210",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DHA-00007"
+  ]
+ },
+ {
+  "person_a": "P-00002",
+  "person_b": "P-00263",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KOL-00007"
+  ]
+ },
+ {
+  "person_a": "P-00002",
+  "person_b": "P-00273",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KOL-00007"
+  ]
+ },
+ {
+  "person_a": "P-00263",
+  "person_b": "P-00273",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KOL-00007"
+  ]
+ },
+ {
+  "person_a": "P-00171",
+  "person_b": "P-00319",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BID-00011"
+  ]
+ },
+ {
+  "person_a": "P-00151",
+  "person_b": "P-00286",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-HAS-00005"
+  ]
+ },
+ {
+  "person_a": "P-00013",
+  "person_b": "P-00242",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-RAI-00006"
+  ]
+ },
+ {
+  "person_a": "P-00083",
+  "person_b": "P-00249",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-CHI-00011"
+  ]
+ },
+ {
+  "person_a": "P-00222",
+  "person_b": "P-00247",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-UTT-00004"
+  ]
+ },
+ {
+  "person_a": "P-00249",
+  "person_b": "P-00297",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
@@ -1053,368 +828,404 @@
   ]
  },
  {
-  "person_a": "P-00249",
-  "person_b": "P-00385",
+  "person_a": "P-00042",
+  "person_b": "P-00123",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-DAK-00011"
+   "FIR-2026-HUB-00006"
   ]
  },
  {
-  "person_a": "P-00096",
-  "person_b": "P-00142",
+  "person_a": "P-00182",
+  "person_b": "P-00377",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00019"
+   "FIR-2026-KOD-00003"
   ]
  },
  {
-  "person_a": "P-00108",
-  "person_b": "P-00256",
+  "person_a": "P-00267",
+  "person_b": "P-00280",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEL-00013"
+   "FIR-2025-DAV-00006"
   ]
  },
  {
-  "person_a": "P-00085",
-  "person_b": "P-00251",
+  "person_a": "P-00127",
+  "person_b": "P-00206",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BEN-00009"
+   "FIR-2025-HUB-00011"
+  ]
+ },
+ {
+  "person_a": "P-00104",
+  "person_b": "P-00245",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2024-MAN-00001"
+  ]
+ },
+ {
+  "person_a": "P-00163",
+  "person_b": "P-00181",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-RAI-00008"
+  ]
+ },
+ {
+  "person_a": "P-00053",
+  "person_b": "P-00201",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-UDU-00010"
+  ]
+ },
+ {
+  "person_a": "P-00012",
+  "person_b": "P-00066",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00011"
+  ]
+ },
+ {
+  "person_a": "P-00066",
+  "person_b": "P-00204",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00011"
+  ]
+ },
+ {
+  "person_a": "P-00012",
+  "person_b": "P-00204",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00011"
+  ]
+ },
+ {
+  "person_a": "P-00013",
+  "person_b": "P-00331",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-SHI-00010"
+  ]
+ },
+ {
+  "person_a": "P-00015",
+  "person_b": "P-00290",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-VIJ-00007"
+  ]
+ },
+ {
+  "person_a": "P-00015",
+  "person_b": "P-00302",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-VIJ-00007"
+  ]
+ },
+ {
+  "person_a": "P-00290",
+  "person_b": "P-00302",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-VIJ-00007"
+  ]
+ },
+ {
+  "person_a": "P-00363",
+  "person_b": "P-00416",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-RAI-00009"
+  ]
+ },
+ {
+  "person_a": "P-00275",
+  "person_b": "P-00285",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00013"
+  ]
+ },
+ {
+  "person_a": "P-00212",
+  "person_b": "P-00275",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00013"
+  ]
+ },
+ {
+  "person_a": "P-00212",
+  "person_b": "P-00285",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00013"
+  ]
+ },
+ {
+  "person_a": "P-00034",
+  "person_b": "P-00076",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-BE1-00009"
+  ]
+ },
+ {
+  "person_a": "P-00034",
+  "person_b": "P-00312",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-BE1-00009"
+  ]
+ },
+ {
+  "person_a": "P-00076",
+  "person_b": "P-00312",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-BE1-00009"
+  ]
+ },
+ {
+  "person_a": "P-00001",
+  "person_b": "P-00330",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-VIJ-00008"
+  ]
+ },
+ {
+  "person_a": "P-00019",
+  "person_b": "P-00239",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00015"
+  ]
+ },
+ {
+  "person_a": "P-00239",
+  "person_b": "P-00414",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00015"
+  ]
+ },
+ {
+  "person_a": "P-00019",
+  "person_b": "P-00414",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00015"
+  ]
+ },
+ {
+  "person_a": "P-00131",
+  "person_b": "P-00397",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DHA-00009"
+  ]
+ },
+ {
+  "person_a": "P-00164",
+  "person_b": "P-00282",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2024-RAI-00001"
+  ]
+ },
+ {
+  "person_a": "P-00174",
+  "person_b": "P-00282",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2024-RAI-00001"
+  ]
+ },
+ {
+  "person_a": "P-00164",
+  "person_b": "P-00174",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2024-RAI-00001"
+  ]
+ },
+ {
+  "person_a": "P-00336",
+  "person_b": "P-00438",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BID-00013"
+  ]
+ },
+ {
+  "person_a": "P-00004",
+  "person_b": "P-00336",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BID-00013"
+  ]
+ },
+ {
+  "person_a": "P-00004",
+  "person_b": "P-00438",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BID-00013"
+  ]
+ },
+ {
+  "person_a": "P-00172",
+  "person_b": "P-00294",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00011"
+  ]
+ },
+ {
+  "person_a": "P-00171",
+  "person_b": "P-00295",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-UTT-00006"
   ]
  },
  {
   "person_a": "P-00090",
-  "person_b": "P-00251",
+  "person_b": "P-00383",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BEN-00009"
+   "FIR-2025-HUB-00013"
   ]
  },
  {
-  "person_a": "P-00085",
-  "person_b": "P-00090",
+  "person_a": "P-00383",
+  "person_b": "P-00437",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BEN-00009"
+   "FIR-2025-HUB-00013"
   ]
  },
  {
-  "person_a": "P-00081",
-  "person_b": "P-00191",
+  "person_a": "P-00090",
+  "person_b": "P-00437",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEL-00014"
+   "FIR-2025-HUB-00013"
   ]
  },
  {
-  "person_a": "P-00038",
-  "person_b": "P-00069",
+  "person_a": "P-00168",
+  "person_b": "P-00445",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2024-KOD-00001"
+   "FIR-2026-UDU-00006"
+  ]
+ },
+ {
+  "person_a": "P-00338",
+  "person_b": "P-00445",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-UDU-00006"
+  ]
+ },
+ {
+  "person_a": "P-00168",
+  "person_b": "P-00338",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-UDU-00006"
   ]
  },
  {
   "person_a": "P-00028",
-  "person_b": "P-00265",
+  "person_b": "P-00094",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BE1-00007"
+   "FIR-2025-BEN-00016"
   ]
  },
  {
-  "person_a": "P-00170",
-  "person_b": "P-00265",
+  "person_a": "P-00094",
+  "person_b": "P-00253",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BE1-00007"
+   "FIR-2025-BEN-00016"
   ]
  },
  {
   "person_a": "P-00028",
-  "person_b": "P-00170",
+  "person_b": "P-00253",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BE1-00007"
+   "FIR-2025-BEN-00016"
   ]
  },
  {
-  "person_a": "P-00139",
-  "person_b": "P-00285",
+  "person_a": "P-00305",
+  "person_b": "P-00470",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-KAL-00007"
+   "FIR-2025-DAV-00009"
   ]
  },
  {
-  "person_a": "P-00139",
-  "person_b": "P-00216",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-KAL-00007"
-  ]
- },
- {
-  "person_a": "P-00216",
-  "person_b": "P-00285",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-KAL-00007"
-  ]
- },
- {
-  "person_a": "P-00079",
-  "person_b": "P-00432",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00017"
-  ]
- },
- {
-  "person_a": "P-00008",
-  "person_b": "P-00058",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00008"
-  ]
- },
- {
-  "person_a": "P-00219",
-  "person_b": "P-00317",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-VIJ-00003"
-  ]
- },
- {
-  "person_a": "P-00010",
-  "person_b": "P-00160",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-MYS-00022"
-  ]
- },
- {
-  "person_a": "P-00197",
-  "person_b": "P-00316",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-DHA-00012"
-  ]
- },
- {
-  "person_a": "P-00244",
-  "person_b": "P-00381",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEL-00016"
-  ]
- },
- {
-  "person_a": "P-00254",
-  "person_b": "P-00443",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-HAS-00009"
-  ]
- },
- {
-  "person_a": "P-00007",
-  "person_b": "P-00397",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-DAV-00001"
-  ]
- },
- {
-  "person_a": "P-00007",
-  "person_b": "P-00061",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-DAV-00001"
-  ]
- },
- {
-  "person_a": "P-00061",
-  "person_b": "P-00397",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-DAV-00001"
-  ]
- },
- {
-  "person_a": "P-00249",
-  "person_b": "P-00341",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-HUB-00007"
-  ]
- },
- {
-  "person_a": "P-00206",
-  "person_b": "P-00235",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00012"
-  ]
- },
- {
-  "person_a": "P-00171",
-  "person_b": "P-00291",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEL-00004"
-  ]
- },
- {
-  "person_a": "P-00171",
-  "person_b": "P-00191",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEL-00004"
-  ]
- },
- {
-  "person_a": "P-00191",
-  "person_b": "P-00291",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEL-00004"
-  ]
- },
- {
-  "person_a": "P-00218",
-  "person_b": "P-00483",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-TUM-00009"
-  ]
- },
- {
-  "person_a": "P-00319",
-  "person_b": "P-00373",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-KOD-00013"
-  ]
- },
- {
-  "person_a": "P-00285",
-  "person_b": "P-00319",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-KOD-00013"
-  ]
- },
- {
-  "person_a": "P-00285",
-  "person_b": "P-00373",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-KOD-00013"
-  ]
- },
- {
-  "person_a": "P-00024",
-  "person_b": "P-00151",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00009"
-  ]
- },
- {
-  "person_a": "P-00151",
-  "person_b": "P-00317",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00009"
-  ]
- },
- {
-  "person_a": "P-00024",
-  "person_b": "P-00317",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00009"
-  ]
- },
- {
-  "person_a": "P-00102",
-  "person_b": "P-00393",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-DAV-00011"
-  ]
- },
- {
-  "person_a": "P-00020",
-  "person_b": "P-00102",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BE1-00011"
-  ]
- },
- {
-  "person_a": "P-00102",
-  "person_b": "P-00239",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BE1-00011"
-  ]
- },
- {
-  "person_a": "P-00020",
-  "person_b": "P-00239",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BE1-00011"
-  ]
- },
- {
-  "person_a": "P-00175",
-  "person_b": "P-00341",
+  "person_a": "P-00399",
+  "person_b": "P-00424",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
@@ -1423,142 +1234,358 @@
  },
  {
   "person_a": "P-00009",
-  "person_b": "P-00462",
+  "person_b": "P-00436",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEN-00022"
+   "FIR-2025-BAL-00008"
+  ]
+ },
+ {
+  "person_a": "P-00229",
+  "person_b": "P-00374",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DHA-00012"
+  ]
+ },
+ {
+  "person_a": "P-00065",
+  "person_b": "P-00220",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-BEL-00004"
+  ]
+ },
+ {
+  "person_a": "P-00307",
+  "person_b": "P-00419",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DAK-00015"
+  ]
+ },
+ {
+  "person_a": "P-00202",
+  "person_b": "P-00307",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DAK-00015"
+  ]
+ },
+ {
+  "person_a": "P-00202",
+  "person_b": "P-00419",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DAK-00015"
+  ]
+ },
+ {
+  "person_a": "P-00323",
+  "person_b": "P-00439",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KOL-00012"
+  ]
+ },
+ {
+  "person_a": "P-00024",
+  "person_b": "P-00273",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-RAI-00010"
+  ]
+ },
+ {
+  "person_a": "P-00102",
+  "person_b": "P-00460",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DAV-00010"
+  ]
+ },
+ {
+  "person_a": "P-00016",
+  "person_b": "P-00145",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-MAN-00005"
+  ]
+ },
+ {
+  "person_a": "P-00256",
+  "person_b": "P-00444",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEL-00007"
   ]
  },
  {
   "person_a": "P-00046",
-  "person_b": "P-00257",
+  "person_b": "P-00256",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-DHA-00015"
+   "FIR-2025-BEL-00007"
   ]
  },
  {
-  "person_a": "P-00325",
+  "person_a": "P-00046",
   "person_b": "P-00444",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-TUM-00011"
+   "FIR-2025-BEL-00007"
   ]
  },
  {
-  "person_a": "P-00213",
-  "person_b": "P-00325",
+  "person_a": "P-00019",
+  "person_b": "P-00361",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-TUM-00011"
+   "FIR-2026-KOD-00004"
   ]
  },
  {
-  "person_a": "P-00213",
-  "person_b": "P-00444",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-TUM-00011"
-  ]
- },
- {
-  "person_a": "P-00071",
-  "person_b": "P-00475",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-DAK-00003"
-  ]
- },
- {
-  "person_a": "P-00352",
+  "person_a": "P-00078",
   "person_b": "P-00404",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-BE1-00004"
+   "FIR-2025-MAN-00006"
   ]
  },
  {
-  "person_a": "P-00167",
-  "person_b": "P-00354",
+  "person_a": "P-00089",
+  "person_b": "P-00404",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-KOL-00009"
+   "FIR-2025-MAN-00006"
   ]
  },
  {
-  "person_a": "P-00300",
-  "person_b": "P-00506",
+  "person_a": "P-00078",
+  "person_b": "P-00089",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEN-00024"
+   "FIR-2025-MAN-00006"
   ]
  },
  {
-  "person_a": "P-00022",
-  "person_b": "P-00506",
+  "person_a": "P-00212",
+  "person_b": "P-00456",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEN-00024"
+   "FIR-2025-UTT-00012"
   ]
  },
  {
-  "person_a": "P-00022",
-  "person_b": "P-00300",
+  "person_a": "P-00212",
+  "person_b": "P-00276",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEN-00024"
+   "FIR-2025-UTT-00012"
   ]
  },
  {
-  "person_a": "P-00039",
-  "person_b": "P-00134",
+  "person_a": "P-00276",
+  "person_b": "P-00456",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-CHI-00013"
+   "FIR-2025-UTT-00012"
   ]
  },
  {
-  "person_a": "P-00140",
-  "person_b": "P-00302",
+  "person_a": "P-00036",
+  "person_b": "P-00449",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-BEL-00019"
+   "FIR-2025-KAL-00014"
   ]
  },
  {
-  "person_a": "P-00228",
-  "person_b": "P-00258",
+  "person_a": "P-00031",
+  "person_b": "P-00487",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-CHI-00005"
+   "FIR-2026-BEN-00014"
   ]
  },
  {
-  "person_a": "P-00279",
-  "person_b": "P-00548",
+  "person_a": "P-00161",
+  "person_b": "P-00487",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-DAV-00004"
+   "FIR-2026-BEN-00014"
   ]
  },
  {
-  "person_a": "P-00045",
-  "person_b": "P-00319",
+  "person_a": "P-00031",
+  "person_b": "P-00161",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-BEN-00014"
+  ]
+ },
+ {
+  "person_a": "P-00088",
+  "person_b": "P-00123",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00019"
+  ]
+ },
+ {
+  "person_a": "P-00143",
+  "person_b": "P-00523",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEL-00008"
+  ]
+ },
+ {
+  "person_a": "P-00107",
+  "person_b": "P-00489",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-DHA-00010"
+  ]
+ },
+ {
+  "person_a": "P-00031",
+  "person_b": "P-00489",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-DHA-00010"
+  ]
+ },
+ {
+  "person_a": "P-00031",
+  "person_b": "P-00107",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-DHA-00010"
+  ]
+ },
+ {
+  "person_a": "P-00108",
+  "person_b": "P-00361",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BID-00017"
+  ]
+ },
+ {
+  "person_a": "P-00263",
+  "person_b": "P-00414",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-BID-00004"
+  ]
+ },
+ {
+  "person_a": "P-00008",
+  "person_b": "P-00098",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DAK-00017"
+  ]
+ },
+ {
+  "person_a": "P-00230",
+  "person_b": "P-00285",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEL-00009"
+  ]
+ },
+ {
+  "person_a": "P-00222",
+  "person_b": "P-00502",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-KOD-00005"
+  ]
+ },
+ {
+  "person_a": "P-00222",
+  "person_b": "P-00433",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-KOD-00005"
+  ]
+ },
+ {
+  "person_a": "P-00433",
+  "person_b": "P-00502",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-KOD-00005"
+  ]
+ },
+ {
+  "person_a": "P-00166",
+  "person_b": "P-00526",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00014"
+  ]
+ },
+ {
+  "person_a": "P-00001",
+  "person_b": "P-00448",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-HAS-00010"
+  ]
+ },
+ {
+  "person_a": "P-00170",
+  "person_b": "P-00491",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-TUM-00002"
+  ]
+ },
+ {
+  "person_a": "P-00174",
+  "person_b": "P-00365",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
@@ -1566,485 +1593,143 @@
   ]
  },
  {
-  "person_a": "P-00042",
-  "person_b": "P-00377",
+  "person_a": "P-00357",
+  "person_b": "P-00365",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-DHA-00016"
+   "FIR-2025-DAK-00019"
   ]
  },
  {
-  "person_a": "P-00279",
-  "person_b": "P-00439",
+  "person_a": "P-00174",
+  "person_b": "P-00357",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-HUB-00015"
+   "FIR-2025-DAK-00019"
   ]
  },
  {
-  "person_a": "P-00037",
-  "person_b": "P-00499",
+  "person_a": "P-00385",
+  "person_b": "P-00441",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-DAK-00007"
+   "FIR-2026-MYS-00007"
   ]
  },
  {
-  "person_a": "P-00090",
-  "person_b": "P-00176",
+  "person_a": "P-00347",
+  "person_b": "P-00354",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-KAL-00012"
+   "FIR-2025-TUM-00011"
   ]
  },
  {
-  "person_a": "P-00115",
-  "person_b": "P-00352",
+  "person_a": "P-00085",
+  "person_b": "P-00347",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-KOD-00014"
+   "FIR-2025-TUM-00011"
   ]
  },
  {
-  "person_a": "P-00352",
-  "person_b": "P-00487",
+  "person_a": "P-00085",
+  "person_b": "P-00354",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-KOD-00014"
+   "FIR-2025-TUM-00011"
   ]
  },
  {
-  "person_a": "P-00115",
-  "person_b": "P-00487",
+  "person_a": "P-00008",
+  "person_b": "P-00309",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-KOD-00014"
+   "FIR-2025-SHI-00017"
   ]
  },
  {
-  "person_a": "P-00002",
-  "person_b": "P-00356",
+  "person_a": "P-00374",
+  "person_b": "P-00472",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-KOL-00010"
+   "FIR-2025-DAK-00021"
   ]
  },
  {
-  "person_a": "P-00002",
-  "person_b": "P-00106",
+  "person_a": "P-00259",
+  "person_b": "P-00472",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-KOL-00010"
+   "FIR-2025-DAK-00021"
   ]
  },
  {
-  "person_a": "P-00106",
-  "person_b": "P-00356",
+  "person_a": "P-00259",
+  "person_b": "P-00374",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-KOL-00010"
+   "FIR-2025-DAK-00021"
+  ]
+ },
+ {
+  "person_a": "P-00274",
+  "person_b": "P-00413",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-HUB-00017"
+  ]
+ },
+ {
+  "person_a": "P-00051",
+  "person_b": "P-00518",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BE1-00008"
+  ]
+ },
+ {
+  "person_a": "P-00325",
+  "person_b": "P-00518",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BE1-00008"
+  ]
+ },
+ {
+  "person_a": "P-00051",
+  "person_b": "P-00325",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BE1-00008"
+  ]
+ },
+ {
+  "person_a": "P-00124",
+  "person_b": "P-00429",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00021"
   ]
  },
  {
   "person_a": "P-00022",
-  "person_b": "P-00211",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BE1-00018"
-  ]
- },
- {
-  "person_a": "P-00393",
-  "person_b": "P-00554",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-MYS-00012"
-  ]
- },
- {
-  "person_a": "P-00110",
-  "person_b": "P-00241",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-HAS-00012"
-  ]
- },
- {
-  "person_a": "P-00122",
-  "person_b": "P-00241",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-HAS-00012"
-  ]
- },
- {
-  "person_a": "P-00110",
-  "person_b": "P-00122",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-HAS-00012"
-  ]
- },
- {
-  "person_a": "P-00176",
-  "person_b": "P-00257",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-CHI-00006"
-  ]
- },
- {
-  "person_a": "P-00028",
-  "person_b": "P-00437",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00012"
-  ]
- },
- {
-  "person_a": "P-00437",
-  "person_b": "P-00540",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00012"
-  ]
- },
- {
-  "person_a": "P-00028",
-  "person_b": "P-00540",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BAL-00012"
-  ]
- },
- {
-  "person_a": "P-00414",
-  "person_b": "P-00581",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-TUM-00014"
-  ]
- },
- {
-  "person_a": "P-00127",
-  "person_b": "P-00411",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-DAV-00013"
-  ]
- },
- {
-  "person_a": "P-00432",
-  "person_b": "P-00525",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-SHI-00010"
-  ]
- },
- {
-  "person_a": "P-00416",
-  "person_b": "P-00583",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-CH1-00005"
-  ]
- },
- {
-  "person_a": "P-00068",
-  "person_b": "P-00093",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BAL-00007"
-  ]
- },
- {
-  "person_a": "P-00093",
-  "person_b": "P-00600",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BAL-00007"
-  ]
- },
- {
-  "person_a": "P-00068",
-  "person_b": "P-00600",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BAL-00007"
-  ]
- },
- {
-  "person_a": "P-00230",
-  "person_b": "P-00442",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-SHI-00011"
-  ]
- },
- {
-  "person_a": "P-00442",
-  "person_b": "P-00465",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-SHI-00011"
-  ]
- },
- {
-  "person_a": "P-00230",
-  "person_b": "P-00465",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-SHI-00011"
-  ]
- },
- {
-  "person_a": "P-00321",
-  "person_b": "P-00332",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BE1-00007"
-  ]
- },
- {
-  "person_a": "P-00092",
-  "person_b": "P-00619",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BAL-00008"
-  ]
- },
- {
-  "person_a": "P-00004",
-  "person_b": "P-00092",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BAL-00008"
-  ]
- },
- {
-  "person_a": "P-00004",
-  "person_b": "P-00619",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BAL-00008"
-  ]
- },
- {
-  "person_a": "P-00478",
-  "person_b": "P-00496",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-HAS-00013"
-  ]
- },
- {
-  "person_a": "P-00142",
-  "person_b": "P-00167",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEL-00023"
-  ]
- },
- {
-  "person_a": "P-00302",
-  "person_b": "P-00453",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00016"
-  ]
- },
- {
-  "person_a": "P-00444",
-  "person_b": "P-00453",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00016"
-  ]
- },
- {
-  "person_a": "P-00302",
-  "person_b": "P-00444",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00016"
-  ]
- },
- {
-  "person_a": "P-00234",
-  "person_b": "P-00587",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-UDU-00004"
-  ]
- },
- {
-  "person_a": "P-00027",
-  "person_b": "P-00476",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BE1-00023"
-  ]
- },
- {
-  "person_a": "P-00125",
-  "person_b": "P-00480",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-DAK-00024"
-  ]
- },
- {
-  "person_a": "P-00192",
-  "person_b": "P-00455",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-MAN-00008"
-  ]
- },
- {
-  "person_a": "P-00131",
-  "person_b": "P-00273",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-CHA-00006"
-  ]
- },
- {
-  "person_a": "P-00273",
-  "person_b": "P-00632",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-CHA-00006"
-  ]
- },
- {
-  "person_a": "P-00131",
-  "person_b": "P-00632",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-CHA-00006"
-  ]
- },
- {
-  "person_a": "P-00251",
-  "person_b": "P-00292",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-CHA-00007"
-  ]
- },
- {
-  "person_a": "P-00038",
-  "person_b": "P-00661",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-HUB-00014"
-  ]
- },
- {
-  "person_a": "P-00267",
-  "person_b": "P-00658",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BAL-00011"
-  ]
- },
- {
-  "person_a": "P-00242",
-  "person_b": "P-00329",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-MYS-00014"
-  ]
- },
- {
-  "person_a": "P-00229",
-  "person_b": "P-00343",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BE1-00024"
-  ]
- },
- {
-  "person_a": "P-00263",
-  "person_b": "P-00604",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-UDU-00002"
-  ]
- },
- {
-  "person_a": "P-00263",
-  "person_b": "P-00465",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-UDU-00002"
-  ]
- },
- {
-  "person_a": "P-00465",
-  "person_b": "P-00604",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2024-UDU-00002"
-  ]
- },
- {
-  "person_a": "P-00368",
-  "person_b": "P-00514",
+  "person_b": "P-00226",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
@@ -2052,56 +1737,443 @@
   ]
  },
  {
-  "person_a": "P-00191",
-  "person_b": "P-00594",
+  "person_a": "P-00428",
+  "person_b": "P-00466",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-DAK-00025"
+   "FIR-2024-RAI-00002"
   ]
  },
  {
-  "person_a": "P-00709",
-  "person_b": "P-00716",
+  "person_a": "P-00013",
+  "person_b": "P-00436",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-DHA-00011"
+  ]
+ },
+ {
+  "person_a": "P-00024",
+  "person_b": "P-00436",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-DHA-00011"
+  ]
+ },
+ {
+  "person_a": "P-00013",
+  "person_b": "P-00024",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-DHA-00011"
+  ]
+ },
+ {
+  "person_a": "P-00243",
+  "person_b": "P-00459",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-HAS-00004"
+  ]
+ },
+ {
+  "person_a": "P-00377",
+  "person_b": "P-00524",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KOL-00014"
+  ]
+ },
+ {
+  "person_a": "P-00366",
+  "person_b": "P-00420",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-DAK-00005"
+  ]
+ },
+ {
+  "person_a": "P-00340",
+  "person_b": "P-00532",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BID-00019"
+  ]
+ },
+ {
+  "person_a": "P-00305",
+  "person_b": "P-00340",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BID-00019"
+  ]
+ },
+ {
+  "person_a": "P-00305",
+  "person_b": "P-00532",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BID-00019"
+  ]
+ },
+ {
+  "person_a": "P-00318",
+  "person_b": "P-00457",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00022"
+  ]
+ },
+ {
+  "person_a": "P-00120",
+  "person_b": "P-00457",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00022"
+  ]
+ },
+ {
+  "person_a": "P-00120",
+  "person_b": "P-00318",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00022"
+  ]
+ },
+ {
+  "person_a": "P-00564",
+  "person_b": "P-00606",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KOL-00015"
+  ]
+ },
+ {
+  "person_a": "P-00232",
+  "person_b": "P-00423",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-HAS-00012"
+  ]
+ },
+ {
+  "person_a": "P-00012",
+  "person_b": "P-00131",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-CHI-00019"
+  ]
+ },
+ {
+  "person_a": "P-00012",
+  "person_b": "P-00598",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-CHI-00019"
+  ]
+ },
+ {
+  "person_a": "P-00131",
+  "person_b": "P-00598",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-CHI-00019"
+  ]
+ },
+ {
+  "person_a": "P-00030",
+  "person_b": "P-00067",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-RAI-00012"
+  ]
+ },
+ {
+  "person_a": "P-00445",
+  "person_b": "P-00533",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BE1-00009"
+  ]
+ },
+ {
+  "person_a": "P-00198",
+  "person_b": "P-00445",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BE1-00009"
+  ]
+ },
+ {
+  "person_a": "P-00198",
+  "person_b": "P-00533",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BE1-00009"
+  ]
+ },
+ {
+  "person_a": "P-00349",
+  "person_b": "P-00571",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-BEN-00017"
+  ]
+ },
+ {
+  "person_a": "P-00240",
+  "person_b": "P-00523",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00023"
+  ]
+ },
+ {
+  "person_a": "P-00047",
+  "person_b": "P-00523",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00023"
+  ]
+ },
+ {
+  "person_a": "P-00047",
+  "person_b": "P-00240",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00023"
+  ]
+ },
+ {
+  "person_a": "P-00013",
+  "person_b": "P-00205",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BAL-00012"
+  ]
+ },
+ {
+  "person_a": "P-00159",
+  "person_b": "P-00442",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BE1-00010"
+  ]
+ },
+ {
+  "person_a": "P-00159",
+  "person_b": "P-00420",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BE1-00010"
+  ]
+ },
+ {
+  "person_a": "P-00420",
+  "person_b": "P-00442",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BE1-00010"
+  ]
+ },
+ {
+  "person_a": "P-00207",
+  "person_b": "P-00475",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BID-00020"
+  ]
+ },
+ {
+  "person_a": "P-00559",
+  "person_b": "P-00581",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DAV-00017"
+  ]
+ },
+ {
+  "person_a": "P-00574",
+  "person_b": "P-00661",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2024-KOD-00002"
+  ]
+ },
+ {
+  "person_a": "P-00066",
+  "person_b": "P-00440",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-TUM-00012"
+  ]
+ },
+ {
+  "person_a": "P-00503",
+  "person_b": "P-00634",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-UDU-00018"
+  ]
+ },
+ {
+  "person_a": "P-00214",
+  "person_b": "P-00634",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-UDU-00018"
+  ]
+ },
+ {
+  "person_a": "P-00214",
+  "person_b": "P-00503",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-UDU-00018"
+  ]
+ },
+ {
+  "person_a": "P-00248",
+  "person_b": "P-00292",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-HUB-00019"
+  ]
+ },
+ {
+  "person_a": "P-00193",
+  "person_b": "P-00289",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-KAL-00020"
+  ]
+ },
+ {
+  "person_a": "P-00283",
+  "person_b": "P-00350",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00025"
+  ]
+ },
+ {
+  "person_a": "P-00173",
+  "person_b": "P-00350",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00025"
+  ]
+ },
+ {
+  "person_a": "P-00173",
+  "person_b": "P-00283",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-BEN-00025"
+  ]
+ },
+ {
+  "person_a": "P-00376",
+  "person_b": "P-00654",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-DAK-00007"
+  ]
+ },
+ {
+  "person_a": "P-00027",
+  "person_b": "P-00521",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DAV-00018"
+  ]
+ },
+ {
+  "person_a": "P-00027",
+  "person_b": "P-00245",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DAV-00018"
+  ]
+ },
+ {
+  "person_a": "P-00245",
+  "person_b": "P-00521",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-DAV-00018"
+  ]
+ },
+ {
+  "person_a": "P-00701",
+  "person_b": "P-00703",
   "type": "cooffender",
   "weight": 2,
   "source_fir_ids": [
    "FIR-2026-BEN-00019",
-   "FIR-2025-BEN-00034"
+   "FIR-2025-BEN-00026"
   ]
  },
  {
-  "person_a": "P-00709",
-  "person_b": "P-00713",
+  "person_a": "P-00701",
+  "person_b": "P-00705",
   "type": "cooffender",
   "weight": 3,
   "source_fir_ids": [
-   "FIR-2026-BEN-00021",
-   "FIR-2025-BEN-00035",
-   "FIR-2026-BEN-00026"
+   "FIR-2026-BEN-00020",
+   "FIR-2026-BEN-00023",
+   "FIR-2026-BEN-00024"
   ]
  },
  {
-  "person_a": "P-00709",
-  "person_b": "P-00714",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00021"
-  ]
- },
- {
-  "person_a": "P-00713",
-  "person_b": "P-00714",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00021"
-  ]
- },
- {
-  "person_a": "P-00709",
-  "person_b": "P-00710",
+  "person_a": "P-00704",
+  "person_b": "P-00707",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
@@ -2109,148 +2181,202 @@
   ]
  },
  {
-  "person_a": "P-00709",
-  "person_b": "P-00712",
+  "person_a": "P-00701",
+  "person_b": "P-00704",
   "type": "cooffender",
   "weight": 3,
   "source_fir_ids": [
-   "FIR-2026-BEN-00023",
-   "FIR-2025-BEN-00033",
-   "FIR-2026-BEN-00025"
-  ]
- },
- {
-  "person_a": "P-00709",
-  "person_b": "P-00711",
-  "type": "cooffender",
-  "weight": 2,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00033",
-   "FIR-2026-BEN-00024"
-  ]
- },
- {
-  "person_a": "P-00711",
-  "person_b": "P-00712",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00033"
-  ]
- },
- {
-  "person_a": "P-00709",
-  "person_b": "P-00715",
-  "type": "cooffender",
-  "weight": 3,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00034",
-   "FIR-2026-BEN-00025",
-   "FIR-2026-BEN-00027"
-  ]
- },
- {
-  "person_a": "P-00715",
-  "person_b": "P-00716",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2025-BEN-00034"
-  ]
- },
- {
-  "person_a": "P-00712",
-  "person_b": "P-00715",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00025"
-  ]
- },
- {
-  "person_a": "P-00711",
-  "person_b": "P-00716",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-BEN-00028"
-  ]
- },
- {
-  "person_a": "P-00710",
-  "person_b": "P-00716",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
+   "FIR-2026-BEN-00022",
+   "FIR-2026-BEN-00027",
    "FIR-2026-BEN-00029"
   ]
  },
  {
-  "person_a": "P-00013",
-  "person_b": "P-00294",
+  "person_a": "P-00701",
+  "person_b": "P-00707",
   "type": "cooffender",
-  "weight": 1,
+  "weight": 2,
   "source_fir_ids": [
-   "FIR-2025-MYS-00042"
+   "FIR-2026-BEN-00022",
+   "FIR-2026-BEN-00028"
   ]
  },
  {
-  "person_a": "P-00508",
-  "person_b": "P-00713",
+  "person_a": "P-00701",
+  "person_b": "P-00702",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00044"
+   "FIR-2026-BEN-00025"
   ]
  },
  {
-  "person_a": "P-00264",
-  "person_b": "P-00522",
+  "person_a": "P-00701",
+  "person_b": "P-00706",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2024-MYS-00001"
+   "FIR-2026-BEN-00026"
   ]
  },
  {
-  "person_a": "P-00403",
-  "person_b": "P-00763",
+  "person_a": "P-00701",
+  "person_b": "P-00708",
+  "type": "cooffender",
+  "weight": 3,
+  "source_fir_ids": [
+   "FIR-2026-BEN-00026",
+   "FIR-2026-BEN-00027",
+   "FIR-2025-BEN-00027"
+  ]
+ },
+ {
+  "person_a": "P-00706",
+  "person_b": "P-00708",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00055"
+   "FIR-2026-BEN-00026"
   ]
  },
  {
-  "person_a": "P-00021",
-  "person_b": "P-00372",
+  "person_a": "P-00704",
+  "person_b": "P-00708",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00056"
+   "FIR-2026-BEN-00027"
   ]
  },
  {
-  "person_a": "P-00569",
-  "person_b": "P-00669",
+  "person_a": "P-00386",
+  "person_b": "P-00625",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00063"
+   "FIR-2026-MYS-00024"
   ]
  },
  {
-  "person_a": "P-00597",
-  "person_b": "P-00692",
+  "person_a": "P-00071",
+  "person_b": "P-00253",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2025-MYS-00066"
+   "FIR-2025-MYS-00028"
   ]
  },
  {
-  "person_a": "P-00110",
-  "person_b": "P-00276",
+  "person_a": "P-00447",
+  "person_b": "P-00727",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00030"
+  ]
+ },
+ {
+  "person_a": "P-00225",
+  "person_b": "P-00727",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00030"
+  ]
+ },
+ {
+  "person_a": "P-00225",
+  "person_b": "P-00447",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00030"
+  ]
+ },
+ {
+  "person_a": "P-00104",
+  "person_b": "P-00269",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-MYS-00028"
+  ]
+ },
+ {
+  "person_a": "P-00226",
+  "person_b": "P-00327",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00038"
+  ]
+ },
+ {
+  "person_a": "P-00274",
+  "person_b": "P-00351",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00041"
+  ]
+ },
+ {
+  "person_a": "P-00205",
+  "person_b": "P-00351",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00041"
+  ]
+ },
+ {
+  "person_a": "P-00205",
+  "person_b": "P-00274",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00041"
+  ]
+ },
+ {
+  "person_a": "P-00180",
+  "person_b": "P-00601",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00046"
+  ]
+ },
+ {
+  "person_a": "P-00180",
+  "person_b": "P-00194",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00046"
+  ]
+ },
+ {
+  "person_a": "P-00194",
+  "person_b": "P-00601",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2025-MYS-00046"
+  ]
+ },
+ {
+  "person_a": "P-00462",
+  "person_b": "P-00709",
+  "type": "cooffender",
+  "weight": 1,
+  "source_fir_ids": [
+   "FIR-2026-MYS-00030"
+  ]
+ },
+ {
+  "person_a": "P-00221",
+  "person_b": "P-00501",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
@@ -2258,586 +2384,568 @@
   ]
  },
  {
-  "person_a": "P-00110",
-  "person_b": "P-00701",
+  "person_a": "P-00077",
+  "person_b": "P-00491",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-MYS-00033"
+   "FIR-2026-HUB-00016"
   ]
  },
  {
-  "person_a": "P-00276",
-  "person_b": "P-00701",
+  "person_a": "P-00491",
+  "person_b": "P-00745",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-MYS-00033"
+   "FIR-2026-HUB-00016"
   ]
  },
  {
-  "person_a": "P-00015",
-  "person_b": "P-00698",
+  "person_a": "P-00077",
+  "person_b": "P-00745",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-HUB-00017"
+   "FIR-2026-HUB-00016"
   ]
  },
  {
-  "person_a": "P-00337",
-  "person_b": "P-00741",
+  "person_a": "P-00479",
+  "person_b": "P-00498",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-HUB-00018"
+   "FIR-2026-HUB-00022"
   ]
  },
  {
-  "person_a": "P-00208",
-  "person_b": "P-00675",
+  "person_a": "P-00072",
+  "person_b": "P-00347",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-HUB-00025"
+   "FIR-2026-HUB-00027"
   ]
  },
  {
-  "person_a": "P-00511",
-  "person_b": "P-00548",
+  "person_a": "P-00072",
+  "person_b": "P-00129",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-HUB-00028"
+   "FIR-2026-HUB-00027"
   ]
  },
  {
-  "person_a": "P-00053",
-  "person_b": "P-00511",
+  "person_a": "P-00129",
+  "person_b": "P-00347",
   "type": "cooffender",
   "weight": 1,
   "source_fir_ids": [
-   "FIR-2026-HUB-00028"
+   "FIR-2026-HUB-00027"
   ]
  },
  {
-  "person_a": "P-00053",
-  "person_b": "P-00548",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-HUB-00028"
-  ]
- },
- {
-  "person_a": "P-00484",
-  "person_b": "P-00512",
-  "type": "cooffender",
-  "weight": 1,
-  "source_fir_ids": [
-   "FIR-2026-HUB-00032"
-  ]
- },
- {
-  "person_a": "P-00228",
-  "person_b": "P-00290",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00195",
-  "person_b": "P-00296",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00334",
-  "person_b": "P-00337",
+  "person_a": "P-00187",
+  "person_b": "P-00508",
   "type": "associate",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00261",
-  "person_b": "P-00649",
-  "type": "phone",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00096",
-  "person_b": "P-00150",
-  "type": "phone",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00380",
-  "person_b": "P-00537",
+  "person_a": "P-00155",
+  "person_b": "P-00183",
   "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00377",
-  "person_b": "P-00660",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00120",
-  "person_b": "P-00754",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00088",
-  "person_b": "P-00720",
-  "type": "phone",
   "weight": 1,
   "source_fir_ids": []
  },
  {
   "person_a": "P-00249",
-  "person_b": "P-00577",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00019",
-  "person_b": "P-00556",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00213",
-  "person_b": "P-00606",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00263",
-  "person_b": "P-00679",
+  "person_b": "P-00624",
   "type": "phone",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00056",
-  "person_b": "P-00498",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00404",
-  "person_b": "P-00795",
+  "person_a": "P-00165",
+  "person_b": "P-00564",
   "type": "phone",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00020",
-  "person_b": "P-00125",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00302",
-  "person_b": "P-00460",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00135",
-  "person_b": "P-00563",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00452",
-  "person_b": "P-00557",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00218",
-  "person_b": "P-00514",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00299",
-  "person_b": "P-00744",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00174",
-  "person_b": "P-00677",
+  "person_a": "P-00095",
+  "person_b": "P-00202",
   "type": "phone",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00154",
-  "person_b": "P-00192",
+  "person_a": "P-00194",
+  "person_b": "P-00327",
+  "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00102",
+  "person_b": "P-00129",
+  "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00222",
+  "person_b": "P-00537",
+  "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00532",
+  "person_b": "P-00584",
+  "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00317",
+  "person_b": "P-00519",
   "type": "associate",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00380",
-  "person_b": "P-00788",
+  "person_a": "P-00199",
+  "person_b": "P-00270",
   "type": "family",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00161",
-  "person_b": "P-00228",
+  "person_a": "P-00076",
+  "person_b": "P-00168",
+  "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00329",
+  "person_b": "P-00601",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00064",
+  "person_b": "P-00382",
   "type": "vehicle",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00089",
-  "person_b": "P-00203",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00087",
-  "person_b": "P-00196",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00291",
-  "person_b": "P-00764",
-  "type": "vehicle",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00096",
-  "person_b": "P-00358",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00204",
-  "person_b": "P-00239",
-  "type": "phone",
   "weight": 1,
   "source_fir_ids": []
  },
  {
   "person_a": "P-00148",
-  "person_b": "P-00579",
+  "person_b": "P-00459",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00035",
+  "person_b": "P-00142",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00088",
+  "person_b": "P-00236",
   "type": "phone",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00029",
-  "person_b": "P-00478",
+  "person_a": "P-00225",
+  "person_b": "P-00787",
+  "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00448",
+  "person_b": "P-00698",
   "type": "associate",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00305",
-  "person_b": "P-00363",
+  "person_a": "P-00010",
+  "person_b": "P-00287",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00095",
+  "person_b": "P-00479",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00058",
+  "person_b": "P-00394",
   "type": "phone",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00062",
-  "person_b": "P-00220",
+  "person_a": "P-00234",
+  "person_b": "P-00606",
+  "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00067",
+  "person_b": "P-00474",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00321",
+  "person_b": "P-00444",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00025",
+  "person_b": "P-00110",
+  "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00545",
+  "person_b": "P-00654",
+  "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00063",
+  "person_b": "P-00118",
   "type": "vehicle",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00002",
-  "person_b": "P-00511",
+  "person_a": "P-00009",
+  "person_b": "P-00615",
   "type": "associate",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00053",
-  "person_b": "P-00367",
+  "person_a": "P-00014",
+  "person_b": "P-00053",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00116",
+  "person_b": "P-00621",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00082",
+  "person_b": "P-00646",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00302",
+  "person_b": "P-00321",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00311",
+  "person_b": "P-00493",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00191",
+  "person_b": "P-00448",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00386",
+  "person_b": "P-00733",
   "type": "phone",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00006",
-  "person_b": "P-00081",
+  "person_a": "P-00140",
+  "person_b": "P-00770",
   "type": "associate",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00202",
-  "person_b": "P-00221",
+  "person_a": "P-00200",
+  "person_b": "P-00253",
+  "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00082",
+  "person_b": "P-00112",
   "type": "associate",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00003",
-  "person_b": "P-00604",
-  "type": "associate",
+  "person_a": "P-00338",
+  "person_b": "P-00420",
+  "type": "family",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00129",
-  "person_b": "P-00543",
+  "person_a": "P-00010",
+  "person_b": "P-00274",
   "type": "associate",
   "weight": 1,
   "source_fir_ids": []
  },
  {
   "person_a": "P-00449",
-  "person_b": "P-00692",
+  "person_b": "P-00476",
   "type": "associate",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00424",
-  "person_b": "P-00511",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00476",
-  "person_b": "P-00564",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00081",
-  "person_b": "P-00101",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00437",
-  "person_b": "P-00562",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00259",
-  "person_b": "P-00655",
-  "type": "phone",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00311",
-  "person_b": "P-00553",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00005",
-  "person_b": "P-00468",
-  "type": "phone",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00588",
-  "person_b": "P-00720",
-  "type": "phone",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00143",
-  "person_b": "P-00314",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00710",
-  "person_b": "P-00779",
-  "type": "phone",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00005",
-  "person_b": "P-00179",
-  "type": "family",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00512",
-  "person_b": "P-00756",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00337",
+  "person_a": "P-00177",
   "person_b": "P-00486",
   "type": "associate",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00192",
-  "person_b": "P-00713",
-  "type": "phone",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00111",
-  "person_b": "P-00156",
+  "person_a": "P-00061",
+  "person_b": "P-00086",
   "type": "family",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00028",
-  "person_b": "P-00617",
+  "person_a": "P-00165",
+  "person_b": "P-00590",
   "type": "associate",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00317",
-  "person_b": "P-00414",
+  "person_a": "P-00170",
+  "person_b": "P-00781",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00104",
+  "person_b": "P-00581",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00031",
+  "person_b": "P-00319",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00232",
+  "person_b": "P-00518",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00061",
+  "person_b": "P-00554",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00247",
+  "person_b": "P-00295",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00165",
+  "person_b": "P-00778",
+  "type": "vehicle",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00307",
+  "person_b": "P-00598",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00419",
+  "person_b": "P-00477",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00351",
+  "person_b": "P-00781",
   "type": "family",
   "weight": 1,
   "source_fir_ids": []
  },
  {
   "person_a": "P-00070",
-  "person_b": "P-00344",
+  "person_b": "P-00216",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00058",
+  "person_b": "P-00153",
   "type": "phone",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00604",
-  "person_b": "P-00705",
-  "type": "phone",
+  "person_a": "P-00152",
+  "person_b": "P-00730",
+  "type": "family",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00711",
-  "person_b": "P-00811",
+  "person_a": "P-00149",
+  "person_b": "P-00244",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00078",
+  "person_b": "P-00179",
+  "type": "family",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00703",
+  "person_b": "P-00803",
   "type": "vehicle",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00711",
-  "person_b": "P-00812",
+  "person_a": "P-00703",
+  "person_b": "P-00804",
   "type": "vehicle",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00712",
-  "person_b": "P-00811",
+  "person_a": "P-00704",
+  "person_b": "P-00803",
   "type": "phone",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00712",
-  "person_b": "P-00812",
+  "person_a": "P-00704",
+  "person_b": "P-00804",
   "type": "phone",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00803",
+  "person_b": "P-00807",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00804",
+  "person_b": "P-00807",
+  "type": "associate",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00808",
+  "person_b": "P-00814",
+  "type": "financial",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00809",
+  "person_b": "P-00814",
+  "type": "financial",
+  "weight": 1,
+  "source_fir_ids": []
+ },
+ {
+  "person_a": "P-00810",
+  "person_b": "P-00814",
+  "type": "financial",
   "weight": 1,
   "source_fir_ids": []
  },
  {
   "person_a": "P-00811",
-  "person_b": "P-00815",
-  "type": "associate",
+  "person_b": "P-00814",
+  "type": "financial",
   "weight": 1,
   "source_fir_ids": []
  },
  {
   "person_a": "P-00812",
-  "person_b": "P-00815",
-  "type": "associate",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00816",
-  "person_b": "P-00822",
+  "person_b": "P-00814",
   "type": "financial",
   "weight": 1,
   "source_fir_ids": []
  },
  {
-  "person_a": "P-00817",
-  "person_b": "P-00822",
-  "type": "financial",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00818",
-  "person_b": "P-00822",
-  "type": "financial",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00819",
-  "person_b": "P-00822",
-  "type": "financial",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00820",
-  "person_b": "P-00822",
-  "type": "financial",
-  "weight": 1,
-  "source_fir_ids": []
- },
- {
-  "person_a": "P-00821",
-  "person_b": "P-00822",
+  "person_a": "P-00813",
+  "person_b": "P-00814",
   "type": "financial",
   "weight": 1,
   "source_fir_ids": []

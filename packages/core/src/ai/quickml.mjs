@@ -15,28 +15,29 @@ export function llmConfigured() {
 export async function ragNarrate({ question, grounding, lang = 'en' }) {
   const url = process.env.NETRA_LLM_URL;
   if (!url) return null;
+  // Catalyst QuickML LLM Serving contract: POST {model, prompt, instructions, temperature,
+  // top_p, top_k, max_tokens}, Zoho OAuth2 header (Zoho-oauthtoken, scope QuickML.deployment.READ),
+  // response {response:'...'}. We stay tolerant of other shapes for flexibility.
+  const token = process.env.NETRA_LLM_KEY;
+  const scheme = process.env.NETRA_LLM_AUTH_SCHEME || 'Zoho-oauthtoken';
+  const model = process.env.NETRA_LLM_MODEL || 'Qwen2.5-14B-Instruct';
+  const prompt = `Question: ${question}\n\nGrounded facts (answer ONLY from these; reply in ${lang === 'kn' ? 'Kannada' : 'English'}):\n${JSON.stringify(grounding)}`;
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 6000);
   try {
     const res = await fetch(url, {
       method: 'POST',
       signal: controller.signal,
-      headers: {
-        'Content-Type': 'application/json',
-        ...(process.env.NETRA_LLM_KEY ? { Authorization: `Bearer ${process.env.NETRA_LLM_KEY}` } : {}),
-      },
+      headers: { 'Content-Type': 'application/json', ...(token ? { Authorization: `${scheme} ${token}` } : {}) },
       body: JSON.stringify({
-        // QuickML RAG endpoints accept a question + grounding context; the model must answer
-        // ONLY from the provided context and respond in `language`.
-        question,
-        language: lang === 'kn' ? 'kn' : 'en',
-        context: grounding,
-        instruction: 'Answer only from the provided context. Be concise and factual. Cite FIR IDs where relevant.',
+        model, prompt,
+        instructions: 'Answer only from the provided grounded facts. Be concise and factual. Cite FIR IDs where relevant. Never invent data.',
+        temperature: 0.2, top_p: 0.9, top_k: 40, max_tokens: 512,
       }),
     });
     if (!res.ok) return null;
     const data = await res.json();
-    return data.answer || data.output || data.text || null;
+    return data.response || data.answer || data.output || data.text || null;
   } catch {
     return null;
   } finally {

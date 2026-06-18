@@ -8,8 +8,8 @@ const MS_DAY = 86400000;
 const CRIME_SYNONYMS = [
   [['chain snatch', 'snatching', 'chain-snatch'], 'Chain Snatching'],
   [['motor vehicle', 'vehicle theft', 'bike theft', 'car theft', 'two-wheeler theft'], 'Motor Vehicle Theft'],
-  [['burglary', 'house break', 'break-in', 'break in', 'housebreaking'], 'Burglary'],
-  [['robbery', 'loot', 'mugging'], 'Robbery'],
+  [['burglary', 'burglaries', 'house break', 'break-in', 'break in', 'housebreaking'], 'Burglary'],
+  [['robbery', 'robberies', 'loot', 'mugging'], 'Robbery'],
   [['cyber', 'online fraud', 'otp fraud', 'phishing', 'upi fraud'], 'Cyber Fraud'],
   [['cheating', 'scam'], 'Cheating'],
   [['assault', 'attack', 'hurt'], 'Assault'],
@@ -107,12 +107,29 @@ export function classify(text, slots) {
   if (has(t, 'similar', 'same mo', 'same modus', 'comparable case', 'cases like')) return { intent: 'mo_similarity', confidence: 0.78 };
   if (has(t, 'lead', 'investigate next', 'what next', 'next step', 'recommend', 'where do i look', 'what should i do', 'how to proceed')) return { intent: 'suggest_leads', confidence: 0.8 };
   if (has(t, 'trend', 'over time', 'monthly', 'per month', 'rising', 'increasing', 'time series')) return { intent: 'trend_analysis', confidence: 0.8 };
+  if (has(t, 'by age', 'by gender', 'age group', 'age band', 'age distribution', 'gender breakdown', 'demographic breakdown', 'age and gender', 'offender demographic')) return { intent: 'demographics', confidence: 0.82 };
   if (has(t, 'unemployment', 'literacy', 'urbaniz', 'urbanis', 'socio', 'poverty', 'education', 'social factor', 'demographic', 'correlat')) return { intent: 'socio_insight', confidence: 0.8 };
   if (slots.personRef && has(t, 'history', 'priors', 'record', 'past cases')) return { intent: 'criminal_history', confidence: 0.82 };
   if (slots.personRef && has(t, 'who is', 'profile', 'about', 'tell me about', 'details of')) return { intent: 'person_profile', confidence: 0.8 };
   if (slots.personRef) return { intent: 'person_profile', confidence: 0.7 };
   if (has(t, 'show', 'list', 'find', 'search', 'how many', 'count', 'cases', 'firs', 'crimes', 'reported', 'registered')) return { intent: 'search_firs', confidence: 0.72 };
   return { intent: 'clarify', confidence: 0.3 };
+}
+
+function parseTimeOfDay(text) {
+  const t = text.toLowerCase();
+  const out = {};
+  const after = t.match(/after\s+(\d{1,2})\s*(am|pm)?/);
+  if (after) out.afterHour = (Number(after[1]) % 12) + (after[2] === 'pm' ? 12 : 0);
+  const before = t.match(/before\s+(\d{1,2})\s*(am|pm)?/);
+  if (before) out.beforeHour = (Number(before[1]) % 12) + (before[2] === 'pm' ? 12 : 0);
+  // labelled windows (night wraps midnight: 20:00–05:59)
+  if (/\b(night|after dark|late night|night-?time)\b/.test(t)) out.tod = 'night';
+  else if (/\bevening\b/.test(t)) out.tod = 'evening';
+  else if (/\bmorning\b/.test(t)) out.tod = 'morning';
+  else if (/\bafternoon\b/.test(t)) out.tod = 'afternoon';
+  else if (/\b(daytime|day time)\b/.test(t)) out.tod = 'daytime';
+  return out;
 }
 
 /** Full NLU pass: resolve slots, then classify. */
@@ -123,7 +140,32 @@ export function understand(text, ds) {
     days: parseTimeDays(text),
     firId: resolveFirId(text),
     personRef: resolvePerson(text, ds),
+    ...parseTimeOfDay(text),
   };
   const { intent, confidence } = classify(text, slots);
   return { intent, confidence, slots };
+}
+
+/**
+ * Context-aware NLU for multi-turn follow-ups. Inherits unfilled slots (and, for vague
+ * refinements, the intent) from the previous user turn so anaphoric queries like
+ * "only the ones after 9 PM" or "what about Mysuru?" resolve without repeating context.
+ */
+export function understandWithContext(text, ds, history = []) {
+  const cur = understand(text, ds);
+  const prevUser = [...(history || [])].reverse().find((m) => m.role === 'user');
+  if (!prevUser) return cur;
+  const prev = understand(prevUser.text, ds);
+  for (const k of ['crimeType', 'area', 'days', 'firId', 'personRef']) {
+    if (cur.slots[k] == null && prev.slots[k] != null) cur.slots[k] = prev.slots[k];
+  }
+  const t = text.toLowerCase().trim();
+  const isRefinement = /^(only|just|what about|how about|and |also |filter|narrow|after |before |in the last|this year|last (month|week|year)|same|those|them|that|there|by district|by type)\b/.test(t)
+    || cur.intent === 'clarify' || text.split(/\s+/).length <= 4;
+  if (isRefinement && prev.intent !== 'clarify' && prev.intent !== 'abstain') {
+    cur.intent = prev.intent;
+    cur.confidence = Math.min((cur.confidence || 0) + 0.3, 0.9);
+    cur.inherited = true;
+  }
+  return cur;
 }

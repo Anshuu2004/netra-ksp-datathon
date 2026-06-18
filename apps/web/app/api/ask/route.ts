@@ -15,10 +15,11 @@ export async function POST(req: Request) {
     const message: string = (body?.message || '').toString();
     const role: string = body?.role || 'investigator';
     const lang: string = body?.lang || 'en';
+    const history = Array.isArray(body?.history) ? body.history : [];
     if (!message.trim()) {
       return Response.json({ error: 'Empty message' }, { status: 400 });
     }
-    const envelope = await askEnriched(getDataset(), message, { role, lang, user_id: 'demo' });
+    const envelope = await askEnriched(getDataset(), message, { role, lang, user_id: 'demo', history });
     return Response.json(envelope);
   } catch (err: any) {
     return Response.json({ error: err?.message || 'Internal error' }, { status: 500 });

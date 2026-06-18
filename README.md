@@ -15,17 +15,24 @@ voice-first, explainable, and proactive** — surfacing networks, hotspots, and 
 invisible in Excel.
 
 ## What it does
-- **Conversational + voice, EN/ಕನ್ನಡ** — ask by text or speech; spoken answers.
+- **Conversational + voice + multi-turn, EN/ಕನ್ನಡ** — ask by text or speech; anaphoric follow-ups ("only the ones after 9 PM") resolve from context; spoken answers.
 - **Visual answers** — map / network graph / chart / table / dossier for every reply.
 - **Criminal networks** — centrality + Louvain community detection (gangs) + link prediction (hidden ties).
 - **Forecasting** — near-repeat space-time scan → next-strike red zone with a time window.
 - **Explainable offender risk** — transparent factor breakdown + repeat-offender ranking.
-- **Financial trail** — transaction graph + structuring detection.
+- **Sociological** — district socio-economic correlation (real data) + offender age/gender demographics.
+- **Financial trail** — transaction graph + **query-time** fan-in / sub-threshold structuring detection, joined to FIRs.
 - **Explainable AI** — evidence trail (records, method, confidence, reasoning) on every answer.
-- **Governance** — 4 roles + immutable audit log.
-- **Proactive Beat Briefing** — nightly auto-intelligence (Catalyst Cron) at `/briefing`.
+- **Governance** — 4 roles with **real PII redaction by role** + a per-query audit log (in-app viewer + API; persisted to Catalyst Data Store in production).
+- **Proactive Beat Briefing** — per-jurisdiction intelligence on-demand at `/briefing`; a Catalyst Cron **function + schedule are included** (`catalyst/functions/beatBriefing`) and dispatch nightly via Mail/Push once deployed.
 - **PDF dossier export** — one-click conversation/case dossier.
 - **Real data** — district trends & socio-economic correlation on **real Karnataka 2023** figures.
+
+> **Status (honest):** Working prototype on labelled **synthetic** record-level data (real FIR data is
+> confidential — see [`docs/DATA_POLICY.md`](docs/DATA_POLICY.md)) + **real** Karnataka 2023 aggregates.
+> Runs fully locally today; Catalyst services (Data Store, QuickML/Zia, Auth, Cron, Stratus) are wired
+> behind provider adapters and **activate on deploy** with credentials (see [`catalyst/DEPLOY.md`](catalyst/DEPLOY.md)).
+> Kannada voice uses the browser locally and **Bhashini** in production (Catalyst Zia has no Kannada ASR yet).
 
 ## Repository layout
 ```
