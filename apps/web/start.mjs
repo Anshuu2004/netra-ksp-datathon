@@ -5,7 +5,8 @@
 import { spawn } from 'node:child_process';
 
 const port = process.env.X_ZOHO_CATALYST_LISTEN_PORT || process.env.PORT || '3000';
-const bin = process.platform === 'win32' ? 'next.cmd' : 'next';
 console.log(`[netra] starting Next.js on port ${port}`);
-const child = spawn(bin, ['start', '-p', String(port)], { stdio: 'inherit' });
+// shell:true so the platform shell resolves `next` (next.cmd on Windows, the .bin shim on
+// Linux/AppSail) — avoids the Windows spawn-of-.cmd EINVAL.
+const child = spawn('next', ['start', '-p', String(port)], { stdio: 'inherit', shell: true });
 child.on('exit', (code) => process.exit(code ?? 0));
