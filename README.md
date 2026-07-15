@@ -66,7 +66,9 @@ real-vs-synthetic policy (record-level FIR data is confidential by law; we use a
 synthetic stand-in + real public aggregates).
 
 ## Deploy on Catalyst (mandatory for the datathon)
-See [`catalyst/DEPLOY.md`](catalyst/DEPLOY.md) — `apps/web` deploys to **Catalyst AppSail**; each
+**→ [`docs/MANUAL_STEPS.md`](docs/MANUAL_STEPS.md) is the ordered, click-by-click checklist** (claim
+credits → login → deploy → Data Store → Auth → QuickML → voice → submission form).
+See also [`catalyst/DEPLOY.md`](catalyst/DEPLOY.md) — `apps/web` deploys to **Catalyst AppSail**; each
 capability maps to a Catalyst service (Data Store, QuickML/Zia, Authentication, Stratus, Cron…).
 The app runs without external keys (local providers) and **upgrades to Catalyst services via env vars,
 no code changes** (`packages/core/src/providers`).
