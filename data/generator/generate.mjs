@@ -16,8 +16,11 @@ import {
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = join(__dirname, '..', 'seed');
-const REF_NOW = new Date('2026-06-05T12:00:00+05:30').getTime();
 const DAY = 86400000;
+// Anchor "now" to TODAY (noon UTC) so planted "recent" patterns (active near-repeat spree,
+// emerging hotspots) stay recent relative to the wall clock the analytics use — the dataset
+// never ages out of the demo. Stable within a day; regenerate before the final demo.
+const REF_NOW = Math.floor(Date.now() / DAY) * DAY + 12 * 3600000;
 
 // ---- deterministic RNG (mulberry32) ----
 const seedArg = process.argv.indexOf('--seed');

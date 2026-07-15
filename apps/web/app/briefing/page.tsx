@@ -13,7 +13,14 @@ export default function BriefingPage() {
   }
   useEffect(() => { load(district); }, [district]);
 
-  if (!b) return <div className="p-10 text-slate-400">Generating briefing…</div>;
+  if (!b) return (
+    <div className="min-h-screen grid place-items-center text-slate-400">
+      <div className="flex flex-col items-center gap-3">
+        <div className="w-8 h-8 border-2 border-edge border-t-accent rounded-full animate-spin" />
+        <div className="text-sm">Generating briefing…</div>
+      </div>
+    </div>
+  );
   const date = new Date(b.generated_at).toLocaleString('en-IN');
 
   return (
@@ -40,7 +47,7 @@ export default function BriefingPage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-4 gap-3 mb-5">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
           <Stat label="FIRs (7 days)" value={b.summary.last7_total} />
           <Stat label="Emerging hotspots" value={b.summary.emerging_hotspots} tone="warn" />
           <Stat label="Active series" value={b.summary.active_series} tone="danger" />

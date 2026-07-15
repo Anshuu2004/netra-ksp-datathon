@@ -157,8 +157,8 @@
         "IPC 379",
         "BNS 303"
       ],
-      "occurred_at": "2025-05-26T22:08:00.000Z",
-      "reported_at": "2025-05-30T16:08:00.000Z",
+      "occurred_at": "2025-07-05T22:08:00.000Z",
+      "reported_at": "2025-07-09T16:08:00.000Z",
       "district": "Kalaburagi",
       "ps_code": "PS-KAL-01",
       "lat": 17.297274,
@@ -169,7 +169,7 @@
         "parking-lot",
         "two-wheeler"
       ],
-      "narrative_en": "On Tue May 27 2025, a case of motor vehicle theft was reported at Kalaburagi City, Kalaburagi. Modus operandi observed: no-lock, parking-lot, two-wheeler.",
+      "narrative_en": "On Sun Jul 06 2025, a case of motor vehicle theft was reported at Kalaburagi City, Kalaburagi. Modus operandi observed: no-lock, parking-lot, two-wheeler.",
       "narrative_kn": null,
       "value_loss": 292000
     },
@@ -181,8 +181,8 @@
         "IPC 420",
         "BNS 318"
       ],
-      "occurred_at": "2025-08-04T18:59:00.000Z",
-      "reported_at": "2025-08-04T23:59:00.000Z",
+      "occurred_at": "2025-09-13T18:59:00.000Z",
+      "reported_at": "2025-09-13T23:59:00.000Z",
       "district": "Kolar",
       "ps_code": "PS-KOL-01",
       "lat": 13.158116,
@@ -192,7 +192,7 @@
         "forged-document",
         "investment-scam"
       ],
-      "narrative_en": "On Tue Aug 05 2025, a case of cheating was reported at Kolar Town, Kolar. Modus operandi observed: forged-document, investment-scam.",
+      "narrative_en": "On Sun Sep 14 2025, a case of cheating was reported at Kolar Town, Kolar. Modus operandi observed: forged-document, investment-scam.",
       "narrative_kn": null,
       "value_loss": 223000
     },
@@ -204,8 +204,8 @@
         "IPC 420",
         "BNS 318"
       ],
-      "occurred_at": "2025-03-31T16:35:00.000Z",
-      "reported_at": "2025-04-03T05:35:00.000Z",
+      "occurred_at": "2025-05-10T16:35:00.000Z",
+      "reported_at": "2025-05-13T05:35:00.000Z",
       "district": "Kalaburagi",
       "ps_code": "PS-KAL-03",
       "lat": 17.28204,
@@ -216,7 +216,7 @@
         "fake-promise",
         "investment-scam"
       ],
-      "narrative_en": "On Mon Mar 31 2025, a case of cheating was reported at Kalaburagi Lake, Kalaburagi. Modus operandi observed: forged-document, fake-promise, investment-scam.",
+      "narrative_en": "On Sat May 10 2025, a case of cheating was reported at Kalaburagi Lake, Kalaburagi. Modus operandi observed: forged-document, fake-promise, investment-scam.",
       "narrative_kn": null,
       "value_loss": 93000
     },
@@ -228,8 +228,8 @@
         "IPC 379",
         "BNS 303"
       ],
-      "occurred_at": "2026-05-30T14:07:00.000Z",
-      "reported_at": "2026-06-03T09:07:00.000Z",
+      "occurred_at": "2026-07-09T14:07:00.000Z",
+      "reported_at": "2026-07-13T09:07:00.000Z",
       "district": "Hubballi",
       "ps_code": "PS-HUB-01",
       "lat": 15.331718,
@@ -241,7 +241,7 @@
         "crowded-bus",
         "market"
       ],
-      "narrative_en": "On Sat May 30 2026, a case of theft was reported at Hubballi East, Hubballi. Modus operandi observed: unattended, pickpocket, crowded-bus, market.",
+      "narrative_en": "On Thu Jul 09 2026, a case of theft was reported at Hubballi East, Hubballi. Modus operandi observed: unattended, pickpocket, crowded-bus, market.",
       "narrative_kn": null,
       "value_loss": 403000
     },
@@ -254,8 +254,8 @@
         "IPC 380",
         "BNS 305"
       ],
-      "occurred_at": "2026-04-10T00:13:00.000Z",
-      "reported_at": "2026-04-11T05:13:00.000Z",
+      "occurred_at": "2026-05-20T00:13:00.000Z",
+      "reported_at": "2026-05-21T05:13:00.000Z",
       "district": "Bengaluru Rural",
       "ps_code": "PS-BE1-01",
       "lat": 13.232466,
@@ -266,7 +266,7 @@
         "cut-grill",
         "rear-entry"
       ],
-      "narrative_en": "On Fri Apr 10 2026, a case of burglary was reported at Bengaluru Rural North, Bengaluru Rural. Modus operandi observed: unoccupied-house, cut-grill, rear-entry.",
+      "narrative_en": "On Wed May 20 2026, a case of burglary was reported at Bengaluru Rural North, Bengaluru Rural. Modus operandi observed: unoccupied-house, cut-grill, rear-entry.",
       "narrative_kn": null,
       "value_loss": 162000
     }
@@ -324,7 +324,7 @@
       "from_account": "AC-0022",
       "to_account": "AC-0039",
       "amount": 70000,
-      "ts": "2025-06-10T06:30:00.000Z",
+      "ts": "2025-07-20T12:00:00.000Z",
       "channel": "CASH-DEPOSIT",
       "flagged_reason": null
     },
@@ -333,7 +333,7 @@
       "from_account": "AC-0006",
       "to_account": "AC-0042",
       "amount": 66000,
-      "ts": "2025-08-20T06:30:00.000Z",
+      "ts": "2025-09-29T12:00:00.000Z",
       "channel": "IMPS",
       "flagged_reason": null
     },
@@ -342,7 +342,7 @@
       "from_account": "AC-0021",
       "to_account": "AC-0024",
       "amount": 59000,
-      "ts": "2025-08-20T06:30:00.000Z",
+      "ts": "2025-09-29T12:00:00.000Z",
       "channel": "IMPS",
       "flagged_reason": null
     },
@@ -351,7 +351,7 @@
       "from_account": "AC-0005",
       "to_account": "AC-0012",
       "amount": 36000,
-      "ts": "2026-04-13T06:30:00.000Z",
+      "ts": "2026-05-23T12:00:00.000Z",
       "channel": "IMPS",
       "flagged_reason": null
     },
@@ -360,7 +360,7 @@
       "from_account": "AC-0025",
       "to_account": "AC-0024",
       "amount": 57000,
-      "ts": "2025-08-21T06:30:00.000Z",
+      "ts": "2025-09-30T12:00:00.000Z",
       "channel": "IMPS",
       "flagged_reason": null
     }

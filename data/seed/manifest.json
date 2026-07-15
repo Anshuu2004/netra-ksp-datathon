@@ -1,6 +1,6 @@
 {
   "seed": 20260605,
-  "generated_at": "2026-06-05T06:30:00.000Z",
+  "generated_at": "2026-07-15T12:00:00.000Z",
   "patterns": {
     "organized_gang": {
       "description": "Chain-snatching gang operating in Bengaluru Urban South.",
@@ -16,9 +16,7 @@
         "P-00708"
       ],
       "fir_ids": [
-        "FIR-2026-BEN-00019",
         "FIR-2026-BEN-00020",
-        "FIR-2025-BEN-00026",
         "FIR-2026-BEN-00021",
         "FIR-2026-BEN-00022",
         "FIR-2026-BEN-00023",
@@ -27,9 +25,11 @@
         "FIR-2026-BEN-00026",
         "FIR-2026-BEN-00027",
         "FIR-2026-BEN-00028",
-        "FIR-2025-BEN-00027",
         "FIR-2026-BEN-00029",
-        "FIR-2026-BEN-00030"
+        "FIR-2026-BEN-00030",
+        "FIR-2026-BEN-00031",
+        "FIR-2026-BEN-00032",
+        "FIR-2026-BEN-00033"
       ]
     },
     "near_repeat_series": {
@@ -41,10 +41,6 @@
       "radius_km": 2,
       "ps_code": "PS-MYS-01",
       "fir_ids": [
-        "FIR-2026-MYS-00013",
-        "FIR-2026-MYS-00014",
-        "FIR-2026-MYS-00015",
-        "FIR-2026-MYS-00016",
         "FIR-2026-MYS-00017",
         "FIR-2026-MYS-00018",
         "FIR-2026-MYS-00019",
@@ -52,7 +48,11 @@
         "FIR-2026-MYS-00021",
         "FIR-2026-MYS-00022",
         "FIR-2026-MYS-00023",
-        "FIR-2026-MYS-00024"
+        "FIR-2026-MYS-00024",
+        "FIR-2026-MYS-00025",
+        "FIR-2026-MYS-00026",
+        "FIR-2026-MYS-00027",
+        "FIR-2026-MYS-00028"
       ],
       "suspect": "P-00723"
     },
@@ -61,7 +61,6 @@
       "ps_code": "PS-HUB-01",
       "station": "Hubballi East PS",
       "fir_ids": [
-        "FIR-2026-HUB-00014",
         "FIR-2026-HUB-00015",
         "FIR-2026-HUB-00016",
         "FIR-2026-HUB-00017",
@@ -82,7 +81,8 @@
         "FIR-2026-HUB-00032",
         "FIR-2026-HUB-00033",
         "FIR-2026-HUB-00034",
-        "FIR-2026-HUB-00035"
+        "FIR-2026-HUB-00035",
+        "FIR-2026-HUB-00036"
       ]
     },
     "predicted_link": {
@@ -104,7 +104,7 @@
         "AC-0050",
         "AC-0051"
       ],
-      "fir_id": "FIR-2026-BEN-00033"
+      "fir_id": "FIR-2026-BEN-00036"
     }
   },
   "counts": {

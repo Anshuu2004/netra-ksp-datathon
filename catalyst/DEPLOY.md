@@ -59,7 +59,7 @@ local implementations for Catalyst services **without code changes**:
 
 | NETRA capability | Catalyst service | How to enable |
 |---|---|---|
-| Crime data store (FIRs, persons, edges, txns, audit) | **Data Store** + **NoSQL** | Import `data/seed` into Data Store tables; set `NETRA_ENV=catalyst` |
+| Crime data store (FIRs, persons, edges, txns, audit) | **Data Store** + **NoSQL** | Run `node catalyst/scripts/seed-to-csv.mjs` → bulk-import the 9 CSVs from `data/csv/` via console (Data Store → Import; schema in `data/csv/_SCHEMA.md`); set `NETRA_ENV=catalyst` |
 | Grounded answers / RAG / case summaries | **QuickML** (RAG + LLM Serving + Knowledge Base) + **Zia LLM** | Create a QuickML RAG endpoint over the FIR knowledge base; set `NETRA_LLM_URL`, `NETRA_LLM_KEY` |
 | Voice Q&A (English) | **Zia Services** ASR/TTS | set `NETRA_ASR=zia` |
 | Voice Q&A (Kannada) | **Bhashini / AI4Bharat** (Catalyst has no Kannada ASR yet) | set `NETRA_ASR_KN=bhashini`, `BHASHINI_KEY` |

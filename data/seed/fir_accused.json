@@ -96,19 +96,19 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00001",
+  "fir_id": "FIR-2025-BID-00002",
   "person_id": "P-00033",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00001",
+  "fir_id": "FIR-2025-BID-00002",
   "person_id": "P-00084",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00001",
+  "fir_id": "FIR-2025-BID-00002",
   "person_id": "P-00078",
   "role": "accused",
   "arrest_status": "bailed"
@@ -390,13 +390,13 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-KAL-00005",
+  "fir_id": "FIR-2026-KAL-00001",
   "person_id": "P-00085",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-KAL-00005",
+  "fir_id": "FIR-2026-KAL-00001",
   "person_id": "P-00199",
   "role": "accused",
   "arrest_status": "arrested"
@@ -420,7 +420,7 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAV-00001",
+  "fir_id": "FIR-2025-DAV-00002",
   "person_id": "P-00049",
   "role": "accused",
   "arrest_status": "absconding"
@@ -456,7 +456,7 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BID-00004",
+  "fir_id": "FIR-2026-BID-00001",
   "person_id": "P-00179",
   "role": "accused",
   "arrest_status": "arrested"
@@ -468,7 +468,7 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-CH1-00003",
+  "fir_id": "FIR-2026-CH1-00002",
   "person_id": "P-00156",
   "role": "accused",
   "arrest_status": "arrested"
@@ -480,7 +480,7 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UTT-00002",
+  "fir_id": "FIR-2025-UTT-00001",
   "person_id": "P-00045",
   "role": "suspect",
   "arrest_status": "arrested"
@@ -510,7 +510,7 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KAL-00006",
+  "fir_id": "FIR-2025-KAL-00005",
   "person_id": "P-00138",
   "role": "accused",
   "arrest_status": "arrested"
@@ -558,7 +558,7 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-UTT-00003",
+  "fir_id": "FIR-2026-UTT-00002",
   "person_id": "P-00169",
   "role": "accused",
   "arrest_status": "bailed"
@@ -630,7 +630,7 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-CH1-00004",
+  "fir_id": "FIR-2025-CH1-00003",
   "person_id": "P-00236",
   "role": "suspect",
   "arrest_status": "arrested"
@@ -648,13 +648,13 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-RAI-00003",
+  "fir_id": "FIR-2026-RAI-00004",
   "person_id": "P-00120",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAV-00002",
+  "fir_id": "FIR-2025-DAV-00003",
   "person_id": "P-00013",
   "role": "accused",
   "arrest_status": "arrested"
@@ -702,7 +702,7 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-MYS-00001",
+  "fir_id": "FIR-2025-MYS-00006",
   "person_id": "P-00002",
   "role": "accused",
   "arrest_status": "absconding"
@@ -714,25 +714,25 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-BEN-00008",
+  "fir_id": "FIR-2026-BEN-00005",
   "person_id": "P-00046",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BID-00006",
+  "fir_id": "FIR-2026-BID-00002",
   "person_id": "P-00160",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2024-BEN-00001",
+  "fir_id": "FIR-2025-BEN-00008",
   "person_id": "P-00060",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-BEN-00001",
+  "fir_id": "FIR-2025-BEN-00008",
   "person_id": "P-00190",
   "role": "accused",
   "arrest_status": "arrested"
@@ -774,7 +774,7 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-KOL-00003",
+  "fir_id": "FIR-2026-KOL-00001",
   "person_id": "P-00133",
   "role": "accused",
   "arrest_status": "arrested"
@@ -786,13 +786,13 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAV-00003",
+  "fir_id": "FIR-2025-DAV-00004",
   "person_id": "P-00233",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAV-00003",
+  "fir_id": "FIR-2025-DAV-00004",
   "person_id": "P-00077",
   "role": "suspect",
   "arrest_status": "bailed"
@@ -816,13 +816,13 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-RAI-00004",
+  "fir_id": "FIR-2026-RAI-00005",
   "person_id": "P-00101",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-RAI-00004",
+  "fir_id": "FIR-2026-RAI-00005",
   "person_id": "P-00238",
   "role": "accused",
   "arrest_status": "arrested"
@@ -888,13 +888,13 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-HAS-00004",
+  "fir_id": "FIR-2026-HAS-00002",
   "person_id": "P-00121",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-TUM-00007",
+  "fir_id": "FIR-2025-TUM-00006",
   "person_id": "P-00014",
   "role": "accused",
   "arrest_status": "arrested"
@@ -924,7 +924,7 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DHA-00005",
+  "fir_id": "FIR-2025-DHA-00006",
   "person_id": "P-00186",
   "role": "accused",
   "arrest_status": "absconding"
@@ -948,19 +948,19 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-DHA-00006",
+  "fir_id": "FIR-2025-DHA-00007",
   "person_id": "P-00152",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DHA-00006",
+  "fir_id": "FIR-2025-DHA-00007",
   "person_id": "P-00128",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-DHA-00006",
+  "fir_id": "FIR-2025-DHA-00007",
   "person_id": "P-00022",
   "role": "accused",
   "arrest_status": "bailed"
@@ -984,7 +984,7 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00005",
+  "fir_id": "FIR-2026-BEN-00006",
   "person_id": "P-00160",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1020,13 +1020,13 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KOL-00004",
+  "fir_id": "FIR-2025-KOL-00003",
   "person_id": "P-00174",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KOL-00004",
+  "fir_id": "FIR-2025-KOL-00003",
   "person_id": "P-00271",
   "role": "accused",
   "arrest_status": "absconding"
@@ -1038,7 +1038,7 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00006",
+  "fir_id": "FIR-2026-BEN-00007",
   "person_id": "P-00076",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1074,37 +1074,37 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2024-DAK-00001",
+  "fir_id": "FIR-2025-DAK-00008",
   "person_id": "P-00115",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-DAK-00001",
+  "fir_id": "FIR-2025-DAK-00008",
   "person_id": "P-00113",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00006",
+  "fir_id": "FIR-2025-MYS-00007",
   "person_id": "P-00160",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-UTT-00001",
+  "fir_id": "FIR-2026-UTT-00003",
   "person_id": "P-00232",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-UTT-00001",
+  "fir_id": "FIR-2026-UTT-00003",
   "person_id": "P-00026",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-UTT-00001",
+  "fir_id": "FIR-2026-UTT-00003",
   "person_id": "P-00274",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1128,13 +1128,13 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-CHI-00001",
+  "fir_id": "FIR-2025-CHI-00010",
   "person_id": "P-00215",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAV-00004",
+  "fir_id": "FIR-2025-DAV-00005",
   "person_id": "P-00039",
   "role": "suspect",
   "arrest_status": "bailed"
@@ -1164,73 +1164,73 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00007",
+  "fir_id": "FIR-2025-BID-00006",
   "person_id": "P-00014",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-BID-00007",
+  "fir_id": "FIR-2025-BID-00006",
   "person_id": "P-00256",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-CHI-00010",
+  "fir_id": "FIR-2025-CHI-00011",
   "person_id": "P-00206",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-CHI-00010",
+  "fir_id": "FIR-2025-CHI-00011",
   "person_id": "P-00330",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DHA-00007",
+  "fir_id": "FIR-2025-DHA-00008",
   "person_id": "P-00210",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DHA-00007",
+  "fir_id": "FIR-2025-DHA-00008",
   "person_id": "P-00153",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-RAI-00005",
+  "fir_id": "FIR-2025-RAI-00004",
   "person_id": "P-00180",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-KOL-00007",
+  "fir_id": "FIR-2026-KOL-00002",
   "person_id": "P-00002",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-KOL-00007",
+  "fir_id": "FIR-2026-KOL-00002",
   "person_id": "P-00263",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-KOL-00007",
+  "fir_id": "FIR-2026-KOL-00002",
   "person_id": "P-00273",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-CH1-00003",
+  "fir_id": "FIR-2026-CH1-00004",
   "person_id": "P-00037",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BID-00008",
+  "fir_id": "FIR-2025-BID-00007",
   "person_id": "P-00171",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1248,19 +1248,19 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KOL-00008",
+  "fir_id": "FIR-2025-KOL-00006",
   "person_id": "P-00098",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAV-00005",
+  "fir_id": "FIR-2025-DAV-00006",
   "person_id": "P-00155",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-CH1-00004",
+  "fir_id": "FIR-2026-CH1-00005",
   "person_id": "P-00062",
   "role": "suspect",
   "arrest_status": "bailed"
@@ -1272,19 +1272,19 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-RAI-00005",
+  "fir_id": "FIR-2026-RAI-00007",
   "person_id": "P-00008",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-DAV-00002",
+  "fir_id": "FIR-2025-DAV-00007",
   "person_id": "P-00243",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00010",
+  "fir_id": "FIR-2025-DAK-00009",
   "person_id": "P-00143",
   "role": "accused",
   "arrest_status": "bailed"
@@ -1296,13 +1296,13 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00010",
+  "fir_id": "FIR-2025-BID-00009",
   "person_id": "P-00104",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-KOL-00009",
+  "fir_id": "FIR-2025-KOL-00007",
   "person_id": "P-00259",
   "role": "accused",
   "arrest_status": "bailed"
@@ -1314,37 +1314,37 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00011",
+  "fir_id": "FIR-2025-BID-00010",
   "person_id": "P-00319",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BID-00011",
+  "fir_id": "FIR-2025-BID-00010",
   "person_id": "P-00171",
   "role": "suspect",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-BID-00012",
+  "fir_id": "FIR-2025-BID-00011",
   "person_id": "P-00367",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-KOD-00001",
+  "fir_id": "FIR-2025-KOD-00009",
   "person_id": "P-00116",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-HAS-00005",
+  "fir_id": "FIR-2025-HAS-00004",
   "person_id": "P-00151",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-HAS-00005",
+  "fir_id": "FIR-2025-HAS-00004",
   "person_id": "P-00286",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1362,13 +1362,13 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-RAI-00006",
+  "fir_id": "FIR-2026-RAI-00008",
   "person_id": "P-00013",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-RAI-00006",
+  "fir_id": "FIR-2026-RAI-00008",
   "person_id": "P-00242",
   "role": "suspect",
   "arrest_status": "arrested"
@@ -1380,19 +1380,19 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-RAI-00007",
+  "fir_id": "FIR-2026-RAI-00009",
   "person_id": "P-00342",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00010",
+  "fir_id": "FIR-2026-BEN-00011",
   "person_id": "P-00321",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00007",
+  "fir_id": "FIR-2025-MYS-00008",
   "person_id": "P-00280",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1410,37 +1410,37 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-CHI-00011",
+  "fir_id": "FIR-2025-CHI-00012",
   "person_id": "P-00249",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-CHI-00011",
+  "fir_id": "FIR-2025-CHI-00012",
   "person_id": "P-00083",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UTT-00004",
+  "fir_id": "FIR-2025-UTT-00002",
   "person_id": "P-00222",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-UTT-00004",
+  "fir_id": "FIR-2025-UTT-00002",
   "person_id": "P-00247",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-DAK-00002",
+  "fir_id": "FIR-2026-DAK-00004",
   "person_id": "P-00249",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-DAK-00002",
+  "fir_id": "FIR-2026-DAK-00004",
   "person_id": "P-00297",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1470,103 +1470,103 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAV-00006",
+  "fir_id": "FIR-2025-DAV-00008",
   "person_id": "P-00280",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAV-00006",
+  "fir_id": "FIR-2025-DAV-00008",
   "person_id": "P-00267",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-HUB-00011",
+  "fir_id": "FIR-2025-HUB-00012",
   "person_id": "P-00206",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-HUB-00011",
+  "fir_id": "FIR-2025-HUB-00012",
   "person_id": "P-00127",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-HUB-00012",
+  "fir_id": "FIR-2025-HUB-00013",
   "person_id": "P-00360",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAV-00007",
+  "fir_id": "FIR-2025-DAV-00009",
   "person_id": "P-00174",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-MAN-00001",
+  "fir_id": "FIR-2025-MAN-00006",
   "person_id": "P-00245",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-MAN-00001",
+  "fir_id": "FIR-2025-MAN-00006",
   "person_id": "P-00104",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00012",
+  "fir_id": "FIR-2026-BEN-00013",
   "person_id": "P-00086",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-DAK-00011",
+  "fir_id": "FIR-2025-DAK-00010",
   "person_id": "P-00335",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-RAI-00008",
+  "fir_id": "FIR-2026-RAI-00010",
   "person_id": "P-00163",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-RAI-00008",
+  "fir_id": "FIR-2026-RAI-00010",
   "person_id": "P-00181",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-RAI-00009",
+  "fir_id": "FIR-2026-RAI-00011",
   "person_id": "P-00013",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-UDU-00010",
+  "fir_id": "FIR-2026-UDU-00006",
   "person_id": "P-00053",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UDU-00010",
+  "fir_id": "FIR-2026-UDU-00006",
   "person_id": "P-00201",
   "role": "suspect",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-BID-00001",
+  "fir_id": "FIR-2026-BID-00003",
   "person_id": "P-00183",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-UTT-00003",
+  "fir_id": "FIR-2026-UTT-00005",
   "person_id": "P-00029",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1608,13 +1608,13 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2024-BEN-00002",
+  "fir_id": "FIR-2025-BEN-00013",
   "person_id": "P-00031",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-CHI-00012",
+  "fir_id": "FIR-2025-CHI-00013",
   "person_id": "P-00362",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1668,13 +1668,13 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-RAI-00009",
+  "fir_id": "FIR-2025-RAI-00007",
   "person_id": "P-00416",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-RAI-00009",
+  "fir_id": "FIR-2025-RAI-00007",
   "person_id": "P-00363",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1686,25 +1686,25 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00009",
+  "fir_id": "FIR-2025-MYS-00010",
   "person_id": "P-00049",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BEN-00013",
+  "fir_id": "FIR-2025-BEN-00014",
   "person_id": "P-00275",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BEN-00013",
+  "fir_id": "FIR-2025-BEN-00014",
   "person_id": "P-00285",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BEN-00013",
+  "fir_id": "FIR-2025-BEN-00014",
   "person_id": "P-00212",
   "role": "accused",
   "arrest_status": "bailed"
@@ -1740,7 +1740,7 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-UTT-00004",
+  "fir_id": "FIR-2026-UTT-00006",
   "person_id": "P-00110",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1752,31 +1752,31 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BEN-00015",
+  "fir_id": "FIR-2025-BEN-00016",
   "person_id": "P-00239",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BEN-00015",
+  "fir_id": "FIR-2025-BEN-00016",
   "person_id": "P-00019",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-BEN-00015",
+  "fir_id": "FIR-2025-BEN-00016",
   "person_id": "P-00414",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DHA-00009",
+  "fir_id": "FIR-2025-DHA-00010",
   "person_id": "P-00397",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DHA-00009",
+  "fir_id": "FIR-2025-DHA-00010",
   "person_id": "P-00131",
   "role": "suspect",
   "arrest_status": "arrested"
@@ -1794,43 +1794,43 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-HAS-00007",
+  "fir_id": "FIR-2025-HAS-00006",
   "person_id": "P-00273",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-RAI-00001",
+  "fir_id": "FIR-2025-RAI-00008",
   "person_id": "P-00282",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2024-RAI-00001",
+  "fir_id": "FIR-2025-RAI-00008",
   "person_id": "P-00164",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2024-RAI-00001",
+  "fir_id": "FIR-2025-RAI-00008",
   "person_id": "P-00174",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BID-00013",
+  "fir_id": "FIR-2025-BID-00012",
   "person_id": "P-00336",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00013",
+  "fir_id": "FIR-2025-BID-00012",
   "person_id": "P-00438",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BID-00013",
+  "fir_id": "FIR-2025-BID-00012",
   "person_id": "P-00004",
   "role": "accused",
   "arrest_status": "bailed"
@@ -1860,13 +1860,13 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00014",
+  "fir_id": "FIR-2025-BID-00013",
   "person_id": "P-00180",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2024-KAL-00001",
+  "fir_id": "FIR-2025-KAL-00011",
   "person_id": "P-00047",
   "role": "accused",
   "arrest_status": "absconding"
@@ -1884,61 +1884,61 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00015",
+  "fir_id": "FIR-2025-BID-00014",
   "person_id": "P-00056",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00011",
+  "fir_id": "FIR-2025-MYS-00012",
   "person_id": "P-00294",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-MYS-00011",
+  "fir_id": "FIR-2025-MYS-00012",
   "person_id": "P-00172",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAV-00008",
+  "fir_id": "FIR-2025-DAV-00010",
   "person_id": "P-00225",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UTT-00006",
+  "fir_id": "FIR-2025-UTT-00004",
   "person_id": "P-00171",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-UTT-00006",
+  "fir_id": "FIR-2025-UTT-00004",
   "person_id": "P-00295",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-HUB-00013",
+  "fir_id": "FIR-2025-HUB-00014",
   "person_id": "P-00383",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-HUB-00013",
+  "fir_id": "FIR-2025-HUB-00014",
   "person_id": "P-00090",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-HUB-00013",
+  "fir_id": "FIR-2025-HUB-00014",
   "person_id": "P-00437",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00013",
+  "fir_id": "FIR-2025-DAK-00012",
   "person_id": "P-00154",
   "role": "accused",
   "arrest_status": "absconding"
@@ -1950,19 +1950,19 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-UDU-00006",
+  "fir_id": "FIR-2026-UDU-00007",
   "person_id": "P-00445",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-UDU-00006",
+  "fir_id": "FIR-2026-UDU-00007",
   "person_id": "P-00168",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-UDU-00006",
+  "fir_id": "FIR-2026-UDU-00007",
   "person_id": "P-00338",
   "role": "accused",
   "arrest_status": "arrested"
@@ -1974,25 +1974,25 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00013",
+  "fir_id": "FIR-2026-BEN-00014",
   "person_id": "P-00317",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BEN-00016",
+  "fir_id": "FIR-2025-BEN-00017",
   "person_id": "P-00094",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BEN-00016",
+  "fir_id": "FIR-2025-BEN-00017",
   "person_id": "P-00028",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BEN-00016",
+  "fir_id": "FIR-2025-BEN-00017",
   "person_id": "P-00253",
   "role": "accused",
   "arrest_status": "arrested"
@@ -2004,7 +2004,7 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-CH1-00005",
+  "fir_id": "FIR-2026-CH1-00006",
   "person_id": "P-00371",
   "role": "accused",
   "arrest_status": "arrested"
@@ -2016,73 +2016,73 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-UDU-00007",
+  "fir_id": "FIR-2026-UDU-00008",
   "person_id": "P-00092",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAV-00009",
+  "fir_id": "FIR-2025-DAV-00011",
   "person_id": "P-00305",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAV-00009",
+  "fir_id": "FIR-2025-DAV-00011",
   "person_id": "P-00470",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UTT-00007",
+  "fir_id": "FIR-2025-UTT-00005",
   "person_id": "P-00377",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-UTT-00008",
+  "fir_id": "FIR-2025-UTT-00006",
   "person_id": "P-00317",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-UDU-00001",
+  "fir_id": "FIR-2025-UDU-00011",
   "person_id": "P-00417",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-BID-00002",
+  "fir_id": "FIR-2026-BID-00004",
   "person_id": "P-00076",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00014",
+  "fir_id": "FIR-2025-DAK-00013",
   "person_id": "P-00395",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-UDU-00008",
+  "fir_id": "FIR-2026-UDU-00009",
   "person_id": "P-00035",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-DAK-00004",
+  "fir_id": "FIR-2026-DAK-00006",
   "person_id": "P-00424",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-DAK-00004",
+  "fir_id": "FIR-2026-DAK-00006",
   "person_id": "P-00399",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KOL-00011",
+  "fir_id": "FIR-2025-KOL-00009",
   "person_id": "P-00161",
   "role": "accused",
   "arrest_status": "absconding"
@@ -2100,13 +2100,13 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DHA-00012",
+  "fir_id": "FIR-2025-DHA-00013",
   "person_id": "P-00229",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DHA-00012",
+  "fir_id": "FIR-2025-DHA-00013",
   "person_id": "P-00374",
   "role": "accused",
   "arrest_status": "bailed"
@@ -2124,55 +2124,55 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UTT-00009",
+  "fir_id": "FIR-2025-UTT-00007",
   "person_id": "P-00282",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00015",
+  "fir_id": "FIR-2025-DAK-00014",
   "person_id": "P-00307",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-DAK-00015",
+  "fir_id": "FIR-2025-DAK-00014",
   "person_id": "P-00419",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAK-00015",
+  "fir_id": "FIR-2025-DAK-00014",
   "person_id": "P-00202",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-KOL-00012",
+  "fir_id": "FIR-2025-KOL-00010",
   "person_id": "P-00439",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KOL-00012",
+  "fir_id": "FIR-2025-KOL-00010",
   "person_id": "P-00323",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-RAI-00010",
+  "fir_id": "FIR-2026-RAI-00012",
   "person_id": "P-00024",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-RAI-00010",
+  "fir_id": "FIR-2026-RAI-00012",
   "person_id": "P-00273",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-UTT-00005",
+  "fir_id": "FIR-2026-UTT-00007",
   "person_id": "P-00014",
   "role": "suspect",
   "arrest_status": "arrested"
@@ -2184,13 +2184,13 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAV-00010",
+  "fir_id": "FIR-2025-DAV-00012",
   "person_id": "P-00460",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAV-00010",
+  "fir_id": "FIR-2025-DAV-00012",
   "person_id": "P-00102",
   "role": "accused",
   "arrest_status": "arrested"
@@ -2238,13 +2238,13 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-KOD-00004",
+  "fir_id": "FIR-2026-KOD-00005",
   "person_id": "P-00361",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-KOD-00004",
+  "fir_id": "FIR-2026-KOD-00005",
   "person_id": "P-00019",
   "role": "accused",
   "arrest_status": "arrested"
@@ -2256,115 +2256,115 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UTT-00010",
+  "fir_id": "FIR-2025-UTT-00008",
   "person_id": "P-00495",
   "role": "suspect",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-MAN-00006",
+  "fir_id": "FIR-2025-MAN-00007",
   "person_id": "P-00404",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MAN-00006",
+  "fir_id": "FIR-2025-MAN-00007",
   "person_id": "P-00078",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MAN-00006",
+  "fir_id": "FIR-2025-MAN-00007",
   "person_id": "P-00089",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00012",
+  "fir_id": "FIR-2025-MYS-00013",
   "person_id": "P-00040",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BID-00003",
+  "fir_id": "FIR-2026-BID-00005",
   "person_id": "P-00510",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-KAL-00013",
+  "fir_id": "FIR-2026-KAL-00005",
   "person_id": "P-00472",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00013",
+  "fir_id": "FIR-2025-MYS-00014",
   "person_id": "P-00008",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UTT-00011",
+  "fir_id": "FIR-2025-UTT-00009",
   "person_id": "P-00108",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-UTT-00012",
+  "fir_id": "FIR-2025-UTT-00010",
   "person_id": "P-00212",
   "role": "suspect",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-UTT-00012",
+  "fir_id": "FIR-2025-UTT-00010",
   "person_id": "P-00456",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UTT-00012",
+  "fir_id": "FIR-2025-UTT-00010",
   "person_id": "P-00276",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KAL-00014",
+  "fir_id": "FIR-2025-KAL-00013",
   "person_id": "P-00036",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KAL-00014",
+  "fir_id": "FIR-2025-KAL-00013",
   "person_id": "P-00449",
   "role": "suspect",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-BEN-00014",
+  "fir_id": "FIR-2026-BEN-00015",
   "person_id": "P-00487",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-BEN-00014",
+  "fir_id": "FIR-2026-BEN-00015",
   "person_id": "P-00031",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00014",
+  "fir_id": "FIR-2026-BEN-00015",
   "person_id": "P-00161",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BEN-00019",
+  "fir_id": "FIR-2025-BEN-00020",
   "person_id": "P-00088",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BEN-00019",
+  "fir_id": "FIR-2025-BEN-00020",
   "person_id": "P-00123",
   "role": "accused",
   "arrest_status": "absconding"
@@ -2400,49 +2400,49 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BID-00017",
+  "fir_id": "FIR-2025-BID-00016",
   "person_id": "P-00108",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-BID-00017",
+  "fir_id": "FIR-2025-BID-00016",
   "person_id": "P-00361",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-BID-00004",
+  "fir_id": "FIR-2026-BID-00006",
   "person_id": "P-00263",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BID-00004",
+  "fir_id": "FIR-2026-BID-00006",
   "person_id": "P-00414",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-UTT-00006",
+  "fir_id": "FIR-2026-UTT-00008",
   "person_id": "P-00524",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-DAK-00017",
+  "fir_id": "FIR-2025-DAK-00016",
   "person_id": "P-00098",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00017",
+  "fir_id": "FIR-2025-DAK-00016",
   "person_id": "P-00008",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-HUB-00010",
+  "fir_id": "FIR-2026-HUB-00011",
   "person_id": "P-00073",
   "role": "accused",
   "arrest_status": "arrested"
@@ -2460,7 +2460,7 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-KAL-00004",
+  "fir_id": "FIR-2026-KAL-00006",
   "person_id": "P-00532",
   "role": "suspect",
   "arrest_status": "arrested"
@@ -2472,37 +2472,37 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-KOD-00005",
+  "fir_id": "FIR-2026-KOD-00006",
   "person_id": "P-00222",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-KOD-00005",
+  "fir_id": "FIR-2026-KOD-00006",
   "person_id": "P-00502",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-KOD-00005",
+  "fir_id": "FIR-2026-KOD-00006",
   "person_id": "P-00433",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-HUB-00011",
+  "fir_id": "FIR-2026-HUB-00012",
   "person_id": "P-00027",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00014",
+  "fir_id": "FIR-2025-MYS-00015",
   "person_id": "P-00526",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00014",
+  "fir_id": "FIR-2025-MYS-00015",
   "person_id": "P-00166",
   "role": "accused",
   "arrest_status": "arrested"
@@ -2520,7 +2520,7 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-DHA-00013",
+  "fir_id": "FIR-2025-DHA-00014",
   "person_id": "P-00124",
   "role": "accused",
   "arrest_status": "arrested"
@@ -2532,7 +2532,7 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-HAS-00009",
+  "fir_id": "FIR-2026-HAS-00005",
   "person_id": "P-00541",
   "role": "accused",
   "arrest_status": "arrested"
@@ -2550,73 +2550,73 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KAL-00015",
+  "fir_id": "FIR-2025-KAL-00014",
   "person_id": "P-00234",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-BEL-00001",
+  "fir_id": "FIR-2025-BEL-00010",
   "person_id": "P-00086",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-HAS-00010",
+  "fir_id": "FIR-2025-HAS-00008",
   "person_id": "P-00001",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-HAS-00010",
+  "fir_id": "FIR-2025-HAS-00008",
   "person_id": "P-00448",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-CH1-00006",
+  "fir_id": "FIR-2025-CH1-00005",
   "person_id": "P-00069",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-UDU-00013",
+  "fir_id": "FIR-2026-UDU-00011",
   "person_id": "P-00404",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-TUM-00002",
+  "fir_id": "FIR-2026-TUM-00003",
   "person_id": "P-00170",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-TUM-00002",
+  "fir_id": "FIR-2026-TUM-00003",
   "person_id": "P-00491",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00015",
+  "fir_id": "FIR-2025-MYS-00016",
   "person_id": "P-00208",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00019",
+  "fir_id": "FIR-2025-DAK-00018",
   "person_id": "P-00365",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00019",
+  "fir_id": "FIR-2025-DAK-00018",
   "person_id": "P-00174",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00019",
+  "fir_id": "FIR-2025-DAK-00018",
   "person_id": "P-00357",
   "role": "accused",
   "arrest_status": "absconding"
@@ -2640,13 +2640,13 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-DAV-00003",
+  "fir_id": "FIR-2025-DAV-00015",
   "person_id": "P-00384",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-MAN-00007",
+  "fir_id": "FIR-2025-MAN-00008",
   "person_id": "P-00236",
   "role": "suspect",
   "arrest_status": "bailed"
@@ -2658,13 +2658,13 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAK-00020",
+  "fir_id": "FIR-2025-DAK-00019",
   "person_id": "P-00205",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00017",
+  "fir_id": "FIR-2025-MYS-00018",
   "person_id": "P-00299",
   "role": "accused",
   "arrest_status": "bailed"
@@ -2688,7 +2688,7 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BEN-00020",
+  "fir_id": "FIR-2025-BEN-00021",
   "person_id": "P-00263",
   "role": "accused",
   "arrest_status": "arrested"
@@ -2712,37 +2712,37 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00021",
+  "fir_id": "FIR-2025-DAK-00020",
   "person_id": "P-00472",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAK-00021",
+  "fir_id": "FIR-2025-DAK-00020",
   "person_id": "P-00374",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAK-00021",
+  "fir_id": "FIR-2025-DAK-00020",
   "person_id": "P-00259",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-BAL-00001",
+  "fir_id": "FIR-2025-BAL-00010",
   "person_id": "P-00210",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-HUB-00012",
+  "fir_id": "FIR-2026-HUB-00013",
   "person_id": "P-00064",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-UDU-00014",
+  "fir_id": "FIR-2025-UDU-00013",
   "person_id": "P-00024",
   "role": "accused",
   "arrest_status": "bailed"
@@ -2760,19 +2760,19 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00018",
+  "fir_id": "FIR-2025-BID-00017",
   "person_id": "P-00044",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-HUB-00013",
+  "fir_id": "FIR-2026-HUB-00014",
   "person_id": "P-00502",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2024-BAL-00002",
+  "fir_id": "FIR-2025-BAL-00011",
   "person_id": "P-00019",
   "role": "accused",
   "arrest_status": "bailed"
@@ -2802,73 +2802,73 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BEN-00021",
+  "fir_id": "FIR-2025-BEN-00022",
   "person_id": "P-00429",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BEN-00021",
+  "fir_id": "FIR-2025-BEN-00022",
   "person_id": "P-00124",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KAL-00017",
+  "fir_id": "FIR-2025-KAL-00016",
   "person_id": "P-00226",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KAL-00017",
+  "fir_id": "FIR-2025-KAL-00016",
   "person_id": "P-00022",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2024-CHI-00002",
+  "fir_id": "FIR-2025-CHI-00017",
   "person_id": "P-00426",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-UDU-00010",
+  "fir_id": "FIR-2026-UDU-00012",
   "person_id": "P-00061",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAV-00013",
+  "fir_id": "FIR-2025-DAV-00016",
   "person_id": "P-00541",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-TUM-00003",
+  "fir_id": "FIR-2026-TUM-00004",
   "person_id": "P-00299",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-CHI-00001",
+  "fir_id": "FIR-2026-CHI-00003",
   "person_id": "P-00088",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2024-MYS-00002",
+  "fir_id": "FIR-2025-MYS-00020",
   "person_id": "P-00201",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00020",
+  "fir_id": "FIR-2026-MYS-00009",
   "person_id": "P-00461",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-UTT-00013",
+  "fir_id": "FIR-2025-UTT-00011",
   "person_id": "P-00131",
   "role": "accused",
   "arrest_status": "absconding"
@@ -2880,13 +2880,13 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-RAI-00002",
+  "fir_id": "FIR-2025-RAI-00011",
   "person_id": "P-00428",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-RAI-00002",
+  "fir_id": "FIR-2025-RAI-00011",
   "person_id": "P-00466",
   "role": "accused",
   "arrest_status": "bailed"
@@ -2910,73 +2910,73 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAV-00015",
+  "fir_id": "FIR-2025-DAV-00018",
   "person_id": "P-00394",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-HAS-00004",
+  "fir_id": "FIR-2026-HAS-00006",
   "person_id": "P-00459",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-HAS-00004",
+  "fir_id": "FIR-2026-HAS-00006",
   "person_id": "P-00243",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-MYS-00008",
+  "fir_id": "FIR-2026-MYS-00010",
   "person_id": "P-00336",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KOL-00014",
+  "fir_id": "FIR-2026-KOL-00004",
   "person_id": "P-00524",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KOL-00014",
+  "fir_id": "FIR-2026-KOL-00004",
   "person_id": "P-00377",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-DAK-00005",
+  "fir_id": "FIR-2026-DAK-00007",
   "person_id": "P-00366",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-DAK-00005",
+  "fir_id": "FIR-2026-DAK-00007",
   "person_id": "P-00420",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00019",
+  "fir_id": "FIR-2026-BID-00008",
   "person_id": "P-00340",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00019",
+  "fir_id": "FIR-2026-BID-00008",
   "person_id": "P-00532",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00019",
+  "fir_id": "FIR-2026-BID-00008",
   "person_id": "P-00305",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-CH1-00007",
+  "fir_id": "FIR-2025-CH1-00006",
   "person_id": "P-00244",
   "role": "accused",
   "arrest_status": "absconding"
@@ -3000,31 +3000,31 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-KOL-00015",
+  "fir_id": "FIR-2025-KOL-00012",
   "person_id": "P-00564",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-KOL-00015",
+  "fir_id": "FIR-2025-KOL-00012",
   "person_id": "P-00606",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-HAS-00011",
+  "fir_id": "FIR-2025-HAS-00009",
   "person_id": "P-00333",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-HAS-00012",
+  "fir_id": "FIR-2025-HAS-00010",
   "person_id": "P-00232",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-HAS-00012",
+  "fir_id": "FIR-2025-HAS-00010",
   "person_id": "P-00423",
   "role": "accused",
   "arrest_status": "bailed"
@@ -3054,31 +3054,31 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-MYS-00010",
+  "fir_id": "FIR-2026-MYS-00012",
   "person_id": "P-00053",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-BEN-00003",
+  "fir_id": "FIR-2025-BEN-00024",
   "person_id": "P-00543",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-RAI-00012",
+  "fir_id": "FIR-2026-RAI-00014",
   "person_id": "P-00030",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-RAI-00012",
+  "fir_id": "FIR-2026-RAI-00014",
   "person_id": "P-00067",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00023",
+  "fir_id": "FIR-2025-DAK-00022",
   "person_id": "P-00143",
   "role": "accused",
   "arrest_status": "bailed"
@@ -3090,103 +3090,103 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-CHA-00011",
+  "fir_id": "FIR-2025-CHA-00010",
   "person_id": "P-00489",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2024-BID-00002",
+  "fir_id": "FIR-2025-BID-00018",
   "person_id": "P-00431",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-CHI-00021",
+  "fir_id": "FIR-2025-CHI-00020",
   "person_id": "P-00182",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAK-00025",
+  "fir_id": "FIR-2025-DAK-00024",
   "person_id": "P-00400",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-BE1-00009",
+  "fir_id": "FIR-2026-BE1-00010",
   "person_id": "P-00445",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BE1-00009",
+  "fir_id": "FIR-2026-BE1-00010",
   "person_id": "P-00533",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BE1-00009",
+  "fir_id": "FIR-2026-BE1-00010",
   "person_id": "P-00198",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00017",
+  "fir_id": "FIR-2026-BEN-00018",
   "person_id": "P-00349",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00017",
+  "fir_id": "FIR-2026-BEN-00018",
   "person_id": "P-00571",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-CHI-00002",
+  "fir_id": "FIR-2026-CHI-00005",
   "person_id": "P-00341",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BEN-00023",
+  "fir_id": "FIR-2025-BEN-00025",
   "person_id": "P-00523",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BEN-00023",
+  "fir_id": "FIR-2025-BEN-00025",
   "person_id": "P-00240",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BEN-00023",
+  "fir_id": "FIR-2025-BEN-00025",
   "person_id": "P-00047",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-CHA-00012",
+  "fir_id": "FIR-2025-CHA-00011",
   "person_id": "P-00381",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-UTT-00007",
+  "fir_id": "FIR-2026-UTT-00009",
   "person_id": "P-00633",
   "role": "suspect",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-BAL-00012",
+  "fir_id": "FIR-2025-BAL-00014",
   "person_id": "P-00205",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BAL-00012",
+  "fir_id": "FIR-2025-BAL-00014",
   "person_id": "P-00013",
   "role": "accused",
   "arrest_status": "arrested"
@@ -3198,133 +3198,133 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BE1-00010",
+  "fir_id": "FIR-2025-BE1-00009",
   "person_id": "P-00159",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BE1-00010",
+  "fir_id": "FIR-2025-BE1-00009",
   "person_id": "P-00442",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-BE1-00010",
+  "fir_id": "FIR-2025-BE1-00009",
   "person_id": "P-00420",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BID-00020",
+  "fir_id": "FIR-2025-BID-00019",
   "person_id": "P-00207",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BID-00020",
+  "fir_id": "FIR-2025-BID-00019",
   "person_id": "P-00475",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAV-00016",
+  "fir_id": "FIR-2025-DAV-00019",
   "person_id": "P-00056",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-UTT-00008",
+  "fir_id": "FIR-2026-UTT-00010",
   "person_id": "P-00061",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00018",
+  "fir_id": "FIR-2026-BEN-00019",
   "person_id": "P-00580",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-CH1-00008",
+  "fir_id": "FIR-2025-CH1-00007",
   "person_id": "P-00102",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-BAL-00013",
+  "fir_id": "FIR-2026-BAL-00009",
   "person_id": "P-00507",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00026",
+  "fir_id": "FIR-2025-DAK-00025",
   "person_id": "P-00335",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-BE1-00011",
+  "fir_id": "FIR-2025-BE1-00010",
   "person_id": "P-00484",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAV-00017",
+  "fir_id": "FIR-2025-DAV-00020",
   "person_id": "P-00581",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-DAV-00017",
+  "fir_id": "FIR-2025-DAV-00020",
   "person_id": "P-00559",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BAL-00014",
+  "fir_id": "FIR-2025-BAL-00015",
   "person_id": "P-00302",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-KOD-00007",
+  "fir_id": "FIR-2026-KOD-00008",
   "person_id": "P-00193",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2024-CHI-00003",
+  "fir_id": "FIR-2025-CHI-00021",
   "person_id": "P-00395",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UDU-00015",
+  "fir_id": "FIR-2025-UDU-00014",
   "person_id": "P-00520",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2024-KOD-00002",
+  "fir_id": "FIR-2025-KOD-00016",
   "person_id": "P-00661",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2024-KOD-00002",
+  "fir_id": "FIR-2025-KOD-00016",
   "person_id": "P-00574",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-KOL-00016",
+  "fir_id": "FIR-2025-KOL-00013",
   "person_id": "P-00253",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-UDU-00016",
+  "fir_id": "FIR-2025-UDU-00015",
   "person_id": "P-00338",
   "role": "suspect",
   "arrest_status": "arrested"
@@ -3342,19 +3342,19 @@
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-UDU-00018",
+  "fir_id": "FIR-2025-UDU-00017",
   "person_id": "P-00634",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-UDU-00018",
+  "fir_id": "FIR-2025-UDU-00017",
   "person_id": "P-00503",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-UDU-00018",
+  "fir_id": "FIR-2025-UDU-00017",
   "person_id": "P-00214",
   "role": "accused",
   "arrest_status": "arrested"
@@ -3372,19 +3372,19 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-DAK-00027",
+  "fir_id": "FIR-2026-DAK-00009",
   "person_id": "P-00551",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-KAL-00020",
+  "fir_id": "FIR-2025-KAL-00019",
   "person_id": "P-00289",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KAL-00020",
+  "fir_id": "FIR-2025-KAL-00019",
   "person_id": "P-00193",
   "role": "accused",
   "arrest_status": "bailed"
@@ -3396,105 +3396,81 @@
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-BEN-00025",
+  "fir_id": "FIR-2025-BEN-00027",
   "person_id": "P-00350",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BEN-00025",
+  "fir_id": "FIR-2025-BEN-00027",
   "person_id": "P-00283",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-BEN-00025",
+  "fir_id": "FIR-2025-BEN-00027",
   "person_id": "P-00173",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-DAK-00028",
+  "fir_id": "FIR-2026-DAK-00010",
   "person_id": "P-00358",
   "role": "suspect",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-KOD-00017",
+  "fir_id": "FIR-2025-KOD-00018",
   "person_id": "P-00035",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-KOL-00017",
+  "fir_id": "FIR-2025-KOL-00014",
   "person_id": "P-00623",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-DAK-00007",
+  "fir_id": "FIR-2026-DAK-00011",
   "person_id": "P-00376",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-DAK-00007",
+  "fir_id": "FIR-2026-DAK-00011",
   "person_id": "P-00654",
   "role": "suspect",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-DAV-00018",
+  "fir_id": "FIR-2025-DAV-00021",
   "person_id": "P-00027",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-DAV-00018",
+  "fir_id": "FIR-2025-DAV-00021",
   "person_id": "P-00521",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-DAV-00018",
+  "fir_id": "FIR-2025-DAV-00021",
   "person_id": "P-00245",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-BEN-00019",
+  "fir_id": "FIR-2026-BEN-00020",
   "person_id": "P-00701",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00019",
+  "fir_id": "FIR-2026-BEN-00020",
   "person_id": "P-00703",
   "role": "accused",
-  "arrest_status": "bailed"
- },
- {
-  "fir_id": "FIR-2026-BEN-00020",
-  "person_id": "P-00701",
-  "role": "accused",
-  "arrest_status": "bailed"
- },
- {
-  "fir_id": "FIR-2026-BEN-00020",
-  "person_id": "P-00705",
-  "role": "accused",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2025-BEN-00026",
-  "person_id": "P-00701",
-  "role": "accused",
-  "arrest_status": "bailed"
- },
- {
-  "fir_id": "FIR-2025-BEN-00026",
-  "person_id": "P-00703",
-  "role": "suspect",
   "arrest_status": "bailed"
  },
  {
@@ -3504,130 +3480,118 @@
   "arrest_status": "bailed"
  },
  {
+  "fir_id": "FIR-2026-BEN-00021",
+  "person_id": "P-00705",
+  "role": "accused",
+  "arrest_status": "arrested"
+ },
+ {
   "fir_id": "FIR-2026-BEN-00022",
+  "person_id": "P-00701",
+  "role": "accused",
+  "arrest_status": "bailed"
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00022",
+  "person_id": "P-00703",
+  "role": "suspect",
+  "arrest_status": "bailed"
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00023",
+  "person_id": "P-00701",
+  "role": "accused",
+  "arrest_status": "bailed"
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00024",
   "person_id": "P-00704",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-BEN-00022",
+  "fir_id": "FIR-2026-BEN-00024",
   "person_id": "P-00707",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00022",
+  "fir_id": "FIR-2026-BEN-00024",
   "person_id": "P-00701",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-BEN-00023",
+  "fir_id": "FIR-2026-BEN-00025",
   "person_id": "P-00701",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-BEN-00023",
+  "fir_id": "FIR-2026-BEN-00025",
   "person_id": "P-00705",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-BEN-00024",
+  "fir_id": "FIR-2026-BEN-00026",
   "person_id": "P-00701",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-BEN-00024",
+  "fir_id": "FIR-2026-BEN-00026",
   "person_id": "P-00705",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00025",
+  "fir_id": "FIR-2026-BEN-00027",
   "person_id": "P-00701",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-BEN-00025",
+  "fir_id": "FIR-2026-BEN-00027",
   "person_id": "P-00702",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-BEN-00026",
+  "fir_id": "FIR-2026-BEN-00028",
   "person_id": "P-00701",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00026",
+  "fir_id": "FIR-2026-BEN-00028",
   "person_id": "P-00706",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-BEN-00026",
+  "fir_id": "FIR-2026-BEN-00028",
   "person_id": "P-00708",
   "role": "suspect",
-  "arrest_status": "bailed"
- },
- {
-  "fir_id": "FIR-2026-BEN-00027",
-  "person_id": "P-00701",
-  "role": "suspect",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2026-BEN-00027",
-  "person_id": "P-00704",
-  "role": "accused",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2026-BEN-00027",
-  "person_id": "P-00708",
-  "role": "accused",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2026-BEN-00028",
-  "person_id": "P-00701",
-  "role": "accused",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2026-BEN-00028",
-  "person_id": "P-00707",
-  "role": "accused",
-  "arrest_status": "bailed"
- },
- {
-  "fir_id": "FIR-2025-BEN-00027",
-  "person_id": "P-00701",
-  "role": "accused",
-  "arrest_status": "bailed"
- },
- {
-  "fir_id": "FIR-2025-BEN-00027",
-  "person_id": "P-00708",
-  "role": "accused",
   "arrest_status": "bailed"
  },
  {
   "fir_id": "FIR-2026-BEN-00029",
   "person_id": "P-00701",
-  "role": "accused",
+  "role": "suspect",
   "arrest_status": "arrested"
  },
  {
   "fir_id": "FIR-2026-BEN-00029",
   "person_id": "P-00704",
   "role": "accused",
-  "arrest_status": "bailed"
+  "arrest_status": "arrested"
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00029",
+  "person_id": "P-00708",
+  "role": "accused",
+  "arrest_status": "arrested"
  },
  {
   "fir_id": "FIR-2026-BEN-00030",
@@ -3636,26 +3600,38 @@
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-MYS-00013",
-  "person_id": "P-00723",
-  "role": "accused",
-  "arrest_status": "absconding"
- },
- {
-  "fir_id": "FIR-2026-MYS-00014",
-  "person_id": "P-00723",
+  "fir_id": "FIR-2026-BEN-00030",
+  "person_id": "P-00707",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-MYS-00015",
-  "person_id": "P-00723",
+  "fir_id": "FIR-2026-BEN-00031",
+  "person_id": "P-00701",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-MYS-00016",
-  "person_id": "P-00723",
+  "fir_id": "FIR-2026-BEN-00031",
+  "person_id": "P-00708",
+  "role": "accused",
+  "arrest_status": "bailed"
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00032",
+  "person_id": "P-00701",
+  "role": "accused",
+  "arrest_status": "arrested"
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00032",
+  "person_id": "P-00704",
+  "role": "accused",
+  "arrest_status": "bailed"
+ },
+ {
+  "fir_id": "FIR-2026-BEN-00033",
+  "person_id": "P-00701",
   "role": "accused",
   "arrest_status": "arrested"
  },
@@ -3663,13 +3639,13 @@
   "fir_id": "FIR-2026-MYS-00017",
   "person_id": "P-00723",
   "role": "accused",
-  "arrest_status": "arrested"
+  "arrest_status": "absconding"
  },
  {
   "fir_id": "FIR-2026-MYS-00018",
   "person_id": "P-00723",
   "role": "accused",
-  "arrest_status": "arrested"
+  "arrest_status": "bailed"
  },
  {
   "fir_id": "FIR-2026-MYS-00019",
@@ -3681,388 +3657,412 @@
   "fir_id": "FIR-2026-MYS-00020",
   "person_id": "P-00723",
   "role": "accused",
-  "arrest_status": "bailed"
+  "arrest_status": "arrested"
  },
  {
   "fir_id": "FIR-2026-MYS-00021",
-  "person_id": "P-00270",
+  "person_id": "P-00723",
+  "role": "accused",
+  "arrest_status": "arrested"
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00022",
+  "person_id": "P-00723",
+  "role": "accused",
+  "arrest_status": "arrested"
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00023",
+  "person_id": "P-00723",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
   "fir_id": "FIR-2026-MYS-00024",
-  "person_id": "P-00386",
-  "role": "accused",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2026-MYS-00024",
-  "person_id": "P-00625",
-  "role": "accused",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2025-MYS-00026",
-  "person_id": "P-00037",
-  "role": "accused",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2025-MYS-00028",
-  "person_id": "P-00071",
-  "role": "accused",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2025-MYS-00028",
-  "person_id": "P-00253",
-  "role": "accused",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2025-MYS-00030",
-  "person_id": "P-00727",
-  "role": "accused",
-  "arrest_status": "arrested"
- },
- {
-  "fir_id": "FIR-2025-MYS-00030",
-  "person_id": "P-00447",
-  "role": "accused",
-  "arrest_status": "bailed"
- },
- {
-  "fir_id": "FIR-2025-MYS-00030",
-  "person_id": "P-00225",
-  "role": "suspect",
-  "arrest_status": "absconding"
- },
- {
-  "fir_id": "FIR-2025-MYS-00031",
-  "person_id": "P-00311",
+  "person_id": "P-00723",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
   "fir_id": "FIR-2026-MYS-00025",
+  "person_id": "P-00270",
+  "role": "accused",
+  "arrest_status": "bailed"
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00028",
+  "person_id": "P-00386",
+  "role": "accused",
+  "arrest_status": "arrested"
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00028",
+  "person_id": "P-00625",
+  "role": "accused",
+  "arrest_status": "arrested"
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00024",
+  "person_id": "P-00037",
+  "role": "accused",
+  "arrest_status": "arrested"
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00026",
+  "person_id": "P-00071",
+  "role": "accused",
+  "arrest_status": "arrested"
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00026",
+  "person_id": "P-00253",
+  "role": "accused",
+  "arrest_status": "arrested"
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00028",
+  "person_id": "P-00727",
+  "role": "accused",
+  "arrest_status": "arrested"
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00028",
+  "person_id": "P-00447",
+  "role": "accused",
+  "arrest_status": "bailed"
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00028",
+  "person_id": "P-00225",
+  "role": "suspect",
+  "arrest_status": "absconding"
+ },
+ {
+  "fir_id": "FIR-2025-MYS-00029",
+  "person_id": "P-00311",
+  "role": "accused",
+  "arrest_status": "bailed"
+ },
+ {
+  "fir_id": "FIR-2026-MYS-00029",
   "person_id": "P-00583",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00032",
+  "fir_id": "FIR-2025-MYS-00030",
   "person_id": "P-00229",
   "role": "suspect",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-MYS-00033",
+  "fir_id": "FIR-2025-MYS-00031",
   "person_id": "P-00477",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-MYS-00026",
+  "fir_id": "FIR-2026-MYS-00030",
   "person_id": "P-00053",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00034",
+  "fir_id": "FIR-2026-MYS-00031",
   "person_id": "P-00019",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00036",
+  "fir_id": "FIR-2025-MYS-00033",
   "person_id": "P-00712",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-MYS-00028",
+  "fir_id": "FIR-2026-MYS-00033",
   "person_id": "P-00269",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-MYS-00028",
+  "fir_id": "FIR-2026-MYS-00033",
   "person_id": "P-00104",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00037",
+  "fir_id": "FIR-2025-MYS-00034",
   "person_id": "P-00506",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00038",
+  "fir_id": "FIR-2025-MYS-00035",
   "person_id": "P-00327",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00038",
+  "fir_id": "FIR-2025-MYS-00035",
   "person_id": "P-00226",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00040",
+  "fir_id": "FIR-2025-MYS-00037",
   "person_id": "P-00216",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00041",
+  "fir_id": "FIR-2026-MYS-00034",
   "person_id": "P-00351",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00041",
+  "fir_id": "FIR-2026-MYS-00034",
   "person_id": "P-00274",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00041",
+  "fir_id": "FIR-2026-MYS-00034",
   "person_id": "P-00205",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-MYS-00042",
+  "fir_id": "FIR-2025-MYS-00038",
   "person_id": "P-00525",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00043",
+  "fir_id": "FIR-2025-MYS-00039",
   "person_id": "P-00456",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00044",
+  "fir_id": "FIR-2025-MYS-00040",
   "person_id": "P-00334",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00046",
+  "fir_id": "FIR-2025-MYS-00042",
   "person_id": "P-00180",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-MYS-00046",
+  "fir_id": "FIR-2025-MYS-00042",
   "person_id": "P-00601",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00046",
+  "fir_id": "FIR-2025-MYS-00042",
   "person_id": "P-00194",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-MYS-00047",
+  "fir_id": "FIR-2025-MYS-00043",
   "person_id": "P-00149",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00048",
+  "fir_id": "FIR-2025-MYS-00044",
   "person_id": "P-00294",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-MYS-00029",
+  "fir_id": "FIR-2026-MYS-00035",
   "person_id": "P-00575",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-MYS-00030",
+  "fir_id": "FIR-2026-MYS-00036",
   "person_id": "P-00462",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-MYS-00030",
+  "fir_id": "FIR-2026-MYS-00036",
   "person_id": "P-00709",
   "role": "suspect",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00050",
+  "fir_id": "FIR-2025-MYS-00046",
   "person_id": "P-00359",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00051",
+  "fir_id": "FIR-2025-MYS-00047",
   "person_id": "P-00582",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00052",
+  "fir_id": "FIR-2025-MYS-00048",
   "person_id": "P-00580",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00053",
+  "fir_id": "FIR-2025-MYS-00049",
   "person_id": "P-00661",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2025-MYS-00054",
+  "fir_id": "FIR-2025-MYS-00050",
   "person_id": "P-00553",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2025-MYS-00057",
+  "fir_id": "FIR-2025-MYS-00052",
   "person_id": "P-00078",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-MYS-00032",
+  "fir_id": "FIR-2026-MYS-00039",
   "person_id": "P-00337",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2025-MYS-00061",
+  "fir_id": "FIR-2025-MYS-00055",
   "person_id": "P-00224",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-MYS-00033",
+  "fir_id": "FIR-2026-MYS-00041",
   "person_id": "P-00501",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-MYS-00033",
+  "fir_id": "FIR-2026-MYS-00041",
   "person_id": "P-00221",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-HUB-00014",
+  "fir_id": "FIR-2026-HUB-00015",
   "person_id": "P-00113",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-HUB-00015",
+  "fir_id": "FIR-2026-HUB-00016",
   "person_id": "P-00014",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-HUB-00016",
+  "fir_id": "FIR-2026-HUB-00017",
   "person_id": "P-00491",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-HUB-00016",
+  "fir_id": "FIR-2026-HUB-00017",
   "person_id": "P-00077",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-HUB-00016",
+  "fir_id": "FIR-2026-HUB-00017",
   "person_id": "P-00745",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-HUB-00018",
+  "fir_id": "FIR-2026-HUB-00019",
   "person_id": "P-00600",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-HUB-00022",
+  "fir_id": "FIR-2026-HUB-00023",
   "person_id": "P-00479",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-HUB-00022",
+  "fir_id": "FIR-2026-HUB-00023",
   "person_id": "P-00498",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-HUB-00025",
+  "fir_id": "FIR-2026-HUB-00026",
   "person_id": "P-00652",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-HUB-00026",
+  "fir_id": "FIR-2026-HUB-00027",
   "person_id": "P-00184",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-HUB-00027",
+  "fir_id": "FIR-2026-HUB-00028",
   "person_id": "P-00072",
   "role": "suspect",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-HUB-00027",
+  "fir_id": "FIR-2026-HUB-00028",
   "person_id": "P-00347",
   "role": "suspect",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-HUB-00027",
+  "fir_id": "FIR-2026-HUB-00028",
   "person_id": "P-00129",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-HUB-00028",
+  "fir_id": "FIR-2026-HUB-00029",
   "person_id": "P-00023",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-BEN-00031",
+  "fir_id": "FIR-2026-BEN-00034",
   "person_id": "P-00803",
   "role": "accused",
   "arrest_status": "bailed"
  },
  {
-  "fir_id": "FIR-2026-BEN-00032",
+  "fir_id": "FIR-2026-BEN-00035",
   "person_id": "P-00804",
   "role": "accused",
   "arrest_status": "absconding"
  },
  {
-  "fir_id": "FIR-2026-BEN-00033",
+  "fir_id": "FIR-2026-BEN-00036",
   "person_id": "P-00814",
   "role": "accused",
   "arrest_status": "arrested"
  },
  {
-  "fir_id": "FIR-2026-BEN-00033",
+  "fir_id": "FIR-2026-BEN-00036",
   "person_id": "P-00808",
   "role": "accused",
   "arrest_status": "bailed"

@@ -28,6 +28,12 @@ Thumbs.db
 # NOTE: the generated seed dataset (data/seed/*.json) IS committed so the deployed
 # Catalyst app has data at runtime. Regenerate any time with `npm run data:generate`.
 
+# Catalyst import CSVs are regenerable from the seed — don't commit
+data/csv/
+
+# The official KSP ERD is marked "Confidential" — reference only, never redistribute publicly
+docs/*.pdf
+
 # catalyst
 .catalyst/
 catalyst/**/node_modules/
