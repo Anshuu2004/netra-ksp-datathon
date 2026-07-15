@@ -22,6 +22,7 @@ const SUGGESTIONS = [
   { icon: <RiskIcon />, text: 'Top repeat offenders in Mysuru' },
   { icon: <MoneyIcon />, text: 'Trace the money trail for the laundering ring' },
   { icon: <ChartIcon />, text: 'Correlate crime with urbanisation' },
+  { icon: <ChartIcon />, text: 'Is chain-snatching in Bengaluru seasonal?' },
 ];
 
 export default function ChatConsole() {
@@ -209,16 +210,18 @@ function AuditModal({ entries, onClose }: { entries: any[]; onClose: () => void 
 function Header({ role, setRole, lang, setLang, onDossier, onAudit, hasMsgs }: any) {
   const current = ROLES.find((r) => r.id === role)!;
   return (
-    <header className="flex items-center justify-between gap-3 px-4 py-2.5 border-b border-edge">
+    <header className="relative flex items-center justify-between gap-3 px-4 py-2.5 border-b border-white/[0.06] bg-gradient-to-b from-white/[0.02] to-transparent after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-gradient-to-r after:from-transparent after:via-accent/30 after:to-transparent">
       <div className="flex items-center gap-3">
-        <div className="relative w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-accent2 grid place-items-center text-ink font-bold shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)]">ನೇ</div>
+        <div className="relative w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-accent2 grid place-items-center text-ink font-bold ring-1 ring-white/15 shadow-[0_0_22px_-4px_rgba(56,189,248,0.65)]">ನೇ</div>
         <div className="leading-tight">
           <div className="font-semibold tracking-wide text-white">NETRA <span className="text-slate-400 font-normal text-sm">· Crime Intelligence Copilot</span></div>
-          <div className="text-[11px] text-slate-400">Karnataka State Police · Ask. See. Act.</div>
+          <div className="text-[11px] text-slate-400 flex items-center gap-1.5">
+            <span className="live-dot" aria-hidden /> Karnataka State Police · Ask. See. Act.
+          </div>
         </div>
       </div>
       <div className="flex items-center gap-2">
-        <span className="hidden lg:inline text-[10px] uppercase tracking-wide text-amber-300/90 border border-amber-500/30 bg-amber-500/10 rounded px-2 py-1">Synthetic demo data</span>
+        <span className="hidden lg:inline-flex items-center gap-1.5 text-[10px] uppercase tracking-wide text-amber-300/90 border border-amber-500/30 bg-amber-500/10 rounded px-2 py-1"><span className="w-1.5 h-1.5 rounded-full bg-amber-400/90" />Synthetic demo data</span>
         <a href="/briefing" className="btn-ghost hidden sm:inline-flex items-center gap-1.5 text-sm px-2.5 py-1.5 rounded-lg border border-edge text-slate-300 hover:text-accent hover:border-accent"><BellIcon /><span className="hidden md:inline">Briefing</span></a>
         <button onClick={onAudit} className="btn-ghost inline-flex items-center gap-1.5 text-sm px-2.5 py-1.5 rounded-lg border border-edge text-slate-300 hover:text-accent hover:border-accent"><ShieldIcon /><span className="hidden md:inline">Audit</span></button>
         <button onClick={onDossier} disabled={!hasMsgs} className="btn-ghost inline-flex items-center gap-1.5 text-sm px-2.5 py-1.5 rounded-lg border border-edge text-slate-300 hover:text-accent hover:border-accent disabled:opacity-40 disabled:hover:text-slate-300 disabled:hover:border-edge"><DownloadIcon /><span className="hidden md:inline">Dossier</span></button>
@@ -241,16 +244,16 @@ function Header({ role, setRole, lang, setLang, onDossier, onAudit, hasMsgs }: a
 function EmptyState({ onPick, lang }: { onPick: (s: string) => void; lang: 'en' | 'kn' }) {
   return (
     <div className="py-6 msg-in">
-      <div className="text-2xl font-semibold text-white text-balance">{lang === 'kn' ? 'ಅಪರಾಧ ದತ್ತಸಂಚಯವನ್ನು ಏನಾದರೂ ಕೇಳಿ.' : 'Ask the crime database anything.'}</div>
-      <p className="text-slate-400 text-sm mt-1.5 max-w-[46ch]">English or ಕನ್ನಡ · by text or voice. Every answer renders as a map, graph or chart — with a full evidence trail.</p>
-      <div className="text-[11px] uppercase tracking-wide text-slate-500 mt-5 mb-2">Try a query</div>
+      <div className="text-2xl font-semibold text-white text-balance tracking-tight">{lang === 'kn' ? 'ಅಪರಾಧ ದತ್ತಸಂಚಯವನ್ನು ಏನಾದರೂ ಕೇಳಿ.' : 'Ask the crime database anything.'}</div>
+      <p className="text-slate-400 text-sm mt-2 max-w-[48ch] leading-relaxed">English or ಕನ್ನಡ · by text or voice. Every answer renders as a map, graph or chart — with a full evidence trail back to the source FIRs.</p>
+      <div className="eyebrow mt-6 mb-2.5 flex items-center gap-2"><span>Start a line of enquiry</span><span className="h-px flex-1 bg-white/[0.06]" /></div>
       <div className="grid gap-2">
         {SUGGESTIONS.map((s) => (
           <button key={s.text} onClick={() => onPick(s.text)}
-            className="group flex items-center gap-3 text-left rounded-lg border border-edge bg-panel2/60 hover:bg-panel2 hover:border-accent transition px-3 py-2.5 text-sm text-slate-200">
-            <span className="text-slate-500 group-hover:text-accent transition-colors">{s.icon}</span>
+            className="group flex items-center gap-3 text-left rounded-lg border border-white/[0.06] bg-white/[0.02] hover:bg-accent/[0.06] hover:border-accent/40 transition-colors px-3 py-2.5 text-sm text-slate-200">
+            <span className="grid place-items-center w-7 h-7 rounded-md bg-white/[0.03] border border-white/[0.06] text-slate-400 group-hover:text-accent group-hover:border-accent/40 transition-colors shrink-0">{s.icon}</span>
             <span className="group-hover:text-white transition-colors">{s.text}</span>
-            <span className="ml-auto text-slate-600 group-hover:text-accent transition-colors"><ArrowIcon /></span>
+            <span className="ml-auto text-slate-600 group-hover:text-accent group-hover:translate-x-0.5 transition-all"><ArrowIcon /></span>
           </button>
         ))}
       </div>
@@ -261,16 +264,18 @@ function EmptyState({ onPick, lang }: { onPick: (s: string) => void; lang: 'en' 
 function Bubble({ m, lang }: { m: Msg; lang: 'en' | 'kn' }) {
   const isUser = m.role === 'user';
   const tone = isUser
-    ? 'bg-accent text-ink rounded-br-sm shadow-[0_2px_12px_-4px_rgba(56,189,248,0.5)]'
+    ? 'bg-accent text-ink rounded-br-sm shadow-[0_4px_16px_-6px_rgba(56,189,248,0.6)]'
     : m.error
       ? 'bg-danger/10 border border-danger/40 text-rose-200 rounded-bl-sm'
-      : 'bg-panel2 border border-edge text-slate-100 rounded-bl-sm';
+      : 'bg-white/[0.04] border border-white/[0.07] text-slate-100 rounded-bl-sm';
   return (
     <div className={`flex msg-in ${isUser ? 'justify-end' : 'justify-start'}`}>
-      <div className={`max-w-[88%] rounded-2xl px-3.5 py-2 text-sm leading-relaxed ${tone} ${lang === 'kn' ? 'font-kn' : ''}`}>
+      <div className={`max-w-[88%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed ${tone} ${lang === 'kn' ? 'font-kn' : ''}`}>
         {!isUser && m.env && (
-          <div className="flex items-center gap-1.5 mb-1">
-            <span className="text-[9px] uppercase tracking-wider text-accent2 bg-accent2/10 border border-accent2/20 rounded px-1.5 py-0.5">{m.env.intent.replace(/_/g, ' ')}</span>
+          <div className="flex items-center gap-1.5 mb-1.5">
+            <span className="inline-flex items-center gap-1 text-[9px] font-medium uppercase tracking-wider text-accent2 bg-accent2/10 border border-accent2/25 rounded px-1.5 py-0.5">
+              <span className="w-1 h-1 rounded-full bg-accent2" />{m.env.intent.replace(/_/g, ' ')}
+            </span>
           </div>
         )}
         {m.error && <span className="mr-1">⚠</span>}
@@ -295,22 +300,22 @@ function Thinking() {
 
 function Composer({ input, setInput, onSend, listening, toggleVoice, busy, lang }: any) {
   return (
-    <div className="border-t border-edge p-2.5">
+    <div className="border-t border-white/[0.06] p-2.5 bg-gradient-to-t from-white/[0.02] to-transparent">
       <div className="flex items-center gap-2">
         <button onClick={toggleVoice} aria-label="Voice query" title="Voice query (Chrome/Edge)"
-          className={`btn-ghost shrink-0 w-10 h-10 rounded-lg grid place-items-center border ${listening ? 'bg-danger/20 border-danger text-danger animate-pulse' : 'border-edge text-slate-300 hover:text-accent hover:border-accent'}`}>
+          className={`btn-ghost shrink-0 w-10 h-10 rounded-lg grid place-items-center border ${listening ? 'bg-danger/20 border-danger text-danger animate-pulse' : 'border-white/[0.08] text-slate-300 hover:text-accent hover:border-accent/50'}`}>
           <MicIcon />
         </button>
         <div className="relative flex-1">
           <input
             value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && onSend()}
             placeholder={lang === 'kn' ? 'ಒಂದು ಪ್ರಶ್ನೆ ಕೇಳಿ…' : 'Ask about hotspots, gangs, offenders, a FIR…'}
-            className={`w-full bg-panel2 border border-edge rounded-lg pl-3 pr-8 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 outline-none focus:border-accent transition-colors ${lang === 'kn' ? 'font-kn' : ''}`}
+            className={`w-full bg-[#0c1220] border border-white/[0.08] rounded-lg pl-3 pr-8 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 outline-none focus:border-accent/70 focus:shadow-[0_0_0_3px_rgba(56,189,248,0.12)] transition-all ${lang === 'kn' ? 'font-kn' : ''}`}
           />
-          {input && <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-slate-500 border border-edge rounded px-1 py-0.5 bg-ink/60">↵</kbd>}
+          {input && <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-slate-500 border border-white/[0.08] rounded px-1 py-0.5 bg-ink/60">↵</kbd>}
         </div>
         <button onClick={onSend} disabled={busy || !input.trim()}
-          className="btn-ghost shrink-0 px-4 h-10 rounded-lg bg-accent text-ink font-medium text-sm hover:brightness-110 active:brightness-95 disabled:opacity-40 disabled:hover:brightness-100">Ask</button>
+          className="btn-ghost shrink-0 px-4 h-10 rounded-lg bg-accent text-ink font-semibold text-sm shadow-[0_6px_18px_-8px_rgba(56,189,248,0.8)] hover:brightness-110 hover:-translate-y-px active:translate-y-0 active:brightness-95 disabled:opacity-40 disabled:shadow-none disabled:hover:brightness-100 disabled:hover:translate-y-0">Ask</button>
       </div>
     </div>
   );

@@ -6,53 +6,100 @@
   color-scheme: dark;
   /* semantic z-index scale */
   --z-sticky: 20; --z-modal-backdrop: 40; --z-modal: 50; --z-toast: 60;
+  /* command-centre material tokens */
+  --edge: #223049;
+  --edge-soft: rgba(56, 189, 248, 0.10);
+  --hair: rgba(148, 175, 214, 0.12);
+  --accent: #38bdf8;
+  --accent2: #22d3ee;
+  --panel-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 24px 48px -32px rgba(0, 0, 0, 0.9);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 html, body { height: 100%; }
 body {
   background:
-    radial-gradient(1100px 560px at 72% -12%, #16233f 0%, rgba(10,14,20,0) 55%),
-    linear-gradient(#0a0e14, #090c12);
+    radial-gradient(1200px 620px at 74% -14%, #17263f 0%, rgba(10,14,20,0) 56%),
+    radial-gradient(900px 500px at 0% 108%, #10192b 0%, rgba(10,14,20,0) 60%),
+    linear-gradient(#0a0e14, #080b11);
   color: #e6edf6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+/* faint precision grid — command-centre texture, kept near-subliminal so it never competes */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(86, 130, 190, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(86, 130, 190, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(120% 90% at 50% 0%, #000 30%, transparent 78%);
+}
+body > * { position: relative; z-index: 1; }
 ::selection { background: rgba(56, 189, 248, 0.28); color: #eaf6ff; }
+
+/* Numeric data reads as an instrument, not prose */
+.tnum { font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1, 'cv01' 1; }
 
 /* Accessible keyboard focus everywhere */
 :where(button, a, input, select, [tabindex]):focus-visible {
-  outline: 2px solid var(--tw-color-accent, #38bdf8);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 8px;
 }
 
 /* thin scrollbars */
 *::-webkit-scrollbar { width: 8px; height: 8px; }
-*::-webkit-scrollbar-thumb { background: #223049; border-radius: 8px; }
+*::-webkit-scrollbar-thumb { background: #26344d; border-radius: 8px; border: 2px solid transparent; background-clip: padding-box; }
+*::-webkit-scrollbar-thumb:hover { background: #33455f; background-clip: padding-box; }
 *::-webkit-scrollbar-track { background: transparent; }
+* { scrollbar-width: thin; scrollbar-color: #26344d transparent; }
 
+/* Panels — crisp hairline, inner top highlight, deep grounded shadow for real elevation */
 .glass {
-  background: linear-gradient(180deg, rgba(22, 29, 43, 0.72), rgba(15, 21, 32, 0.72));
-  backdrop-filter: blur(12px);
-  border: 1px solid #223049;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 10px 30px -20px rgba(0, 0, 0, 0.8);
+  background:
+    linear-gradient(180deg, rgba(24, 32, 48, 0.82), rgba(14, 20, 31, 0.86));
+  backdrop-filter: blur(14px) saturate(1.1);
+  border: 1px solid var(--hair);
+  box-shadow: var(--panel-shadow);
 }
+/* hairline top-edge light that catches the eye like brushed metal */
+.glass { position: relative; }
+.glass::before {
+  content: ''; position: absolute; inset: 0 0 auto 0; height: 1px; pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.35), transparent);
+  opacity: 0.6;
+}
+
+/* Section micro-label used across evidence / empty states */
+.eyebrow { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #6b7c96; font-weight: 600; }
+
+/* Live status dot */
+.live-dot { position: relative; width: 7px; height: 7px; border-radius: 999px; background: #34d399; box-shadow: 0 0 10px -1px #34d399; }
+.live-dot::after { content: ''; position: absolute; inset: -4px; border-radius: 999px; border: 1px solid rgba(52, 211, 153, 0.6); animation: livePing 2.2s var(--ease-out-quint) infinite; }
+@keyframes livePing { 0% { transform: scale(0.6); opacity: 0.8; } 100% { transform: scale(2.4); opacity: 0; } }
+
 .chip {
-  @apply text-xs px-2.5 py-1 rounded-full border border-edge bg-panel2 text-slate-300 hover:border-accent hover:text-accent cursor-pointer;
-  transition: color .15s ease, border-color .15s ease, transform .15s ease, background-color .15s ease;
+  @apply text-xs px-2.5 py-1 rounded-full border text-slate-300 cursor-pointer;
+  border-color: var(--hair);
+  background: rgba(22, 29, 43, 0.6);
+  transition: color .18s var(--ease-out-quint), border-color .18s var(--ease-out-quint), transform .18s var(--ease-out-quint), background-color .18s var(--ease-out-quint), box-shadow .18s var(--ease-out-quint);
 }
-.chip:hover { transform: translateY(-1px); }
+.chip:hover { color: #7dd3fc; border-color: rgba(56, 189, 248, 0.5); background: rgba(56, 189, 248, 0.08); transform: translateY(-1px); box-shadow: 0 6px 16px -10px rgba(56, 189, 248, 0.7); }
 .chip:active { transform: translateY(0); }
 
 /* Message entrance (reveal enhances an already-visible default) */
-@keyframes msgIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
-.msg-in { animation: msgIn .28s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes msgIn { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
+.msg-in { animation: msgIn .34s var(--ease-out-quint) both; }
 
 /* Loading skeleton shimmer */
 @keyframes shimmer { 100% { transform: translateX(100%); } }
-.skeleton { position: relative; overflow: hidden; background: #131b28; border-radius: 8px; }
+.skeleton { position: relative; overflow: hidden; background: #121a28; border-radius: 10px; border: 1px solid var(--hair); }
 .skeleton::after {
   content: ''; position: absolute; inset: 0; transform: translateX(-100%);
-  background: linear-gradient(90deg, transparent, rgba(56,189,248,0.10), transparent);
-  animation: shimmer 1.4s infinite;
+  background: linear-gradient(90deg, transparent, rgba(56,189,248,0.12), transparent);
+  animation: shimmer 1.5s infinite;
 }
 
 /* Thinking indicator */
@@ -61,15 +108,15 @@ body {
 
 /* Indeterminate top progress bar */
 @keyframes indeterminate { 0% { left: -40%; width: 40%; } 50% { left: 30%; width: 45%; } 100% { left: 100%; width: 40%; } }
-.progress-rail { position: relative; height: 2px; overflow: hidden; background: transparent; }
+.progress-rail { position: relative; height: 2px; overflow: hidden; background: transparent; transition: opacity .3s var(--ease-out-quint); }
 .progress-rail::after { content: ''; position: absolute; top: 0; height: 100%; border-radius: 999px; background: linear-gradient(90deg, transparent, #38bdf8, #22d3ee, transparent); animation: indeterminate 1.1s infinite ease-in-out; }
 
 /* Standard control transitions */
-.btn-ghost { transition: color .15s ease, border-color .15s ease, background-color .15s ease; }
+.btn-ghost { transition: color .16s var(--ease-out-quint), border-color .16s var(--ease-out-quint), background-color .16s var(--ease-out-quint), box-shadow .16s var(--ease-out-quint), transform .16s var(--ease-out-quint); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
-  .netra-pulse::after { display: none; }
+  .netra-pulse::after, .live-dot::after { display: none; }
 }
 
 /* MapLibre pulsing forecast/hotspot marker */

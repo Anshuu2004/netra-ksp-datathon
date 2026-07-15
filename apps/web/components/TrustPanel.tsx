@@ -4,27 +4,33 @@ import type { Evidence } from '@/lib/types';
 export function TrustPanel({ evidence }: { evidence: Evidence }) {
   const pct = Math.round((evidence.confidence || 0) * 100);
   const confColor = pct >= 80 ? 'text-good' : pct >= 55 ? 'text-warn' : 'text-danger';
+  const confBar = pct >= 80 ? 'bg-good' : pct >= 55 ? 'bg-warn' : 'bg-danger';
   return (
     <div className="text-sm">
-      <div className="flex items-center justify-between mb-2">
-        <div className="flex items-center gap-2 text-slate-300">
+      <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center gap-2 text-slate-200">
           <ShieldIcon />
           <span className="font-medium">Evidence &amp; reasoning</span>
         </div>
-        <span className={`text-xs font-semibold ${confColor}`}>confidence {pct}%</span>
+        <div className="flex items-center gap-2">
+          <div className="w-16 h-1.5 rounded-full bg-white/[0.06] overflow-hidden" aria-hidden>
+            <div className={`h-full rounded-full ${confBar}`} style={{ width: `${pct}%` }} />
+          </div>
+          <span className={`text-xs font-semibold tabular-nums ${confColor}`}>{pct}%</span>
+        </div>
       </div>
 
-      <div className="text-[11px] uppercase tracking-wide text-slate-500 mb-1">What NETRA ran</div>
-      <code className="block text-xs text-accent2 bg-[#0c1220] border border-edge rounded-md px-2 py-1.5 mb-3 break-words">{evidence.query}</code>
+      <div className="eyebrow mb-1.5">What NETRA ran</div>
+      <code className="block text-xs text-accent2 bg-[#0b1120] border border-white/[0.06] rounded-md px-2.5 py-2 mb-4 break-words leading-relaxed">{evidence.query}</code>
 
-      <div className="text-[11px] uppercase tracking-wide text-slate-500 mb-1">Reasoning path</div>
-      <ol className="space-y-1.5 mb-3">
+      <div className="eyebrow mb-2">Reasoning path</div>
+      <ol className="relative space-y-2.5 mb-4 before:absolute before:left-[9px] before:top-1 before:bottom-1 before:w-px before:bg-white/[0.07]">
         {evidence.reasoning_path.map((r, i) => (
-          <li key={i} className="flex gap-2">
-            <span className="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-panel2 border border-edge text-[10px] grid place-items-center text-accent">{i + 1}</span>
-            <div>
-              <div className="text-slate-200">{r.step}</div>
-              <div className="text-xs text-slate-400">{r.detail}</div>
+          <li key={i} className="relative flex gap-2.5">
+            <span className="relative z-10 mt-0.5 w-[19px] h-[19px] shrink-0 rounded-full bg-panel border border-accent/40 text-[10px] font-semibold grid place-items-center text-accent tabular-nums">{i + 1}</span>
+            <div className="min-w-0">
+              <div className="text-slate-100 font-medium leading-snug">{r.step}</div>
+              <div className="text-xs text-slate-400 leading-relaxed">{r.detail}</div>
             </div>
           </li>
         ))}
@@ -32,11 +38,14 @@ export function TrustPanel({ evidence }: { evidence: Evidence }) {
 
       {evidence.fir_ids.length > 0 && (
         <>
-          <div className="text-[11px] uppercase tracking-wide text-slate-500 mb-1">Source records ({evidence.fir_ids.length})</div>
+          <div className="eyebrow mb-1.5">Source records · <span className="tabular-nums text-slate-400">{evidence.fir_ids.length}</span></div>
           <div className="flex flex-wrap gap-1.5">
             {evidence.fir_ids.slice(0, 24).map((id) => (
-              <span key={id} className="text-[11px] font-mono px-1.5 py-0.5 rounded bg-[#0c1220] border border-edge text-slate-300">{id}</span>
+              <span key={id} className="text-[11px] font-mono px-1.5 py-0.5 rounded bg-[#0b1120] border border-white/[0.06] text-slate-300 hover:border-accent/40 hover:text-accent transition-colors">{id}</span>
             ))}
+            {evidence.fir_ids.length > 24 && (
+              <span className="text-[11px] font-mono px-1.5 py-0.5 text-slate-500">+{evidence.fir_ids.length - 24} more</span>
+            )}
           </div>
         </>
       )}
