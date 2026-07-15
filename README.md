@@ -18,6 +18,7 @@ invisible in Excel.
 - **Conversational + voice + multi-turn, EN/ಕನ್ನಡ** — ask by text or speech; anaphoric follow-ups ("only the ones after 9 PM") resolve from context; spoken answers.
 - **Visual answers** — map / network graph / chart / table / dossier for every reply.
 - **Criminal networks** — centrality + Louvain community detection (gangs) + link prediction (hidden ties).
+- **Trends & seasonality** — chronological trend (rising/falling) + month-of-year **seasonal** decomposition (seasonal index, festive-window peaks).
 - **Forecasting** — near-repeat space-time scan → next-strike red zone with a time window.
 - **Explainable offender risk** — transparent factor breakdown + repeat-offender ranking.
 - **Sociological** — district socio-economic correlation (real data) + offender age/gender demographics.

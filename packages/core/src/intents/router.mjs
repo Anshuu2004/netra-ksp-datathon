@@ -463,6 +463,56 @@ function hTrend(ds, slots) {
   };
 }
 
+function hSeasonal(ds, slots) {
+  // Seasonal / event-based analysis: bucket incidents by CALENDAR month (Jan..Dec) across all
+  // years to expose a recurring cycle (as opposed to hTrend's chronological rise/fall). A
+  // seasonal index (month count ÷ average month) quantifies the pattern; the peak month is
+  // mapped to Karnataka's known festive window where it lands. (PS1 §3 — seasonal & event-based.)
+  const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const MONTHS_KN = ['ಜನ', 'ಫೆಬ್ರ', 'ಮಾರ್ಚ್', 'ಏಪ್ರಿ', 'ಮೇ', 'ಜೂನ್', 'ಜುಲೈ', 'ಆಗ', 'ಸೆಪ್ಟೆಂ', 'ಅಕ್ಟೋ', 'ನವೆಂ', 'ಡಿಸೆಂ'];
+  const DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  // Karnataka festive/event windows the peak may coincide with (heuristic, month-level).
+  const FESTIVE = { 7: 'Ganesha Chaturthi season', 8: 'Dasara (Navaratri) season', 9: 'Dasara–Deepavali festive season', 10: 'Deepavali season' };
+  const crime = slots.crimeType || 'crime';
+  const matched = filterFirs(ds, { crimeType: slots.crimeType, area: slots.area });
+  if (matched.length < 12) return abstain(`Not enough ${crime.toLowerCase()} records${slots.area ? ' in ' + slots.area : ''} to establish a seasonal pattern (need at least 12).`);
+  const byMonth = new Array(12).fill(0);
+  const byDow = new Array(7).fill(0);
+  for (const f of matched) { const d = new Date(f.occurred_at); byMonth[d.getMonth()]++; byDow[d.getDay()]++; }
+  const total = matched.length;
+  const mean = total / 12;
+  const index = byMonth.map((c) => (mean ? c / mean : 0)); // 1.0 = an average month
+  let peakM = 0, lowM = 0;
+  for (let i = 0; i < 12; i++) { if (byMonth[i] > byMonth[peakM]) peakM = i; if (byMonth[i] < byMonth[lowM]) lowM = i; }
+  const peakIdx = index[peakM];
+  const strength = peakIdx >= 1.4 ? 'strong' : peakIdx >= 1.2 ? 'moderate' : 'weak';
+  let peakD = 0; for (let i = 0; i < 7; i++) if (byDow[i] > byDow[peakD]) peakD = i;
+  const festive = FESTIVE[peakM] ? ` — coinciding with the ${FESTIVE[peakM]}` : '';
+  const peakFirs = matched.filter((f) => new Date(f.occurred_at).getMonth() === peakM);
+  const narration_en = strength === 'weak'
+    ? `${crime} ${slots.area ? 'in ' + slots.area + ' ' : ''}shows little seasonality — incidents are spread fairly evenly across the year (${MONTHS[peakM]} marginally highest at ${peakIdx.toFixed(2)}× the monthly average). Busiest weekday: ${DOW[peakD]}.`
+    : `${crime} ${slots.area ? 'in ' + slots.area + ' ' : ''}shows a ${strength} seasonal pattern: incidents peak in ${MONTHS[peakM]} (${byMonth[peakM]} cases, ${peakIdx.toFixed(2)}× the monthly average)${festive}, and are lowest in ${MONTHS[lowM]} (${byMonth[lowM]}). Busiest weekday: ${DOW[peakD]}.`;
+  return {
+    narration_en,
+    narration_kn: `${knArea(slots.area)}ದಲ್ಲಿ ${knCrime(slots.crimeType || 'ಅಪರಾಧ')} ${strength === 'weak' ? 'ಋತುಮಾನದ ಪ್ರವೃತ್ತಿ ಕಡಿಮೆ' : `${MONTHS_KN[peakM]} ತಿಂಗಳಲ್ಲಿ ಹೆಚ್ಚು (${byMonth[peakM]} ಪ್ರಕರಣ)`}.`,
+    surface: {
+      kind: 'chart', chartType: 'bar', xLabel: 'Month of year', yLabel: 'Incidents (all years)',
+      series: [{ name: `${slots.crimeType || 'All crime'}${slots.area ? ' — ' + slots.area : ''}: ${strength} seasonality, peak ${MONTHS[peakM]} (${peakIdx.toFixed(2)}×)`, points: MONTHS.map((m, i) => ({ x: m, y: byMonth[i] })) }],
+    },
+    evidence: {
+      fir_ids: peakFirs.slice(0, 20).map((f) => f.id),
+      query: `month-of-year seasonal decomposition over ${total} FIRs (crime=${slots.crimeType || 'all'}, area=${slots.area || 'all'})`,
+      confidence: strength === 'weak' ? 0.68 : 0.83,
+      reasoning_path: [
+        { step: 'Aggregate', detail: `${total} FIRs bucketed by calendar month (avg ${mean.toFixed(1)}/month)` },
+        { step: 'Seasonal index', detail: `peak ${MONTHS[peakM]} = ${peakIdx.toFixed(2)}× avg; trough ${MONTHS[lowM]} = ${index[lowM].toFixed(2)}× avg` },
+        { step: 'Classify', detail: `${strength} seasonality${festive ? ` (peak in ${FESTIVE[peakM]})` : ''}; busiest weekday ${DOW[peakD]}` },
+      ],
+    },
+    followups: [`Show ${crime.toLowerCase()} hotspots${slots.area ? ' in ' + slots.area : ''}`, `Forecast the next ${crime.toLowerCase()}${slots.area ? ' in ' + slots.area : ''}`, `${crime} trend over time`],
+  };
+}
+
 function hSocio(ds, slots) {
   const t = (slots._text || '').toLowerCase();
   const indicator = t.includes('literacy') ? 'literacy_rate' : t.includes('unemploy') ? 'unemployment_proxy' : 'urbanization_index';
@@ -605,6 +655,7 @@ const HANDLERS = {
   offender_risk: hOffenderRisk, person_profile: hPersonProfile, criminal_history: hCriminalHistory,
   mo_similarity: hMoSimilarity, case_summary: hCaseSummary, trend_analysis: hTrend, socio_insight: hSocio,
   money_trail: hMoneyTrail, suggest_leads: hSuggestLeads, demographics: hDemographics,
+  seasonal_pattern: hSeasonal,
 };
 
 /**

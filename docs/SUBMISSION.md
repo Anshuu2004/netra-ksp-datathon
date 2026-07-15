@@ -18,6 +18,7 @@ proactive — surfacing networks, hotspots, and forecasts that are invisible in 
 - **Conversational, bilingual, voice, multi-turn** — ask by text or speech in English/ಕನ್ನಡ; anaphoric follow-ups resolve from context; spoken answers (TTS).
 - **Visual answers** — every reply renders a map, network graph, chart, table, or dossier.
 - **Criminal-network analysis** — centrality + Louvain communities (gang discovery) + link prediction (hidden ties).
+- **Trend & seasonal analysis** — chronological trend (rising/falling/stable) + month-of-year **seasonal** pattern (seasonal index, festive-window peaks, busiest weekday).
 - **Crime forecasting** — near-repeat space-time scan → next-strike red zone with time window.
 - **Explainable offender risk** — transparent factor breakdown; repeat-offender ranking.
 - **Sociological insight** — district socio-economic correlation on real data + offender age/gender demographic breakdown.

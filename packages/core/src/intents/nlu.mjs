@@ -106,6 +106,7 @@ export function classify(text, slots) {
   if (has(t, 'connected', 'connection', 'linked', 'link between', 'associate', 'associates', 'network of', 'who knows')) return { intent: 'network_explore', confidence: 0.8 };
   if (has(t, 'similar', 'same mo', 'same modus', 'comparable case', 'cases like')) return { intent: 'mo_similarity', confidence: 0.78 };
   if (has(t, 'lead', 'investigate next', 'what next', 'next step', 'recommend', 'where do i look', 'what should i do', 'how to proceed')) return { intent: 'suggest_leads', confidence: 0.8 };
+  if (has(t, 'seasonal', 'seasonality', 'which month', 'what month', 'time of year', 'festival', 'festive', 'cyclical', 'periodic', 'by season', 'recurring pattern', 'month of year', 'day of week', 'weekday pattern')) return { intent: 'seasonal_pattern', confidence: 0.84 };
   if (has(t, 'trend', 'over time', 'monthly', 'per month', 'rising', 'increasing', 'time series')) return { intent: 'trend_analysis', confidence: 0.8 };
   if (has(t, 'by age', 'by gender', 'age group', 'age band', 'age distribution', 'gender breakdown', 'demographic breakdown', 'age and gender', 'offender demographic')) return { intent: 'demographics', confidence: 0.82 };
   if (has(t, 'unemployment', 'literacy', 'urbaniz', 'urbanis', 'socio', 'poverty', 'education', 'social factor', 'demographic', 'correlat')) return { intent: 'socio_insight', confidence: 0.8 };
@@ -162,7 +163,10 @@ export function understandWithContext(text, ds, history = []) {
   const t = text.toLowerCase().trim();
   const isRefinement = /^(only|just|what about|how about|and |also |filter|narrow|after |before |in the last|this year|last (month|week|year)|same|those|them|that|there|by district|by type)\b/.test(t)
     || cur.intent === 'clarify' || text.split(/\s+/).length <= 4;
-  if (isRefinement && prev.intent !== 'clarify' && prev.intent !== 'abstain') {
+  // A short turn that ALSO confidently names a concrete intent (e.g. "Is this seasonal?" →
+  // seasonal_pattern) keeps its own intent — only inherit when the turn is genuinely vague.
+  const curIsConcrete = cur.intent !== 'clarify' && (cur.confidence || 0) >= 0.8;
+  if (isRefinement && !curIsConcrete && prev.intent !== 'clarify' && prev.intent !== 'abstain') {
     cur.intent = prev.intent;
     cur.confidence = Math.min((cur.confidence || 0) + 0.3, 0.9);
     cur.inherited = true;
