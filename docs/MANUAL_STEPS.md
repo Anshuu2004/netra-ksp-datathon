@@ -114,7 +114,7 @@ Google Drive**.
 | **Challenge** | *Intelligent Conversational AI for KSP Crime Database* |
 | **Prototype Brief** (≤1024 chars) | paste from `docs/SUBMISSION.md §1` |
 | **GitHub Public Repository** | https://github.com/Anshuu2004/netra-ksp-datathon |
-| **Prototype Deployed Link** | your Catalyst AppSail URL (step 3) |
+| **Prototype Deployed Link** | ✅ https://netra-50044047689.development.catalystappsail.in |
 | **Demo Video (Public)** | your YouTube/Drive link (step 11) |
 | **Upload Prototype Deck** | the filled PDF ≤5 MB (step 10) |
 

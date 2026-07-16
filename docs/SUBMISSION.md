@@ -60,7 +60,7 @@ briefings — a deployable blueprint for a state-wide SCRB Crime Intelligence Hu
 - [ ] **Challenge** selected: *Intelligent Conversational AI for KSP Crime Database*
 - [ ] **Prototype Brief** (§1) pasted
 - [ ] **Public GitHub repo** (this repo) with README + setup
-- [ ] **Deployed link** on Catalyst (see `catalyst/DEPLOY.md`) — live & reachable
+- [x] **Deployed link** on Catalyst — **https://netra-50044047689.development.catalystappsail.in** (AppSail · Node 24 · verified 200 + live API)
 - [ ] **Demo video** (unlisted YouTube / public Drive) per §6
 - [ ] **Prototype Deck** PDF (≤5MB) — print `docs/PITCH_DECK.html`
 - [ ] All links verified before deadline

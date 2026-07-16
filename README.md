@@ -6,6 +6,8 @@
 > Every answer is a living visual — a hotspot map, a criminal-network graph, an offender dossier —
 > with a clickable **evidence trail** back to the exact FIRs it used. Built for **Zoho Catalyst**.
 
+### 🔗 Live on Catalyst AppSail → **https://netra-50044047689.development.catalystappsail.in**
+
 ---
 
 ## Why NETRA
@@ -67,6 +69,14 @@ real-vs-synthetic policy (record-level FIR data is confidential by law; we use a
 synthetic stand-in + real public aggregates).
 
 ## Deploy on Catalyst (mandatory for the datathon)
+**Deployed & live:** https://netra-50044047689.development.catalystappsail.in (AppSail · Node 24 · IN DC).
+
+Build the deployable bundle with `node catalyst/scripts/build-appsail.mjs`, then zip the contents of
+`../netra-appsail/build` and upload via **console → AppSail → Deploy from Console** (Catalyst-Managed
+Runtime · startup command `node launch.mjs` · port 9000). *Note: the Catalyst **CLI** deploy does not
+work from Windows — it uploads but never places files at the runtime's `/catalyst` root, so the
+console upload (or a Linux/WSL CLI run) is the reliable path.*
+
 **→ [`docs/MANUAL_STEPS.md`](docs/MANUAL_STEPS.md) is the ordered, click-by-click checklist** (claim
 credits → login → deploy → Data Store → Auth → QuickML → voice → submission form).
 See also [`catalyst/DEPLOY.md`](catalyst/DEPLOY.md) — `apps/web` deploys to **Catalyst AppSail**; each
