@@ -19,8 +19,40 @@ export async function POST(req: Request) {
     if (!message.trim()) {
       return Response.json({ error: 'Empty message' }, { status: 400 });
     }
-    const envelope = await askEnriched(getDataset(), message, { role, lang, user_id: 'demo', history });
-    return Response.json(envelope);
+    const ds = getDataset();
+    const envelope = await askEnriched(ds, message, { role, lang, user_id: 'demo', history });
+
+    // Hydrate the evidence FIR ids into lightweight records so the workstation can drive the
+    // timeline (occurred_at), the map overlay (lat/lng) and the inspector from one response.
+    // Deliberately NON-PII: no names, no narrative — so this can never bypass the router's
+    // role-based redaction. Person labels come from the (already redacted) graph surface.
+    // Cover BOTH the cited evidence and every incident plotted on the map, so the timeline
+    // represents what the analyst can actually see — and brushing it genuinely re-filters the map.
+    const ids = new Set<string>(envelope.evidence?.fir_ids || []);
+    if (envelope.surface?.kind === 'map') {
+      for (const p of (envelope.surface as any).points || []) if (p?.fir_id) ids.add(p.fir_id);
+    }
+    const byId = ds.index?.firById;
+    const records = byId
+      ? [...ids]
+          .slice(0, 600)
+          .map((id: string) => byId.get(id))
+          .filter(Boolean)
+          .map((f: any) => ({
+            id: f.id,
+            crime_type: f.crime_type,
+            district: f.district,
+            ps_code: f.ps_code,
+            occurred_at: f.occurred_at,
+            status: f.status,
+            lat: f.lat,
+            lng: f.lng,
+            mo_tags: f.mo_tags,
+            value_loss: f.value_loss,
+          }))
+      : [];
+
+    return Response.json({ ...envelope, context: { records } });
   } catch (err: any) {
     return Response.json({ error: err?.message || 'Internal error' }, { status: 500 });
   }

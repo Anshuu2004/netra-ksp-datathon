@@ -2,129 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
+/* NETRA material layer — "Khaki & Ember".
+   Panels are OPAQUE and hairline-separated. No glass, no ambient glow, no grid texture:
+   backdrop-filter is a per-frame GPU cost paid on panels sitting over a live map and a
+   cytoscape canvas, and a glow behind 10px text was measurably destroying its contrast. */
+
 :root {
   color-scheme: dark;
-  /* semantic z-index scale */
   --z-sticky: 20; --z-modal-backdrop: 40; --z-modal: 50; --z-toast: 60;
-  /* command-centre material tokens */
-  --edge: #223049;
-  --edge-soft: rgba(56, 189, 248, 0.10);
-  --hair: rgba(148, 175, 214, 0.12);
-  --accent: #38bdf8;
-  --accent2: #22d3ee;
-  --panel-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 24px 48px -32px rgba(0, 0, 0, 0.9);
+
+  --page: #0b0a07;
+  --sunken: #14130e;
+  --panel: #1e1c15;
+  --raised: #28251e;
+  --hairline: #333028;
+  --stroke: #4b483e;
+  --fg: #eeebe2;
+  --fg-secondary: #bbb7ab;
+  --fg-muted: #8a867a;
+  --accent: #4bbd91;
+  --accent-hover: #6fd6ab;
+
   --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 html, body { height: 100%; }
 body {
-  background:
-    radial-gradient(1200px 620px at 74% -14%, #17263f 0%, rgba(10,14,20,0) 56%),
-    radial-gradient(900px 500px at 0% 108%, #10192b 0%, rgba(10,14,20,0) 60%),
-    linear-gradient(#0a0e14, #080b11);
-  color: #e6edf6;
+  background: var(--page);
+  color: var(--fg);
+  font-size: 12px;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
-/* faint precision grid — command-centre texture, kept near-subliminal so it never competes */
-body::before {
-  content: '';
-  position: fixed; inset: 0; z-index: 0; pointer-events: none;
-  background-image:
-    linear-gradient(rgba(86, 130, 190, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(86, 130, 190, 0.045) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: radial-gradient(120% 90% at 50% 0%, #000 30%, transparent 78%);
-}
-body > * { position: relative; z-index: 1; }
-::selection { background: rgba(56, 189, 248, 0.28); color: #eaf6ff; }
+::selection { background: rgba(75, 189, 145, 0.30); color: #f4fff9; }
 
-/* Numeric data reads as an instrument, not prose */
-.tnum { font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1, 'cv01' 1; }
-
-/* Accessible keyboard focus everywhere */
-:where(button, a, input, select, [tabindex]):focus-visible {
-  outline: 2px solid var(--accent);
+/* Focus ring. NOT wrapped in :where() — a zero-specificity baseline lets any Tailwind
+   `outline-none` utility (which emits `outline: 2px solid transparent` at specificity 0,1,0)
+   silently clobber it. That is exactly how the role <select> ended up with no visible focus. */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-hover);
   outline-offset: 2px;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
-/* thin scrollbars */
+/* thin scrollbars — achromatic; chrome never spends the accent */
 *::-webkit-scrollbar { width: 8px; height: 8px; }
-*::-webkit-scrollbar-thumb { background: #26344d; border-radius: 8px; border: 2px solid transparent; background-clip: padding-box; }
-*::-webkit-scrollbar-thumb:hover { background: #33455f; background-clip: padding-box; }
+*::-webkit-scrollbar-thumb { background: var(--stroke); border-radius: 2px; border: 2px solid transparent; background-clip: padding-box; }
+*::-webkit-scrollbar-thumb:hover { background: #5c584c; background-clip: padding-box; }
 *::-webkit-scrollbar-track { background: transparent; }
-* { scrollbar-width: thin; scrollbar-color: #26344d transparent; }
+* { scrollbar-width: thin; scrollbar-color: var(--stroke) transparent; }
 
-/* Panels — crisp hairline, inner top highlight, deep grounded shadow for real elevation */
-.glass {
-  background:
-    linear-gradient(180deg, rgba(24, 32, 48, 0.82), rgba(14, 20, 31, 0.86));
-  backdrop-filter: blur(14px) saturate(1.1);
-  border: 1px solid var(--hair);
-  box-shadow: var(--panel-shadow);
+/* Panels: opaque, flat, hairline. Elevation is reserved for genuinely floating layers. */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
 }
-/* hairline top-edge light that catches the eye like brushed metal */
-.glass { position: relative; }
-.glass::before {
-  content: ''; position: absolute; inset: 0 0 auto 0; height: 1px; pointer-events: none;
-  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.35), transparent);
-  opacity: 0.6;
+.raised {
+  background: var(--raised);
+  border: 1px solid var(--stroke);
+  border-radius: 3px;
+  box-shadow: 0 16px 40px -24px rgba(0, 0, 0, 0.9);
 }
 
-/* Section micro-label used across evidence / empty states */
-.eyebrow { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #6b7c96; font-weight: 600; }
-
-/* Live status dot */
-.live-dot { position: relative; width: 7px; height: 7px; border-radius: 999px; background: #34d399; box-shadow: 0 0 10px -1px #34d399; }
-.live-dot::after { content: ''; position: absolute; inset: -4px; border-radius: 999px; border: 1px solid rgba(52, 211, 153, 0.6); animation: livePing 2.2s var(--ease-out-quint) infinite; }
-@keyframes livePing { 0% { transform: scale(0.6); opacity: 0.8; } 100% { transform: scale(2.4); opacity: 0; } }
-
-.chip {
-  @apply text-xs px-2.5 py-1 rounded-full border text-slate-300 cursor-pointer;
-  border-color: var(--hair);
-  background: rgba(22, 29, 43, 0.6);
-  transition: color .18s var(--ease-out-quint), border-color .18s var(--ease-out-quint), transform .18s var(--ease-out-quint), background-color .18s var(--ease-out-quint), box-shadow .18s var(--ease-out-quint);
-}
-.chip:hover { color: #7dd3fc; border-color: rgba(56, 189, 248, 0.5); background: rgba(56, 189, 248, 0.08); transform: translateY(-1px); box-shadow: 0 6px 16px -10px rgba(56, 189, 248, 0.7); }
-.chip:active { transform: translateY(0); }
-
-/* Message entrance (reveal enhances an already-visible default) */
-@keyframes msgIn { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
-.msg-in { animation: msgIn .34s var(--ease-out-quint) both; }
-
-/* Loading skeleton shimmer */
-@keyframes shimmer { 100% { transform: translateX(100%); } }
-.skeleton { position: relative; overflow: hidden; background: #121a28; border-radius: 10px; border: 1px solid var(--hair); }
-.skeleton::after {
-  content: ''; position: absolute; inset: 0; transform: translateX(-100%);
-  background: linear-gradient(90deg, transparent, rgba(56,189,248,0.12), transparent);
-  animation: shimmer 1.5s infinite;
+/* Section micro-label. fg-secondary (8.50:1) — the old #6b7c96 measured 4.23:1 and failed. */
+.eyebrow {
+  font-size: 10px; letter-spacing: 0.11em; text-transform: uppercase;
+  color: var(--fg-secondary); font-weight: 600;
 }
 
-/* Thinking indicator */
-@keyframes thinking { 0%, 80%, 100% { opacity: .25; transform: scale(.8); } 40% { opacity: 1; transform: scale(1); } }
-.thinking-dot { width: 5px; height: 5px; border-radius: 999px; background: #38bdf8; display: inline-block; animation: thinking 1.2s infinite ease-in-out; }
+/* Live status dot — SOLID. The old version pinged every 2.2s: an always-animating element is
+   an element crying wolf, and it made "urgent" the resting state. */
+.live-dot { width: 6px; height: 6px; border-radius: 999px; background: var(--accent-dim, #2f8f6a); }
 
-/* Indeterminate top progress bar */
+/* Entrance for answers only. Data elements get .12s; chrome hover is instant — instant
+   feedback is a large part of what makes software feel like hardware rather than a web page. */
+@keyframes msgIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+.msg-in { animation: msgIn .2s var(--ease-out-quint) both; }
+
+/* Skeleton — flat achromatic pulse (the accent is not a loading decoration). */
+@keyframes pulseBg { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+.skeleton { background: var(--sunken); border: 1px solid var(--hairline); border-radius: 2px; animation: pulseBg 1.6s ease-in-out infinite; }
+
+/* Indeterminate busy rail */
 @keyframes indeterminate { 0% { left: -40%; width: 40%; } 50% { left: 30%; width: 45%; } 100% { left: 100%; width: 40%; } }
-.progress-rail { position: relative; height: 2px; overflow: hidden; background: transparent; transition: opacity .3s var(--ease-out-quint); }
-.progress-rail::after { content: ''; position: absolute; top: 0; height: 100%; border-radius: 999px; background: linear-gradient(90deg, transparent, #38bdf8, #22d3ee, transparent); animation: indeterminate 1.1s infinite ease-in-out; }
+.progress-rail { position: relative; height: 2px; overflow: hidden; background: transparent; transition: opacity .2s var(--ease-out-quint); }
+.progress-rail::after { content: ''; position: absolute; top: 0; height: 100%; background: var(--accent); animation: indeterminate 1.1s infinite ease-in-out; }
 
-/* Standard control transitions */
-.btn-ghost { transition: color .16s var(--ease-out-quint), border-color .16s var(--ease-out-quint), background-color .16s var(--ease-out-quint), box-shadow .16s var(--ease-out-quint), transform .16s var(--ease-out-quint); }
+.btn-ghost { transition: color .12s var(--ease-out-quint), border-color .12s var(--ease-out-quint), background-color .12s var(--ease-out-quint); }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
-  .netra-pulse::after, .live-dot::after { display: none; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important; scroll-behavior: auto !important;
+  }
+  .netra-pulse::after { display: none; }
+  /* Freezing the keyframe would park the bar off-canvas at left:-40%, deleting the ONLY busy
+     affordance for reduced-motion users. Give them a static full-width rail instead. */
+  .progress-rail::after { animation: none !important; left: 0 !important; width: 100% !important; opacity: 0.6; }
 }
 
-/* MapLibre pulsing forecast/hotspot marker */
-.netra-pulse { width: 16px; height: 16px; border-radius: 50%; background: rgba(244, 63, 94, 0.55); position: relative; }
-.netra-pulse::after { content: ''; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid #f43f5e; animation: netraPulse 1.8s ease-out infinite; }
+/* Forecast / hotspot marker. Fires only for real severity and settles static after ~6s —
+   see surfaces.tsx. A marker that pulses forever desensitises the operator. */
+.netra-pulse { width: 14px; height: 14px; border-radius: 50%; background: rgba(239, 138, 44, 0.5); position: relative; }
+.netra-pulse::after { content: ''; position: absolute; inset: -5px; border-radius: 50%; border: 2px solid #ef8a2c; animation: netraPulse 1.8s ease-out 4; }
 @keyframes netraPulse { 0% { transform: scale(0.5); opacity: 0.85; } 100% { transform: scale(2.6); opacity: 0; } }
-.netra-pulse-label { position: absolute; top: -24px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 10px; color: #fecdd3; background: rgba(10, 14, 20, 0.85); padding: 1px 6px; border-radius: 4px; border: 1px solid rgba(244, 63, 94, 0.4); }
-.maplibregl-popup-content { background: #111722 !important; color: #e6edf6 !important; border: 1px solid #223049; border-radius: 8px; padding: 4px 8px !important; }
-.maplibregl-popup-tip { border-top-color: #111722 !important; }
-.maplibregl-ctrl-attrib { background: rgba(10,14,20,0.6) !important; }
-.maplibregl-ctrl-attrib a { color: #64748b !important; }
+.netra-pulse-label { position: absolute; top: -22px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 9px; color: #f7c05a; background: rgba(11, 10, 7, 0.9); padding: 1px 5px; border-radius: 2px; border: 1px solid rgba(239, 138, 44, 0.5); }
+
+.maplibregl-popup-content { background: #28251e !important; color: #eeebe2 !important; border: 1px solid #4b483e; border-radius: 2px; padding: 3px 7px !important; font-size: 11px; }
+.maplibregl-popup-tip { border-top-color: #28251e !important; }
+.maplibregl-ctrl-attrib { background: rgba(11,10,7,0.65) !important; }
+.maplibregl-ctrl-attrib a { color: #8a867a !important; }
+.maplibregl-ctrl-group { background: #1e1c15 !important; border: 1px solid #333028 !important; }
+.maplibregl-ctrl-group button + button { border-top-color: #333028 !important; }

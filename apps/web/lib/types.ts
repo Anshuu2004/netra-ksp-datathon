@@ -21,6 +21,20 @@ export type AnswerSurface = MapAnswer | GraphAnswer | ChartAnswer | TableAnswer 
 export interface ReasoningStep { step: string; detail: string; refs?: string[]; }
 export interface Evidence { fir_ids: string[]; query: string; confidence: number; reasoning_path: ReasoningStep[]; }
 
+/** Non-PII hydration of the evidence FIRs — drives the timeline, map overlay and inspector. */
+export interface FirRecord {
+  id: string;
+  crime_type: string;
+  district: string;
+  ps_code: string;
+  occurred_at: string;
+  status: string;
+  lat: number;
+  lng: number;
+  mo_tags: string[];
+  value_loss: number;
+}
+
 export interface AnswerEnvelope {
   intent: string;
   narration_en: string;
@@ -28,4 +42,11 @@ export interface AnswerEnvelope {
   surface: AnswerSurface;
   evidence: Evidence;
   followups: string[];
+  context?: { records: FirRecord[] };
 }
+
+/** What the analyst currently has selected — the spine every coordinated view subscribes to. */
+export type SelectionKind = 'fir' | 'person' | null;
+export interface Selection { kind: SelectionKind; id: string | null; }
+/** Inclusive epoch-ms window from the timeline brush; null = no temporal filter. */
+export type TimeWindow = { from: number; to: number } | null;

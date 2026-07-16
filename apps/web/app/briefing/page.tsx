@@ -1,116 +1,200 @@
 'use client';
+// Beat Briefing — the one artifact in this whole space that terminates in an ACTION for a named
+// person at a named time, rather than a picture a human still has to interpret.
+//
+// Rebuilt on the workstation frame (same command bar / rail / status strip, same Khaki & Ember
+// tokens, same SVG icon set). It previously used the retired chat-era design language — solid
+// panel2 fills, emoji section headings — and read as a different application.
 import { useEffect, useState } from 'react';
 
-type Briefing = any;
+const DISTRICTS = ['Bengaluru Urban', 'Mysuru', 'Hubballi', 'Dakshina Kannada', 'Belagavi'];
 
 export default function BriefingPage() {
-  const [b, setB] = useState<Briefing | null>(null);
+  const [b, setB] = useState<any>(null);
   const [district, setDistrict] = useState('');
+  const [err, setErr] = useState<string | null>(null);
 
-  async function load(d: string) {
-    const res = await fetch(`/api/briefing${d ? `?district=${encodeURIComponent(d)}` : ''}`);
-    setB(await res.json());
-  }
-  useEffect(() => { load(district); }, [district]);
-
-  if (!b) return (
-    <div className="min-h-screen grid place-items-center text-slate-400">
-      <div className="flex flex-col items-center gap-3">
-        <div className="w-8 h-8 border-2 border-edge border-t-accent rounded-full animate-spin" />
-        <div className="text-sm">Generating briefing…</div>
-      </div>
-    </div>
-  );
-  const date = new Date(b.generated_at).toLocaleString('en-IN');
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      setB(null); setErr(null);
+      try {
+        const res = await fetch(`/api/briefing${district ? `?district=${encodeURIComponent(district)}` : ''}`);
+        if (!res.ok) throw new Error(`Server returned ${res.status}`);
+        const data = await res.json();
+        if (!cancelled) setB(data);
+      } catch (e: any) {
+        if (!cancelled) setErr(e?.message || 'Could not generate the briefing');
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [district]);
 
   return (
-    <div className="max-w-4xl mx-auto p-6 print:p-0">
-      <style>{`@media print { .no-print{display:none} body{background:#fff} }`}</style>
+    <div className="h-[100svh] flex flex-col overflow-hidden">
+      <style>{`@media print { .no-print{display:none!important} body{background:#fff;color:#111} .print-plain{background:#fff!important;border-color:#ccc!important;color:#111!important} }`}</style>
 
-      <div className="flex items-center justify-between mb-4 no-print">
-        <a href="/" className="text-accent text-sm">← Back to NETRA</a>
-        <div className="flex items-center gap-2">
-          <select value={district} onChange={(e) => setDistrict(e.target.value)} className="bg-panel2 border border-edge rounded-lg text-sm px-2 py-1.5 text-slate-200">
+      {/* command bar — same frame as the workstation */}
+      <header className="shrink-0 flex items-center gap-2 px-2 h-9 border-b border-hairline bg-panel no-print">
+        <a href="/" className="btn-ghost flex items-center gap-1.5 text-xs text-fg-secondary hover:text-accent shrink-0">
+          <span aria-hidden>←</span> Workstation
+        </a>
+        <div className="w-px h-4 bg-hairline" aria-hidden />
+        <span className="text-sm font-semibold text-fg">Beat Briefing</span>
+        <div className="ml-auto flex items-center gap-1">
+          <label className="sr-only" htmlFor="district">Jurisdiction</label>
+          <select id="district" value={district} onChange={(e) => setDistrict(e.target.value)}
+            className="bg-sunken border border-hairline rounded-sm text-xs px-1.5 h-6 text-fg">
             <option value="">All Karnataka</option>
-            {['Bengaluru Urban', 'Mysuru', 'Hubballi', 'Dakshina Kannada', 'Belagavi'].map((d) => <option key={d}>{d}</option>)}
+            {DISTRICTS.map((d) => <option key={d}>{d}</option>)}
           </select>
-          <button onClick={() => window.print()} className="px-3 py-1.5 rounded-lg bg-accent text-ink text-sm font-medium">Print / Save PDF</button>
+          <button onClick={() => window.print()} className="btn-ghost px-2 h-6 rounded-sm bg-accent text-onfill text-xs font-semibold">
+            Print / Save PDF
+          </button>
         </div>
-      </div>
+      </header>
 
-      <div className="glass rounded-xl p-6 print:border-0 print:shadow-none">
-        <div className="flex items-center gap-3 border-b border-edge pb-3 mb-4">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-accent2 grid place-items-center text-ink font-bold">ನೇ</div>
-          <div>
-            <div className="text-xl font-bold text-white">NETRA — Daily Beat Briefing</div>
-            <div className="text-xs text-slate-400">{b.district} · generated {date} · auto-generated intelligence (synthetic demo data)</div>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
-          <Stat label="FIRs (7 days)" value={b.summary.last7_total} />
-          <Stat label="Emerging hotspots" value={b.summary.emerging_hotspots} tone="warn" />
-          <Stat label="Active series" value={b.summary.active_series} tone="danger" />
-          <Stat label="Watch offenders" value={b.summary.watch_offenders} />
-        </div>
-
-        <Section title="🚨 Active near-repeat series — deploy tonight">
-          {b.active_series.length === 0 ? <Empty /> : b.active_series.map((s: any, i: number) => (
-            <div key={i} className="rounded-lg border border-danger/30 bg-danger/5 px-3 py-2 mb-2">
-              <div className="text-sm text-white font-medium">{s.crime} near {s.station}, {s.district}</div>
-              <div className="text-xs text-slate-300">
-                {s.cluster.observed} incidents in 1.5km in 40 days (vs {s.cluster.expected} expected, p={s.cluster.p}).
-                {s.forecast && <> Predicted next window: <span className="text-warn">{s.forecast.eta.start.slice(0, 10)} → {s.forecast.eta.end.slice(0, 10)}</span>.</>}
-              </div>
+      <div className="flex-1 overflow-auto bg-page">
+        <div className="max-w-3xl mx-auto p-3">
+          {err ? (
+            <div className="panel p-4 text-center">
+              <div className="text-md font-semibold" style={{ color: '#d95f4a' }}>Briefing unavailable</div>
+              <p className="text-base text-fg-secondary mt-1">{err}</p>
+              <button onClick={() => setDistrict((d) => d)} className="btn-ghost mt-3 px-3 h-7 rounded-sm bg-accent text-onfill text-base font-semibold">Retry</button>
             </div>
-          ))}
-        </Section>
+          ) : !b ? (
+            <div className="space-y-2" aria-hidden>
+              <div className="skeleton h-16" /><div className="skeleton h-28" /><div className="skeleton h-28" />
+            </div>
+          ) : (
+            <article className="panel p-4 print-plain">
+              <header className="border-b border-hairline pb-2 mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-sm bg-fg grid place-items-center text-onfill font-bold text-xs print-plain" aria-hidden>ನೇ</div>
+                  <div>
+                    <h1 className="text-lg font-bold text-fg leading-tight">Daily Beat Briefing</h1>
+                    <div className="text-2xs text-fg-secondary tabular-nums">
+                      {b.district} · generated {new Date(b.generated_at).toLocaleString('en-IN')} · Karnataka State Police
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-2 inline-block text-2xs px-1.5 py-0.5 rounded-sm border" style={{ color: '#ef8a2c', borderColor: '#ef8a2c' }}>
+                  Prototype · labelled synthetic demo data
+                </div>
+              </header>
 
-        <Section title="📈 Emerging hotspots (last 14 days)">
-          {b.emerging.length === 0 ? <Empty /> : (
-            <table className="w-full text-sm">
-              <thead><tr className="text-slate-400 text-left"><th className="py-1">Crime</th><th>Station</th><th>District</th><th>Count</th><th>z-score</th></tr></thead>
-              <tbody>
-                {b.emerging.map((e: any, i: number) => (
-                  <tr key={i} className="border-t border-edge/40"><td className="py-1 text-slate-200">{e.crime}</td><td>{e.station}</td><td>{e.district}</td><td>{e.count}</td><td className="text-warn">{e.z}</td></tr>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 mb-4">
+                <Stat label="FIRs (7 days)" value={b.summary.last7_total} />
+                <Stat label="Emerging hotspots" value={b.summary.emerging_hotspots} c="#b04a72" />
+                <Stat label="Active series" value={b.summary.active_series} c="#ef8a2c" />
+                <Stat label="Watch offenders" value={b.summary.watch_offenders} c="#d95f4a" />
+              </div>
+
+              <Section title="Active near-repeat series" note="deploy tonight">
+                {b.active_series.length === 0 ? <Empty /> : b.active_series.map((s: any, i: number) => (
+                  <div key={i} className="rounded-sm border border-hairline bg-sunken px-2 py-1.5 mb-1 print-plain">
+                    <div className="text-base text-fg font-medium">{s.crime} near {s.station}, {s.district}</div>
+                    <div className="text-xs text-fg-secondary tabular-nums mt-0.5">
+                      {s.cluster.observed} incidents within 1.5&nbsp;km in 40 days (vs {s.cluster.expected} expected by chance, p={s.cluster.p}).
+                      {s.forecast && <> Predicted next window: <span style={{ color: '#ef8a2c' }}>{s.forecast.eta.start.slice(0, 10)} → {s.forecast.eta.end.slice(0, 10)}</span>.</>}
+                    </div>
+                  </div>
                 ))}
-              </tbody>
-            </table>
-          )}
-        </Section>
+              </Section>
 
-        <Section title="👤 Offenders to watch">
-          {b.watch_offenders.length === 0 ? <Empty /> : (
-            <table className="w-full text-sm">
-              <thead><tr className="text-slate-400 text-left"><th className="py-1">Offender</th><th>Risk</th><th>Band</th><th>MO</th></tr></thead>
-              <tbody>
-                {b.watch_offenders.map((o: any, i: number) => (
-                  <tr key={i} className="border-t border-edge/40"><td className="py-1 text-slate-200">{o.name}</td><td>{o.score}</td><td>{o.band}</td><td className="text-slate-400">{o.mo_fingerprint.slice(0, 3).join(', ')}</td></tr>
-                ))}
-              </tbody>
-            </table>
-          )}
-        </Section>
+              <Section title="Emerging hotspots" note="last 14 days">
+                {b.emerging.length === 0 ? <Empty /> : (
+                  <Table head={['Crime', 'Station', 'District', 'Count', 'z']}>
+                    {b.emerging.map((e: any, i: number) => (
+                      <tr key={i} className="border-t border-hairline">
+                        <td className="py-1 px-1.5 text-fg">{e.crime}</td>
+                        <td className="px-1.5 text-fg-secondary">{e.station}</td>
+                        <td className="px-1.5 text-fg-secondary">{e.district}</td>
+                        <td className="px-1.5 text-fg tabular-nums">{e.count}</td>
+                        <td className="px-1.5 tabular-nums" style={{ color: '#ef8a2c' }}>{e.z}</td>
+                      </tr>
+                    ))}
+                  </Table>
+                )}
+              </Section>
 
-        <div className="text-[11px] text-slate-500 border-t border-edge pt-3 mt-4">
-          Generated by NETRA · Karnataka State Police Crime Intelligence Platform · For official use. All findings are
-          computed from records with full evidence trails. (Prototype runs on labelled synthetic data.)
+              <Section title="Offenders to watch">
+                {b.watch_offenders.length === 0 ? <Empty /> : (
+                  <Table head={['Offender', 'Risk', 'MO fingerprint']}>
+                    {b.watch_offenders.map((o: any, i: number) => (
+                      <tr key={i} className="border-t border-hairline">
+                        <td className="py-1 px-1.5 text-fg">{o.name}</td>
+                        <td className="px-1.5"><Risk v={o.score} band={o.band} /></td>
+                        <td className="px-1.5 text-fg-secondary">{(o.mo_fingerprint || []).slice(0, 3).join(' · ')}</td>
+                      </tr>
+                    ))}
+                  </Table>
+                )}
+              </Section>
+
+              <footer className="text-2xs text-fg-muted border-t border-hairline pt-2 mt-3 leading-relaxed">
+                Generated by NETRA · Karnataka State Police Crime Intelligence Workstation · For official use.
+                Every finding is computed from records with a full evidence trail. Record-level data in this
+                prototype is labelled synthetic; district trends use real Karnataka 2023 figures.
+              </footer>
+            </article>
+          )}
         </div>
       </div>
+
+      <footer className="shrink-0 h-6 border-t border-hairline bg-panel flex items-center gap-3 px-2 text-xs text-fg-secondary no-print">
+        <span className="flex items-center gap-1"><span className="live-dot" aria-hidden /> live</span>
+        <span className="hidden sm:inline">Catalyst Cron dispatches this nightly at 06:00 IST</span>
+        <span className="ml-auto" style={{ color: '#ef8a2c' }}>synthetic demo data</span>
+      </footer>
     </div>
   );
 }
 
-function Stat({ label, value, tone }: { label: string; value: number; tone?: string }) {
-  const c = tone === 'danger' ? 'text-danger' : tone === 'warn' ? 'text-warn' : 'text-accent';
+function Stat({ label, value, c }: { label: string; value: number; c?: string }) {
   return (
-    <div className="rounded-lg border border-edge bg-panel2 px-3 py-2 text-center">
-      <div className={`text-2xl font-bold ${c}`}>{value}</div>
-      <div className="text-[11px] text-slate-400">{label}</div>
+    <div className="rounded-sm border border-hairline bg-sunken px-2 py-1.5 print-plain">
+      <div className="text-lg font-bold tabular-nums" style={{ color: c || '#eeebe2' }}>{value}</div>
+      <div className="text-2xs text-fg-secondary leading-tight">{label}</div>
     </div>
   );
 }
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return <div className="mb-5"><div className="text-sm font-semibold text-white mb-2">{title}</div>{children}</div>;
+
+function Section({ title, note, children }: { title: string; note?: string; children: React.ReactNode }) {
+  return (
+    <section className="mb-4">
+      <div className="flex items-baseline gap-2 mb-1.5">
+        <h2 className="eyebrow">{title}</h2>
+        {note && <span className="text-2xs text-fg-muted">— {note}</span>}
+        <span className="h-px flex-1 bg-hairline" aria-hidden />
+      </div>
+      {children}
+    </section>
+  );
 }
-function Empty() { return <div className="text-xs text-slate-500 italic">No items flagged.</div>; }
+
+function Table({ head, children }: { head: string[]; children: React.ReactNode }) {
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full text-base border-collapse">
+        <thead><tr>{head.map((h) => <th key={h} className="text-left text-2xs uppercase tracking-wider text-fg-muted font-medium px-1.5 pb-1">{h}</th>)}</tr></thead>
+        <tbody>{children}</tbody>
+      </table>
+    </div>
+  );
+}
+
+/** Same redundant encoding as the workstation: number + luminosity + bar length. */
+function Risk({ v, band }: { v: number; band?: string }) {
+  const c = v >= 85 ? '#ef8a2c' : v >= 70 ? '#d95f4a' : v >= 45 ? '#b04a72' : v >= 20 ? '#7c3b7e' : '#8a867a';
+  return (
+    <span className="inline-flex items-center gap-1.5" title={`${v}/100${band ? ' · ' + band : ''}`}>
+      <span className="w-8 h-1 bg-hairline rounded-sm overflow-hidden shrink-0" aria-hidden>
+        <span className="block h-full" style={{ width: `${Math.max(2, Math.min(100, v))}%`, background: c }} />
+      </span>
+      <span className="tabular-nums text-fg font-semibold">{v}</span>
+    </span>
+  );
+}
+
+function Empty() { return <div className="text-xs text-fg-muted">Nothing flagged for this jurisdiction.</div>; }
