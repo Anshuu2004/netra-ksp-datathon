@@ -7,6 +7,7 @@
 > with a clickable **evidence trail** back to the exact FIRs it used. Built for **Zoho Catalyst**.
 
 ### 🔗 Live on Catalyst AppSail → **https://netra-50044047689.development.catalystappsail.in**
+### ✅ Proof it isn't a wrapper → open **Proof** in the app (or [`/api/validate`](https://netra-50044047689.development.catalystappsail.in/api/validate)) — the analytics rediscover planted ground truth **live, 10/10**, and the server reports which Catalyst services it is actually calling.
 
 ---
 

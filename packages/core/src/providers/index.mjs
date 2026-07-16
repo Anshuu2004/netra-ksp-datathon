@@ -95,3 +95,44 @@ export const voiceProvider = {
 export const blobProvider = {
   name: process.env.NETRA_BLOB || 'browser-download',
 };
+
+/**
+ * Honest, self-reporting platform status.
+ *
+ * Why this exists: it is tempting to claim "built end-to-end on Catalyst". The code does not
+ * support that sentence unless the credentials are present, and one question from a Zoho
+ * engineer in the room collapses it. So NETRA reports the truth itself, live, per service:
+ *   active        — credentials present, this deployment is really calling the service
+ *   adapter-ready — the adapter exists and activates on env vars, no code change
+ *   roadmap       — declared, not built
+ * Under-claiming and being verifiable beats over-claiming and being caught.
+ */
+export function platformStatus() {
+  const on = (v) => !!(v && String(v).trim());
+  const svc = (service, capability, activeWhen, note) => ({
+    service, capability,
+    state: activeWhen ? 'active' : 'adapter-ready',
+    note,
+  });
+
+  const onCatalyst = on(process.env.NETRA_ENV) && process.env.NETRA_ENV === 'catalyst';
+
+  return {
+    env: process.env.NETRA_ENV || 'local',
+    hosting: {
+      service: 'Catalyst AppSail',
+      capability: 'Hosts the Next.js server',
+      state: on(process.env.X_ZOHO_CATALYST_LISTEN_PORT) ? 'active' : 'adapter-ready',
+      note: 'Detected from the AppSail-injected listen port.',
+    },
+    services: [
+      svc('Catalyst Data Store / NoSQL', 'Crime records, edges, audit', onCatalyst, 'Set NETRA_ENV=catalyst after importing data/csv.'),
+      svc('QuickML LLM Serving + RAG', 'Grounded narration over NETRA facts', on(process.env.NETRA_LLM_URL), 'Set NETRA_LLM_URL / NETRA_LLM_KEY.'),
+      svc('Catalyst Authentication', 'Server-derived role (4 RBAC roles)', on(process.env.NETRA_AUTH), 'Set NETRA_AUTH=catalyst.'),
+      svc('Zia ASR / TTS', 'English voice Q&A', process.env.NETRA_ASR === 'zia', 'Set NETRA_ASR=zia. Browser Web Speech until then.'),
+      svc('Bhashini / AI4Bharat', 'Kannada voice (no Catalyst equivalent)', on(process.env.BHASHINI_API_KEY), 'Documented exception: Catalyst Zia has no Kannada ASR.'),
+      svc('Stratus', 'PDF dossier storage', on(process.env.NETRA_BLOB) && process.env.NETRA_BLOB === 'stratus', 'Set NETRA_BLOB=stratus.'),
+      svc('Cron + Functions', 'Nightly Beat Briefing dispatch', on(process.env.NETRA_CRON), 'catalyst/functions/beatBriefing is included; schedule on deploy.'),
+    ],
+  };
+}

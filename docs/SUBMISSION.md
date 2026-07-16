@@ -7,7 +7,7 @@
 
 ## 1. Prototype Brief (paste into the form — fits the 1024-char limit)
 
-> NETRA (ನೇತ್ರ, "the eye") is a bilingual (English + Kannada), voice-enabled conversational crime-intelligence copilot for the KSP crime database. Investigators ask in plain language — typed or spoken — and NETRA replies with a living visual (hotspot map, criminal-network graph, offender risk dossier, money trail) plus a clickable evidence trail back to the exact FIRs used. It detects organized gangs (Louvain community detection), forecasts a crime series' next strike (near-repeat space-time analysis), scores repeat offenders, and traces suspicious money flows — turning a passive archive into an investigator that talks back. A nightly Beat Briefing proactively flags emerging hotspots. Trends and socio-economic insights run on REAL Karnataka 2023 crime data; record-level features use a labelled, swappable synthetic stand-in (real FIR data is confidential). Built end-to-end on Zoho Catalyst.
+> NETRA (ನೇತ್ರ, "the eye") is a bilingual (English + Kannada), voice-enabled conversational crime-intelligence copilot for the KSP crime database. Investigators ask in plain language — typed or spoken — and NETRA replies with a living visual (hotspot map, criminal-network graph, offender risk dossier, money trail) plus a clickable evidence trail back to the exact FIRs used. It detects organized gangs (Louvain community detection), forecasts a crime series' next strike (near-repeat space-time analysis), scores repeat offenders, and traces suspicious money flows — turning a passive archive into an investigator that talks back. A nightly Beat Briefing proactively flags emerging hotspots. Trends and socio-economic insights run on REAL Karnataka 2023 crime data; record-level features use a labelled, swappable synthetic stand-in (real FIR data is confidential). Every analytic is provable: `Proof` in the app re-runs a harness that makes the algorithms rediscover planted ground truth, live — 10/10. Deployed on Zoho Catalyst AppSail, with each capability bound to a Catalyst service through provider adapters.
 
 ## 2. Problem statement addressed
 KSP crime data is rich but siloed; querying it needs technical skill and English fluency, and policing
@@ -30,14 +30,28 @@ proactive — surfacing networks, hotspots, and forecasts that are invisible in 
 - **Real data** — district trends & socio-economic correlation computed on real Karnataka 2023 figures.
 
 ## 4. Technology stack
+
+> **We do not claim more than the code does.** NETRA reports its own platform state at runtime —
+> open **Proof** in the app (or `GET /api/validate`) and the server lists, per Catalyst service,
+> whether it is **active** (credentials present, really being called) or **adapter-ready** (the
+> adapter exists and switches on via env vars, no code change). Ask us which services are live
+> and the answer is on screen, not on a slide.
+
 **Live in the prototype:** Next.js 15 · React 19 · TypeScript · Tailwind · MapLibre GL · Cytoscape.js ·
 Recharts · zero-dependency Node ESM analytics core (graph / forecast / risk / demographics) ·
 rule-based NLU + RAG-shaped LLM adapter · browser Web Speech (dev voice).
-**Catalyst (deployment target — wired via provider adapters, activate on deploy):** AppSail (hosts the
-Next.js server) · Data Store / NoSQL · QuickML LLM Serving + RAG (Qwen2.5) · Authentication (4 RBAC
-roles) · Cron + Functions (beatBriefing) · Mail / Push · Stratus + SmartBrowz (PDF) · Zia ASR/TTS
-(English) · **Roadmap:** Zia AutoML, IndicNER. **Allowed third-party (no Catalyst equivalent):**
-Bhashini / AI4Bharat for **Kannada** voice; MapLibre + CARTO/OSM tiles; Cytoscape/Recharts.
+
+**Catalyst — active now:** **AppSail** hosts the Next.js server (the deployed URL above).
+
+**Catalyst — adapter-ready** (`packages/core/src/providers`, activate on credentials, no code change):
+Data Store / NoSQL (`NETRA_ENV=catalyst`) · QuickML LLM Serving + RAG, Qwen2.5 (`NETRA_LLM_URL`) ·
+Authentication, 4 RBAC roles (`NETRA_AUTH`) · Cron + Functions — `catalyst/functions/beatBriefing`
+is written and included · Mail / Push · Stratus + SmartBrowz for PDF (`NETRA_BLOB=stratus`) ·
+Zia ASR/TTS, English (`NETRA_ASR=zia`).
+**Roadmap:** Zia AutoML, IndicNER.
+**Allowed third-party (no Catalyst equivalent):** Bhashini / AI4Bharat for **Kannada** voice
+(Zia has no Kannada ASR — a documented exception, not a shortcut); MapLibre + CARTO/OSM tiles;
+Cytoscape / Recharts.
 
 ## 5. Proposed impact & use case
 Any officer — regardless of tech skill or language — interrogates the state crime database in spoken

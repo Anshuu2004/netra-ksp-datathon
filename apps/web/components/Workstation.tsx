@@ -41,7 +41,7 @@ const T = {
     ask: 'Ask', askPh: 'Ask the crime database — hotspots, gangs, offenders, a FIR…',
     commands: 'Commands', workspace: 'Workspace', analysing: 'Analysing…', speak: 'Speak',
     case: 'Case', caseEmpty: 'Your line of enquiry builds here. Every question stays — click one to return to it.',
-    export: 'Export dossier', audit: 'Audit log', briefing: 'Beat briefing',
+    export: 'Export dossier', audit: 'Audit log', briefing: 'Beat briefing', proof: 'Proof · validation',
     live: 'live', role: 'role', queries: 'queries', selected: 'selected',
     piiVisible: 'PII visible', piiRedacted: 'PII redacted', demoData: 'synthetic demo data',
     timelineFilter: 'timeline filter active', failed: 'failed',
@@ -53,7 +53,7 @@ const T = {
     ask: 'ಕೇಳಿ', askPh: 'ಅಪರಾಧ ದತ್ತಸಂಚಯವನ್ನು ಕೇಳಿ…',
     commands: 'ಆದೇಶಗಳು', workspace: 'ಕಾರ್ಯಕ್ಷೇತ್ರ', analysing: 'ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ…', speak: 'ಓದಿ',
     case: 'ಪ್ರಕರಣ', caseEmpty: 'ನಿಮ್ಮ ವಿಚಾರಣೆ ಇಲ್ಲಿ ದಾಖಲಾಗುತ್ತದೆ. ಪ್ರತಿ ಪ್ರಶ್ನೆಯೂ ಉಳಿಯುತ್ತದೆ.',
-    export: 'ದಸ್ತಾವೇಜು ರಫ್ತು', audit: 'ಲೆಕ್ಕಪರಿಶೋಧನೆ', briefing: 'ಬೀಟ್ ವರದಿ',
+    export: 'ದಸ್ತಾವೇಜು ರಫ್ತು', audit: 'ಲೆಕ್ಕಪರಿಶೋಧನೆ', briefing: 'ಬೀಟ್ ವರದಿ', proof: 'ಪುರಾವೆ · ಪರಿಶೀಲನೆ',
     live: 'ಸಕ್ರಿಯ', role: 'ಪಾತ್ರ', queries: 'ಪ್ರಶ್ನೆಗಳು', selected: 'ಆಯ್ಕೆ',
     piiVisible: 'ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ ಗೋಚರ', piiRedacted: 'ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ ಮರೆಮಾಚಲಾಗಿದೆ',
     demoData: 'ಕೃತಕ ಪ್ರಾತ್ಯಕ್ಷಿಕೆ ದತ್ತಾಂಶ', timelineFilter: 'ಕಾಲರೇಖೆ ಶೋಧಕ ಸಕ್ರಿಯ', failed: 'ವಿಫಲ',
@@ -73,6 +73,7 @@ export default function Workstation() {
   const [listening, setListening] = useState(false);
   const [palette, setPalette] = useState(false);
   const [audit, setAudit] = useState<any[] | null>(null);
+  const [proof, setProof] = useState<any | null>(null);
   const [live, setLive] = useState('');           // screen-reader announcement for the ask→answer loop
   const recogRef = useRef<any>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -168,6 +169,16 @@ export default function Workstation() {
     catch { setAudit([]); }
   }
 
+  /** Runs the ground-truth recovery harness live, in front of the viewer. */
+  async function openProof() {
+    setProof({ loading: true });
+    try {
+      const r = await fetch('/api/validate');
+      if (!r.ok) throw new Error(`Server returned ${r.status}`);
+      setProof(await r.json());
+    } catch (e: any) { setProof({ error: e?.message || 'Could not run validation' }); }
+  }
+
   function exportDossier() {
     const esc = (s: string) => (s || '').replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c] as string));
     if (turns.length === 0) { alert('Ask something first — the dossier captures this case.'); return; }
@@ -207,14 +218,15 @@ export default function Workstation() {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); setPalette((p) => !p); }
       else if (e.key === '/' && !typing) { e.preventDefault(); inputRef.current?.focus(); }
       else if (e.key === 'Escape') {
-        if (audit !== null) setAudit(null);
+        if (proof !== null) setProof(null);
+        else if (audit !== null) setAudit(null);
         else if (palette) setPalette(false);
         else clear();
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [clear, audit, palette]);
+  }, [clear, audit, palette, proof]);
 
   const current = ROLES.find((r) => r.id === role)!;
   const isMac = typeof navigator !== 'undefined' && /Mac|iPhone|iPad/.test(navigator.platform || '');
@@ -293,6 +305,7 @@ export default function Workstation() {
             ))}
           </div>
           <div className="shrink-0 border-t border-hairline p-1 grid gap-0.5">
+            <RailBtn onClick={openProof}><CheckIcon /> {t.proof}</RailBtn>
             <RailBtn onClick={exportDossier} disabled={!turns.length}><DownloadIcon /> {t.export}</RailBtn>
             <RailBtn onClick={openAudit}><ShieldIcon /> {t.audit}</RailBtn>
             <RailBtn href="/briefing"><BellIcon /> {t.briefing}</RailBtn>
@@ -347,14 +360,15 @@ export default function Workstation() {
         <span className="ml-auto text-sev-critical shrink-0">{t.demoData}</span>
       </footer>
 
-      {palette && <CommandPalette onClose={() => setPalette(false)} onRun={send} setLang={setLang} setRole={changeRole} onDossier={exportDossier} onAudit={openAudit} />}
+      {palette && <CommandPalette onClose={() => setPalette(false)} onRun={send} setLang={setLang} setRole={changeRole} onDossier={exportDossier} onAudit={openAudit} onProof={openProof} />}
       {audit !== null && <AuditModal entries={audit} onClose={() => setAudit(null)} />}
+      {proof !== null && <ProofModal data={proof} onClose={() => setProof(null)} />}
     </div>
   );
 }
 
 /* ───────────────────────── command palette (⌘K) ───────────────────────── */
-function CommandPalette({ onClose, onRun, setLang, setRole, onDossier, onAudit }: any) {
+function CommandPalette({ onClose, onRun, setLang, setRole, onDossier, onAudit, onProof }: any) {
   const [q, setQ] = useState('');
   const [i, setI] = useState(0);
   const listRef = useRef<HTMLDivElement>(null);
@@ -369,6 +383,7 @@ function CommandPalette({ onClose, onRun, setLang, setRole, onDossier, onAudit }
     { group: 'Access', label: 'Role: Policymaker (PII redacted)', run: () => setRole('policymaker') },
     { group: 'Case', label: 'Export dossier (PDF)', run: onDossier },
     { group: 'Case', label: 'Open audit log', run: onAudit },
+    { group: 'Proof', label: 'Run validation — recover planted ground truth', run: onProof },
   ];
   const hits = cmds.filter((c) => c.label.toLowerCase().includes(q.toLowerCase()));
   const clamped = Math.min(i, Math.max(0, hits.length - 1));
@@ -492,6 +507,90 @@ function AuditModal({ entries, onClose }: { entries: any[]; onClose: () => void 
   );
 }
 
+/* ───────────────────── proof: ground-truth recovery, run live ─────────────────────
+   NETRA's least replicable asset. The competitive field reports unvalidated accuracy numbers;
+   this runs the analytics against ground truth they never see and shows whether they recover it.
+   It also reports honestly which Catalyst services this deployment is really calling — so the
+   question "which ones are you actually using?" has an on-screen answer instead of a silence. */
+function ProofModal({ data, onClose }: { data: any; onClose: () => void }) {
+  const all = data?.checks?.length ?? 0;
+  const ok = data?.passed ?? 0;
+  return (
+    <div role="dialog" aria-modal="true" aria-label="Validation proof"
+      className="fixed inset-0 z-[50] bg-black/70 flex items-center justify-center p-4 msg-in" onClick={onClose}>
+      <div className="raised w-full max-w-3xl max-h-[85vh] overflow-hidden flex flex-col" onClick={(e) => e.stopPropagation()}>
+        <div className="flex items-start justify-between gap-3 px-3 py-2 border-b border-hairline">
+          <div className="min-w-0">
+            <div className="font-semibold text-fg text-md">Proof · analytics recover planted ground truth</div>
+            <p className="text-2xs text-fg-secondary leading-relaxed mt-0.5 max-w-[70ch]">
+              Run live, just now — the same checks as <code className="font-mono text-fg-muted">npm run validate</code>.
+              The analytics never see the answer key: a gang, a kingpin, a hidden tie, a spree and a
+              hotspot were planted in <code className="font-mono text-fg-muted">data/seed/manifest.json</code>, and
+              each method below has to <em>rediscover</em> them. Nothing is hardcoded — if an algorithm
+              were faked or broken, these fail.
+            </p>
+          </div>
+          <div className="flex items-center gap-2 shrink-0">
+            {!data?.loading && !data?.error && (
+              <span className="text-md font-bold tabular-nums" style={{ color: ok === all ? '#4bbd91' : '#ef8a2c' }}>{ok}/{all}</span>
+            )}
+            <button onClick={onClose} aria-label="Close" className="btn-ghost text-fg-secondary hover:text-fg text-lg leading-none">×</button>
+          </div>
+        </div>
+
+        <div className="overflow-auto p-3">
+          {data?.loading && <div className="space-y-1.5" aria-hidden><div className="skeleton h-8" /><div className="skeleton h-8" /><div className="skeleton h-8" /></div>}
+          {data?.error && <div className="text-base" style={{ color: '#d95f4a' }}>{data.error}</div>}
+
+          {data?.checks && (
+            <ul className="space-y-1">
+              {data.checks.map((c: any, i: number) => (
+                <li key={i} className="border border-hairline rounded-sm bg-sunken px-2 py-1.5">
+                  <div className="flex items-start gap-2">
+                    <span className="mt-0.5 shrink-0 text-2xs font-bold" style={{ color: c.pass ? '#4bbd91' : '#d95f4a' }} aria-hidden>
+                      {c.pass ? '✓' : '✕'}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-base text-fg font-medium leading-snug">{c.name}</div>
+                      <div className="text-2xs text-fg-secondary font-mono mt-0.5 break-words">{c.detail}</div>
+                      {c.claim && <div className="text-2xs text-fg-muted mt-1 leading-relaxed">{c.claim}</div>}
+                    </div>
+                    <span className="text-2xs text-fg-muted shrink-0 hidden sm:block text-right max-w-[13rem]">{c.method}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {data?.platform && (
+            <div className="mt-4">
+              <div className="eyebrow mb-1.5">Platform · what this deployment actually calls</div>
+              <p className="text-2xs text-fg-muted mb-1.5 leading-relaxed max-w-[70ch]">
+                Reported by the running server, not asserted in a slide. <b className="text-fg-secondary">active</b> = credentials
+                present and in use. <b className="text-fg-secondary">adapter-ready</b> = the adapter exists and switches on with
+                env vars, no code change (<code className="font-mono">packages/core/src/providers</code>).
+              </p>
+              <ul className="grid sm:grid-cols-2 gap-1">
+                {[data.platform.hosting, ...data.platform.services].map((s: any, i: number) => (
+                  <li key={i} className="flex items-start gap-1.5 border border-hairline rounded-sm bg-sunken px-1.5 py-1">
+                    <span className="mt-1 w-1.5 h-1.5 rounded-full shrink-0" aria-hidden
+                      style={{ background: s.state === 'active' ? '#4bbd91' : '#8a867a' }} />
+                    <div className="min-w-0">
+                      <div className="text-xs text-fg leading-tight">{s.service}</div>
+                      <div className="text-2xs text-fg-muted leading-tight">{s.capability}</div>
+                      <div className="text-2xs mt-0.5" style={{ color: s.state === 'active' ? '#4bbd91' : '#8a867a' }}>{s.state}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const prettyIntent = (s: string) => s.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 function surfaceIcon(kind?: string) {
   if (kind === 'map') return <MapPinIcon />;
@@ -506,6 +605,7 @@ function MicIcon() { return <svg {...S({ width: 12, height: 12 })}><rect x="9" y
 function SpeakerIcon() { return <svg {...S({ width: 11, height: 11 })}><path d="M11 5 6 9H2v6h4l5 4zM15.5 8.5a5 5 0 0 1 0 7" /></svg>; }
 function ShieldIcon() { return <svg {...S({ width: 11, height: 11 })}><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>; }
 function BellIcon() { return <svg {...S({ width: 11, height: 11 })}><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.5 21a1.5 1.5 0 0 0 3 0" /></svg>; }
+function CheckIcon() { return <svg {...S({ width: 11, height: 11 })}><path d="M20 6 9 17l-5-5" /></svg>; }
 function DownloadIcon() { return <svg {...S({ width: 11, height: 11 })}><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16" /></svg>; }
 function MapPinIcon() { return <svg {...S()}><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z" /><circle cx="12" cy="10" r="2.5" /></svg>; }
 function GraphIcon() { return <svg {...S()}><circle cx="6" cy="6" r="2.5" /><circle cx="18" cy="7" r="2.5" /><circle cx="12" cy="18" r="2.5" /><path d="M8 7.5 16 8m-9 1.5L11 16m6-6.5L13 16" /></svg>; }
