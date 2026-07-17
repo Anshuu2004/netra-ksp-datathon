@@ -83,9 +83,10 @@ const config: Config = {
       borderRadius: { none: '0', sm: '2px', DEFAULT: '2px', md: '3px', lg: '3px' },
 
       fontFamily: {
-        // Kannada ahead of system-ui: it was falling through Inter/Segoe and being rescued only
-        // by per-character fallback — fragile metrics on the language we claim as first-class.
-        sans: ['"Noto Sans Kannada"', 'system-ui', '"Segoe UI"', 'Roboto', 'sans-serif'],
+        // Platform sans for clean Latin UI (Segoe UI on the Windows target), with Noto Sans
+        // Kannada in the stack so Kannada glyphs render consistently via fallback. Known-Kannada
+        // content (narration, the toggle) also carries `font-kn` explicitly for correct metrics.
+        sans: ['system-ui', '"Segoe UI"', 'Roboto', '"Noto Sans Kannada"', 'sans-serif'],
         kn: ['"Noto Sans Kannada"', 'system-ui', 'sans-serif'],
         // Mono ONLY for machine-generated identifiers an analyst may read aloud or transcribe.
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace'],

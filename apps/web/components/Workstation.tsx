@@ -87,7 +87,7 @@ export default function Workstation() {
   /** Single fetch path. Guards res.ok AND the envelope shape — one 500 used to white-screen
    *  the whole workstation, because `await res.json()` happily returned {error} and every
    *  consumer then called .slice()/.replace() on undefined. */
-  const run = useCallback(async (q: string, id: number, forRole: Role) => {
+  const run = useCallback(async (q: string, id: number, forRole: Role, opts?: { silent?: boolean }) => {
     setBusy(true);
     setLive(t.analysing);
     try {
@@ -104,7 +104,7 @@ export default function Workstation() {
       setTurns((ts) => ts.map((x) => (x.id === id ? { ...x, env: envelope, error: undefined } : x)));
       setRecords(envelope.context?.records || []);
       setLive(`${narrate(envelope)} · ${envelope.context?.records?.length || 0} records`);
-      speak(envelope);
+      if (!opts?.silent) speak(envelope);   // the boot query must not blast TTS on page load
     } catch (err: any) {
       const msg = err?.message || 'Request failed';
       setTurns((ts) => ts.map((x) => (x.id === id ? { ...x, env: undefined, error: msg } : x)));
@@ -116,7 +116,7 @@ export default function Workstation() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [turns, lang, setRecords, t.analysing]);
 
-  const send = useCallback((text: string) => {
+  const send = useCallback((text: string, opts?: { silent?: boolean }) => {
     const q = text.trim();
     if (!q || busy) return;
     const id = Date.now();
@@ -124,8 +124,18 @@ export default function Workstation() {
     setPalette(false);
     setTurns((ts) => [...ts, { id, q }]);
     setActiveId(id);
-    run(q, id, role);
+    run(q, id, role, opts);
   }, [busy, role, run]);
+
+  // Open ALIVE. An instrument should never greet an investigator with an empty void — boot with
+  // a populated map + timeline + evidence they can immediately click. Silent (no TTS on load).
+  const booted = useRef(false);
+  useEffect(() => {
+    if (booted.current) return;
+    booted.current = true;
+    send('Show chain-snatching hotspots in Bengaluru in the last 6 months', { silent: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   /** GOVERNANCE, FOR REAL. Changing role re-runs the active query against the server so the
    *  pixels on screen actually match the access level the status strip claims. Previously this
@@ -321,7 +331,7 @@ export default function Workstation() {
                 <h1 className="text-base text-fg font-semibold truncate">
                   {env ? prettyIntent(env.intent) : busy ? t.analysing : t.workspace}
                 </h1>
-                {env && <span className="text-xs text-fg-muted truncate hidden xl:inline min-w-0">· {narrate(env)}</span>}
+                {env && <span className={`text-xs text-fg-muted truncate hidden xl:inline min-w-0 ${lang === 'kn' ? 'font-kn' : ''}`}>· {narrate(env)}</span>}
               </div>
               {env && (
                 <button onClick={() => speak(env)} className="btn-ghost text-xs flex items-center gap-1 text-fg-secondary hover:text-accent shrink-0">
@@ -333,7 +343,7 @@ export default function Workstation() {
               {busy && !env ? <Skeleton />
                 : active?.error ? <ErrorState msg={active.error} onRetry={() => send(active.q)} />
                 : env ? <AnswerSurfaceView surface={env.surface} />
-                : <EmptyWorkspace onPick={send} t={t} />}
+                : <EmptyWorkspace onPick={send} t={t} lang={lang} />}
             </div>
           </section>
 
@@ -423,9 +433,9 @@ function CommandPalette({ onClose, onRun, setLang, setRole, onDossier, onAudit, 
 }
 
 /* ───────────────────────── bits ───────────────────────── */
-function EmptyWorkspace({ onPick, t }: { onPick: (s: string) => void; t: any }) {
+function EmptyWorkspace({ onPick, t, lang }: { onPick: (s: string) => void; t: any; lang: 'en' | 'kn' }) {
   return (
-    <div className="h-full grid place-items-center p-3 overflow-auto">
+    <div className={`h-full grid place-items-center p-3 overflow-auto ${lang === 'kn' ? 'font-kn' : ''}`}>
       <div className="max-w-md w-full">
         <h2 className="text-lg font-semibold text-fg text-balance">{t.headline}</h2>
         <p className="text-base text-fg-secondary mt-1.5 leading-relaxed">{t.sub}</p>
